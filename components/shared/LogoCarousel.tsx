@@ -11,13 +11,15 @@ export function LogoCarousel() {
         { name: "NORA", url: "/images/LogoCarousel/nora.png" },
         { name: "Rettsdata", url: "/images/LogoCarousel/rettsdata.png" },
         { name: "Selmer", url: "/images/LogoCarousel/selmer.png" },
+        { name: "Thommessen", url: "/images/LogoCarousel/thommessen.jpg" },
+        { name: "UiO", url: "/images/LogoCarousel/uio.png" },
     ]
 
     // Duplicate logos to ensure seamless looping
     const duplicatedLogos = [...logos, ...logos, ...logos]
 
     return (
-        <section className="py-12 bg-muted/30 overflow-hidden">
+        <section className="py-0 md:py-12 bg-muted/30 overflow-hidden">
             <div className="w-full overflow-hidden mask-gradient-x">
                 <motion.div
                     className="flex items-center gap-16 w-max px-4"
@@ -31,16 +33,26 @@ export function LogoCarousel() {
                         },
                     }}
                 >
-                    {duplicatedLogos.map((logo, index) => (
-                        <div key={index} className="flex items-center justify-center relative h-12 w-32 flex-shrink-0 opacity-70 grayscale transition-all hover:grayscale-0 hover:opacity-100">
-                            <Image
-                                src={logo.url}
-                                alt={logo.name}
-                                fill
-                                className="object-contain"
-                            />
-                        </div>
-                    ))}
+                    {duplicatedLogos.map((logo, index) => {
+                        let sizeClasses = "h-12 w-32"
+                        let imageClasses = "object-contain"
+                        if (logo.name === "UiO") {
+                            sizeClasses = "h-28 w-64"
+                            imageClasses = "object-cover"
+                        } else if (logo.name === "Thommessen") {
+                            sizeClasses = "h-20 w-48"
+                        }
+                        return (
+                            <div key={index} className={`flex items-center justify-center relative ${sizeClasses} flex-shrink-0 opacity-70 grayscale transition-all hover:grayscale-0 hover:opacity-100`}>
+                                <Image
+                                    src={logo.url}
+                                    alt={logo.name}
+                                    fill
+                                    className={imageClasses}
+                                />
+                            </div>
+                        )
+                    })}
                 </motion.div>
             </div>
         </section>

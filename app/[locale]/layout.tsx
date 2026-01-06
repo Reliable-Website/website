@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   keywords: ["AI", "Legal Tech", "NLP", "Large Language Models", "Survey Analysis", "Norwegian AI"],
   authors: [{ name: "Reliable AI Team" }],
   creator: "Reliable AI",
+  icons: {
+    icon: "/images/LogoReliable/favicon.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

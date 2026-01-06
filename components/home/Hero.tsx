@@ -9,7 +9,7 @@ import { Award } from "lucide-react"
 export function Hero() {
     const t = useTranslations('Hero')
     return (
-        <section className="relative overflow-hidden py-32 sm:py-48 lg:pb-32 xl:pb-36">
+        <section className="relative overflow-hidden py-20 pt-56 sm:pt-64 md:pt-56 lg:pt-56 xl:pt-56 lg:pb-20 xl:pb-24">
             {/* Dynamic Background */}
             <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#80808025_1px,transparent_1px),linear-gradient(to_bottom,#80808025_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
@@ -18,7 +18,7 @@ export function Hero() {
                 initial={{ opacity: 0, x: 50, rotate: 15 }}
                 animate={{ opacity: 1, x: 0, rotate: 12 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="absolute top-20 right-8 sm:top-24 sm:right-16 md:top-28 md:right-24 lg:right-32 z-20"
+                className="absolute top-28 right-8 sm:top-32 sm:right-16 md:top-36 md:right-24 lg:right-32 z-20"
             >
                 <Link
                     href="/blog/ecai-2025-outstanding-demo-award"
@@ -51,11 +51,11 @@ export function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.1 }}
                     >
-                        <h1 className="font-heading text-5xl font-normal tracking-tight text-foreground sm:text-7xl md:text-8xl" dangerouslySetInnerHTML={{ __html: t.raw('title') }} />
+                        <h1 className="font-heading text-5xl font-normal tracking-tight text-foreground sm:text-6xl md:text-7xl" dangerouslySetInnerHTML={{ __html: t.raw('title') }} />
                     </motion.div>
 
                     <motion.p
-                        className="mt-6 text-lg leading-8 text-muted-foreground md:text-xl"
+                        className="mt-4 text-lg leading-8 text-muted-foreground md:text-xl"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}

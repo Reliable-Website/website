@@ -35,7 +35,7 @@
         "login": "Login"
     },
     "Hero": {
-        "title": "Building the future of <br /><span class=\"text-primary italic\">Reliable AI.</span>",
+        "title": "<span class=\"text-primary\">Reliable AI</span> research, consulting and deployment",
         "subtitle": "Bridging the gap between academic research and industrial application.",
         "cta": "Contact us",
         "award": "Winner of ECAI 2025 Outstanding Demo Award"
@@ -114,6 +114,7 @@
             "feature2": "Instant access to precedents and relevant case law.",
             "feature3": "Streamlined workflow for legal professionals.",
             "cta": "Request Access",
+            "login": "Login",
             "cardTitle": "KOFA Database",
             "cardSubtitle": "Intelligent Legal Search"
         },

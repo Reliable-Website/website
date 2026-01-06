@@ -15,7 +15,7 @@ export function Testimonial() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
                     {/* Image Column */}
-                    <div className="relative order-2 lg:order-1">
+                    <div className="relative order-1 lg:order-1">
                         <div className="relative aspect-[3/4] w-full max-w-md mx-auto lg:mx-0 rounded-2xl overflow-hidden">
                             <Image
                                 src="/images/Testemony/stian.jpg"
@@ -31,7 +31,7 @@ export function Testimonial() {
                     </div>
 
                     {/* Content Column */}
-                    <div className="order-1 lg:order-2">
+                    <div className="order-2 lg:order-2">
                         <blockquote className="font-heading text-xl md:text-2xl font-normal leading-relaxed text-foreground mb-8">
                             "{t('textBefore')}
                             <Link

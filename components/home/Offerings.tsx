@@ -35,7 +35,7 @@ export function Offerings() {
     ]
 
     return (
-        <section className="py-24 bg-muted/30 relative overflow-hidden">
+        <section className="py-12 md:py-24 bg-muted/30 relative overflow-hidden">
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 <div className="mx-auto max-w-2xl text-center mb-16">
                     <h2 className="font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">

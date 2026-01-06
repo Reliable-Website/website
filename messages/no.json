@@ -35,7 +35,7 @@
         "login": "Logg inn"
     },
     "Hero": {
-        "title": "Vi bygger fremtidens <br /><span class=\"text-primary italic\">Reliable AI.</span>",
+        "title": "<span class=\"text-primary\">Reliable AI</span> forskning, rådgivning og implementasjon",
         "subtitle": "Brobygger mellom akademisk forskning og industriell anvendelse.",
         "cta": "Kontakt oss",
         "award": "Vinner av ECAI 2025 Outstanding Demo Award"
@@ -114,6 +114,7 @@
             "feature2": "Umiddelbar tilgang til presedenser og relevant rettspraksis.",
             "feature3": "Strømlinjeformet arbeidsflyt for jurister.",
             "cta": "Be om tilgang",
+            "login": "Logg inn",
             "cardTitle": "KOFA Database",
             "cardSubtitle": "Intelligent Juridisk Søk"
         },

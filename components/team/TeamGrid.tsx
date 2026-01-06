@@ -24,15 +24,15 @@ const team = [
         role: "co_founder",
     },
     {
-        name: "Anders Malthe-Sørenssen",
-        email: "anders@reliableai.no",
-        image: "/images/Team/anders.jpg",
-        role: "co_founder",
-    },
-    {
         name: "Tor Ole Bigton Odden",
         email: "torole@reliableai.no",
         image: "/images/Team/tor.jpg",
+        role: "co_founder",
+    },
+    {
+        name: "Anders Malthe-Sørenssen",
+        email: "anders@reliableai.no",
+        image: "/images/Team/anders.jpg",
         role: "co_founder",
     },
     {
@@ -59,18 +59,38 @@ export function TeamGrid() {
     return (
         <section className="pt-40 pb-24 bg-background overflow-hidden">
             <div className="container mx-auto px-6 md:px-16 lg:px-32">
+                {/* Title Section - Mobile only */}
+                <div className="md:hidden mb-12">
+                    <h1 className="font-heading text-5xl md:text-7xl font-normal tracking-tight text-foreground mb-6">
+                        {t.rich('title', {
+                            reliable: (chunks) => <span className="text-primary italic">{chunks}</span>,
+                            br: () => <br />
+                        })}
+                    </h1>
+                    <p className="text-xl text-muted-foreground leading-relaxed">
+                        {t('subtitle')}
+                    </p>
+                </div>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-start">
 
-                    {/* Left Column - Starts slightly lower */}
-                    <div className="space-y-12 lg:space-y-24 md:pt-12">
-                        {leftColumn.map((member) => (
+                    {/* Left Column - Starts slightly lower (Desktop only) */}
+                    <div className="hidden md:block space-y-12 lg:space-y-24 md:pt-12">
+                        {team.filter((_, i) => i % 2 === 0).map((member) => (
                             <TeamMemberCard key={member.email} member={member} />
                         ))}
                     </div>
 
-                    {/* Right Column - Starts with Header, padding reduced */}
-                    <div className="space-y-12 lg:space-y-24 md:pt-12">
-                        <div className="mb-16 md:mb-24 text-left">
+                    {/* Mobile view - Sequential order */}
+                    <div className="md:hidden space-y-12">
+                        {team.map((member) => (
+                            <TeamMemberCard key={member.email} member={member} />
+                        ))}
+                    </div>
+
+                    {/* Right Column - Starts with Header, padding reduced (Desktop only) */}
+                    <div className="hidden md:block space-y-12 lg:space-y-24 md:pt-12">
+                        <div className="mb-16 md:mb-24 text-left hidden md:block">
                             <h1 className="font-heading text-5xl md:text-7xl font-normal tracking-tight text-foreground mb-6">
                                 {t.rich('title', {
                                     reliable: (chunks) => <span className="text-primary italic">{chunks}</span>,
@@ -82,7 +102,7 @@ export function TeamGrid() {
                             </p>
                         </div>
 
-                        {rightColumn.map((member) => (
+                        {team.filter((_, i) => i % 2 !== 0).map((member) => (
                             <TeamMemberCard key={member.email} member={member} />
                         ))}
                     </div>
