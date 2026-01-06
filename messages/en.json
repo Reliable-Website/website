@@ -1,0 +1,153 @@
+{
+    "Research": {
+        "title": "Our Research",
+        "subtitle": "Rigorous, peer-reviewed research is at the core of Reliable AI.",
+        "papers": {
+            "paper1": {
+                "title": "Scalable and consistent few-shot classification of survey responses using text embeddings",
+                "description": "We introduce a text embedding-based classification framework for efficient qualitative analysis of open-ended survey responses. Requiring only a handful of examples, this method integrates seamlessly into existing workflows and achieves performance comparable to expert human coders. It enables scalable, consistent, and audit-friendly analysis of thousands of responses.",
+                "date": "August 27, 2025",
+                "linkText": "Read Paper",
+                "linkUrl": "https://arxiv.org/abs/2508.19836"
+            },
+            "paper2": {
+                "title": "Using Text Embeddings for Qualitative Analysis at Scale",
+                "description": "We propose a novel technique for deductive qualitative data analysis using text embeddings. By representing text in a high-dimensional meaning space, we can quantify differences and model topics more flexibly than traditional methods. Validate against established datasets, our approach recovers key trends and offers a scalable solution for large text corpora.",
+                "date": "February 28, 2024",
+                "linkText": "Read Paper",
+                "linkUrl": "https://journals.aps.org/prper/abstract/10.1103/PhysRevPhysEducRes.20.020151"
+            },
+            "paper3": {
+                "title": "DANTE: Deductive Content Analysis Using Text Embeddings",
+                "description": "Traditional qualitative content analysis of text is labor-intensive. We introduce DANTE, a reliable and transparent few-shot tool that makes text embedding-based qualitative analysis more accessible. It enables researchers to perform large-scale deductive content analysis without extensive programming skills.",
+                "date": "October 30, 2025",
+                "linkText": "Read Paper",
+                "linkUrl": "https://ebooks.iospress.nl/doi/10.3233/FAIA251443"
+            }
+        }
+    },
+    "Header": {
+        "products": "Products",
+        "team": "Team",
+        "research": "Research",
+        "blog": "Blog",
+        "contact": "Contact",
+        "login": "Login"
+    },
+    "Hero": {
+        "title": "Building the future of <br /><span class=\"text-primary italic\">Reliable AI.</span>",
+        "subtitle": "Bridging the gap between academic research and industrial application.",
+        "cta": "Contact us",
+        "award": "Winner of ECAI 2025 Outstanding Demo Award"
+    },
+    "Values": {
+        "title": "Our Principles",
+        "research": {
+            "name": "Research based",
+            "description": "Our methods are grounded in rigorous academic research and proven methodologies."
+        },
+        "reliable": {
+            "name": "Reliable and secure",
+            "description": "We prioritize data security and system reliability in every solution we build."
+        },
+        "custom": {
+            "name": "Custom solutions",
+            "description": "We don't believe in one-size-fits-all. We build what you actually need."
+        }
+    },
+    "Offerings": {
+        "title": "What We Offer",
+        "subtitle": "Comprehensive AI services from strategy to software.",
+        "consulting": {
+            "title": "Consulting",
+            "description": "Strategic guidance on AI adoption and implementation.",
+            "cta": "Learn more"
+        },
+        "custom": {
+            "title": "Custom Software",
+            "description": "Tailor-made AI applications solving your specific challenges.",
+            "cta": "Get started"
+        },
+        "saas": {
+            "title": "SaaS Solutions",
+            "description": "Ready-to-use tools for specialized tasks.",
+            "cta": "Explore products"
+        }
+    },
+    "BlogPreview": {
+        "title": "Latest Insights",
+        "subtitle": "Thoughts on technology, strategy, and the future of work.",
+        "viewAll": "View all posts"
+    },
+    "Blog": {
+        "title": "News & Insights",
+        "subtitle": "Latest updates, research findings, and thoughts from the Reliable AI team.",
+        "backToBlog": "Back to Blog"
+    },
+    "Footer": {
+        "contactUs": "CONTACT US",
+        "overview": "Overview",
+        "products": "Products",
+        "team": "Team",
+        "research": "Research",
+        "blog": "Blog",
+        "contacts": "Contacts",
+        "office": "Office",
+        "rights": "All rights reserved Oslo {year}"
+    },
+    "Team": {
+        "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",
+        "subtitle": "As an inherently interdisciplinary team of researchers, we are committed to ethical and responsible AI usage. Our strong ties to philosophy and social science sets us apart.",
+        "roles": {
+            "co_founder": "Co-Founder",
+            "board_member": "External Board Member"
+        }
+    },
+    "Products": {
+        "title": "Our Products",
+        "subtitle": "Advanced AI solutions designed for precision, transparency, and reliability in legal and academic research.",
+        "kofa": {
+            "tag": "Legal Tech",
+            "title": "KOFA Search",
+            "description": "Navigate the complexities of public procurement with our specialized search engine for KOFA (Klagenemnda for offentlig anskaffelse) documents.",
+            "feature1": "Advanced semantic search across the entire KOFA database.",
+            "feature2": "Instant access to precedents and relevant case law.",
+            "feature3": "Streamlined workflow for legal professionals.",
+            "cta": "Request Access",
+            "cardTitle": "KOFA Database",
+            "cardSubtitle": "Intelligent Legal Search"
+        },
+        "dante": {
+            "tag": "Research Tool",
+            "title": "DANTE",
+            "description": "Deductive Content Analysis Using Text Embeddings. A reliable and transparent few-shot tool that makes text embedding-based qualitative analysis accessible to everyone.",
+            "feature1": "Perform large-scale deductive content analysis without coding skills.",
+            "feature2": "Few-shot learning capabilities for high efficiency.",
+            "feature3": "Transparent methodology grounded in academic research.",
+            "cta": "Read the Paper",
+            "cardTitle": "DANTE",
+            "cardSubtitle": "Deductive Content Analysis"
+        }
+    },
+    "Testimonial": {
+        "textBefore": "We are proud to use award-winning, Norwegian-developed technology in practical legal work. The collaboration with Reliable AI has made it possible to develop a product for precise search in ",
+        "kofa": "KOFA",
+        "textAfter": " cases, simplifying our daily workflow. Reliable took the challenge head-on and developed a highly useful product in a short time through close dialogue with us.",
+        "author": "Stian Hultin Oddbjørnsen",
+        "role": "Partner",
+        "company": "Advokatfirmaet Haavind",
+        "cta": "Explore KOFA Search"
+    },
+    "Contact": {
+        "title": "Get in touch",
+        "subtitle": "Reach out to discuss how we can support your AI initiatives.",
+        "markus": {
+            "name": "Markus Kreutzer",
+            "title": "Co-Founder",
+            "quote": "We are committed to ethical and responsible AI. Our goal is to enable safe, confident adoption."
+        },
+        "getInTouch": "Get in Touch",
+        "office": "Office",
+        "general": "General Inquiries"
+    }
+}

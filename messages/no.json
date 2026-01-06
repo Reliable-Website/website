@@ -1,0 +1,153 @@
+{
+    "Research": {
+        "title": "Vår Forskning",
+        "subtitle": "Rigorøs, fagfellevurdert forskning er kjernen i Reliable AI.",
+        "papers": {
+            "paper1": {
+                "title": "Skalerbar klassifisering av spørreundersøkelser med tekst-embeddings",
+                "description": "Vi presenterer et rammeverk for effektiv kvalitativ analyse av åpne svar ved hjelp av tekst-embeddings. Metoden krever få eksempler, integreres lett i eksisterende arbeidsflyter, og oppnår resultater på linje med menneskelige eksperter. Dette muliggjør skalerbar analyse av tusenvis av svar med høy konsistens og etterprøvbarhet.",
+                "date": "27. august 2025",
+                "linkText": "Les Artikkel",
+                "linkUrl": "https://arxiv.org/abs/2508.19836"
+            },
+            "paper2": {
+                "title": "Kvalitativ analyse i stor skala med tekst-embeddings",
+                "description": "Vi foreslår en ny teknikk for deduktiv kvalitativ analyse ved bruk av tekst-embeddings. Ved å representere tekst i et høydimensjonalt betydningsrom kan vi kvantifisere forskjeller og modellere emner mer fleksibelt enn tradisjonelle metoder. Vår tilnærming er validert mot etablerte datasett og viser stort potensial for analyse av store tekstmengder.",
+                "date": "28. februar 2024",
+                "linkText": "Les Artikkel",
+                "linkUrl": "https://journals.aps.org/prper/abstract/10.1103/PhysRevPhysEducRes.20.020151"
+            },
+            "paper3": {
+                "title": "DANTE: Deduktiv innholdsanalyse med tekst-embeddings",
+                "description": "Tradisjonell kvalitativ tekstanalyse er tidkrevende. Vi introduserer DANTE, et pålitelig og transparent verktøy som gjør kvalitativ analyse basert på embeddings mer tilgjengelig. Det gjør det mulig for forskere å utføre storskala deduktiv innholdsanalyse uten omfattende programmeringsferdigheter.",
+                "date": "30. oktober 2025",
+                "linkText": "Les Artikkel",
+                "linkUrl": "https://ebooks.iospress.nl/doi/10.3233/FAIA251443"
+            }
+        }
+    },
+    "Header": {
+        "products": "Produkter",
+        "team": "Team",
+        "research": "Forskning",
+        "blog": "Blogg",
+        "contact": "Kontakt",
+        "login": "Logg inn"
+    },
+    "Hero": {
+        "title": "Vi bygger fremtidens <br /><span class=\"text-primary italic\">Reliable AI.</span>",
+        "subtitle": "Brobygger mellom akademisk forskning og industriell anvendelse.",
+        "cta": "Kontakt oss",
+        "award": "Vinner av ECAI 2025 Outstanding Demo Award"
+    },
+    "Values": {
+        "title": "Våre Prinsipper",
+        "research": {
+            "name": "Forskningsbasert",
+            "description": "Våre metoder er forankret i grundig akademisk forskning og utprøvde metoder."
+        },
+        "reliable": {
+            "name": "Pålitelig og sikker",
+            "description": "Vi prioriterer datasikkerhet og systempålitelighet i hver løsning vi bygger."
+        },
+        "custom": {
+            "name": "Skreddersydde løsninger",
+            "description": "Vi tror ikke på 'one-size-fits-all'. Vi bygger det du faktisk trenger."
+        }
+    },
+    "Offerings": {
+        "title": "Hva Vi Tilbyr",
+        "subtitle": "Omfattende AI-tjenester fra strategi til programvare.",
+        "consulting": {
+            "title": "Rådgivning",
+            "description": "Strategisk veiledning om AI-adopsjon og implementering.",
+            "cta": "Les mer"
+        },
+        "custom": {
+            "title": "Skreddersydd Programvare",
+            "description": "Spesialtilpassede AI-applikasjoner som løser dine spesifikke utfordringer.",
+            "cta": "Kom i gang"
+        },
+        "saas": {
+            "title": "SaaS-løsninger",
+            "description": "Klare verktøy for spesialiserte oppgaver.",
+            "cta": "Utforsk produkter"
+        }
+    },
+    "BlogPreview": {
+        "title": "Siste Innsikt",
+        "subtitle": "Tanker om teknologi, strategi og fremtidens arbeid.",
+        "viewAll": "Se alle innlegg"
+    },
+    "Blog": {
+        "title": "Nyheter og Innsikt",
+        "subtitle": "Siste oppdateringer, forskningsfunn og tanker fra Reliable AI-teamet.",
+        "backToBlog": "Tilbake til Blogg"
+    },
+    "Footer": {
+        "contactUs": "KONTAKT OSS",
+        "overview": "Oversikt",
+        "products": "Produkter",
+        "team": "Team",
+        "research": "Forskning",
+        "blog": "Blogg",
+        "contacts": "Kontakt",
+        "office": "Kontor",
+        "rights": "Alle rettigheter forbeholdt Oslo {year}"
+    },
+    "Team": {
+        "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",
+        "subtitle": "Som et tverrfaglig team av forskere er vi forpliktet til etisk og ansvarlig AI-bruk. Våre sterke bånd til filosofi og samfunnsvitenskap skiller oss ut.",
+        "roles": {
+            "co_founder": "Co-Founder",
+            "board_member": "Eksternt styremedlem"
+        }
+    },
+    "Products": {
+        "title": "Våre Produkter",
+        "subtitle": "Avanserte AI-løsninger designet for presisjon, åpenhet og pålitelighet innen juridisk og akademisk forskning.",
+        "kofa": {
+            "tag": "Legal Tech",
+            "title": "KOFA Søk",
+            "description": "Naviger i kompleksiteten av offentlige anskaffelser med vår spesialiserte søkemotor for KOFA-dokumenter.",
+            "feature1": "Avansert semantisk søk i hele KOFA-databasen.",
+            "feature2": "Umiddelbar tilgang til presedenser og relevant rettspraksis.",
+            "feature3": "Strømlinjeformet arbeidsflyt for jurister.",
+            "cta": "Be om tilgang",
+            "cardTitle": "KOFA Database",
+            "cardSubtitle": "Intelligent Juridisk Søk"
+        },
+        "dante": {
+            "tag": "Forskningsverktøy",
+            "title": "DANTE",
+            "description": "Deduktiv innholdsanalyse ved bruk av tekstinnbygginger. Et pålitelig og gjennomsiktig 'few-shot' verktøy som gjør kvalitativ analyse basert på tekstinnbygging tilgjengelig for alle.",
+            "feature1": "Utfør storskala deduktiv innholdsanalyse uten kodeferdigheter.",
+            "feature2": "'Few-shot' læringsevner for høy effektivitet.",
+            "feature3": "Gjennomsiktig metodikk forankret i akademisk forskning.",
+            "cta": "Les artikkelen",
+            "cardTitle": "DANTE",
+            "cardSubtitle": "Deduktiv Innholdsanalyse"
+        }
+    },
+    "Testimonial": {
+        "textBefore": "Vi er stolte over å kunne ta i bruk prisvinnende norskutviklet teknologi i praktisk juridisk arbeid. Samarbeidet med Reliable AI har gjort det mulig å utvikle et produkt for presist søk i ",
+        "kofa": "KOFA",
+        "textAfter": "-saker, noe som forenkler arbeidshverdagen. Reliable tok oppgaven på strak arm og utviklet et svært nyttig produkt på kort tid i tett dialog med oss.",
+        "author": "Stian Hultin Oddbjørnsen",
+        "role": "Partner",
+        "company": "Advokatfirmaet Haavind",
+        "cta": "Utforsk KOFA Søk"
+    },
+    "Contact": {
+        "title": "Ta kontakt",
+        "subtitle": "Ta kontakt for å diskutere hvordan vi kan støtte dine AI-initiativer.",
+        "markus": {
+            "name": "Markus Kreutzer",
+            "title": "Co-Founder",
+            "quote": "Vi er forpliktet til etisk og ansvarlig AI. Målet vårt er å muliggjøre trygg og sikker bruk."
+        },
+        "getInTouch": "Ta Kontakt",
+        "office": "Kontor",
+        "general": "Generelle Henvendelser"
+    }
+}
