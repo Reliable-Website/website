@@ -21,6 +21,8 @@ node_modules
 *.key
 *.cert
 ECAIdemo.mov
+thommessen.jpg
+
 
 # Debug
 npm-debug.log*
