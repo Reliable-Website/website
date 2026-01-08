@@ -167,18 +167,13 @@ export default function ProductsPage() {
                                 {t('dante.description')}
                             </p>
                             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border bg-muted">
-                                <video
-                                    autoPlay
-                                    muted
-                                    loop
-                                    playsInline
-                                    className="w-full h-full object-cover"
-                                    poster="/images/LogoReliable/logo.svg"
-                                >
-                                    <source src="/images/Products/ECAIdemo.mov" type="video/quicktime" />
-                                    <source src="/images/Products/ECAIdemo.mov" type="video/mp4" />
-                                    Your browser does not support the video tag.
-                                </video>
+                                <Image
+                                    src="/images/Products/dante.png"
+                                    alt="DANTE Interface"
+                                    fill
+                                    className="object-cover"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
                                 <div className="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur p-4 rounded-xl border">
                                     <p className="font-semibold">{t('dante.cardTitle')}</p>
                                     <p className="text-sm text-muted-foreground">{t('dante.cardSubtitle')}</p>
@@ -238,18 +233,13 @@ export default function ProductsPage() {
                                 </Button>
                             </div>
                             <div className="md:col-start-1 relative aspect-video rounded-2xl overflow-hidden shadow-2xl border bg-muted">
-                                <video
-                                    autoPlay
-                                    muted
-                                    loop
-                                    playsInline
-                                    className="w-full h-full object-cover"
-                                    poster="/images/LogoReliable/logo.svg"
-                                >
-                                    <source src="/images/Products/ECAIdemo.mov" type="video/quicktime" />
-                                    <source src="/images/Products/ECAIdemo.mov" type="video/mp4" />
-                                    Your browser does not support the video tag.
-                                </video>
+                                <Image
+                                    src="/images/Products/dante.png"
+                                    alt="DANTE Interface"
+                                    fill
+                                    className="object-cover"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
                                 <div className="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur p-4 rounded-xl border">
                                     <div className="flex items-center justify-between">
                                         <div>

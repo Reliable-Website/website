@@ -11,7 +11,6 @@ export function LogoCarousel() {
         { name: "NORA", url: "/images/LogoCarousel/nora.png" },
         { name: "Rettsdata", url: "/images/LogoCarousel/rettsdata.png" },
         { name: "Selmer", url: "/images/LogoCarousel/selmer.png" },
-        { name: "Thommessen", url: "/images/LogoCarousel/thommessen.jpg" },
         { name: "UiO", url: "/images/LogoCarousel/uio.png" },
     ]
 
@@ -39,8 +38,6 @@ export function LogoCarousel() {
                         if (logo.name === "UiO") {
                             sizeClasses = "h-28 w-64"
                             imageClasses = "object-cover"
-                        } else if (logo.name === "Thommessen") {
-                            sizeClasses = "h-20 w-48"
                         }
                         return (
                             <div key={index} className={`flex items-center justify-center relative ${sizeClasses} flex-shrink-0 opacity-70 grayscale transition-all hover:grayscale-0 hover:opacity-100`}>

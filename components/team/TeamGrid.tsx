@@ -36,15 +36,13 @@ const team = [
         role: "co_founder",
     },
     {
-        name: "Lars-Petter Windelstad Kjos",
-        email: "lp@reliableai.no",
-        image: "/images/Team/larspetter.png",
+        name: "Mathilde Fiksdahl",
+        image: "/images/Team/mathilde.jpg",
         role: "board_member",
     },
     {
-        name: "Mathilde Fiksdahl",
-        email: "mathilde@reliableai.no",
-        image: "/images/Team/mathilde.jpg",
+        name: "Lars-Petter Windelstad Kjos",
+        image: "/images/Team/larspetter.png",
         role: "board_member",
     },
 ]
@@ -77,14 +75,14 @@ export function TeamGrid() {
                     {/* Left Column - Starts slightly lower (Desktop only) */}
                     <div className="hidden md:block space-y-12 lg:space-y-24 md:pt-12">
                         {team.filter((_, i) => i % 2 === 0).map((member) => (
-                            <TeamMemberCard key={member.email} member={member} />
+                            <TeamMemberCard key={member.name} member={member} />
                         ))}
                     </div>
 
                     {/* Mobile view - Sequential order */}
                     <div className="md:hidden space-y-12">
                         {team.map((member) => (
-                            <TeamMemberCard key={member.email} member={member} />
+                            <TeamMemberCard key={member.name} member={member} />
                         ))}
                     </div>
 
@@ -103,7 +101,7 @@ export function TeamGrid() {
                         </div>
 
                         {team.filter((_, i) => i % 2 !== 0).map((member) => (
-                            <TeamMemberCard key={member.email} member={member} />
+                            <TeamMemberCard key={member.name} member={member} />
                         ))}
                     </div>
                 </div>
@@ -133,9 +131,11 @@ function TeamMemberCard({ member }: { member: typeof team[0] }) {
                 </h3>
                 <div className="flex flex-col gap-1 text-muted-foreground">
                     <p className="font-medium text-primary">{t(`roles.${member.role}`)}</p>
-                    <a href={`mailto:${member.email}`} className="text-sm hover:text-foreground transition-colors">
-                        {member.email}
-                    </a>
+                    {member.email && (
+                        <a href={`mailto:${member.email}`} className="text-sm hover:text-foreground transition-colors">
+                            {member.email}
+                        </a>
+                    )}
                 </div>
             </div>
         </div>
