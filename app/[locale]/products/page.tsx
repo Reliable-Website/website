@@ -171,7 +171,7 @@ export default function ProductsPage() {
                                     src="/images/Products/dante.png"
                                     alt="DANTE Interface"
                                     fill
-                                    className="object-cover"
+                                    className="object-cover object-top"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
                                 <div className="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur p-4 rounded-xl border">
@@ -237,7 +237,7 @@ export default function ProductsPage() {
                                     src="/images/Products/dante.png"
                                     alt="DANTE Interface"
                                     fill
-                                    className="object-cover"
+                                    className="object-cover object-top"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
                                 <div className="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur p-4 rounded-xl border">
