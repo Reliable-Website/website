@@ -35,11 +35,6 @@ export function Hero() {
                                 <span className="text-[6px] sm:text-[8px] md:text-[10px] font-semibold text-amber-900 leading-tight">Award Winner</span>
                             </div>
                         </div>
-                        {/* Ribbon tails */}
-                        <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 flex gap-1">
-                            <div className="w-3 sm:w-4 h-6 sm:h-8 bg-gradient-to-b from-amber-600 to-amber-700 transform -rotate-12 rounded-b-sm" />
-                            <div className="w-3 sm:w-4 h-6 sm:h-8 bg-gradient-to-b from-amber-600 to-amber-700 transform rotate-12 rounded-b-sm" />
-                        </div>
                     </div>
                 </Link>
             </motion.div>
