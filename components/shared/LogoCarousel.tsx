@@ -5,14 +5,14 @@ import { motion } from "framer-motion"
 
 export function LogoCarousel() {
     const logos = [
-        { name: "Føyen", url: "/images/LogoCarousel/foyen.png" },
-        { name: "Haavind", url: "/images/LogoCarousel/haavind.png" },
-        { name: "Innovasjon Norge", url: "/images/LogoCarousel/innovasjonnorge.png" },
         { name: "Microsoft", url: "/images/LogoCarousel/microsoft.png" },
         { name: "NORA", url: "/images/LogoCarousel/nora.png" },
-        { name: "Rettsdata", url: "/images/LogoCarousel/rettsdata.png" },
-        { name: "Selmer", url: "/images/LogoCarousel/selmer.png" },
         { name: "UiO", url: "/images/LogoCarousel/uio.png" },
+        { name: "Haavind", url: "/images/LogoCarousel/haavind.png" },
+        { name: "Selmer", url: "/images/LogoCarousel/selmer.png" },
+        { name: "Føyen", url: "/images/LogoCarousel/foyen.png" },
+        { name: "Rettsdata", url: "/images/LogoCarousel/rettsdata.png" },
+        { name: "Innovasjon Norge", url: "/images/LogoCarousel/innovasjonnorge.png" },
     ]
 
     // Duplicate logos to ensure seamless looping
@@ -37,10 +37,13 @@ export function LogoCarousel() {
                         let sizeClasses = "h-12 w-32"
                         let imageClasses = "object-contain"
                         if (logo.name === "UiO") {
-                            sizeClasses = "h-28 w-64"
-                            imageClasses = "object-cover"
+                            sizeClasses = "h-12 w-40"
+                            imageClasses = "object-contain scale-[2.5]"
                         } else if (logo.name === "Rettsdata") {
                             sizeClasses = "h-16 w-40"
+                        } else if (logo.name === "Føyen") {
+                            sizeClasses = "h-12 w-32"
+                            imageClasses = "object-contain scale-[2.5]"
                         }
                         return (
                             <div key={index} className={`flex items-center justify-center relative ${sizeClasses} flex-shrink-0 opacity-70 grayscale transition-all hover:grayscale-0 hover:opacity-100`}>
