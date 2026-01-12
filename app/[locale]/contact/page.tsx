@@ -75,13 +75,6 @@ export default function ContactPage() {
                                                 markus@reliableai.no
                                                 <ArrowRight className="h-5 w-5 transform group-hover/link:translate-x-1 transition-transform" />
                                             </a>
-                                            <a
-                                                href="tel:+4798600262"
-                                                className="group/link inline-flex items-center gap-2 text-lg font-medium text-foreground hover:text-primary transition-colors"
-                                            >
-                                                +47 986 00 262
-                                                <ArrowRight className="h-5 w-5 transform group-hover/link:translate-x-1 transition-transform" />
-                                            </a>
                                         </div>
                                     </div>
                                 </div>

@@ -10,40 +10,47 @@ const team = [
         email: "halvor@reliableai.no",
         image: "/images/Team/halvor.jpg",
         role: "co_founder",
+        description: "Background in physics and computational science. Specializes in text embeddings and the representation of meaning — with a particular interest in creative approaches to working with embedding spaces. The technical backbone of Reliable AI. When not coding, you'll find him on the cross-country skiing trails or at the bouldering gym.",
     },
     {
         name: "Jonas Timmann Mjaaland",
         email: "jonas@reliableai.no",
         image: "/images/Team/jonas.jpg",
         role: "co_founder",
+        description: "Background in philosophy and data science, with a strong foundation in statistics and theory. Has an eye for design and makes the solutions look good. When he's not working, you might find him on the basketball court or the football pitch.",
     },
     {
         name: "Markus Kreutzer",
         email: "markus@reliableai.no",
         image: "/images/Team/markus.jpg",
         role: "co_founder",
+        description: "Background in philosophy, AI, and ethics — with a particular interest in how language models represent concepts. Leads sales and marketing at Reliable AI. Tennis player and downhill skier of near-professional caliber.",
     },
     {
         name: "Tor Ole Bigton Odden",
         email: "torole@reliableai.no",
         image: "/images/Team/tor.jpg",
         role: "co_founder",
+        description: "Associate Professor of Physics at the University of Oslo. His research focuses on computational literacy, active learning methods, and using NLP for educational research — including text embeddings for qualitative analysis. In his spare time, he plays Norwegian folk fiddle, carves wood, and reads graphic novels.",
     },
     {
         name: "Anders Malthe-Sørenssen",
         email: "anders@reliableai.no",
         image: "/images/Team/anders.jpg",
         role: "co_founder",
+        description: "Professor of Physics at the University of Oslo with research spanning geophysics, neuroscience, and artificial intelligence. Director of the Center for Computing in Science Education and experienced in bringing academic research to market — having founded companies and taken them through IPO. Currently chairs a national committee (Malthe-Sørenssen-utvalget) advising on how AI should reshape higher education. Runs on oatmeal.",
     },
     {
         name: "Mathilde Fiksdahl",
         image: "/images/Team/mathilde.jpg",
         role: "board_member",
+        description: "Partner at Sprint Consulting with nine years of experience in innovation and sustainability consulting. Background from NTNU in computer science and strategy. Specializes in helping companies drive innovation, establish new ventures, and pursue sustainable growth.",
     },
     {
         name: "Lars-Petter Windelstad Kjos",
         image: "/images/Team/larspetter.png",
         role: "board_member",
+        description: "5x serial entrepreneur in EdTech. Co-founder and CPO of We Are Learning (immersive 3D learning). Previously co-founded Motimate, which was acquired by Kahoot!. His journey spans from CD-ROMs and laser discs to gamification and AI-powered immersive products. Known as a captivating speaker on creativity and AI.",
     },
 ]
 
@@ -137,6 +144,11 @@ function TeamMemberCard({ member }: { member: typeof team[0] }) {
                         </a>
                     )}
                 </div>
+                {member.description && (
+                    <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
+                        {member.description}
+                    </p>
+                )}
             </div>
         </div>
     )
