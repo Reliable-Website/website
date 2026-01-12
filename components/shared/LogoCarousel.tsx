@@ -35,15 +35,13 @@ export function LogoCarousel() {
                 >
                     {duplicatedLogos.map((logo, index) => {
                         let sizeClasses = "h-12 w-32"
-                        let imageClasses = "object-contain"
+                        const imageClasses = "object-contain"
                         if (logo.name === "UiO") {
                             sizeClasses = "h-12 w-40"
-                            imageClasses = "object-contain scale-150"
                         } else if (logo.name === "Rettsdata") {
                             sizeClasses = "h-16 w-40"
                         } else if (logo.name === "Føyen") {
                             sizeClasses = "h-12 w-32"
-                            imageClasses = "object-contain scale-150"
                         }
                         return (
                             <div key={index} className={`flex items-center justify-center relative ${sizeClasses} flex-shrink-0 opacity-70 grayscale transition-all hover:grayscale-0 hover:opacity-100`}>
