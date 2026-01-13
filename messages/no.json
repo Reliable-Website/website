@@ -101,6 +101,15 @@
         "roles": {
             "co_founder": "Co-Founder",
             "board_member": "Eksternt styremedlem"
+        },
+        "descriptions": {
+            "halvor": "Bakgrunn i fysikk og beregningsvitenskap. Spesialiserer seg på tekst-embeddings og representasjon av mening — med særlig interesse for kreative tilnærminger til embedding-rommet. Den tekniske ryggraden i Reliable AI. Når han ikke koder, finner du ham på langrennssporet eller i klatreveggen.",
+            "jonas": "Bakgrunn i filosofi og datavitenskap, med et solid grunnlag i statistikk og teori. Har øye for design og får løsningene til å se bra ut. Når han ikke jobber, finner du ham på basketballbanen eller fotballbanen.",
+            "markus": "Bakgrunn i filosofi, AI og etikk — med særlig interesse for hvordan språkmodeller representerer konsepter. Leder salg og markedsføring i Reliable AI. Tennisspiller og alpinist på nær profesjonelt nivå.",
+            "torole": "Førsteamanuensis i fysikk ved Universitetet i Oslo. Forskningen hans fokuserer på beregningskompetanse, aktive læringsmetoder og bruk av NLP i utdanningsforskning — inkludert tekst-embeddings for kvalitativ analyse. På fritiden spiller han norsk folkemusikk på fele, driver med treskjæring og leser tegneserier.",
+            "anders": "Professor i fysikk ved Universitetet i Oslo med forskning innen geofysikk, nevrovitenskap og kunstig intelligens. Leder for Senter for Computing in Science Education og erfaren med å bringe akademisk forskning til markedet. Leder for tiden et offentlig utvalg (Malthe-Sørenssen-utvalget) som gir råd om hvordan AI bør forme høyere utdanning. Utover alt dette, er han lidenskapelig opptatt av havregryn.",
+            "mathilde": "Partner i Sprint Consulting med ni års erfaring innen innovasjon og bærekraftsrådgivning. Bakgrunn fra NTNU i informatikk og strategi. Spesialiserer seg på å hjelpe selskaper med innovasjon, etablering av nye virksomheter og bærekraftig vekst.",
+            "larspetter": "5x seriegrunder innen EdTech. Medgründer og CPO i We Are Learning (immersiv 3D-læring). Tidligere medgründer av Motimate, som ble kjøpt opp av Kahoot!. Reisen hans spenner fra CD-ROM og laserdisker til gamification og AI-drevne immersive produkter. Kjent som en engasjerende foredragsholder om kreativitet og AI."
         }
     },
     "Products": {
