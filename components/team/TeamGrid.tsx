@@ -3,8 +3,18 @@
 
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { CSSProperties } from "react"
 
-const team = [
+type TeamMember = {
+    name: string
+    email?: string
+    image: string
+    role: string
+    descriptionKey?: string
+    imageStyle?: CSSProperties
+}
+
+const team: TeamMember[] = [
     {
         name: "Halvor Tyseng",
         email: "halvor@reliableai.no",
@@ -25,6 +35,7 @@ const team = [
         image: "/images/Team/markus.jpg",
         role: "co_founder",
         descriptionKey: "markus",
+        imageStyle: { objectPosition: "center 30%", transform: "scale(0.9)" },
     },
     {
         name: "Tor Ole Bigton Odden",
@@ -117,7 +128,7 @@ export function TeamGrid() {
     )
 }
 
-function TeamMemberCard({ member }: { member: typeof team[0] }) {
+function TeamMemberCard({ member }: { member: TeamMember }) {
     const t = useTranslations('Team')
 
     return (
@@ -129,6 +140,7 @@ function TeamMemberCard({ member }: { member: typeof team[0] }) {
                     alt={member.name}
                     fill
                     className="object-cover transition-all duration-700 filter grayscale contrast-125 group-hover:grayscale-0 group-hover:contrast-100 group-hover:scale-105"
+                    style={member.imageStyle}
                 />
             </div>
 
