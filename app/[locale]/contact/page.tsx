@@ -49,12 +49,13 @@ export default function ContactPage() {
 
                                     <div className="relative z-10 flex flex-col gap-8">
                                         <div className="flex items-center gap-6">
-                                            <div className="relative h-24 w-24 rounded-full overflow-hidden ring-4 ring-background shadow-lg">
+                                            <div className="relative h-32 w-32">
                                                 <Image
                                                     src="/images/Team/markus.jpg"
                                                     alt="Markus Kreutzer"
                                                     fill
-                                                    className="object-cover"
+                                                    className="object-cover rounded-xl"
+                                                    style={{ objectPosition: "center 15%" }}
                                                 />
                                             </div>
                                             <div>

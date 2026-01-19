@@ -35,7 +35,6 @@ const team: TeamMember[] = [
         image: "/images/Team/markus.jpg",
         role: "co_founder",
         descriptionKey: "markus",
-        imageStyle: { objectPosition: "center 30%", transform: "scale(0.9)" },
     },
     {
         name: "Tor Ole Bigton Odden",
