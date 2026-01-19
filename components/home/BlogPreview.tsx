@@ -35,7 +35,7 @@ export function BlogPreview() {
                 </div>
 
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-                    {latestPosts.map((post) => (
+                    {latestPosts.map(({ featured, ...post }) => (
                         <BlogCard key={post.slug} {...post} />
                     ))}
                 </div>

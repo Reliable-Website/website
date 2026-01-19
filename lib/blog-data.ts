@@ -7,6 +7,7 @@ export interface BlogPost {
     content: string
     image?: string
     imageContain?: boolean
+    featured?: boolean
 }
 
 export const blogPosts: BlogPost[] = [
@@ -17,6 +18,7 @@ export const blogPosts: BlogPost[] = [
         category: "Award",
         slug: "ecai-2025-outstanding-demo-award",
         image: "/images/Blog/ecai.jpg",
+        featured: true,
         content: `
             <p>We are proud to announce that Reliable AI, in collaboration with the University of Oslo, has won the Outstanding Demo Award at ECAI 2025 – Europe's oldest and most prestigious AI conference – held this year in Bologna.</p>
             <p>The award was given for our demonstration of DANTE, a dependable and transparent tool for few-shot qualitative analysis. DANTE enables NLP-based qualitative research without requiring extensive coding expertise, making advanced text analysis accessible to researchers and professionals across domains.</p>

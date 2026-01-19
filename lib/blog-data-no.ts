@@ -8,6 +8,7 @@ export const blogPostsNo: BlogPost[] = [
         category: "Pris",
         slug: "ecai-2025-outstanding-demo-award",
         image: "/images/Blog/ecai.jpg",
+        featured: true,
         content: `
             <p>Vi er stolte over å kunngjøre at Reliable AI, i samarbeid med Universitetet i Oslo, har vunnet Outstanding Demo Award på ECAI 2025 – Europas eldste og mest prestisjefylte AI-konferanse – som i år ble avholdt i Bologna.</p>
             <p>Prisen ble gitt for vår demonstrasjon av DANTE, et pålitelig og transparent verktøy for few-shot kvalitativ analyse. DANTE muliggjør NLP-basert kvalitativ forskning uten behov for omfattende programmeringskompetanse, og gjør avansert tekstanalyse tilgjengelig for forskere og fagfolk på tvers av domener.</p>

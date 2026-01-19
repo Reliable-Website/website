@@ -14,6 +14,9 @@ export default async function BlogPage({ params }: PageProps) {
     const t = await getTranslations("Blog")
     const posts = locale === "no" ? blogPostsNo : blogPosts
 
+    const featuredPost = posts.find((post) => post.featured)
+    const otherPosts = posts.filter((post) => !post.featured)
+
     return (
         <div className="flex min-h-screen flex-col">
             <Header />
@@ -28,13 +31,15 @@ export default async function BlogPage({ params }: PageProps) {
                 </div>
 
                 {/* Featured post */}
-                <div className="mb-12">
-                    <BlogCard {...posts[0]} featured />
-                </div>
+                {featuredPost && (
+                    <div className="mb-12">
+                        <BlogCard {...featuredPost} featured />
+                    </div>
+                )}
 
                 {/* Other posts */}
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                    {posts.slice(1).map((post) => (
+                    {otherPosts.map((post) => (
                         <BlogCard key={post.slug} {...post} />
                     ))}
                 </div>
