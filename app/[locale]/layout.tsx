@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Reliable AI",
     images: [
       {
-        url: "https://reliable-ai.no/images/LogoReliable/og-image.svg",
+        url: "https://reliable-ai.no/images/LogoReliable/og-image.png",
         width: 1200,
         height: 630,
         alt: "Reliable AI Logo",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Reliable AI - Analytical AI for Large Language Data",
     description: "We empower people to work smarter with information. Reliable AI brings rigorous research into practical, trustworthy solutions.",
     creator: "@reliable_ai",
-    images: ["https://reliable-ai.no/images/LogoReliable/og-image.svg"],
+    images: ["https://reliable-ai.no/images/LogoReliable/og-image.png"],
   },
   robots: {
     index: true,
