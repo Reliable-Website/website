@@ -35,12 +35,21 @@ export const metadata: Metadata = {
     title: "Reliable AI - Analytical AI for Large Language Data",
     description: "We empower people to work smarter with information. Reliable AI brings rigorous research into practical, trustworthy solutions.",
     siteName: "Reliable AI",
+    images: [
+      {
+        url: "https://reliable-ai.no/images/LogoReliable/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "Reliable AI Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Reliable AI - Analytical AI for Large Language Data",
     description: "We empower people to work smarter with information. Reliable AI brings rigorous research into practical, trustworthy solutions.",
     creator: "@reliable_ai",
+    images: ["https://reliable-ai.no/images/LogoReliable/og-image.svg"],
   },
   robots: {
     index: true,
