@@ -51,16 +51,22 @@ const team: TeamMember[] = [
         descriptionKey: "anders",
     },
     {
-        name: "Mathilde Fiksdahl",
-        image: "/images/Team/mathilde.jpg",
-        role: "board_member",
-        descriptionKey: "mathilde",
+        name: "Martine Goto",
+        image: "/images/Team/martine.jpeg",
+        role: "graphic_designer",
+        descriptionKey: "martine",
     },
     {
         name: "Lars-Petter Windelstad Kjos",
         image: "/images/Team/larspetter.png",
         role: "board_member",
         descriptionKey: "larspetter",
+    },
+    {
+        name: "Mathilde Fiksdahl",
+        image: "/images/Team/mathilde.jpg",
+        role: "board_member",
+        descriptionKey: "mathilde",
     },
 ]
 
