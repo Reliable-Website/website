@@ -51,13 +51,13 @@ export default async function BlogPost({ params }: PageProps) {
                         </h1>
                     </div>
 
-                    {post.image && (
-                        <div className={`relative w-full mb-8 rounded-lg overflow-hidden ${post.imageContain ? 'h-48' : 'h-96 md:h-[28rem]'}`}>
+                    {(post.contentImage || post.image) && (
+                        <div className={`relative w-full mb-8 rounded-lg overflow-hidden ${post.imageContain ? 'h-48' : post.contentImage ? 'h-[28rem] md:h-[36rem]' : 'h-96 md:h-[28rem]'}`}>
                             <Image
-                                src={post.image}
+                                src={post.contentImage || post.image!}
                                 alt={post.title}
                                 fill
-                                className={post.imageContain ? "object-contain p-4" : "object-cover"}
+                                className={`${post.imageContain ? "object-contain p-4" : "object-cover"} ${post.contentImage ? "object-[center_70%]" : ""}`}
                             />
                         </div>
                     )}

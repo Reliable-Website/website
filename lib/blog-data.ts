@@ -6,7 +6,9 @@ export interface BlogPost {
     excerpt: string
     content: string
     image?: string
+    contentImage?: string
     imageContain?: boolean
+    contentImageContain?: boolean
     featured?: boolean
 }
 
@@ -29,6 +31,22 @@ export const blogPosts: BlogPost[] = [
             </blockquote>
             <p>This recognition highlights the importance of collaboration between academic institutions and industry in advancing AI technology from research labs into practical professional applications.</p>
             <p>We're grateful to the ECAI organizing committee and the broader AI research community for this recognition. It motivates us to continue developing reliable, human-centered AI solutions that make qualitative research smarter, faster, and more accessible.</p>
+        `
+    },
+    {
+        title: "Reliable AI at TechTorget 2026",
+        excerpt: "We had a stand at TechTorget in Oslo – Norway's leading legaltech event. With the tallest banner at the venue and an undefeated chess record, we connected with legal professionals curious about reliable AI solutions.",
+        date: "28 January 2026",
+        category: "Event",
+        slug: "techtorget-2026",
+        image: "/images/Blog/techtorget2.jpg",
+        contentImage: "/images/Blog/techtorget1.jpg",
+        content: `
+            <p>Reliable AI had a stand at TechTorget – an arena where lawyers and legal professionals discover modern IT solutions for the legal sector. Organized by Advokatforeningen (The Norwegian Bar Association) and Gyldendal Rettsdata, the event gathered legaltech initiatives from across Norway at Gyldendalhuset in Oslo.</p>
+            <p>We arrived with what was arguably the tallest banner at the venue (and possibly the tallest team members as well). The day was filled with great conversations, new connections – and chess matches against anyone brave enough to challenge us.</p>
+            <p>The result? Undefeated. ♟️</p>
+            <p>It's always inspiring to meet people who are curious about how AI can be used in a safe and reliable way. Many visitors were interested in our work on semantic search for legal documents and our approach to trustworthy AI in professional contexts.</p>
+            <p>A big thank you to everyone who stopped by our stand for interesting conversations, and thanks to TechTorget for organizing a fantastic event. We look forward to the same time next year!</p>
         `
     },
     {

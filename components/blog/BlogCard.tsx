@@ -16,7 +16,7 @@ interface BlogCardProps {
 export function BlogCard({ title, excerpt, date, slug, category, image, imageContain, featured }: BlogCardProps) {
     if (featured) {
         return (
-            <article className="group relative flex flex-col md:flex-row rounded-lg border bg-card shadow-sm transition-all hover:shadow-md overflow-hidden">
+            <article className="group relative flex flex-col md:flex-row rounded-lg border-2 border-primary/30 bg-card shadow-md transition-all hover:shadow-lg hover:border-primary/50 overflow-hidden">
                 {image && (
                     <div className="relative h-64 md:h-auto md:w-1/2">
                         <Image
@@ -29,6 +29,9 @@ export function BlogCard({ title, excerpt, date, slug, category, image, imageCon
                 )}
                 <div className="flex flex-col space-y-4 p-8 md:w-1/2 justify-center">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <span className="font-medium text-primary-foreground bg-primary px-3 py-1 rounded-full text-xs uppercase tracking-wide">
+                            Featured
+                        </span>
                         <span className="font-medium text-accent-foreground/80 bg-accent/10 px-3 py-1 rounded-full">
                             {category}
                         </span>

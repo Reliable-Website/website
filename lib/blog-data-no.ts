@@ -22,6 +22,22 @@ export const blogPostsNo: BlogPost[] = [
         `
     },
     {
+        title: "Reliable AI på TechTorget 2026",
+        excerpt: "Vi stilte med stand på TechTorget i Oslo – Norges ledende legaltech-arrangement. Med torgets høyeste banner og en ubeseiret sjakk-rekord, knyttet vi kontakt med jurister som er nysgjerrige på pålitelige AI-løsninger.",
+        date: "28. januar 2026",
+        category: "Arrangement",
+        slug: "techtorget-2026",
+        image: "/images/Blog/techtorget2.jpg",
+        contentImage: "/images/Blog/techtorget1.jpg",
+        content: `
+            <p>Reliable stilte med stand på TechTorget – en arena hvor advokater og juridiske fagfolk oppdager moderne IT-løsninger for juridisk sektor. Arrangert av Advokatforeningen og Gyldendal Rettsdata, samlet arrangementet legaltech-initiativer fra hele Norge i Gyldendalhuset i Oslo.</p>
+            <p>Vi møtte opp med torgets desidert høyeste banner (og muligens torgets høyeste karer). Det ble en fantastisk dag fylt med gode samtaler, nye bekjentskaper – og sjakk mot alle som turte å utfordre oss.</p>
+            <p>Resultatet? Ubeseiret. ♟️</p>
+            <p>Det er alltid inspirerende å møte folk som er nysgjerrige på hvordan AI kan brukes på en trygg og pålitelig måte. Mange besøkende var interessert i vårt arbeid med semantisk søk for juridiske dokumenter og vår tilnærming til pålitelig AI i profesjonelle sammenhenger.</p>
+            <p>Tusen takk til alle som stakk innom standen vår for interessante samtaler, og takk til TechTorget for et herlig arrangement. Vi ser frem til samme tid neste år!</p>
+        `
+    },
+    {
         title: "Besøk ved University of Liverpool",
         excerpt: "I august presenterte vi vår forskning på deduktiv kvalitativ analyse i stor skala på GenAI in Action-konferansen ved University of Liverpool. Vår tilnærming viser hvordan tekst-embeddings kan gjøre storskala kvalitativ forskning mer transparent, tolkbar og effektiv.",
         date: "28. august 2025",
