@@ -5,13 +5,14 @@ import { Link } from "@/i18n/navigation"
 import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
 import { Award } from "lucide-react"
+import { MagnetLines } from "./MagnetLines"
 
 export function Hero() {
     const t = useTranslations('Hero')
     return (
         <section className="relative overflow-hidden py-20 pt-56 sm:pt-64 md:pt-56 lg:pt-56 xl:pt-56 lg:pb-20 xl:pb-24">
-            {/* Dynamic Background */}
-            <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#80808025_1px,transparent_1px),linear-gradient(to_bottom,#80808025_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
+            {/* Dynamic Background - Interactive MagnetLines */}
+            <MagnetLines rows={20} columns={20} mobileRows={10} mobileColumns={10} lineColor="rgba(97, 126, 255, 0.22)" lineHeight="20px" lineWidth="2px" baseAngle={-10} />
 
             {/* Award Badge - Positioned at angle on right */}
             <motion.div
@@ -74,20 +75,6 @@ export function Hero() {
                 </div>
             </div>
 
-            {/* Background decorative elements - Animated Circles */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10">
-                <motion.div
-                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[600px] rounded-full border border-primary/10"
-                    animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
-                    transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                />
-                <motion.div
-                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[800px] w-[800px] rounded-full border border-primary/5"
-                    animate={{ scale: [1.1, 1, 1.1], opacity: [0.2, 0.4, 0.2] }}
-                    transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-[1000px] rounded-full bg-gradient-to-b from-sky-100/30 to-transparent blur-[100px] dark:from-sky-900/10" />
-            </div>
         </section>
     )
 }
