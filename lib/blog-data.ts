@@ -34,6 +34,32 @@ export const blogPosts: BlogPost[] = [
         `
     },
     {
+        title: "Introducing KOFA Search — Our First SaaS Product",
+        excerpt: "We are proud to announce the launch of KOFA Search, our first SaaS product. Reliable AI now offers what we believe is the world's best search tool for KOFA decisions — making it faster and easier to find relevant case law in public procurement.",
+        date: "8 January 2026",
+        category: "Product Launch",
+        slug: "introducing-kofa-search",
+        image: "/images/Blog/KOFAlaunch.png",
+        content: `
+            <p>We are thrilled to announce the official launch of <strong>KOFA Search</strong> — Reliable AI's first SaaS product, and what we believe is the world's most capable search tool for decisions from the <em>Klagenemnda for offentlige anskaffelser</em> (KOFA), Norway's public procurement complaints board.</p>
+            <p>Public procurement law is complex, voluminous, and constantly evolving. Legal professionals and advisors working in this field spend significant time sifting through thousands of KOFA decisions to find relevant precedents and case law. Traditional keyword-based search tools fall short — they miss conceptually related decisions that don't share exact wording, and return far too much noise.</p>
+            <p>KOFA Search solves this. Powered by our research-based AI, the tool uses semantic search to understand the meaning behind a query — not just the words. This means you can describe a legal situation in plain language and immediately surface the most relevant KOFA decisions, even when exact terminology differs.</p>
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">Built for legal professionals</h2>
+            <p>KOFA Search is designed from the ground up for lawyers, legal advisors, and public procurement specialists. The interface is clean and purpose-built for the task at hand: finding the right decisions quickly. Key features include:</p>
+            <ul class="list-disc list-inside space-y-2 mb-6 text-muted-foreground">
+                <li>Advanced semantic search across the full KOFA database</li>
+                <li>Instant access to relevant decisions and legal precedents</li>
+                <li>A streamlined workflow that reduces research time significantly</li>
+            </ul>
+            <p>We've validated the tool with legal professionals who regularly work with public procurement law, and the results speak for themselves: less time searching, more time analyzing.</p>
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">Thank you to Advokatfirmaet Haavind</h2>
+            <p>This launch would not have been possible without the trust and invaluable development support from <strong>Advokatfirmaet Haavind AS</strong>. From the earliest pilot stages, Haavind's team provided sharp legal expertise and real-world feedback that shaped the product into what it is today. Their willingness to partner with us and test the technology in practice has been essential.</p>
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">What's next</h2>
+            <p>The launch of KOFA Search marks an important milestone for Reliable AI — our first commercial SaaS offering, and a proof of concept for how research-based AI can deliver real, measurable value in professional settings.</p>
+            <p>We're excited about what comes next. If you're curious about how KOFA Search can streamline your work with public procurement law, we'd love to hear from you. Reach out to learn more or request access.</p>
+        `
+    },
+    {
         title: "Reliable AI at TechTorget 2026",
         excerpt: "We had a stand at TechTorget in Oslo – Norway's leading legaltech event. With the tallest banner at the venue and an undefeated chess record, we connected with legal professionals curious about reliable AI solutions.",
         date: "28 January 2026",

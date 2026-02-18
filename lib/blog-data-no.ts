@@ -22,6 +22,32 @@ export const blogPostsNo: BlogPost[] = [
         `
     },
     {
+        title: "Vi lanserer KOFA Søk — vårt første SaaS-produkt",
+        excerpt: "Vi er stolte av å annonsere lanseringen av KOFA Søk, vårt første SaaS-produkt. Reliable AI tilbyr nå det vi mener er verdens beste søkeverktøy for KOFA-avgjørelser — som gjør det raskere og enklere å finne relevant rettspraksis innen offentlige anskaffelser.",
+        date: "8. januar 2026",
+        category: "Produktlansering",
+        slug: "introducing-kofa-search",
+        image: "/images/Blog/KOFAlaunch.png",
+        content: `
+            <p>Vi er svært glade for å kunngjøre den offisielle lanseringen av <strong>KOFA Søk</strong> — Reliable AIs første SaaS-produkt, og det vi mener er verdens mest avanserte søkeverktøy for avgjørelser fra <em>Klagenemnda for offentlige anskaffelser</em> (KOFA).</p>
+            <p>Anskaffelsesretten er kompleks, omfattende og i stadig utvikling. Jurister og rådgivere som arbeider innen dette feltet bruker mye tid på å gå gjennom tusenvis av KOFA-avgjørelser for å finne relevante presedenser og rettspraksis. Tradisjonelle nøkkelordsbaserte søkeverktøy strekker ikke til — de overser begrepsmessig beslektede avgjørelser som ikke deler eksakt ordlyd, og returnerer altfor mye støy.</p>
+            <p>KOFA Søk løser dette. Drevet av vår forskningsbaserte AI bruker verktøyet semantisk søk for å forstå <em>meningen</em> bak en forespørsel — ikke bare ordene. Det betyr at du kan beskrive en juridisk situasjon med egne ord og umiddelbart få frem de mest relevante KOFA-avgjørelsene, selv når den eksakte terminologien er ulik.</p>
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">Bygget for juridiske fagfolk</h2>
+            <p>KOFA Søk er designet fra bunnen av for advokater, juridiske rådgivere og anskaffelsesspesialister. Grensesnittet er enkelt og målrettet for oppgaven: å finne de riktige avgjørelsene raskt. Viktige funksjoner inkluderer:</p>
+            <ul class="list-disc list-inside space-y-2 mb-6 text-muted-foreground">
+                <li>Avansert semantisk søk i hele KOFA-databasen</li>
+                <li>Umiddelbar tilgang til relevante avgjørelser og rettspraksis</li>
+                <li>En strømlinjeformet arbeidsflyt som reduserer søketid betydelig</li>
+            </ul>
+            <p>Vi har validert verktøyet med juridiske fagfolk som jevnlig arbeider med anskaffelsesrett, og resultatene taler for seg: mindre tid på søk, mer tid til analyse.</p>
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">Takk til Advokatfirmaet Haavind</h2>
+            <p>Denne lanseringen hadde ikke vært mulig uten tilliten og den uvurderlige utviklingsstøtten fra <strong>Advokatfirmaet Haavind AS</strong>. Fra de tidligste pilotstadiene ga Haavinds team skarp juridisk ekspertise og tilbakemeldinger fra virkeligheten som formet produktet til det det er i dag. Deres vilje til å samarbeide med oss og teste teknologien i praksis har vært avgjørende.</p>
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">Hva skjer videre</h2>
+            <p>Lanseringen av KOFA Søk markerer en viktig milepæl for Reliable AI — vårt første kommersielle SaaS-tilbud, og et bevis på at forskningsbasert AI kan levere reell, målbar verdi i profesjonelle sammenhenger.</p>
+            <p>Vi er spente på hva som kommer. Er du nysgjerrig på hvordan KOFA Søk kan effektivisere din arbeidshverdag med anskaffelsesrett? Vi hører gjerne fra deg. Ta kontakt for å lære mer eller be om tilgang.</p>
+        `
+    },
+    {
         title: "Reliable AI på TechTorget 2026",
         excerpt: "Vi stilte med stand på TechTorget i Oslo – Norges ledende legaltech-arrangement. Med torgets høyeste banner og en ubeseiret sjakk-rekord, knyttet vi kontakt med jurister som er nysgjerrige på pålitelige AI-løsninger.",
         date: "28. januar 2026",

@@ -17,7 +17,7 @@ export default function Home() {
         <LogoCarousel />
         <Values />
         <Testimonial />
-        <Offerings />
+        {/* <Offerings /> */}
         <BlogPreview />
       </main>
       <Footer />
