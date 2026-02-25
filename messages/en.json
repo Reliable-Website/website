@@ -13,7 +13,7 @@
             "paper2": {
                 "title": "Using Text Embeddings for Qualitative Analysis at Scale",
                 "description": "We propose a novel technique for deductive qualitative data analysis using text embeddings. By representing text in a high-dimensional meaning space, we can quantify differences and model topics more flexibly than traditional methods. Validate against established datasets, our approach recovers key trends and offers a scalable solution for large text corpora.",
-                "date": "February 28, 2024",
+                "date": "December 20, 2024",
                 "linkText": "Read Paper",
                 "linkUrl": "https://journals.aps.org/prper/abstract/10.1103/PhysRevPhysEducRes.20.020151"
             },

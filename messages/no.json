@@ -13,7 +13,7 @@
             "paper2": {
                 "title": "Kvalitativ analyse i stor skala med tekst-embeddings",
                 "description": "Vi foreslår en ny teknikk for deduktiv kvalitativ analyse ved bruk av tekst-embeddings. Ved å representere tekst i et høydimensjonalt betydningsrom kan vi kvantifisere forskjeller og modellere emner mer fleksibelt enn tradisjonelle metoder. Vår tilnærming er validert mot etablerte datasett og viser stort potensial for analyse av store tekstmengder.",
-                "date": "28. februar 2024",
+                "date": "20. desember 2024",
                 "linkText": "Les Artikkel",
                 "linkUrl": "https://journals.aps.org/prper/abstract/10.1103/PhysRevPhysEducRes.20.020151"
             },
