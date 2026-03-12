@@ -74,6 +74,11 @@ export function Header() {
                             </Link>
                         ))}
 
+                        {/* Login Button */}
+                        <a href="https://reliableai.online" target="_blank" rel="noopener noreferrer">
+                            <Button size="sm">{t('login')}</Button>
+                        </a>
+
                         {/* Language Dropdown */}
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>
@@ -124,6 +129,9 @@ export function Header() {
                                             {item.name}
                                         </Link>
                                     ))}
+                                    <a href="https://reliableai.online" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
+                                        <Button className="w-full">{t('login')}</Button>
+                                    </a>
                                     <div className="flex items-center justify-between pt-6 border-t">
                                         <span className="text-lg font-medium text-muted-foreground">Language</span>
                                         <div className="flex gap-2">
