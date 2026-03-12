@@ -13,6 +13,7 @@ export function LogoCarousel() {
         { name: "Føyen", url: "/images/LogoCarousel/foyen.png" },
         { name: "Rettsdata", url: "/images/LogoCarousel/rettsdata.png" },
         { name: "Innovasjon Norge", url: "/images/LogoCarousel/innovasjonnorge.png" },
+        { name: "Odin", url: "/images/LogoCarousel/odin.png" },
     ]
 
     // Duplicate logos to ensure seamless looping
