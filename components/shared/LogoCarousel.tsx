@@ -6,13 +6,12 @@ import { motion } from "framer-motion"
 export function LogoCarousel() {
     const logos = [
         { name: "Microsoft", url: "/images/LogoCarousel/microsoft.png" },
-        { name: "NORA", url: "/images/LogoCarousel/nora.png" },
         { name: "UiO", url: "/images/LogoCarousel/uio.png" },
         { name: "Haavind", url: "/images/LogoCarousel/haavind.png" },
         { name: "Selmer", url: "/images/LogoCarousel/selmer.png" },
         { name: "Føyen", url: "/images/LogoCarousel/foyen.png" },
         { name: "Rettsdata", url: "/images/LogoCarousel/rettsdata.png" },
-        { name: "Innovasjon Norge", url: "/images/LogoCarousel/innovasjonnorge.png" },
+        { name: "Innovasjon Norge", url: "/images/LogoCarousel/in.png" },
         { name: "Odin", url: "/images/LogoCarousel/odin.png" },
     ]
 
