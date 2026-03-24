@@ -23,53 +23,74 @@ export function MagnetLines({
     lineHeight = "24px",
     baseAngle = -10,
 }: MagnetLinesProps) {
+    const [mounted, setMounted] = useState(false)
     const [isMobile, setIsMobile] = useState(false)
     const containerRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
         const check = () => setIsMobile(window.innerWidth < 768)
         check()
+        setMounted(true)
         window.addEventListener("resize", check)
         return () => window.removeEventListener("resize", check)
     }, [])
 
-    const actualRows = isMobile && mobileRows ? mobileRows : rows
-    const actualColumns = isMobile && mobileColumns ? mobileColumns : columns
+    // Use mobile dimensions only after mount to avoid hydration mismatch
+    const actualRows = mounted && isMobile && mobileRows ? mobileRows : rows
+    const actualColumns = mounted && isMobile && mobileColumns ? mobileColumns : columns
 
     useEffect(() => {
         const container = containerRef.current
         if (!container) return
 
-        const items = container.querySelectorAll<HTMLSpanElement>("span")
+        const items = Array.from(container.querySelectorAll<HTMLSpanElement>("span"))
 
-        const onPointerMove = (pointer: { x: number; y: number }) => {
-            items.forEach((item) => {
+        // Cache rects so pointermove never forces reflow
+        let cachedCenters: { x: number; y: number }[] = []
+        const updateCenters = () => {
+            cachedCenters = items.map((item) => {
                 const rect = item.getBoundingClientRect()
-                const centerX = rect.x + rect.width / 2
-                const centerY = rect.y + rect.height / 2
+                return { x: rect.x + rect.width / 2, y: rect.y + rect.height / 2 }
+            })
+        }
+        updateCenters()
 
+        const onResize = () => updateCenters()
+        window.addEventListener("resize", onResize)
+
+        const applyRotations = (pointer: { x: number; y: number }) => {
+            items.forEach((item, i) => {
+                const { x: centerX, y: centerY } = cachedCenters[i]
                 const b = pointer.x - centerX
                 const a = pointer.y - centerY
                 const c = Math.sqrt(a * a + b * b) || 1
-                const r =
-                    ((Math.acos(b / c) * 180) / Math.PI) *
-                    (pointer.y > centerY ? 1 : -1)
-
+                const r = ((Math.acos(b / c) * 180) / Math.PI) * (pointer.y > centerY ? 1 : -1)
                 item.style.setProperty("--rotate", `${r}deg`)
+            })
+        }
+
+        // Throttle to one update per animation frame
+        let rafId: number | null = null
+        const onPointerMove = (e: PointerEvent) => {
+            if (rafId !== null) return
+            rafId = requestAnimationFrame(() => {
+                applyRotations({ x: e.clientX, y: e.clientY })
+                rafId = null
             })
         }
 
         window.addEventListener("pointermove", onPointerMove)
 
         // Initialize with middle element position
-        if (items.length) {
-            const middleIndex = Math.floor(items.length / 2)
-            const rect = items[middleIndex].getBoundingClientRect()
-            onPointerMove({ x: rect.x, y: rect.y })
+        if (cachedCenters.length) {
+            const mid = cachedCenters[Math.floor(cachedCenters.length / 2)]
+            applyRotations(mid)
         }
 
         return () => {
             window.removeEventListener("pointermove", onPointerMove)
+            window.removeEventListener("resize", onResize)
+            if (rafId !== null) cancelAnimationFrame(rafId)
         }
     }, [isMobile])
 
@@ -83,6 +104,7 @@ export function MagnetLines({
                 backgroundColor: lineColor,
                 width: lineWidth,
                 height: lineHeight,
+                willChange: "transform",
             }}
         />
     ))

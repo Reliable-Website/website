@@ -194,7 +194,7 @@ export default function ProductsPage() {
                                 </li>
                             </ul>
                             <Button asChild size="lg" variant="outline" className="rounded-full w-full">
-                                <Link href="https://arxiv.org/abs/2407.10667" target="_blank">
+                                <Link href="https://ebooks.iospress.nl/doi/10.3233/FAIA251443" target="_blank">
                                     {t('dante.cta')} <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                             </Button>
@@ -227,7 +227,7 @@ export default function ProductsPage() {
                                     </li>
                                 </ul>
                                 <Button asChild size="lg" variant="outline" className="rounded-full">
-                                    <Link href="https://arxiv.org/abs/2407.10667" target="_blank">
+                                    <Link href="https://ebooks.iospress.nl/doi/10.3233/FAIA251443" target="_blank">
                                         {t('dante.cta')} <ArrowRight className="ml-2 h-4 w-4" />
                                     </Link>
                                 </Button>
