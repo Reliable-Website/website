@@ -56,7 +56,7 @@ export function BlogCard({ title, excerpt, date, slug, category, image, imageCon
     }
 
     return (
-        <article className="group relative flex flex-col rounded-lg border bg-card shadow-sm transition-all hover:shadow-md overflow-hidden">
+        <article className="group relative flex flex-col rounded-lg bg-card shadow-sm transition-all hover:shadow-md overflow-hidden">
             {image && (
                 <div className="relative h-48 w-full">
                     <Image
