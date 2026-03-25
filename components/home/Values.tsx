@@ -1,19 +1,18 @@
 "use client"
 
 import { useTranslations } from "next-intl"
-import { ShieldCheck, GraduationCap, PenTool } from "lucide-react"
 import { motion } from "framer-motion"
 import { useRef, useState } from "react"
-import type { LucideIcon } from "lucide-react"
+import Image from "next/image"
 
 const valueConfig = [
-    { key: "research", icon: GraduationCap, number: "01" },
-    { key: "reliable", icon: ShieldCheck,   number: "02" },
-    { key: "custom",   icon: PenTool,       number: "03" },
+    { key: "research", image: "/images/Symbols/rai-symboler-02.png", number: "01" },
+    { key: "reliable", image: "/images/Symbols/rai-symboler-04.png", number: "02" },
+    { key: "custom",   image: "/images/Symbols/rai-symboler-03.png", number: "03" },
 ]
 
-function SpotlightCard({ icon: Icon, number, title, description, index }: {
-    icon: LucideIcon
+function SpotlightCard({ image, number, title, description, index }: {
+    image: string
     number: string
     title: string
     description: string
@@ -54,11 +53,9 @@ function SpotlightCard({ icon: Icon, number, title, description, index }: {
                 {number}
             </span>
 
-            {/* Icon */}
-            <div className="relative z-10 mb-8">
-                <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    <Icon className="h-6 w-6" />
-                </div>
+            {/* Symbol */}
+            <div className="relative z-10 mb-6 w-20 h-20">
+                <Image src={image} alt="" fill className="object-contain" />
             </div>
 
             {/* Text */}
@@ -96,7 +93,7 @@ export function Values() {
                     {valueConfig.map((item, i) => (
                         <SpotlightCard
                             key={item.key}
-                            icon={item.icon}
+                            image={item.image}
                             number={item.number}
                             title={t(`${item.key}.name`)}
                             description={t(`${item.key}.description`)}
