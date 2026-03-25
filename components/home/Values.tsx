@@ -2,54 +2,106 @@
 
 import { useTranslations } from "next-intl"
 import { ShieldCheck, GraduationCap, PenTool } from "lucide-react"
+import { motion } from "framer-motion"
+import { useRef, useState } from "react"
+import type { LucideIcon } from "lucide-react"
+
+const valueConfig = [
+    { key: "research", icon: GraduationCap, number: "01" },
+    { key: "reliable", icon: ShieldCheck,   number: "02" },
+    { key: "custom",   icon: PenTool,       number: "03" },
+]
+
+function SpotlightCard({ icon: Icon, number, title, description, index }: {
+    icon: LucideIcon
+    number: string
+    title: string
+    description: string
+    index: number
+}) {
+    const ref = useRef<HTMLDivElement>(null)
+    const [pos, setPos] = useState({ x: -999, y: -999 })
+
+    const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+        const rect = ref.current?.getBoundingClientRect()
+        if (!rect) return
+        setPos({ x: e.clientX - rect.left, y: e.clientY - rect.top })
+    }
+
+    const handleMouseLeave = () => setPos({ x: -999, y: -999 })
+
+    return (
+        <motion.div
+            ref={ref}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.12 }}
+            className="relative group rounded-3xl bg-white p-8 md:p-10 shadow-sm overflow-hidden cursor-default"
+        >
+            {/* Spotlight */}
+            <div
+                className="pointer-events-none absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                style={{
+                    background: `radial-gradient(480px circle at ${pos.x}px ${pos.y}px, rgba(99,102,241,0.07), transparent 60%)`,
+                }}
+            />
+
+            {/* Decorative number */}
+            <span className="absolute top-6 right-8 font-heading text-6xl font-bold text-slate-100 select-none leading-none">
+                {number}
+            </span>
+
+            {/* Icon */}
+            <div className="relative z-10 mb-8">
+                <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                    <Icon className="h-6 w-6" />
+                </div>
+            </div>
+
+            {/* Text */}
+            <div className="relative z-10 space-y-3">
+                <h3 className="font-heading text-xl font-semibold text-foreground">
+                    {title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                    {description}
+                </p>
+            </div>
+        </motion.div>
+    )
+}
 
 export function Values() {
     const t = useTranslations('Values')
 
-    const values = [
-        {
-            key: "research",
-            icon: GraduationCap,
-        },
-        {
-            key: "reliable",
-            icon: ShieldCheck,
-        },
-        {
-            key: "custom",
-            icon: PenTool,
-        }
-    ]
-
     return (
-        <section className="py-12 md:py-24 bg-slate-50 relative overflow-hidden">
-            <div className="container mx-auto px-4 md:px-6 relative z-10">
-                <div className="text-center mb-8 md:mb-16">
+        <section className="py-16 md:py-28 bg-slate-50 relative overflow-hidden">
+            <div className="container mx-auto px-4 md:px-6">
+                <motion.div
+                    className="text-center mb-12 md:mb-16"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                >
                     <h2 className="font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
-                        {t('title')}
+                        Våre <span className="bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">prinsipper</span>
                     </h2>
-                </div>
+                </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 lg:gap-12">
-                    {values.map((item) => (
-                        <div
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                    {valueConfig.map((item, i) => (
+                        <SpotlightCard
                             key={item.key}
-                            className="group relative p-4 md:p-8 rounded-3xl bg-white border-t-4 border-t-primary border-x border-b border-slate-100 hover:shadow-lg transition-all duration-500"
-                        >
-                            <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-transparent opacity-60 rounded-3xl pointer-events-none" />
-
-                            <div className="relative z-10 flex flex-col items-center text-center">
-                                <div className="h-16 w-16 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 text-primary">
-                                    <item.icon className="h-8 w-8" />
-                                </div>
-                                <h3 className="font-heading text-xl font-semibold mb-4">
-                                    {t(`${item.key}.name`)}
-                                </h3>
-                                <p className="text-muted-foreground leading-relaxed">
-                                    {t(`${item.key}.description`)}
-                                </p>
-                            </div>
-                        </div>
+                            icon={item.icon}
+                            number={item.number}
+                            title={t(`${item.key}.name`)}
+                            description={t(`${item.key}.description`)}
+                            index={i}
+                        />
                     ))}
                 </div>
             </div>

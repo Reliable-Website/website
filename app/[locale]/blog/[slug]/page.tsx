@@ -2,12 +2,12 @@ import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
 import { Button } from "@/components/ui/button"
 import { Link } from "@/i18n/navigation"
-import Image from "next/image"
-import { ArrowLeft, Calendar, Folder } from "lucide-react"
+import { ArrowLeft } from "lucide-react"
 import { notFound } from "next/navigation"
 import { blogPosts } from "@/lib/blog-data"
 import { blogPostsNo } from "@/lib/blog-data-no"
 import { getTranslations } from "next-intl/server"
+import { AnimatedArticle } from "@/components/blog/AnimatedArticle"
 
 interface PageProps {
     params: Promise<{ slug: string; locale: string }>
@@ -35,32 +35,14 @@ export default async function BlogPost({ params }: PageProps) {
                         </Link>
                     </Button>
 
-                    <div className="space-y-4 mb-8">
-                        <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                            <span className="flex items-center gap-1">
-                                <Folder className="h-4 w-4" />
-                                {post.category}
-                            </span>
-                            <span className="flex items-center gap-1">
-                                <Calendar className="h-4 w-4" />
-                                {post.date}
-                            </span>
-                        </div>
-                        <h1 className="font-heading text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-                            {post.title}
-                        </h1>
-                    </div>
-
-                    {(post.contentImage || post.image) && (
-                        <div className={`relative w-full mb-8 rounded-lg overflow-hidden ${post.imageContain ? 'h-48' : post.contentImage ? 'h-[28rem] md:h-[36rem]' : 'h-96 md:h-[28rem]'}`}>
-                            <Image
-                                src={post.contentImage || post.image!}
-                                alt={post.title}
-                                fill
-                                className={`${post.imageContain ? "object-contain p-4" : "object-cover"} ${post.contentImage ? "object-[center_70%]" : ""}`}
-                            />
-                        </div>
-                    )}
+                    <AnimatedArticle
+                        title={post.title}
+                        date={post.date}
+                        category={post.category}
+                        image={post.image}
+                        contentImage={post.contentImage}
+                        imageContain={post.imageContain}
+                    />
 
                     <div
                         className="prose prose-lg prose-slate dark:prose-invert max-w-none [&>p]:mb-6 [&>blockquote]:my-8"

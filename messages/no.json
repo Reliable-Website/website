@@ -128,17 +128,6 @@
             "login": "Logg inn",
             "cardTitle": "KOFA Database",
             "cardSubtitle": "Intelligent Juridisk Søk"
-        },
-        "dante": {
-            "tag": "Forskningsverktøy",
-            "title": "DANTE",
-            "description": "Deduktiv innholdsanalyse ved bruk av tekstinnbygginger. Et pålitelig og gjennomsiktig 'few-shot' verktøy som gjør kvalitativ analyse basert på tekstinnbygging tilgjengelig for alle.",
-            "feature1": "Utfør storskala deduktiv innholdsanalyse uten kodeferdigheter.",
-            "feature2": "'Few-shot' læringsevner for høy effektivitet.",
-            "feature3": "Gjennomsiktig metodikk forankret i akademisk forskning.",
-            "cta": "Les artikkelen",
-            "cardTitle": "DANTE",
-            "cardSubtitle": "Deduktiv Innholdsanalyse"
         }
     },
     "Testimonial": {

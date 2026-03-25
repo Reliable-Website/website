@@ -1,6 +1,6 @@
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
-import { BlogCard } from "@/components/blog/BlogCard"
+import { AnimatedBlogGrid } from "@/components/blog/AnimatedBlogGrid"
 import { blogPosts } from "@/lib/blog-data"
 import { blogPostsNo } from "@/lib/blog-data-no"
 import { getTranslations } from "next-intl/server"
@@ -30,19 +30,7 @@ export default async function BlogPage({ params }: PageProps) {
                     </p>
                 </div>
 
-                {/* Featured post */}
-                {featuredPost && (
-                    <div className="mb-12">
-                        <BlogCard {...featuredPost} featured />
-                    </div>
-                )}
-
-                {/* Other posts */}
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                    {otherPosts.map((post) => (
-                        <BlogCard key={post.slug} {...post} />
-                    ))}
-                </div>
+                <AnimatedBlogGrid featuredPost={featuredPost} otherPosts={otherPosts} />
             </main>
             <Footer />
         </div>

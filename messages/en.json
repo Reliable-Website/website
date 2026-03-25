@@ -128,17 +128,6 @@
             "login": "Login",
             "cardTitle": "KOFA Database",
             "cardSubtitle": "Intelligent Legal Search"
-        },
-        "dante": {
-            "tag": "Research Tool",
-            "title": "DANTE",
-            "description": "Deductive Content Analysis Using Text Embeddings. A reliable and transparent few-shot tool that makes text embedding-based qualitative analysis accessible to everyone.",
-            "feature1": "Perform large-scale deductive content analysis without coding skills.",
-            "feature2": "Few-shot learning capabilities for high efficiency.",
-            "feature3": "Transparent methodology grounded in academic research.",
-            "cta": "Read the Paper",
-            "cardTitle": "DANTE",
-            "cardSubtitle": "Deductive Content Analysis"
         }
     },
     "Testimonial": {

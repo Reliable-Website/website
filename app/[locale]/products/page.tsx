@@ -1,3 +1,5 @@
+"use client"
+
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
 import { Button } from "@/components/ui/button"
@@ -5,6 +7,7 @@ import { Link } from "@/i18n/navigation"
 import { ArrowRight, Check, Search, FileText } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { motion } from "framer-motion"
 
 export default function ProductsPage() {
     const t = useTranslations('Products')
@@ -16,12 +19,19 @@ export default function ProductsPage() {
                 {/* Header Section */}
                 <section className="pt-32 pb-12 md:py-32 bg-muted/30">
                     <div className="container mx-auto px-4 md:px-6 text-center">
-                        <h1 className="font-heading text-4xl font-bold tracking-tight text-foreground sm:text-6xl mb-4 md:mb-6">
-                            {t('title')}
-                        </h1>
-                        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                            {t('subtitle')}
-                        </p>
+                        <motion.div
+                            initial={{ opacity: 0, y: 24 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                            <h1 className="font-heading text-4xl font-bold tracking-tight text-foreground sm:text-6xl mb-4 md:mb-6">
+                                {t('title')}
+                            </h1>
+                            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                                {t('subtitle')}
+                            </p>
+                        </motion.div>
                     </div>
                 </section>
 
@@ -88,7 +98,13 @@ export default function ProductsPage() {
 
                         {/* Desktop Layout */}
                         <div className="hidden md:grid md:grid-cols-2 gap-12 items-center">
-                            <div className="space-y-8">
+                            <motion.div
+                                className="space-y-8"
+                                initial={{ opacity: 0, x: -24 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, ease: "easeOut" }}
+                            >
                                 <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">
                                     {t('kofa.tag')}
                                 </div>
@@ -130,8 +146,14 @@ export default function ProductsPage() {
                                         </a>
                                     </Button>
                                 </div>
-                            </div>
-                            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border bg-muted">
+                            </motion.div>
+                            <motion.div
+                                className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border bg-muted"
+                                initial={{ opacity: 0, x: 24 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+                            >
                                 <Image
                                     src="/images/Products/legalsearch.png"
                                     alt="KOFA Search Interface"
@@ -147,111 +169,12 @@ export default function ProductsPage() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                 </section>
 
-                {/* DANTE Section */}
-                <section className="py-12 md:py-24 bg-muted/50">
-                    <div className="container mx-auto px-4 md:px-6">
-                        {/* Mobile Layout */}
-                        <div className="flex flex-col gap-8 md:hidden">
-                            <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold w-fit border-transparent bg-blue-600 text-white">
-                                {t('dante.tag')}
-                            </div>
-                            <h2 className="font-heading text-3xl font-bold tracking-tight">
-                                {t('dante.title')}
-                            </h2>
-                            <p className="text-lg text-muted-foreground leading-relaxed">
-                                {t('dante.description')}
-                            </p>
-                            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border bg-muted">
-                                <Image
-                                    src="/images/Products/dante.png"
-                                    alt="DANTE Interface"
-                                    fill
-                                    className="object-cover object-top"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
-                                <div className="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur p-4 rounded-xl border">
-                                    <p className="font-semibold">{t('dante.cardTitle')}</p>
-                                    <p className="text-sm text-muted-foreground">{t('dante.cardSubtitle')}</p>
-                                </div>
-                            </div>
-                            <ul className="space-y-4">
-                                <li className="flex items-center gap-3">
-                                    <Check className="h-5 w-5 text-blue-600" />
-                                    <span>{t('dante.feature1')}</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <Check className="h-5 w-5 text-blue-600" />
-                                    <span>{t('dante.feature2')}</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <Check className="h-5 w-5 text-blue-600" />
-                                    <span>{t('dante.feature3')}</span>
-                                </li>
-                            </ul>
-                            <Button asChild size="lg" variant="outline" className="rounded-full w-full">
-                                <Link href="https://ebooks.iospress.nl/doi/10.3233/FAIA251443" target="_blank">
-                                    {t('dante.cta')} <ArrowRight className="ml-2 h-4 w-4" />
-                                </Link>
-                            </Button>
-                        </div>
 
-                        {/* Desktop Layout */}
-                        <div className="hidden md:grid md:grid-cols-2 gap-12 items-center md:grid-flow-col-dense">
-                            <div className="md:col-start-2 space-y-8">
-                                <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-blue-600 text-white hover:bg-blue-700">
-                                    {t('dante.tag')}
-                                </div>
-                                <h2 className="font-heading text-3xl font-bold tracking-tight sm:text-4xl">
-                                    {t('dante.title')}
-                                </h2>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    {t('dante.description')}
-                                </p>
-                                <ul className="space-y-4">
-                                    <li className="flex items-center gap-3">
-                                        <Check className="h-5 w-5 text-blue-600" />
-                                        <span>{t('dante.feature1')}</span>
-                                    </li>
-                                    <li className="flex items-center gap-3">
-                                        <Check className="h-5 w-5 text-blue-600" />
-                                        <span>{t('dante.feature2')}</span>
-                                    </li>
-                                    <li className="flex items-center gap-3">
-                                        <Check className="h-5 w-5 text-blue-600" />
-                                        <span>{t('dante.feature3')}</span>
-                                    </li>
-                                </ul>
-                                <Button asChild size="lg" variant="outline" className="rounded-full">
-                                    <Link href="https://ebooks.iospress.nl/doi/10.3233/FAIA251443" target="_blank">
-                                        {t('dante.cta')} <ArrowRight className="ml-2 h-4 w-4" />
-                                    </Link>
-                                </Button>
-                            </div>
-                            <div className="md:col-start-1 relative aspect-video rounded-2xl overflow-hidden shadow-2xl border bg-muted">
-                                <Image
-                                    src="/images/Products/dante.png"
-                                    alt="DANTE Interface"
-                                    fill
-                                    className="object-cover object-top"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
-                                <div className="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur p-4 rounded-xl border">
-                                    <div className="flex items-center justify-between">
-                                        <div>
-                                            <p className="font-semibold">{t('dante.cardTitle')}</p>
-                                            <p className="text-sm text-muted-foreground">{t('dante.cardSubtitle')}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </main>
             <Footer />
         </div>

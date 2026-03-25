@@ -96,7 +96,9 @@ export default function ContactPage() {
                             </div>
 
                             {/* Office Card */}
-                            <div className="bg-card/30 backdrop-blur-md border border-border/50 rounded-3xl p-8 hover:bg-card/50 transition-colors duration-300">
+                            <div className="relative group">
+                                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-[2rem] blur-xl opacity-50 group-hover:opacity-100 transition duration-500" />
+                            <div className="relative bg-card/80 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl transition-all duration-300">
                                 <div className="flex items-start gap-4">
                                     <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
                                         <MapPin className="h-6 w-6" />
@@ -110,6 +112,7 @@ export default function ContactPage() {
                                         </address>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                         </motion.div>
                     </div>

@@ -1,6 +1,9 @@
+"use client"
+
 import { Link } from "@/i18n/navigation"
 import Image from "next/image"
 import { ArrowRight } from "lucide-react"
+import { useLocale } from "next-intl"
 
 interface BlogCardProps {
     title: string
@@ -14,6 +17,9 @@ interface BlogCardProps {
 }
 
 export function BlogCard({ title, excerpt, date, slug, category, image, imageContain, featured }: BlogCardProps) {
+    const locale = useLocale()
+    const readMore = locale === "no" || locale === "da" ? "Les mer" : "Read more"
+
     if (featured) {
         return (
             <article className="group relative flex flex-col md:flex-row rounded-lg border-2 border-primary/30 bg-card shadow-md transition-all hover:shadow-lg hover:border-primary/50 overflow-hidden">
@@ -48,7 +54,7 @@ export function BlogCard({ title, excerpt, date, slug, category, image, imageCon
                         {excerpt}
                     </p>
                     <div className="pt-4 flex items-center text-base font-medium text-primary">
-                        Read more <ArrowRight className="ml-1 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                        {readMore} <ArrowRight className="ml-1 h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </div>
                 </div>
             </article>
@@ -56,9 +62,9 @@ export function BlogCard({ title, excerpt, date, slug, category, image, imageCon
     }
 
     return (
-        <article className="group relative flex flex-col rounded-lg bg-card shadow-sm transition-all hover:shadow-md overflow-hidden">
+        <article className="group relative flex flex-col h-full rounded-lg bg-card shadow-sm transition-all hover:shadow-md overflow-hidden">
             {image && (
-                <div className="relative h-48 w-full">
+                <div className="relative h-48 w-full flex-shrink-0">
                     <Image
                         src={image}
                         alt={title}
@@ -67,7 +73,7 @@ export function BlogCard({ title, excerpt, date, slug, category, image, imageCon
                     />
                 </div>
             )}
-            <div className="flex flex-col space-y-3 p-6">
+            <div className="flex flex-col flex-1 space-y-3 p-6">
                 <div className="flex items-center gap-2 text-xs text-muted-foreground">
                     <span className="font-medium text-accent-foreground/80 bg-accent/10 px-2 py-0.5 rounded-full">
                         {category}
@@ -81,11 +87,11 @@ export function BlogCard({ title, excerpt, date, slug, category, image, imageCon
                         {title}
                     </Link>
                 </h3>
-                <p className="text-muted-foreground line-clamp-3">
+                <p className="text-muted-foreground line-clamp-3 flex-1">
                     {excerpt}
                 </p>
-                <div className="mt-auto pt-4 flex items-center text-sm font-medium text-primary">
-                    Read more <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <div className="pt-4 flex items-center text-sm font-medium text-primary">
+                    {readMore} <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </div>
             </div>
         </article>

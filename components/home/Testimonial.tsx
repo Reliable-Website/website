@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl"
 import { Link } from "@/i18n/navigation"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { motion } from "framer-motion"
 
 export function Testimonial() {
     const t = useTranslations('Testimonial')
@@ -15,7 +16,13 @@ export function Testimonial() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
                     {/* Image Column */}
-                    <div className="relative order-1 lg:order-1">
+                    <motion.div
+                        className="relative order-1 lg:order-1"
+                        initial={{ opacity: 0, x: -32 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className="relative aspect-[3/4] w-full max-w-md mx-auto lg:mx-0 rounded-2xl overflow-hidden">
                             <Image
                                 src="/images/Testemony/stian.jpg"
@@ -23,15 +30,19 @@ export function Testimonial() {
                                 fill
                                 className="object-cover object-top"
                             />
-                            {/* Overlay gradient for text readability if needed, though clean is better here */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-50" />
                         </div>
-                        {/* Decorative background element */}
                         <div className="absolute -top-12 -left-12 w-full h-full border border-primary/10 rounded-2xl -z-10 translate-x-6 translate-y-6" />
-                    </div>
+                    </motion.div>
 
                     {/* Content Column */}
-                    <div className="order-2 lg:order-2">
+                    <motion.div
+                        className="order-2 lg:order-2"
+                        initial={{ opacity: 0, x: 32 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.15 }}
+                    >
                         <blockquote className="font-heading text-xl md:text-2xl font-normal leading-relaxed text-foreground mb-8">
                             "{t('textBefore')}
                             <Link
@@ -62,7 +73,7 @@ export function Testimonial() {
                             {t('cta')}
                             <ArrowRight className="h-4 w-4" />
                         </Link>
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>

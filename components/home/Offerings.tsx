@@ -37,14 +37,20 @@ export function Offerings() {
     return (
         <section className="py-12 md:py-24 bg-muted/30 relative overflow-hidden">
             <div className="container mx-auto px-4 md:px-6 relative z-10">
-                <div className="mx-auto max-w-2xl text-center mb-16">
+                <motion.div
+                    className="mx-auto max-w-2xl text-center mb-16"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                >
                     <h2 className="font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
                         {t('title')}
                     </h2>
                     <p className="mt-4 text-lg text-muted-foreground">
                         {t('subtitle')}
                     </p>
-                </div>
+                </motion.div>
 
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                     {offerings.map((offering, index) => (

@@ -4,6 +4,7 @@
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 import { CSSProperties } from "react"
+import { motion } from "framer-motion"
 
 type TeamMember = {
     name: string
@@ -81,7 +82,13 @@ export function TeamGrid() {
         <section className="pt-40 pb-24 bg-background overflow-hidden">
             <div className="container mx-auto px-6 md:px-16 lg:px-32">
                 {/* Title Section - Mobile only */}
-                <div className="md:hidden mb-12">
+                <motion.div
+                    className="md:hidden mb-12"
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
+                >
                     <h1 className="font-heading text-5xl md:text-7xl font-normal tracking-tight text-foreground mb-6">
                         {t.rich('title', {
                             reliable: (chunks) => <span className="text-primary italic">{chunks}</span>,
@@ -91,27 +98,49 @@ export function TeamGrid() {
                     <p className="text-xl text-muted-foreground leading-relaxed">
                         {t('subtitle')}
                     </p>
-                </div>
+                </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-start">
 
                     {/* Left Column - Starts slightly lower (Desktop only) */}
                     <div className="hidden md:block space-y-12 lg:space-y-24 md:pt-12">
-                        {team.filter((_, i) => i % 2 === 0).map((member) => (
-                            <TeamMemberCard key={member.name} member={member} />
+                        {team.filter((_, i) => i % 2 === 0).map((member, idx) => (
+                            <motion.div
+                                key={member.name}
+                                initial={{ opacity: 0, y: 24 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, ease: "easeOut", delay: idx * 0.08 }}
+                            >
+                                <TeamMemberCard member={member} />
+                            </motion.div>
                         ))}
                     </div>
 
                     {/* Mobile view - Sequential order */}
                     <div className="md:hidden space-y-12">
-                        {team.map((member) => (
-                            <TeamMemberCard key={member.name} member={member} />
+                        {team.map((member, idx) => (
+                            <motion.div
+                                key={member.name}
+                                initial={{ opacity: 0, y: 24 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, ease: "easeOut", delay: idx * 0.06 }}
+                            >
+                                <TeamMemberCard member={member} />
+                            </motion.div>
                         ))}
                     </div>
 
                     {/* Right Column - Starts with Header, padding reduced (Desktop only) */}
                     <div className="hidden md:block space-y-12 lg:space-y-24 md:pt-12">
-                        <div className="mb-16 md:mb-24 text-left hidden md:block">
+                        <motion.div
+                            className="mb-16 md:mb-24 text-left hidden md:block"
+                            initial={{ opacity: 0, y: 24 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
                             <h1 className="font-heading text-5xl md:text-7xl font-normal tracking-tight text-foreground mb-6">
                                 {t.rich('title', {
                                     reliable: (chunks) => <span className="text-primary italic">{chunks}</span>,
@@ -121,10 +150,18 @@ export function TeamGrid() {
                             <p className="text-xl text-muted-foreground leading-relaxed">
                                 {t('subtitle')}
                             </p>
-                        </div>
+                        </motion.div>
 
-                        {team.filter((_, i) => i % 2 !== 0).map((member) => (
-                            <TeamMemberCard key={member.name} member={member} />
+                        {team.filter((_, i) => i % 2 !== 0).map((member, idx) => (
+                            <motion.div
+                                key={member.name}
+                                initial={{ opacity: 0, y: 24 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, ease: "easeOut", delay: idx * 0.08 }}
+                            >
+                                <TeamMemberCard member={member} />
+                            </motion.div>
                         ))}
                     </div>
                 </div>
