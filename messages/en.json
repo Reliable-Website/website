@@ -41,7 +41,8 @@
         "award": "Winner of ECAI 2025 Outstanding Demo Award"
     },
     "Values": {
-        "title": "Our Principles",
+        "title": "Our",
+        "titleAccent": "Principles",
         "research": {
             "name": "Research based",
             "description": "Our methods are grounded in rigorous academic research and proven methodologies."
@@ -116,7 +117,7 @@
     },
     "Products": {
         "title": "Our Products",
-        "subtitle": "Advanced AI solutions designed for precision, transparency, and reliability in legal and academic research.",
+        "subtitle": "Safe decision support that enhances professional judgment. We don't replace your analysis — we make it better.",
         "kofa": {
             "tag": "Legal Tech",
             "title": "KOFA Search",

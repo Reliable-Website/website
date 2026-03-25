@@ -12,7 +12,7 @@ export default function ContactPage() {
     const t = useTranslations('Contact')
 
     return (
-        <div className="min-h-screen bg-background flex flex-col font-sans selection:bg-primary/20">
+        <div className="min-h-screen bg-background flex flex-col font-sans selection:bg-primary/20 overflow-x-hidden">
             <Header />
 
             <main className="flex-1 relative overflow-hidden pt-24">
@@ -35,8 +35,8 @@ export default function ContactPage() {
                     <div className="grid lg:grid-cols-2 gap-16 items-start">
                         {/* Left Column: Markus Card */}
                         <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                             className="lg:mt-12 order-1 lg:order-2"
                         >

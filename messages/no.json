@@ -41,7 +41,8 @@
         "award": "Vinner av ECAI 2025 Outstanding Demo Award"
     },
     "Values": {
-        "title": "Våre Prinsipper",
+        "title": "Våre",
+        "titleAccent": "Prinsipper",
         "research": {
             "name": "Forskningsbasert",
             "description": "Våre metoder er forankret i grundig akademisk forskning og utprøvde metoder."
@@ -116,7 +117,7 @@
     },
     "Products": {
         "title": "Våre Produkter",
-        "subtitle": "Avanserte AI-løsninger designet for presisjon, åpenhet og pålitelighet innen juridisk og akademisk forskning.",
+        "subtitle": "Trygg beslutningsstøtte som styrker faglig skjønn. Vi erstatter ikke analysen din — vi gjør den bedre.",
         "kofa": {
             "tag": "Legal Tech",
             "title": "KOFA Søk",

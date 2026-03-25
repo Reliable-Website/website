@@ -19,9 +19,11 @@ export function Header() {
     const t = useTranslations('Header')
     const [isOpen, setIsOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
+    const [showLogo, setShowLogo] = useState(false)
     const locale = useLocale()
     const router = useRouter()
     const pathname = usePathname()
+    const isHome = pathname === "/"
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,6 +32,26 @@ export function Header() {
         window.addEventListener("scroll", handleScroll)
         return () => window.removeEventListener("scroll", handleScroll)
     }, [])
+
+    useEffect(() => {
+        // On non-home pages, always show the logo
+        if (!isHome) {
+            setShowLogo(true)
+            return
+        }
+
+        // On home page, show logo only when hero logo is out of view
+        setShowLogo(false)
+        const heroLogo = document.getElementById("hero-logo")
+        if (!heroLogo) return
+
+        const observer = new IntersectionObserver(
+            ([entry]) => setShowLogo(!entry.isIntersecting),
+            { threshold: 0.1 }
+        )
+        observer.observe(heroLogo)
+        return () => observer.disconnect()
+    }, [isHome])
 
     const navItems = [
         { name: t('products'), href: "/products" },
@@ -50,17 +72,23 @@ export function Header() {
         >
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex items-center justify-between h-24">
-                    {/* Logo - clickable area constrained, image overflows visually */}
-                    <Link href="/" className="relative z-[70] h-24 w-24 md:w-40 flex items-center" onClick={() => setIsOpen(false)}>
-                        <div className="absolute h-36 w-36 md:h-40 md:w-40 top-1/2 -translate-y-1/2 pointer-events-none">
-                            <Image
-                                src="/images/LogoReliable/logo.svg"
-                                alt="Reliable AI Logo"
-                                fill
-                                className="object-contain"
-                            />
-                        </div>
-                    </Link>
+                    {/* Logo - always takes up space, only visibility animates */}
+                    <motion.div
+                        animate={{ opacity: showLogo ? 1 : 0, x: showLogo ? 0 : -16 }}
+                        transition={{ duration: 0.3, ease: "easeOut" }}
+                        style={{ pointerEvents: showLogo ? "auto" : "none" }}
+                    >
+                        <Link href="/" className="relative z-[70] h-24 w-24 md:w-40 flex items-center" onClick={() => setIsOpen(false)}>
+                            <div className="absolute h-36 w-36 md:h-40 md:w-40 top-1/2 -translate-y-1/2 pointer-events-none">
+                                <Image
+                                    src="/images/LogoReliable/logo.svg"
+                                    alt="Reliable AI Logo"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                        </Link>
+                    </motion.div>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center gap-8">

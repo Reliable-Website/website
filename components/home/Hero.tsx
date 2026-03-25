@@ -6,11 +6,12 @@ import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
 import { Award } from "lucide-react"
 import { MagnetLines } from "./MagnetLines"
+import Image from "next/image"
 
 export function Hero() {
     const t = useTranslations('Hero')
     return (
-        <section className="relative overflow-hidden py-20 pt-56 sm:pt-64 md:pt-56 lg:pt-56 xl:pt-56 lg:pb-20 xl:pb-24">
+        <section className="relative overflow-hidden pt-48 pb-20 md:pt-56 md:pb-28">
             {/* Dynamic Background - Interactive MagnetLines */}
             <MagnetLines rows={20} columns={20} mobileRows={10} mobileColumns={10} lineColor="rgba(97, 126, 255, 0.22)" lineHeight="20px" lineWidth="2px" baseAngle={-10} />
 
@@ -46,12 +47,21 @@ export function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.1 }}
+                        className="flex justify-center"
                     >
-                        <h1 className="font-heading text-5xl font-normal tracking-tight text-foreground sm:text-6xl md:text-7xl" dangerouslySetInnerHTML={{ __html: t.raw('title') }} />
+                        <div id="hero-logo" className="relative w-[400px] h-[98px] sm:w-[560px] sm:h-[138px] md:w-[720px] md:h-[177px] -mb-6 sm:-mb-8 md:-mb-10">
+                            <Image
+                                src="/images/LogoReliable/logo.svg"
+                                alt="Reliable AI"
+                                fill
+                                className="object-contain"
+                                priority
+                            />
+                        </div>
                     </motion.div>
 
                     <motion.p
-                        className="mt-4 text-lg leading-8 text-muted-foreground md:text-xl"
+                        className="mt-8 text-lg leading-8 text-muted-foreground md:text-xl"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}

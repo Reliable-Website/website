@@ -88,7 +88,7 @@ export function Values() {
                     transition={{ duration: 0.5 }}
                 >
                     <h2 className="font-heading text-3xl font-normal tracking-tight text-foreground sm:text-4xl">
-                        Våre <span className="bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">prinsipper</span>
+                        {t('title')} <span className="bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">{t('titleAccent')}</span>
                     </h2>
                 </motion.div>
 
