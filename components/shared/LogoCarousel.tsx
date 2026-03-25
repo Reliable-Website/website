@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { useRef, useState, useEffect } from "react"
 
 export function LogoCarousel() {
     const logos = [
@@ -18,20 +19,42 @@ export function LogoCarousel() {
     // Duplicate logos to ensure seamless looping
     const duplicatedLogos = [...logos, ...logos]
 
+    const [isPaused, setIsPaused] = useState(true)
+    const trackRef = useRef<HTMLDivElement>(null)
+    const offsetRef = useRef(0)
+    const rafRef = useRef<number>(0)
+    const lastTimeRef = useRef<number>(0)
+    const speed = 1 // pixels per frame at 60fps
+
+    useEffect(() => {
+        const animate = (time: number) => {
+            if (!trackRef.current) return
+            if (!isPaused) {
+                const delta = lastTimeRef.current ? (time - lastTimeRef.current) / 16.67 : 1
+                offsetRef.current -= speed * delta
+                const totalWidth = trackRef.current.scrollWidth / 2
+                if (Math.abs(offsetRef.current) >= totalWidth) {
+                    offsetRef.current += totalWidth
+                }
+                trackRef.current.style.transform = `translateX(${offsetRef.current}px)`
+            }
+            lastTimeRef.current = time
+            rafRef.current = requestAnimationFrame(animate)
+        }
+        rafRef.current = requestAnimationFrame(animate)
+        return () => cancelAnimationFrame(rafRef.current)
+    }, [isPaused])
+
     return (
-        <section className="py-0 md:py-12 bg-muted/30 overflow-hidden">
-            <div className="w-full overflow-hidden mask-gradient-x">
-                <motion.div
+        <section className="py-0 md:py-12 bg-muted/30 overflow-hidden relative z-10">
+            <div
+                className="w-full overflow-hidden mask-gradient-x"
+                onMouseEnter={() => setIsPaused(false)}
+                onMouseLeave={() => setIsPaused(true)}
+            >
+                <div
+                    ref={trackRef}
                     className="flex items-center gap-16 w-max px-4"
-                    animate={{ x: ["0%", "-50%"] }}
-                    transition={{
-                        x: {
-                            repeat: Infinity,
-                            repeatType: "loop",
-                            duration: 30,
-                            ease: "linear",
-                        },
-                    }}
                 >
                     {duplicatedLogos.map((logo, index) => {
                         let sizeClasses = "h-12 w-32"
@@ -54,7 +77,7 @@ export function LogoCarousel() {
                             </div>
                         )
                     })}
-                </motion.div>
+                </div>
             </div>
         </section>
     )

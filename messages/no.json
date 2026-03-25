@@ -1,7 +1,7 @@
 {
     "Research": {
         "title": "Vår Forskning",
-        "subtitle": "Rigorøs, fagfellevurdert forskning er kjernen i Reliable AI.",
+        "subtitle": "Fagfellevurdert forskning er grunnlaget til Reliable AI.",
         "papers": {
             "paper1": {
                 "title": "Skalerbar klassifisering av spørreundersøkelser med tekst-embeddings",
@@ -98,7 +98,7 @@
     },
     "Team": {
         "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",
-        "subtitle": "Som et tverrfaglig team av forskere er vi forpliktet til etisk og ansvarlig AI-bruk. Våre sterke bånd til filosofi og samfunnsvitenskap skiller oss ut.",
+        "subtitle": "Som et tverrfaglig team av forskere er vi forpliktet til etisk og ansvarlig AI-bruk.",
         "roles": {
             "co_founder": "Co-Founder",
             "board_member": "Eksternt styremedlem",

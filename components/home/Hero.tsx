@@ -5,22 +5,22 @@ import { Link } from "@/i18n/navigation"
 import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
 import { Award } from "lucide-react"
-import { MagnetLines } from "./MagnetLines"
+import { HeroRings } from "./HeroRings"
 import Image from "next/image"
 
 export function Hero() {
     const t = useTranslations('Hero')
     return (
-        <section className="relative overflow-hidden pt-48 pb-20 md:pt-56 md:pb-28">
-            {/* Dynamic Background - Interactive MagnetLines */}
-            <MagnetLines rows={20} columns={20} mobileRows={10} mobileColumns={10} lineColor="rgba(97, 126, 255, 0.22)" lineHeight="20px" lineWidth="2px" baseAngle={-10} />
+        <section className="relative pt-48 pb-28 md:pt-56 md:pb-44" style={{ clipPath: "inset(-100% 0 0 0)" }}>
+            {/* Decorative rings - bottom corners */}
+            <HeroRings />
 
-            {/* Award Badge - Positioned at angle on right */}
+            {/* Award Badge - Positioned at angle on left */}
             <motion.div
                 initial={{ opacity: 0, x: 50, rotate: 15 }}
                 animate={{ opacity: 1, x: 0, rotate: 12 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="absolute top-28 right-8 sm:top-32 sm:right-16 md:top-36 md:right-24 lg:right-32 z-20"
+                className="absolute top-28 right-[calc(50%-270px)] sm:top-32 sm:right-[calc(50%-380px)] md:top-36 md:right-[calc(50%-520px)] z-20"
             >
                 <Link
                     href="/blog/ecai-2025-outstanding-demo-award"
@@ -75,7 +75,7 @@ export function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.4 }}
                     >
-                        <Button asChild size="lg" className="relative overflow-hidden rounded-full px-8 shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all duration-300 group">
+                        <Button asChild size="lg" className="relative overflow-hidden rounded-full px-8 bg-black text-white hover:bg-[#617eff] shadow-lg shadow-black/20 hover:shadow-[#617eff]/40 transition-all duration-300 group">
                             <Link href="/contact" className="relative z-10">
                                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer" />
                                 {t('cta')}
