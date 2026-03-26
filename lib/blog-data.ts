@@ -14,6 +14,41 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        title: "Reliable AI in the News: Universitas and Digital Norway",
+        excerpt: "We're grateful to have been featured in two major Norwegian publications — Universitas, Norway's largest student newspaper, and Digital Norway — covering our journey from university research to award-winning AI technology.",
+        date: "26 March 2026",
+        category: "Press",
+        slug: "reliable-ai-in-the-news",
+        image: "/images/Blog/universitas1.webp",
+        contentImage: "/images/Blog/universitas2.jpeg",
+        contentImageContain: true,
+        content: `
+            <p>We're proud and humbled to have been featured in two prominent Norwegian publications recently, shining a light on Reliable AI's journey from a research project to an award-winning startup.</p>
+
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">Universitas: "Created an award-winning AI tool alongside their studies"</h2>
+            <p>Norway's largest student newspaper, <strong>Universitas</strong>, published a feature article about how three UiO master's students — Halvor, Jonas, and Markus — built DANTE and founded Reliable AI while still completing their degrees. The article covers our origins as a summer project at the Center for Computing in Science Education (CCSE), our award at ECAI 2025, and our approach to non-generative AI.</p>
+            <blockquote class="border-l-4 border-primary pl-4 italic my-6 text-muted-foreground">
+                "Our master's studies have become a hobby. The work with Reliable AI takes most of our time."
+                <footer class="mt-2 text-sm not-italic">— Halvor Tyseng, Co-Founder</footer>
+            </blockquote>
+            <p>The piece also touches on the broader challenges facing Norwegian startups — from limited venture capital compared to our Nordic neighbors, to cuts in Innovasjon Norge's startup funding. Despite these headwinds, we're committed to building competitive Norwegian AI technology.</p>
+            <p><a href="https://www.universitas.no/innovasjon-norge-kunstig-intelligens-reliable-ai/skapte-prisvinnende-ki-verktoy-ved-siden-av-studiene/398420" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Read the full Universitas article →</a></p>
+
+            <div class="relative w-full rounded-lg overflow-hidden my-8"><img src="/images/Blog/digitalnorway.jpeg" alt="Reliable AI featured in Digital Norway" style="width:100%;height:auto;border-radius:0.5rem;" /></div>
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">Digital Norway: "They got AI to stop lying"</h2>
+            <p><strong>Digital Norway</strong> published an in-depth feature about our core technical innovation — how we eliminate AI hallucinations by removing the generative layer of language models and working directly with mathematical representations of text. The result is deterministic, repeatable, and source-verifiable search.</p>
+            <blockquote class="border-l-4 border-primary pl-4 italic my-6 text-muted-foreground">
+                "With our model you get the same answer every time. It can't hallucinate, because it doesn't generate anything."
+                <footer class="mt-2 text-sm not-italic">— Markus Kreutzer, Co-Founder</footer>
+            </blockquote>
+            <p>The article highlights our partnership with law firm Haavind to develop KOFA Search, and how our semantic search technology saves legal professionals significant research time. It also frames an important question we often return to: the question shouldn't be whether AI is "perfect," but whether it improves workflows compared to current practices.</p>
+            <p><a href="https://digitalnorway.com/aktuelt/de-har-fatt-ki-til-a-slutte-a-lyve" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Read the full Digital Norway article →</a></p>
+
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">What this means for us</h2>
+            <p>Being featured in these publications is a milestone for Reliable AI. It validates that research-based, non-generative AI is gaining recognition — not just in academic circles, but in the broader Norwegian tech and media landscape. We're grateful for the coverage and motivated to keep building reliable, trustworthy AI solutions.</p>
+        `
+    },
+    {
         title: "Reliable AI wins Outstanding Demo Award at ECAI 2025",
         excerpt: "We are proud to announce that Reliable AI, in collaboration with the University of Oslo, has won the Outstanding Demo Award at ECAI 2025 in Bologna for our tool DANTE – a dependable and transparent approach to few-shot qualitative analysis.",
         date: "30 October 2025",

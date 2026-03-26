@@ -13,7 +13,10 @@ export function BlogPreview() {
     const t = useTranslations('BlogPreview')
     const locale = useLocale()
     const posts = locale === "no" ? blogPostsNo : blogPosts
-    const latestPosts = posts.slice(0, 3)
+    // Sort by date using English posts as canonical date source
+    const dateBySlug = Object.fromEntries(blogPosts.map(p => [p.slug, new Date(p.date).getTime()]))
+    const sorted = [...posts].sort((a, b) => (dateBySlug[b.slug] || 0) - (dateBySlug[a.slug] || 0))
+    const latestPosts = sorted.slice(0, 3)
 
     return (
         <section className="py-12 md:py-24 bg-background">

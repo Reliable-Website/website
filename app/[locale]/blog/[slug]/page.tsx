@@ -8,6 +8,7 @@ import { blogPosts } from "@/lib/blog-data"
 import { blogPostsNo } from "@/lib/blog-data-no"
 import { getTranslations } from "next-intl/server"
 import { AnimatedArticle } from "@/components/blog/AnimatedArticle"
+import Image from "next/image"
 
 interface PageProps {
     params: Promise<{ slug: string; locale: string }>
@@ -42,12 +43,26 @@ export default async function BlogPost({ params }: PageProps) {
                         image={post.image}
                         contentImage={post.contentImage}
                         imageContain={post.imageContain}
+                        contentImageContain={post.contentImageContain}
                     />
 
-                    <div
-                        className="prose prose-lg prose-slate dark:prose-invert max-w-none [&>p]:mb-6 [&>blockquote]:my-8"
-                        dangerouslySetInnerHTML={{ __html: post.content }}
-                    />
+                    <div>
+                        {post.contentImageContain && post.contentImage && (
+                            <div className="float-right ml-6 mb-4 w-1/2 md:w-2/5 rounded-lg overflow-hidden">
+                                <Image
+                                    src={post.contentImage}
+                                    alt={post.title}
+                                    width={600}
+                                    height={400}
+                                    className="w-full h-auto rounded-lg"
+                                />
+                            </div>
+                        )}
+                        <div
+                            className="prose prose-lg prose-slate dark:prose-invert max-w-none [&>p]:mb-6 [&>blockquote]:my-8"
+                            dangerouslySetInnerHTML={{ __html: post.content }}
+                        />
+                    </div>
                 </article>
             </main>
             <Footer />

@@ -15,7 +15,8 @@ export default async function BlogPage({ params }: PageProps) {
     const posts = locale === "no" ? blogPostsNo : blogPosts
 
     const featuredPost = posts.find((post) => post.featured)
-    const otherPosts = posts.filter((post) => !post.featured)
+    const dateBySlug = Object.fromEntries(blogPosts.map(p => [p.slug, new Date(p.date).getTime()]))
+    const otherPosts = posts.filter((post) => !post.featured).sort((a, b) => (dateBySlug[b.slug] || 0) - (dateBySlug[a.slug] || 0))
 
     return (
         <div className="flex min-h-screen flex-col">

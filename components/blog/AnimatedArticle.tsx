@@ -11,9 +11,10 @@ interface AnimatedArticleProps {
     image?: string
     contentImage?: string
     imageContain?: boolean
+    contentImageContain?: boolean
 }
 
-export function AnimatedArticle({ title, date, category, image, contentImage, imageContain }: AnimatedArticleProps) {
+export function AnimatedArticle({ title, date, category, image, contentImage, imageContain, contentImageContain }: AnimatedArticleProps) {
     const displayImage = contentImage || image
 
     return (
@@ -40,7 +41,7 @@ export function AnimatedArticle({ title, date, category, image, contentImage, im
                 </h1>
             </motion.div>
 
-            {displayImage && (
+            {displayImage && !contentImageContain && (
                 <motion.div
                     className={`relative w-full mb-8 rounded-lg overflow-hidden ${imageContain ? 'h-48' : contentImage ? 'h-[28rem] md:h-[36rem]' : 'h-96 md:h-[28rem]'}`}
                     initial={{ opacity: 0, y: 24 }}
