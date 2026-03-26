@@ -15,7 +15,7 @@ const intlMiddleware = createMiddleware(routing);
 export default function middleware(request: NextRequest) {
     // Only apply geo-detection on the root path (first visit)
     // Once a user has a locale in the URL, next-intl handles it
-    const country = request.geo?.country || request.headers.get('x-vercel-ip-country') || '';
+    const country = request.headers.get('x-vercel-ip-country') || '';
     const detectedLocale = countryToLocale[country] || 'en';
 
     // Set the Accept-Language header to hint next-intl's locale detection
