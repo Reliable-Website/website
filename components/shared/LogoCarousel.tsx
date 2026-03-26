@@ -19,6 +19,7 @@ export function LogoCarousel() {
     // Duplicate logos to ensure seamless looping
     const duplicatedLogos = [...logos, ...logos]
 
+    const [isMobile, setIsMobile] = useState(false)
     const [isPaused, setIsPaused] = useState(true)
     const trackRef = useRef<HTMLDivElement>(null)
     const offsetRef = useRef(0)
@@ -27,9 +28,16 @@ export function LogoCarousel() {
     const speed = 1 // pixels per frame at 60fps
 
     useEffect(() => {
+        const check = () => setIsMobile(window.innerWidth < 768)
+        check()
+        window.addEventListener("resize", check)
+        return () => window.removeEventListener("resize", check)
+    }, [])
+
+    useEffect(() => {
         const animate = (time: number) => {
             if (!trackRef.current) return
-            if (!isPaused) {
+            if (!isPaused || isMobile) {
                 const delta = lastTimeRef.current ? (time - lastTimeRef.current) / 16.67 : 1
                 offsetRef.current -= speed * delta
                 const totalWidth = trackRef.current.scrollWidth / 2
@@ -43,7 +51,7 @@ export function LogoCarousel() {
         }
         rafRef.current = requestAnimationFrame(animate)
         return () => cancelAnimationFrame(rafRef.current)
-    }, [isPaused])
+    }, [isPaused, isMobile])
 
     return (
         <section className="py-0 md:py-12 bg-muted/30 overflow-hidden relative z-10">

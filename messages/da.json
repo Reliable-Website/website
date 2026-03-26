@@ -4,24 +4,24 @@
         "subtitle": "Grundig forskning er fundamentet for Reliable AI.",
         "papers": {
             "paper1": {
-                "title": "Skalerbar klassificering af sporgeskemabesvarelser med tekst-embeddings",
-                "description": "Vi praesenterer et rammevaerk til effektiv kvalitativ analyse af abne svar ved hjaelp af tekst-embeddings. Metoden kraever kun fa eksempler, integreres let i eksisterende arbejdsgange og opnar resultater pa linje med menneskelige eksperter. Dette muliggor skalerbar analyse af tusindvis af svar med hoj konsistens og sporbarhed.",
+                "title": "Skalerbar klassificering af spørgeskemabesvarelser med tekst-embeddings",
+                "description": "Vi præsenterer et rammeværk til effektiv kvalitativ analyse af åbne svar ved hjælp af tekst-embeddings. Metoden kræver kun få eksempler, integreres let i eksisterende arbejdsgange og opnår resultater på linje med menneskelige eksperter. Dette muliggør skalerbar analyse af tusindvis af svar med høj konsistens og sporbarhed.",
                 "date": "27. august 2025",
-                "linkText": "Laes Artikel",
+                "linkText": "Læs Artikel",
                 "linkUrl": "https://arxiv.org/abs/2508.19836"
             },
             "paper2": {
                 "title": "Kvalitativ analyse i stor skala med tekst-embeddings",
-                "description": "Vi foreslar en ny teknik til deduktiv kvalitativ analyse ved brug af tekst-embeddings. Ved at repraesentere tekst i et hojdimensionalt betydningsrum kan vi kvantificere forskelle og modellere emner mere fleksibelt end traditionelle metoder. Vores tilgang er valideret mod etablerede datasaet og viser stort potentiale for analyse af store tekstmaengder.",
+                "description": "Vi foreslår en ny teknik til deduktiv kvalitativ analyse ved brug af tekst-embeddings. Ved at repræsentere tekst i et højdimensionalt betydningsrum kan vi kvantificere forskelle og modellere emner mere fleksibelt end traditionelle metoder. Vores tilgang er valideret mod etablerede datasæt og viser stort potentiale for analyse af store tekstmængder.",
                 "date": "20. december 2024",
-                "linkText": "Laes Artikel",
+                "linkText": "Læs Artikel",
                 "linkUrl": "https://journals.aps.org/prper/abstract/10.1103/PhysRevPhysEducRes.20.020151"
             },
             "paper3": {
                 "title": "DANTE: Deduktiv indholdsanalyse med tekst-embeddings",
-                "description": "Traditionel kvalitativ tekstanalyse er tidskraevende. Vi introducerer DANTE, et palideligt og transparent vaerktoj, der gor kvalitativ analyse baseret pa embeddings mere tilgaengeligt. Det gor det muligt for forskere at udfore storstilet deduktiv indholdsanalyse uden omfattende programmeringsfaerdigheder.",
+                "description": "Traditionel kvalitativ tekstanalyse er tidskrævende. Vi introducerer DANTE, et pålideligt og transparent værktøj, der gør kvalitativ analyse baseret på embeddings mere tilgængeligt. Det gør det muligt for forskere at udføre storstilet deduktiv indholdsanalyse uden omfattende programmeringsfærdigheder.",
                 "date": "30. oktober 2025",
-                "linkText": "Laes Artikel",
+                "linkText": "Læs Artikel",
                 "linkUrl": "https://ebooks.iospress.nl/doi/10.3233/FAIA251443"
             }
         }
@@ -35,7 +35,7 @@
         "login": "Log ind"
     },
     "Hero": {
-        "title": "<span class=\"text-primary\">Reliable AI</span> forskning, radgivning og implementering",
+        "title": "<span class=\"text-primary\">Reliable AI</span> forskning, rådgivning og implementering",
         "subtitle": "Vi bygger bro mellem akademisk forskning og industriel anvendelse.",
         "cta": "Kontakt os",
         "award": "Vinder af ECAI 2025 Outstanding Demo Award"
@@ -45,40 +45,40 @@
         "titleAccent": "Principper",
         "research": {
             "name": "Forskningsbaseret",
-            "description": "Vores metoder er forankret i grundig akademisk forskning og gennemproevede metoder."
+            "description": "Vores metoder er forankret i grundig akademisk forskning og gennemprøvede metoder."
         },
         "reliable": {
-            "name": "Palidelig og sikker",
-            "description": "Vi prioriterer datasikkerhed og systempalidelig i enhver losning, vi bygger."
+            "name": "Pålidelig og sikker",
+            "description": "Vi prioriterer datasikkerhed og systempålidelighed i enhver løsning, vi bygger."
         },
         "custom": {
-            "name": "Skraeddersyede losninger",
-            "description": "Vi tror ikke pa 'one-size-fits-all'. Vi bygger det, du faktisk har brug for."
+            "name": "Skræddersyede løsninger",
+            "description": "Vi tror ikke på 'one-size-fits-all'. Vi bygger det, du faktisk har brug for."
         }
     },
     "Offerings": {
         "title": "Hvad Vi Tilbyder",
         "subtitle": "Omfattende AI-tjenester fra strategi til software.",
         "consulting": {
-            "title": "Radgivning",
+            "title": "Rådgivning",
             "description": "Strategisk vejledning om AI-adoption og implementering.",
-            "cta": "Laes mere"
+            "cta": "Læs mere"
         },
         "custom": {
-            "title": "Skraeddersyet Software",
-            "description": "Specialudviklede AI-applikationer, der loser dine specifikke udfordringer.",
+            "title": "Skræddersyet Software",
+            "description": "Specialudviklede AI-applikationer, der løser dine specifikke udfordringer.",
             "cta": "Kom i gang"
         },
         "saas": {
-            "title": "SaaS-losninger",
-            "description": "Faerdige vaerktojer til specialiserede opgaver.",
+            "title": "SaaS-løsninger",
+            "description": "Færdige værktøjer til specialiserede opgaver.",
             "cta": "Udforsk produkter"
         }
     },
     "BlogPreview": {
         "title": "Seneste Indsigt",
         "subtitle": "Tanker om teknologi, strategi og fremtidens arbejde.",
-        "viewAll": "Se alle indlaeg"
+        "viewAll": "Se alle indlæg"
     },
     "Blog": {
         "title": "Nyheder og Indsigt",
@@ -98,55 +98,55 @@
     },
     "Team": {
         "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",
-        "subtitle": "Som et tvaerfagligt team af forskere er vi forpligtet til etisk og ansvarlig brug af AI.",
+        "subtitle": "Som et tværfagligt team af forskere er vi forpligtet til etisk og ansvarlig brug af AI.",
         "roles": {
             "co_founder": "Co-Founder",
             "board_member": "Eksternt bestyrelsesmedlem",
             "graphic_designer": "Grafisk designer"
         },
         "descriptions": {
-            "halvor": "Baggrund i fysik og beregningsvidenskab. Specialiserer sig i tekst-embeddings og repraesentationen af betydning — med saerlig interesse for kreative tilgange til embedding-rum. Den tekniske rygrad i Reliable AI. Nar han ikke koder, finder du ham pa langrendssporet eller i klatreveggen.",
-            "jonas": "Baggrund i filosofi og datavidenskab med et solidt fundament i statistik og teori. Har oje for design og far losningerne til at se godt ud. Nar han ikke arbejder, finder du ham pa basketballbanen eller fodboldbanen.",
-            "markus": "Baggrund i filosofi, AI og etik — med saerlig interesse for, hvordan sprogmodeller repraesenterer begreber. Leder salg og markedsforing i Reliable AI. Tennisspiller og alpinist pa naesten professionelt niveau.",
-            "torole": "Lektor i fysik ved Universitetet i Oslo. Hans forskning fokuserer pa beregningskompetence, aktive laeringsmetoder og brug af NLP i uddannelsesforskning — herunder tekst-embeddings til kvalitativ analyse. I sin fritid spiller han norsk folkemusik pa violin, skaerer i trae og laeser tegneserier.",
-            "anders": "Professor i fysik ved Universitetet i Oslo med forskning inden for geofysik, neurovidenskab og kunstig intelligens. Leder af Center for Computing in Science Education og erfaren med at bringe akademisk forskning til markedet. Leder i ojeblikket et offentligt udvalg, der radgiver om, hvordan AI bor forme videregaende uddannelse. Lever af havregryn.",
-            "mathilde": "Partner i Sprint Consulting med ni ars erfaring inden for innovation og baeredygtighedsradgivning. Baggrund fra NTNU i datalogi og strategi. Specialiserer sig i at hjaelpe virksomheder med innovation, etablering af nye forretninger og baeredygtig vaekst.",
-            "larspetter": "5x serieentreprenor inden for EdTech. Medstifter og CPO af We Are Learning (immersiv 3D-laering). Tidligere medstifter af Motimate, som blev opkobt af Kahoot!. Hans rejse spaender fra CD-ROM og laserdiske til gamification og AI-drevne immersive produkter. Kendt som en fangslende foredragsholder om kreativitet og AI.",
-            "martine": "Grafisk designer med bred erfaring fra blandt andet designbureauet WAL. Bringer et skarpt oje for visuel kommunikation og brandidentitet til Reliable AI. Nar hun ikke arbejder, finder du hende i fitness-centeret eller ved billarbordet."
+            "halvor": "Baggrund i fysik og beregningsvidenskab. Specialiserer sig i tekst-embeddings og repræsentationen af betydning — med særlig interesse for kreative tilgange til embedding-rum. Den tekniske rygrad i Reliable AI. Når han ikke koder, finder du ham på langrendssporet eller i klatrevæggen.",
+            "jonas": "Baggrund i filosofi og datavidenskab med et solidt fundament i statistik og teori. Har øje for design og får løsningerne til at se godt ud. Når han ikke arbejder, finder du ham på basketballbanen eller fodboldbanen.",
+            "markus": "Baggrund i filosofi, AI og etik — med særlig interesse for, hvordan sprogmodeller repræsenterer begreber. Leder salg og markedsføring i Reliable AI. Tennisspiller og alpinist på næsten professionelt niveau.",
+            "torole": "Lektor i fysik ved Universitetet i Oslo. Hans forskning fokuserer på beregningskompetence, aktive læringsmetoder og brug af NLP i uddannelsesforskning — herunder tekst-embeddings til kvalitativ analyse. I sin fritid spiller han norsk folkemusik på violin, skærer i træ og læser tegneserier.",
+            "anders": "Professor i fysik ved Universitetet i Oslo med forskning inden for geofysik, neurovidenskab og kunstig intelligens. Leder af Center for Computing in Science Education og erfaren med at bringe akademisk forskning til markedet. Leder i øjeblikket et offentligt udvalg, der rådgiver om, hvordan AI bør forme videregående uddannelse. Lever af havregryn.",
+            "mathilde": "Partner i Sprint Consulting med ni års erfaring inden for innovation og bæredygtighedsrådgivning. Baggrund fra NTNU i datalogi og strategi. Specialiserer sig i at hjælpe virksomheder med innovation, etablering af nye forretninger og bæredygtig vækst.",
+            "larspetter": "5x serieentreprenør inden for EdTech. Medstifter og CPO af We Are Learning (immersiv 3D-læring). Tidligere medstifter af Motimate, som blev opkøbt af Kahoot!. Hans rejse spænder fra CD-ROM og laserdiske til gamification og AI-drevne immersive produkter. Kendt som en fængslende foredragsholder om kreativitet og AI.",
+            "martine": "Grafisk designer med bred erfaring fra blandt andet designbureauet WAL. Bringer et skarpt øje for visuel kommunikation og brandidentitet til Reliable AI. Når hun ikke arbejder, finder du hende i fitness-centeret eller ved billardbordet."
         }
     },
     "Products": {
         "title": "Vores Produkter",
-        "subtitle": "Sikker beslutningsstotte, der styrker faglig vurdering. Vi erstatter ikke din analyse — vi gor den bedre.",
+        "subtitle": "Sikker beslutningsstøtte, der styrker faglig vurdering. Vi erstatter ikke din analyse — vi gør den bedre.",
         "kofa": {
             "tag": "Legal Tech",
-            "title": "KOFA Sok",
-            "description": "Naviger i kompleksiteten af offentlige udbud med vores specialiserede sogemaskine til KOFA-dokumenter.",
-            "feature1": "Avanceret semantisk sogning i hele KOFA-databasen.",
-            "feature2": "Ojeblikkeligt adgang til praecedens og relevant retspraksis.",
-            "feature3": "Stroomlinet arbejdsgang for jurister.",
+            "title": "KOFA Søg",
+            "description": "Naviger i kompleksiteten af offentlige udbud med vores specialiserede søgemaskine til KOFA-dokumenter.",
+            "feature1": "Avanceret semantisk søgning i hele KOFA-databasen.",
+            "feature2": "Øjeblikkelig adgang til præcedens og relevant retspraksis.",
+            "feature3": "Strømlinet arbejdsgang for jurister.",
             "cta": "Anmod om adgang",
             "login": "Log ind",
             "cardTitle": "KOFA Database",
-            "cardSubtitle": "Intelligent Juridisk Sogning"
+            "cardSubtitle": "Intelligent Juridisk Søgning"
         }
     },
     "Testimonial": {
-        "textBefore": "Vi er stolte over at kunne tage prisvindende norskudviklet teknologi i brug i praktisk juridisk arbejde. Samarbejdet med Reliable AI har gjort det muligt at udvikle et produkt til praecis sogning i ",
+        "textBefore": "Vi er stolte over at kunne tage prisvindende norskudviklet teknologi i brug i praktisk juridisk arbejde. Samarbejdet med Reliable AI har gjort det muligt at udvikle et produkt til præcis søgning i ",
         "kofa": "KOFA",
-        "textAfter": "-sager, hvilket forenkler vores daglige arbejdsgang. Reliable tog opgaven pa strak arm og udviklede et yderst nyttigt produkt pa kort tid i taet dialog med os.",
-        "author": "Stian Hultin Oddbjornsen",
+        "textAfter": "-sager, hvilket forenkler vores daglige arbejdsgang. Reliable tog opgaven på strak arm og udviklede et yderst nyttigt produkt på kort tid i tæt dialog med os.",
+        "author": "Stian Hultin Oddbjørnsen",
         "role": "Partner",
         "company": "Advokatfirmaet Haavind",
-        "cta": "Udforsk KOFA Sok"
+        "cta": "Udforsk KOFA Søg"
     },
     "Contact": {
         "title": "Kontakt os",
-        "subtitle": "Kontakt os for at diskutere, hvordan vi kan stotte dine AI-initiativer.",
+        "subtitle": "Kontakt os for at diskutere, hvordan vi kan støtte dine AI-initiativer.",
         "markus": {
             "name": "Markus Kreutzer",
             "title": "Co-Founder",
-            "quote": "Vi er forpligtet til etisk og ansvarlig AI. Vores mal er at muliggore sikker og tryg adoption."
+            "quote": "Vi er forpligtet til etisk og ansvarlig AI. Vores mål er at muliggøre sikker og tryg adoption."
         },
         "getInTouch": "Kontakt Os",
         "office": "Kontor",

@@ -5,21 +5,21 @@
         "papers": {
             "paper1": {
                 "title": "Skalierbare Klassifizierung von Umfrageantworten mit Text-Embeddings",
-                "description": "Wir stellen ein Rahmenwerk zur effizienten qualitativen Analyse offener Umfrageantworten mittels Text-Embeddings vor. Die Methode erfordert nur wenige Beispiele, laesst sich nahtlos in bestehende Arbeitsablaeufe integrieren und erzielt Ergebnisse auf dem Niveau menschlicher Experten. Dies ermoeglicht eine skalierbare Analyse tausender Antworten mit hoher Konsistenz und Nachvollziehbarkeit.",
+                "description": "Wir stellen ein Rahmenwerk zur effizienten qualitativen Analyse offener Umfrageantworten mittels Text-Embeddings vor. Die Methode erfordert nur wenige Beispiele, lässt sich nahtlos in bestehende Arbeitsabläufe integrieren und erzielt Ergebnisse auf dem Niveau menschlicher Experten. Dies ermöglicht eine skalierbare Analyse tausender Antworten mit hoher Konsistenz und Nachvollziehbarkeit.",
                 "date": "27. August 2025",
                 "linkText": "Artikel lesen",
                 "linkUrl": "https://arxiv.org/abs/2508.19836"
             },
             "paper2": {
-                "title": "Qualitative Analyse im grossen Massstab mit Text-Embeddings",
-                "description": "Wir schlagen eine neue Technik fuer deduktive qualitative Analyse unter Verwendung von Text-Embeddings vor. Durch die Darstellung von Text in einem hochdimensionalen Bedeutungsraum koennen wir Unterschiede quantifizieren und Themen flexibler modellieren als mit traditionellen Methoden. Unser Ansatz wurde gegen etablierte Datensaetze validiert und zeigt grosses Potenzial fuer die Analyse grosser Textmengen.",
+                "title": "Qualitative Analyse im großen Maßstab mit Text-Embeddings",
+                "description": "Wir schlagen eine neue Technik für deduktive qualitative Analyse unter Verwendung von Text-Embeddings vor. Durch die Darstellung von Text in einem hochdimensionalen Bedeutungsraum können wir Unterschiede quantifizieren und Themen flexibler modellieren als mit traditionellen Methoden. Unser Ansatz wurde gegen etablierte Datensätze validiert und zeigt großes Potenzial für die Analyse großer Textmengen.",
                 "date": "20. Dezember 2024",
                 "linkText": "Artikel lesen",
                 "linkUrl": "https://journals.aps.org/prper/abstract/10.1103/PhysRevPhysEducRes.20.020151"
             },
             "paper3": {
                 "title": "DANTE: Deduktive Inhaltsanalyse mit Text-Embeddings",
-                "description": "Traditionelle qualitative Textanalyse ist zeitaufwendig. Wir stellen DANTE vor, ein zuverlaessiges und transparentes Werkzeug, das qualitative Analyse auf Basis von Embeddings zugaenglicher macht. Es ermoeglicht Forschenden, grossangelegte deduktive Inhaltsanalysen ohne umfangreiche Programmierkenntnisse durchzufuehren.",
+                "description": "Traditionelle qualitative Textanalyse ist zeitaufwendig. Wir stellen DANTE vor, ein zuverlässiges und transparentes Werkzeug, das qualitative Analyse auf Basis von Embeddings zugänglicher macht. Es ermöglicht Forschenden, großangelegte deduktive Inhaltsanalysen ohne umfangreiche Programmierkenntnisse durchzuführen.",
                 "date": "30. Oktober 2025",
                 "linkText": "Artikel lesen",
                 "linkUrl": "https://ebooks.iospress.nl/doi/10.3233/FAIA251443"
@@ -36,7 +36,7 @@
     },
     "Hero": {
         "title": "<span class=\"text-primary\">Reliable AI</span> Forschung, Beratung und Implementierung",
-        "subtitle": "Wir schlagen die Bruecke zwischen akademischer Forschung und industrieller Anwendung.",
+        "subtitle": "Wir schlagen die Brücke zwischen akademischer Forschung und industrieller Anwendung.",
         "cta": "Kontaktieren Sie uns",
         "award": "Gewinner des ECAI 2025 Outstanding Demo Award"
     },
@@ -45,15 +45,15 @@
         "titleAccent": "Prinzipien",
         "research": {
             "name": "Forschungsbasiert",
-            "description": "Unsere Methoden basieren auf fundierter akademischer Forschung und bewaehrten Verfahren."
+            "description": "Unsere Methoden basieren auf fundierter akademischer Forschung und bewährten Verfahren."
         },
         "reliable": {
-            "name": "Zuverlaessig und sicher",
-            "description": "Wir priorisieren Datensicherheit und Systemzuverlaessigkeit in jeder Loesung, die wir entwickeln."
+            "name": "Zuverlässig und sicher",
+            "description": "Wir priorisieren Datensicherheit und Systemzuverlässigkeit in jeder Lösung, die wir entwickeln."
         },
         "custom": {
-            "name": "Massgeschneiderte Loesungen",
-            "description": "Wir glauben nicht an Einheitsloesungen. Wir entwickeln, was Sie wirklich brauchen."
+            "name": "Maßgeschneiderte Lösungen",
+            "description": "Wir glauben nicht an Einheitslösungen. Wir entwickeln, was Sie wirklich brauchen."
         }
     },
     "Offerings": {
@@ -66,65 +66,65 @@
         },
         "custom": {
             "title": "Individuelle Software",
-            "description": "Massgeschneiderte KI-Anwendungen, die Ihre spezifischen Herausforderungen loesen.",
+            "description": "Maßgeschneiderte KI-Anwendungen, die Ihre spezifischen Herausforderungen lösen.",
             "cta": "Loslegen"
         },
         "saas": {
-            "title": "SaaS-Loesungen",
-            "description": "Einsatzbereite Werkzeuge fuer spezialisierte Aufgaben.",
+            "title": "SaaS-Lösungen",
+            "description": "Einsatzbereite Werkzeuge für spezialisierte Aufgaben.",
             "cta": "Produkte entdecken"
         }
     },
     "BlogPreview": {
         "title": "Neueste Einblicke",
         "subtitle": "Gedanken zu Technologie, Strategie und der Zukunft der Arbeit.",
-        "viewAll": "Alle Beitraege ansehen"
+        "viewAll": "Alle Beiträge ansehen"
     },
     "Blog": {
         "title": "Neuigkeiten und Einblicke",
         "subtitle": "Aktuelle Updates, Forschungsergebnisse und Gedanken vom Reliable AI-Team.",
-        "backToBlog": "Zurueck zum Blog"
+        "backToBlog": "Zurück zum Blog"
     },
     "Footer": {
         "contactUs": "KONTAKT",
-        "overview": "Uebersicht",
+        "overview": "Übersicht",
         "products": "Produkte",
         "team": "Team",
         "research": "Forschung",
         "blog": "Blog",
         "contacts": "Kontakt",
-        "office": "Buero",
+        "office": "Büro",
         "rights": "Alle Rechte vorbehalten Oslo {year}"
     },
     "Team": {
         "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",
-        "subtitle": "Als interdisziplinaeres Forschungsteam setzen wir uns fuer ethischen und verantwortungsvollen Einsatz von KI ein.",
+        "subtitle": "Als interdisziplinäres Forschungsteam setzen wir uns für ethischen und verantwortungsvollen Einsatz von KI ein.",
         "roles": {
             "co_founder": "Co-Founder",
             "board_member": "Externes Vorstandsmitglied",
             "graphic_designer": "Grafikdesignerin"
         },
         "descriptions": {
-            "halvor": "Hintergrund in Physik und Computational Science. Spezialisiert auf Text-Embeddings und die Darstellung von Bedeutung — mit besonderem Interesse an kreativen Ansaetzen im Embedding-Raum. Das technische Rueckgrat von Reliable AI. Wenn er nicht programmiert, findet man ihn auf der Langlaufloipe oder in der Boulderhalle.",
-            "jonas": "Hintergrund in Philosophie und Data Science mit solider Grundlage in Statistik und Theorie. Hat ein Auge fuer Design und sorgt dafuer, dass die Loesungen gut aussehen. In seiner Freizeit findet man ihn auf dem Basketballplatz oder dem Fussballfeld.",
-            "markus": "Hintergrund in Philosophie, KI und Ethik — mit besonderem Interesse daran, wie Sprachmodelle Konzepte repraesentieren. Leitet Vertrieb und Marketing bei Reliable AI. Tennisspieler und Skifahrer auf nahezu professionellem Niveau.",
-            "torole": "Dozent fuer Physik an der Universitaet Oslo. Seine Forschung konzentriert sich auf Computational Literacy, aktive Lernmethoden und den Einsatz von NLP in der Bildungsforschung — einschliesslich Text-Embeddings fuer qualitative Analyse. In seiner Freizeit spielt er norwegische Volksmusik auf der Geige, schnitzt Holz und liest Graphic Novels.",
-            "anders": "Professor fuer Physik an der Universitaet Oslo mit Forschung in Geophysik, Neurowissenschaften und kuenstlicher Intelligenz. Leiter des Center for Computing in Science Education und erfahren darin, akademische Forschung auf den Markt zu bringen. Leitet derzeit einen oeffentlichen Ausschuss, der beraet, wie KI die Hochschulbildung gestalten sollte. Laeuft auf Haferflocken.",
-            "mathilde": "Partnerin bei Sprint Consulting mit neun Jahren Erfahrung in Innovations- und Nachhaltigkeitsberatung. Hintergrund von der NTNU in Informatik und Strategie. Spezialisiert darauf, Unternehmen bei Innovation, Gruendung neuer Geschaeftsbereiche und nachhaltigem Wachstum zu unterstuetzen.",
-            "larspetter": "5-facher Seriengruender im EdTech-Bereich. Mitgruender und CPO von We Are Learning (immersives 3D-Lernen). Zuvor Mitgruender von Motimate, das von Kahoot! uebernommen wurde. Sein Weg fuehrt von CD-ROMs und Laserdiscs ueber Gamification bis zu KI-getriebenen immersiven Produkten. Bekannt als fesselnder Redner ueber Kreativitaet und KI.",
-            "martine": "Grafikdesignerin mit breiter Erfahrung, unter anderem bei der Designagentur WAL. Bringt ein scharfes Auge fuer visuelle Kommunikation und Markenidentitaet zu Reliable AI. Wenn sie nicht arbeitet, findet man sie im Fitnessstudio oder am Billardtisch."
+            "halvor": "Hintergrund in Physik und Computational Science. Spezialisiert auf Text-Embeddings und die Darstellung von Bedeutung — mit besonderem Interesse an kreativen Ansätzen im Embedding-Raum. Das technische Rückgrat von Reliable AI. Wenn er nicht programmiert, findet man ihn auf der Langlaufloipe oder in der Boulderhalle.",
+            "jonas": "Hintergrund in Philosophie und Data Science mit solider Grundlage in Statistik und Theorie. Hat ein Auge für Design und sorgt dafür, dass die Lösungen gut aussehen. In seiner Freizeit findet man ihn auf dem Basketballplatz oder dem Fußballfeld.",
+            "markus": "Hintergrund in Philosophie, KI und Ethik — mit besonderem Interesse daran, wie Sprachmodelle Konzepte repräsentieren. Leitet Vertrieb und Marketing bei Reliable AI. Tennisspieler und Skifahrer auf nahezu professionellem Niveau.",
+            "torole": "Dozent für Physik an der Universität Oslo. Seine Forschung konzentriert sich auf Computational Literacy, aktive Lernmethoden und den Einsatz von NLP in der Bildungsforschung — einschließlich Text-Embeddings für qualitative Analyse. In seiner Freizeit spielt er norwegische Volksmusik auf der Geige, schnitzt Holz und liest Graphic Novels.",
+            "anders": "Professor für Physik an der Universität Oslo mit Forschung in Geophysik, Neurowissenschaften und künstlicher Intelligenz. Leiter des Center for Computing in Science Education und erfahren darin, akademische Forschung auf den Markt zu bringen. Leitet derzeit einen öffentlichen Ausschuss, der berät, wie KI die Hochschulbildung gestalten sollte. Läuft auf Haferflocken.",
+            "mathilde": "Partnerin bei Sprint Consulting mit neun Jahren Erfahrung in Innovations- und Nachhaltigkeitsberatung. Hintergrund von der NTNU in Informatik und Strategie. Spezialisiert darauf, Unternehmen bei Innovation, Gründung neuer Geschäftsbereiche und nachhaltigem Wachstum zu unterstützen.",
+            "larspetter": "5-facher Seriengründer im EdTech-Bereich. Mitgründer und CPO von We Are Learning (immersives 3D-Lernen). Zuvor Mitgründer von Motimate, das von Kahoot! übernommen wurde. Sein Weg führt von CD-ROMs und Laserdiscs über Gamification bis zu KI-getriebenen immersiven Produkten. Bekannt als fesselnder Redner über Kreativität und KI.",
+            "martine": "Grafikdesignerin mit breiter Erfahrung, unter anderem bei der Designagentur WAL. Bringt ein scharfes Auge für visuelle Kommunikation und Markenidentität zu Reliable AI. Wenn sie nicht arbeitet, findet man sie im Fitnessstudio oder am Billardtisch."
         }
     },
     "Products": {
         "title": "Unsere Produkte",
-        "subtitle": "Sichere Entscheidungsunterstuetzung, die fachliches Urteilsvermoegen staerkt. Wir ersetzen Ihre Analyse nicht — wir machen sie besser.",
+        "subtitle": "Sichere Entscheidungsunterstützung, die fachliches Urteilsvermögen stärkt. Wir ersetzen Ihre Analyse nicht — wir machen sie besser.",
         "kofa": {
             "tag": "Legal Tech",
             "title": "KOFA Suche",
-            "description": "Navigieren Sie durch die Komplexitaet oeffentlicher Beschaffung mit unserer spezialisierten Suchmaschine fuer KOFA-Dokumente.",
+            "description": "Navigieren Sie durch die Komplexität öffentlicher Beschaffung mit unserer spezialisierten Suchmaschine für KOFA-Dokumente.",
             "feature1": "Erweiterte semantische Suche in der gesamten KOFA-Datenbank.",
-            "feature2": "Sofortiger Zugang zu Praezedenzfaellen und relevanter Rechtsprechung.",
-            "feature3": "Optimierter Workflow fuer Juristen.",
+            "feature2": "Sofortiger Zugang zu Präzedenzfällen und relevanter Rechtsprechung.",
+            "feature3": "Optimierter Workflow für Juristen.",
             "cta": "Zugang anfragen",
             "login": "Anmelden",
             "cardTitle": "KOFA Datenbank",
@@ -132,24 +132,24 @@
         }
     },
     "Testimonial": {
-        "textBefore": "Wir sind stolz darauf, preisgekroente norwegische Technologie in der praktischen Rechtsarbeit einzusetzen. Die Zusammenarbeit mit Reliable AI hat es ermoeglicht, ein Produkt fuer praezise Suche in ",
+        "textBefore": "Wir sind stolz darauf, preisgekrönte norwegische Technologie in der praktischen Rechtsarbeit einzusetzen. Die Zusammenarbeit mit Reliable AI hat es ermöglicht, ein Produkt für präzise Suche in ",
         "kofa": "KOFA",
-        "textAfter": "-Faellen zu entwickeln, das unseren taeglichen Arbeitsablauf vereinfacht. Reliable hat die Herausforderung angenommen und in engem Dialog mit uns in kurzer Zeit ein aeusserst nuetzliches Produkt entwickelt.",
-        "author": "Stian Hultin Oddbjornsen",
+        "textAfter": "-Fällen zu entwickeln, das unseren täglichen Arbeitsablauf vereinfacht. Reliable hat die Herausforderung angenommen und in engem Dialog mit uns in kurzer Zeit ein äußerst nützliches Produkt entwickelt.",
+        "author": "Stian Hultin Oddbjørnsen",
         "role": "Partner",
         "company": "Advokatfirmaet Haavind",
         "cta": "KOFA Suche entdecken"
     },
     "Contact": {
         "title": "Kontakt aufnehmen",
-        "subtitle": "Kontaktieren Sie uns, um zu besprechen, wie wir Ihre KI-Initiativen unterstuetzen koennen.",
+        "subtitle": "Kontaktieren Sie uns, um zu besprechen, wie wir Ihre KI-Initiativen unterstützen können.",
         "markus": {
             "name": "Markus Kreutzer",
             "title": "Co-Founder",
-            "quote": "Wir setzen uns fuer ethische und verantwortungsvolle KI ein. Unser Ziel ist es, sichere und zuverlaessige Adoption zu ermoeglichen."
+            "quote": "Wir setzen uns für ethische und verantwortungsvolle KI ein. Unser Ziel ist es, sichere und zuverlässige Adoption zu ermöglichen."
         },
         "getInTouch": "Kontakt Aufnehmen",
-        "office": "Buero",
+        "office": "Büro",
         "general": "Allgemeine Anfragen"
     }
 }
