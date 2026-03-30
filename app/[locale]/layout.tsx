@@ -19,46 +19,66 @@ const outfit = Outfit({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Reliable AI - Analytical AI for Large Language Data",
-    template: "%s | Reliable AI",
-  },
-  description: "We empower people to work smarter with information. Reliable AI brings rigorous research into practical, trustworthy solutions for legal and survey data.",
-  keywords: ["AI", "Legal Tech", "NLP", "Large Language Models", "Survey Analysis", "Norwegian AI"],
-  authors: [{ name: "Reliable AI Team" }],
-  creator: "Reliable AI",
-  icons: {
-    icon: "/images/LogoReliable/favicon.png",
-  },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://reliableai.no",
-    title: "Reliable AI - Analytical AI for Large Language Data",
-    description: "We empower people to work smarter with information. Reliable AI brings rigorous research into practical, trustworthy solutions.",
-    siteName: "Reliable AI",
-    images: [
-      {
-        url: "https://reliableai.no/images/LogoReliable/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Reliable AI Logo",
+const baseUrl = "https://reliableai.no";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return {
+    title: {
+      default: "Reliable AI - Analytical AI for Large Language Data",
+      template: "%s | Reliable AI",
+    },
+    description: "We empower people to work smarter with information. Reliable AI brings rigorous research into practical, trustworthy solutions for legal and survey data.",
+    keywords: ["AI", "Legal Tech", "NLP", "Large Language Models", "Survey Analysis", "Norwegian AI"],
+    authors: [{ name: "Reliable AI Team" }],
+    creator: "Reliable AI",
+    icons: {
+      icon: "/images/LogoReliable/favicon.png",
+    },
+    alternates: {
+      canonical: `${baseUrl}/${locale}`,
+      languages: {
+        "en": `${baseUrl}/en`,
+        "no": `${baseUrl}/no`,
+        "da": `${baseUrl}/da`,
+        "de": `${baseUrl}/de`,
+        "x-default": `${baseUrl}/en`,
       },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Reliable AI - Analytical AI for Large Language Data",
-    description: "We empower people to work smarter with information. Reliable AI brings rigorous research into practical, trustworthy solutions.",
-    creator: "@reliable_ai",
-    images: ["https://reliableai.no/images/LogoReliable/og-image.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+    },
+    openGraph: {
+      type: "website",
+      locale: "en_US",
+      url: `${baseUrl}/${locale}`,
+      title: "Reliable AI - Analytical AI for Large Language Data",
+      description: "We empower people to work smarter with information. Reliable AI brings rigorous research into practical, trustworthy solutions.",
+      siteName: "Reliable AI",
+      images: [
+        {
+          url: `${baseUrl}/images/LogoReliable/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: "Reliable AI Logo",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Reliable AI - Analytical AI for Large Language Data",
+      description: "We empower people to work smarter with information. Reliable AI brings rigorous research into practical, trustworthy solutions.",
+      creator: "@reliable_ai",
+      images: [`${baseUrl}/images/LogoReliable/og-image.png`],
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export default async function LocaleLayout({
   children,
