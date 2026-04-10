@@ -2,6 +2,25 @@ import { BlogPost } from "./blog-data"
 
 export const blogPostsNo: BlogPost[] = [
     {
+        title: "Reliable AI mottar 1 MNOK fra Innovasjon Norge",
+        excerpt: "Vi er stolte og takknemlige for å kunngjøre at Reliable AI er tildelt 1 000 000 kr i STUD-ENT-støtte fra Innovasjon Norge, ett av bare 20 prosjekter valgt ut fra rekordmange 87 søkere ved norske universiteter og høgskoler.",
+        date: "10. april 2026",
+        category: "Bedriftsnyheter",
+        slug: "innovasjon-norge-stud-ent-grant",
+        image: "/images/LogoCarousel/in.png",
+        imageContain: true,
+        content: `
+            <p>Vi er stolte og takknemlige for å kunne dele at Reliable AI er tildelt <strong>1 000 000 kr</strong> i STUD-ENT-støtte fra Innovasjon Norge.</p>
+            <p>STUD-ENT er ett av Norges mest konkurranseutsatte tilskuddsprogrammer for studentgründere, og årets runde trakk rekordmange 87 søknader fra 16 universiteter og høgskoler over hele landet. Bare 20 prosjekter ble valgt ut, og vi er blant dem.</p>
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">Hva støtten gjør mulig</h2>
+            <p>STUD-ENT-tilskuddet gir oss rom til å fortsette å bygge. Vi vil bruke det til å videreutvikle kjerneteknologien vår, fordype eksisterende partnerskap og utforske nye områder der pålitelig, ikke-generativ AI kan gjøre en forskjell.</p>
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">Takk</h2>
+            <p>Ingenting av dette hadde skjedd uten våre fantastiske støttespillere. Vi er takknemlige for Fysisk institutt ved UiO som har gitt oss et herlig miljø for å utforske kunstig intelligens, og som stadig er en kilde til faglig input. Vi vil også takke Advokatfirmaet Haavind, Gyldendal Rettsdata og Sprint Consulting for fortløpende råd og tilbakemeldinger.</p>
+            <p>Og til slutt, takk til Innovasjon Norge. Vi tar ikke dette for gitt, med disse midlene kan vi nå satse for fullt.</p>
+            <p><a href="https://www.innovasjonnorge.no/nyhetsartikkel/millioner-til-studenter-etter-rekordstor-interesse" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Les Innovasjon Norges kunngjøring →</a></p>
+        `
+    },
+    {
         title: "Reliable AI i media: Universitas og Digital Norway",
         excerpt: "Vi er takknemlige for å ha blitt omtalt i to store norske publikasjoner — Universitas, Norges største studentavis, og Digital Norway — om reisen vår fra universitetsforskning til prisvinnende AI-teknologi.",
         date: "26. mars 2026",

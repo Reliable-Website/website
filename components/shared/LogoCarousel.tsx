@@ -14,6 +14,7 @@ export function LogoCarousel() {
         { name: "Rettsdata", url: "/images/LogoCarousel/rettsdata.png" },
         { name: "Innovasjon Norge", url: "/images/LogoCarousel/in.png" },
         { name: "Odin", url: "/images/LogoCarousel/odin.png" },
+        { name: "Sprint", url: "/images/LogoCarousel/sprint.png" },
     ]
 
     // Duplicate logos to ensure seamless looping
@@ -67,12 +68,16 @@ export function LogoCarousel() {
                     {duplicatedLogos.map((logo, index) => {
                         let sizeClasses = "h-12 w-32"
                         const imageClasses = "object-contain"
+                        let imageScale = ""
                         if (logo.name === "UiO") {
                             sizeClasses = "h-12 w-40"
                         } else if (logo.name === "Rettsdata") {
                             sizeClasses = "h-16 w-40"
                         } else if (logo.name === "Føyen") {
                             sizeClasses = "h-12 w-32"
+                        } else if (logo.name === "Sprint") {
+                            sizeClasses = "h-14 w-40"
+                            imageScale = "scale-[1.3]"
                         }
                         return (
                             <div key={index} className={`flex items-center justify-center relative ${sizeClasses} flex-shrink-0 opacity-70 grayscale transition-all hover:grayscale-0 hover:opacity-100`}>
@@ -80,7 +85,7 @@ export function LogoCarousel() {
                                     src={logo.url}
                                     alt={logo.name}
                                     fill
-                                    className={imageClasses}
+                                    className={`${imageClasses} ${imageScale}`}
                                 />
                             </div>
                         )

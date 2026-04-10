@@ -14,6 +14,25 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        title: "Reliable AI receives 1 MNOK from Innovasjon Norge",
+        excerpt: "We are proud and grateful to announce that Reliable AI has been awarded 1,000,000 kr in STUD-ENT funding from Innovasjon Norge, one of only 20 projects selected from a record 87 applicants across Norwegian universities and colleges.",
+        date: "10 April 2026",
+        category: "Company News",
+        slug: "innovasjon-norge-stud-ent-grant",
+        image: "/images/LogoCarousel/in.png",
+        imageContain: true,
+        content: `
+            <p>We are proud and grateful to share that Reliable AI has been awarded <strong>1,000,000 kr</strong> in STUD-ENT funding from Innovasjon Norge.</p>
+            <p>STUD-ENT is one of Norway's most competitive grant programs for student entrepreneurs, and this year's round attracted a record 87 applications from 16 universities and colleges across the country. Only 20 projects were selected, and we are among them.</p>
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">What this funding enables</h2>
+            <p>The STUD-ENT grant gives us the runway to keep building. We'll use it to continue developing our core technology, deepen our existing partnerships, and explore new areas where reliable, non-generative AI can make a difference.</p>
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">Thank you</h2>
+            <p>None of this would have happened without our fantastic supporters. We are grateful to the Department of Physics at UiO for providing a wonderful environment to explore artificial intelligence, and for being a continuous source of academic input. We also want to thank Advokatfirmaet Haavind, Gyldendal Rettsdata, and Sprint Consulting for their ongoing advice and feedback.</p>
+            <p>And finally, thank you to Innovasjon Norge. We don't take this for granted, and with this funding we can now go all in.</p>
+            <p><a href="https://www.innovasjonnorge.no/nyhetsartikkel/millioner-til-studenter-etter-rekordstor-interesse" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Read Innovasjon Norge's announcement →</a></p>
+        `
+    },
+    {
         title: "Reliable AI in the News: Universitas and Digital Norway",
         excerpt: "We're grateful to have been featured in two major Norwegian publications — Universitas, Norway's largest student newspaper, and Digital Norway — covering our journey from university research to award-winning AI technology.",
         date: "26 March 2026",
