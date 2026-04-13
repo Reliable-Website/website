@@ -22,7 +22,7 @@ export function BlogPreview() {
         <section className="py-12 md:py-24 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <motion.div
-                    className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4"
+                    className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 gap-4"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}

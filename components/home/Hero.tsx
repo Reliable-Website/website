@@ -20,7 +20,7 @@ export function Hero() {
                 initial={{ opacity: 0, x: 50, rotate: 15 }}
                 animate={{ opacity: 1, x: 0, rotate: 12 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="absolute top-28 right-[calc(50%-270px)] sm:top-32 sm:right-[calc(50%-380px)] md:top-36 md:right-[calc(50%-520px)] z-20"
+                className="absolute top-28 right-4 sm:top-32 sm:right-[calc(50%-380px)] md:top-36 md:right-[calc(50%-520px)] z-20"
             >
                 <Link
                     href="/blog/ecai-2025-outstanding-demo-award"
