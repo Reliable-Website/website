@@ -95,7 +95,7 @@ export function Header() {
                         }}>
                             <div className="absolute h-36 w-36 md:h-40 md:w-40 top-1/2 -translate-y-1/2 pointer-events-none">
                                 <Image
-                                    src="/images/LogoReliable/logo.svg"
+                                    src="/images/LogoReliable/reliableai.png"
                                     alt="Reliable AI Logo"
                                     fill
                                     className="object-contain"

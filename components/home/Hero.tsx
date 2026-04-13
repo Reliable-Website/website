@@ -51,7 +51,7 @@ export function Hero() {
                     >
                         <div id="hero-logo" className="relative w-[400px] h-[98px] sm:w-[560px] sm:h-[138px] md:w-[720px] md:h-[177px] -mb-6 sm:-mb-8 md:-mb-10">
                             <Image
-                                src="/images/LogoReliable/logo.svg"
+                                src="/images/LogoReliable/reliableai.png"
                                 alt="Reliable AI"
                                 fill
                                 className="object-contain"

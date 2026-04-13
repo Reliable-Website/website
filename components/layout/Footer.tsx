@@ -31,7 +31,7 @@ export function Footer() {
                         <Link href="/" className="flex items-center gap-2">
                             <div className="relative h-32 w-32 -mt-10">
                                 <Image
-                                    src="/images/LogoReliable/logo.svg"
+                                    src="/images/LogoReliable/reliableai.png"
                                     alt="Reliable AI Logo"
                                     fill
                                     className="object-contain"
