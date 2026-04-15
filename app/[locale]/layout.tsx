@@ -37,10 +37,7 @@ export async function generateMetadata({
     keywords: ["AI", "Legal Tech", "NLP", "Large Language Models", "Survey Analysis", "Norwegian AI"],
     authors: [{ name: "Reliable AI Team" }],
     creator: "Reliable AI",
-    icons: {
-      icon: "/images/LogoReliable/favicon.png",
-    },
-    alternates: {
+alternates: {
       canonical: `${baseUrl}/${locale}`,
       languages: {
         "en": `${baseUrl}/en`,
