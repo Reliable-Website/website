@@ -10,7 +10,6 @@ export function LogoCarousel() {
         { name: "UiO", url: "/images/LogoCarousel/uio.png" },
         { name: "Haavind", url: "/images/LogoCarousel/haavind.png" },
         { name: "Selmer", url: "/images/LogoCarousel/selmer.png" },
-        { name: "Føyen", url: "/images/LogoCarousel/foyen.png" },
         { name: "Rettsdata", url: "/images/LogoCarousel/rettsdata.png" },
         { name: "Innovasjon Norge", url: "/images/LogoCarousel/in.png" },
         { name: "Odin", url: "/images/LogoCarousel/odin.png" },
