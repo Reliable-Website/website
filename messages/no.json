@@ -37,7 +37,7 @@
     "Hero": {
         "title": "<span class=\"text-primary\">Reliable AI</span> forskning, rådgivning og implementering",
         "subtitle": "Brobygger mellom akademisk forskning og industriell anvendelse.",
-        "cta": "Kontakt oss",
+        "cta": "Book en demo",
         "award": "Vinner av ECAI 2025 Outstanding Demo Award"
     },
     "Values": {
@@ -120,15 +120,15 @@
         "subtitle": "Trygg beslutningsstøtte som styrker faglig skjønn. Vi erstatter ikke analysen din — vi gjør den bedre.",
         "kofa": {
             "tag": "Legal Tech",
-            "title": "KOFA Søk",
-            "description": "Naviger i kompleksiteten av offentlige anskaffelser med vår spesialiserte søkemotor for KOFA-dokumenter.",
-            "feature1": "Avansert semantisk søk i hele KOFA-databasen.",
-            "feature2": "Umiddelbar tilgang til presedenser og relevant rettspraksis.",
-            "feature3": "Strømlinjeformet arbeidsflyt for jurister.",
-            "cta": "Be om tilgang",
+            "title": "Presedens",
+            "description": "Alle relevante rettskilder for anskaffelsesjurister samlet ett sted. Søk i KOFA-avgjørelser, norsk rett, DFØ-veileder, EU-rettsakter og rettspraksis, og dansk KLFU — alt fra ett hybrid AI-søk.",
+            "feature1": "Alle viktige rettskilder for anskaffelsesrett samlet ett sted.",
+            "feature2": "Hybrid søk som kombinerer semantisk forståelse og presis nøkkelordmatching.",
+            "feature3": "Bygget for anskaffelsesjuristens arbeidsflyt.",
+            "cta": "Book en demo",
             "login": "Logg inn",
-            "cardTitle": "KOFA Database",
-            "cardSubtitle": "Intelligent Juridisk Søk"
+            "cardTitle": "Presedens",
+            "cardSubtitle": "Søk i anskaffelsesretten"
         }
     },
     "Testimonial": {
@@ -138,7 +138,7 @@
         "author": "Stian Hultin Oddbjørnsen",
         "role": "Partner",
         "company": "Advokatfirmaet Haavind",
-        "cta": "Utforsk KOFA Søk"
+        "cta": "Utforsk Presedens"
     },
     "Contact": {
         "title": "Ta kontakt",

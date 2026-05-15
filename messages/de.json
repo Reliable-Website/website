@@ -37,7 +37,7 @@
     "Hero": {
         "title": "<span class=\"text-primary\">Reliable AI</span> Forschung, Beratung und Implementierung",
         "subtitle": "Wir schlagen die Brücke zwischen akademischer Forschung und industrieller Anwendung.",
-        "cta": "Kontaktieren Sie uns",
+        "cta": "Demo buchen",
         "award": "Gewinner des ECAI 2025 Outstanding Demo Award"
     },
     "Values": {
@@ -120,15 +120,15 @@
         "subtitle": "Sichere Entscheidungsunterstützung, die fachliches Urteilsvermögen stärkt. Wir ersetzen Ihre Analyse nicht — wir machen sie besser.",
         "kofa": {
             "tag": "Legal Tech",
-            "title": "KOFA Suche",
-            "description": "Navigieren Sie durch die Komplexität öffentlicher Beschaffung mit unserer spezialisierten Suchmaschine für KOFA-Dokumente.",
-            "feature1": "Erweiterte semantische Suche in der gesamten KOFA-Datenbank.",
-            "feature2": "Sofortiger Zugang zu Präzedenzfällen und relevanter Rechtsprechung.",
-            "feature3": "Optimierter Workflow für Juristen.",
-            "cta": "Zugang anfragen",
+            "title": "Presedens",
+            "description": "Alle relevanten Rechtsquellen für Vergaberechtsjuristen an einem Ort. Durchsuchen Sie KOFA-Entscheidungen, norwegisches Recht, DFØ-Leitfäden, EU-Richtlinien und -Rechtsprechung sowie das dänische KLFU — mit einer einzigen hybriden KI-Suche.",
+            "feature1": "Alle wichtigen Rechtsquellen des Vergaberechts in einem Arbeitsbereich vereint.",
+            "feature2": "Hybride Suche, die semantisches Verständnis und exakte Stichwortsuche kombiniert.",
+            "feature3": "Entwickelt für den Arbeitsablauf von Vergaberechtsjuristen.",
+            "cta": "Demo buchen",
             "login": "Anmelden",
-            "cardTitle": "KOFA Datenbank",
-            "cardSubtitle": "Intelligente Juristische Suche"
+            "cardTitle": "Presedens",
+            "cardSubtitle": "Suche im Vergaberecht"
         }
     },
     "Testimonial": {
@@ -138,7 +138,7 @@
         "author": "Stian Hultin Oddbjørnsen",
         "role": "Partner",
         "company": "Advokatfirmaet Haavind",
-        "cta": "KOFA Suche entdecken"
+        "cta": "Presedens entdecken"
     },
     "Contact": {
         "title": "Kontakt aufnehmen",

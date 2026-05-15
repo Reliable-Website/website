@@ -28,7 +28,7 @@ export function Offerings() {
         {
             title: t('saas.title'),
             description: t('saas.description'),
-            features: ["KOFA Search", "DANTE Tool", "Enterprise Support"],
+            features: ["Presedens", "DANTE Tool", "Enterprise Support"],
             cta: t('saas.cta'),
             link: "/products",
         },

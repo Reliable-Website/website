@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
 import { Button } from "@/components/ui/button"
 import { Link } from "@/i18n/navigation"
+import { CALENDLY_URL } from "@/lib/constants"
 import { ArrowRight, Check, Search, FileText } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
@@ -36,7 +37,7 @@ export default function ProductsPage() {
                 </section>
 
                 {/* KOFA Search Section */}
-                <section id="kofa" className="py-12 md:py-16 bg-background scroll-mt-20">
+                <section id="presedens" className="py-12 md:py-16 bg-background scroll-mt-20">
                     <div className="container mx-auto px-4 md:px-6">
                         {/* Mobile Layout */}
                         <div className="flex flex-col gap-8 md:hidden">
@@ -51,8 +52,8 @@ export default function ProductsPage() {
                             </p>
                             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border bg-muted">
                                 <Image
-                                    src="/images/Products/legalsearch.png"
-                                    alt="KOFA Search Interface"
+                                    src="/images/Products/presedens.png"
+                                    alt="Presedens — Procurement law search interface"
                                     fill
                                     className="object-cover"
                                 />
@@ -84,9 +85,9 @@ export default function ProductsPage() {
                             </ul>
                             <div className="flex flex-col gap-3">
                                 <Button asChild size="lg" className="rounded-full w-full">
-                                    <Link href="/contact">
+                                    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
                                         {t('kofa.cta')} <ArrowRight className="ml-2 h-4 w-4" />
-                                    </Link>
+                                    </a>
                                 </Button>
                                 <Button asChild size="lg" variant="outline" className="rounded-full w-full hover:bg-muted hover:text-foreground">
                                     <a href="https://reliableai.online" target="_blank" rel="noopener noreferrer">
@@ -136,9 +137,9 @@ export default function ProductsPage() {
                                 </ul>
                                 <div className="flex gap-4">
                                     <Button asChild size="lg" className="rounded-full">
-                                        <Link href="/contact">
+                                        <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
                                             {t('kofa.cta')} <ArrowRight className="ml-2 h-4 w-4" />
-                                        </Link>
+                                        </a>
                                     </Button>
                                     <Button asChild size="lg" variant="outline" className="rounded-full hover:bg-muted hover:text-foreground">
                                         <a href="https://reliableai.online" target="_blank" rel="noopener noreferrer">
@@ -155,8 +156,8 @@ export default function ProductsPage() {
                                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
                             >
                                 <Image
-                                    src="/images/Products/legalsearch.png"
-                                    alt="KOFA Search Interface"
+                                    src="/images/Products/presedens.png"
+                                    alt="Presedens — Procurement law search interface"
                                     fill
                                     className="object-cover"
                                 />

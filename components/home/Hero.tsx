@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Link } from "@/i18n/navigation"
+import { CALENDLY_URL } from "@/lib/constants"
 import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
 import { Award } from "lucide-react"
@@ -76,10 +77,10 @@ export function Hero() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                     >
                         <Button asChild size="lg" className="relative overflow-hidden rounded-full px-8 bg-black text-white hover:bg-[#617eff] shadow-lg shadow-black/20 hover:shadow-[#617eff]/40 transition-all duration-300 group">
-                            <Link href="/contact" className="relative z-10">
+                            <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="relative z-10">
                                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer" />
                                 {t('cta')}
-                            </Link>
+                            </a>
                         </Button>
                     </motion.div>
                 </div>

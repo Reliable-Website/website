@@ -46,7 +46,7 @@ export function Testimonial() {
                         <blockquote className="font-heading text-xl md:text-2xl font-normal leading-relaxed text-foreground mb-8">
                             "{t('textBefore')}
                             <Link
-                                href="/products#kofa"
+                                href="/products#presedens"
                                 className="text-primary underline underline-offset-4 decoration-primary/50 hover:decoration-primary transition-colors"
                             >
                                 {t('kofa')}
@@ -67,7 +67,7 @@ export function Testimonial() {
                         </div>
 
                         <Link
-                            href="/products#kofa"
+                            href="/products#presedens"
                             className="group inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-300"
                         >
                             {t('cta')}

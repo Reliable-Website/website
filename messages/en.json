@@ -37,7 +37,7 @@
     "Hero": {
         "title": "<span class=\"text-primary\">Reliable AI</span> research, consulting and deployment",
         "subtitle": "Bridging the gap between academic research and industrial application.",
-        "cta": "Contact us",
+        "cta": "Book a demo",
         "award": "Winner of ECAI 2025 Outstanding Demo Award"
     },
     "Values": {
@@ -120,15 +120,15 @@
         "subtitle": "Safe decision support that enhances professional judgment. We don't replace your analysis — we make it better.",
         "kofa": {
             "tag": "Legal Tech",
-            "title": "KOFA Search",
-            "description": "Navigate the complexities of public procurement with our specialized search engine for KOFA (Klagenemnda for offentlig anskaffelse) documents.",
-            "feature1": "Advanced semantic search across the entire KOFA database.",
-            "feature2": "Instant access to precedents and relevant case law.",
-            "feature3": "Streamlined workflow for legal professionals.",
-            "cta": "Request Access",
+            "title": "Presedens",
+            "description": "Every legal source a procurement lawyer needs, in one workspace. Search KOFA decisions, Norwegian law and regulations, DFØ guidance, EU directives and case law, and Danish KLFU — all from a single hybrid AI search.",
+            "feature1": "All major procurement-law sources unified in one workspace.",
+            "feature2": "Hybrid search combining semantic understanding and exact keyword matching.",
+            "feature3": "Built for the procurement lawyer's workflow.",
+            "cta": "Book a demo",
             "login": "Login",
-            "cardTitle": "KOFA Database",
-            "cardSubtitle": "Intelligent Legal Search"
+            "cardTitle": "Presedens",
+            "cardSubtitle": "Procurement Law Search"
         }
     },
     "Testimonial": {
@@ -138,7 +138,7 @@
         "author": "Stian Hultin Oddbjørnsen",
         "role": "Partner",
         "company": "Advokatfirmaet Haavind",
-        "cta": "Explore KOFA Search"
+        "cta": "Explore Presedens"
     },
     "Contact": {
         "title": "Get in touch",

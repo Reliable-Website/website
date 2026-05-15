@@ -37,7 +37,7 @@
     "Hero": {
         "title": "<span class=\"text-primary\">Reliable AI</span> forskning, rådgivning og implementering",
         "subtitle": "Vi bygger bro mellem akademisk forskning og industriel anvendelse.",
-        "cta": "Kontakt os",
+        "cta": "Book en demo",
         "award": "Vinder af ECAI 2025 Outstanding Demo Award"
     },
     "Values": {
@@ -120,15 +120,15 @@
         "subtitle": "Sikker beslutningsstøtte, der styrker faglig vurdering. Vi erstatter ikke din analyse — vi gør den bedre.",
         "kofa": {
             "tag": "Legal Tech",
-            "title": "KOFA Søg",
-            "description": "Naviger i kompleksiteten af offentlige udbud med vores specialiserede søgemaskine til KOFA-dokumenter.",
-            "feature1": "Avanceret semantisk søgning i hele KOFA-databasen.",
-            "feature2": "Øjeblikkelig adgang til præcedens og relevant retspraksis.",
-            "feature3": "Strømlinet arbejdsgang for jurister.",
-            "cta": "Anmod om adgang",
+            "title": "Presedens",
+            "description": "Alle relevante retskilder for udbudsjurister samlet ét sted. Søg i KOFA-afgørelser, norsk ret, DFØ-vejledning, EU-direktiver og retspraksis samt dansk KLFU — alt sammen fra én hybrid AI-søgning.",
+            "feature1": "Alle vigtige retskilder for udbudsret samlet ét sted.",
+            "feature2": "Hybrid søgning, der kombinerer semantisk forståelse og præcis søgeordsmatchning.",
+            "feature3": "Bygget til udbudsjuristens arbejdsgang.",
+            "cta": "Book en demo",
             "login": "Log ind",
-            "cardTitle": "KOFA Database",
-            "cardSubtitle": "Intelligent Juridisk Søgning"
+            "cardTitle": "Presedens",
+            "cardSubtitle": "Søgning i udbudsretten"
         }
     },
     "Testimonial": {
@@ -138,7 +138,7 @@
         "author": "Stian Hultin Oddbjørnsen",
         "role": "Partner",
         "company": "Advokatfirmaet Haavind",
-        "cta": "Udforsk KOFA Søg"
+        "cta": "Udforsk Presedens"
     },
     "Contact": {
         "title": "Kontakt os",
