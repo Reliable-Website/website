@@ -5,7 +5,7 @@ import { Footer } from "@/components/layout/Footer"
 import { Button } from "@/components/ui/button"
 import { Link } from "@/i18n/navigation"
 import { CALENDLY_URL } from "@/lib/constants"
-import { ArrowRight, Check, Search, FileText } from "lucide-react"
+import { ArrowRight, Check, Search, FileText, Plus } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 import { motion } from "framer-motion"
@@ -175,6 +175,57 @@ export default function ProductsPage() {
                     </div>
                 </section>
 
+                {/* Impact stat */}
+                <section className="py-16 md:py-24 bg-muted/30">
+                    <div className="container mx-auto px-4 md:px-6">
+                        <motion.div
+                            className="mx-auto max-w-4xl"
+                            initial={{ opacity: 0, y: 24 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-center">
+                                <div className="flex flex-col items-center">
+                                    <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-3">
+                                        {t('impact.before')}
+                                    </span>
+                                    <span className="font-heading text-5xl md:text-7xl font-bold text-muted-foreground/50 line-through decoration-2">
+                                        ~45 min
+                                    </span>
+                                </div>
+                                <ArrowRight className="h-10 w-10 md:h-12 md:w-12 text-primary rotate-90 md:rotate-0 shrink-0" />
+                                <div className="flex flex-col items-center">
+                                    <span className="text-xs uppercase tracking-[0.2em] text-primary mb-3">
+                                        {t('impact.after')}
+                                    </span>
+                                    <span className="font-heading text-5xl md:text-7xl font-bold text-primary">
+                                        ~10 min
+                                    </span>
+                                </div>
+                            </div>
+                            <p className="mt-12 text-center text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                                {t('impact.caption')}
+                            </p>
+                        </motion.div>
+                    </div>
+                </section>
+
+                {/* More tools coming */}
+                <section className="py-16 md:py-24 bg-background">
+                    <motion.div
+                        className="flex flex-col items-center justify-center text-center"
+                        initial={{ opacity: 0, y: 16 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
+                    >
+                        <Plus className="h-8 w-8 text-muted-foreground/40" strokeWidth={1.5} />
+                        <p className="mt-4 text-sm uppercase tracking-[0.2em] text-muted-foreground/70">
+                            {t('comingSoon.title')}
+                        </p>
+                    </motion.div>
+                </section>
 
             </main>
             <Footer />

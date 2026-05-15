@@ -101,6 +101,9 @@
         "subtitle": "Som et tverrfaglig team av forskere er vi forpliktet til etisk og ansvarlig AI-bruk.",
         "roles": {
             "co_founder": "Co-Founder",
+            "ceo_co_founder": "CEO, Co-Founder",
+            "coo_co_founder": "COO, Co-Founder",
+            "cto_co_founder": "CTO, Co-Founder",
             "board_member": "Eksternt styremedlem",
             "graphic_designer": "Grafisk designer"
         },
@@ -129,6 +132,15 @@
             "login": "Logg inn",
             "cardTitle": "Presedens",
             "cardSubtitle": "Søk i anskaffelsesretten"
+        },
+        "impact": {
+            "before": "Før",
+            "after": "Med Presedens",
+            "caption": "Typisk søk i anskaffelsesretten, ende til ende."
+        },
+        "comingSoon": {
+            "title": "Kommer snart",
+            "subtitle": "Flere verktøy på vei."
         }
     },
     "Testimonial": {
@@ -145,7 +157,7 @@
         "subtitle": "Ta kontakt for å diskutere hvordan vi kan støtte dine AI-initiativer.",
         "markus": {
             "name": "Markus Kreutzer",
-            "title": "Co-Founder",
+            "title": "CEO, Co-Founder",
             "quote": "Vi er forpliktet til etisk og ansvarlig AI. Målet vårt er å muliggjøre trygg og sikker bruk."
         },
         "getInTouch": "Ta Kontakt",

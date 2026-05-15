@@ -101,6 +101,9 @@
         "subtitle": "Als interdisziplinäres Forschungsteam setzen wir uns für ethischen und verantwortungsvollen Einsatz von KI ein.",
         "roles": {
             "co_founder": "Co-Founder",
+            "ceo_co_founder": "CEO, Co-Founder",
+            "coo_co_founder": "COO, Co-Founder",
+            "cto_co_founder": "CTO, Co-Founder",
             "board_member": "Externes Vorstandsmitglied",
             "graphic_designer": "Grafikdesignerin"
         },
@@ -129,6 +132,15 @@
             "login": "Anmelden",
             "cardTitle": "Presedens",
             "cardSubtitle": "Suche im Vergaberecht"
+        },
+        "impact": {
+            "before": "Vorher",
+            "after": "Mit Presedens",
+            "caption": "Typische Vergaberechtsrecherche, von Anfang bis Ende."
+        },
+        "comingSoon": {
+            "title": "Demnächst",
+            "subtitle": "Weitere Tools in Arbeit."
         }
     },
     "Testimonial": {
@@ -145,7 +157,7 @@
         "subtitle": "Kontaktieren Sie uns, um zu besprechen, wie wir Ihre KI-Initiativen unterstützen können.",
         "markus": {
             "name": "Markus Kreutzer",
-            "title": "Co-Founder",
+            "title": "CEO, Co-Founder",
             "quote": "Wir setzen uns für ethische und verantwortungsvolle KI ein. Unser Ziel ist es, sichere und zuverlässige Adoption zu ermöglichen."
         },
         "getInTouch": "Kontakt Aufnehmen",

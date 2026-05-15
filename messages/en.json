@@ -101,6 +101,9 @@
         "subtitle": "As an inherently interdisciplinary team of researchers, we are committed to ethical and responsible AI usage.",
         "roles": {
             "co_founder": "Co-Founder",
+            "ceo_co_founder": "CEO, Co-Founder",
+            "coo_co_founder": "COO, Co-Founder",
+            "cto_co_founder": "CTO, Co-Founder",
             "board_member": "External Board Member",
             "graphic_designer": "Graphic Designer"
         },
@@ -129,6 +132,15 @@
             "login": "Login",
             "cardTitle": "Presedens",
             "cardSubtitle": "Procurement Law Search"
+        },
+        "impact": {
+            "before": "Before",
+            "after": "With Presedens",
+            "caption": "Typical procurement-law search, end-to-end."
+        },
+        "comingSoon": {
+            "title": "Coming soon",
+            "subtitle": "More tools in the works."
         }
     },
     "Testimonial": {
@@ -145,7 +157,7 @@
         "subtitle": "Reach out to discuss how we can support your AI initiatives.",
         "markus": {
             "name": "Markus Kreutzer",
-            "title": "Co-Founder",
+            "title": "CEO, Co-Founder",
             "quote": "We are committed to ethical and responsible AI. Our goal is to enable safe, confident adoption."
         },
         "getInTouch": "Get in Touch",
