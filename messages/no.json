@@ -32,7 +32,12 @@
         "research": "Forskning",
         "blog": "Blogg",
         "contact": "Kontakt",
-        "login": "Logg inn"
+        "login": "Logg inn",
+        "howItWorks": "Slik virker det",
+        "coverage": "Kildedekning",
+        "news": "Blogg",
+        "bookDemo": "Bestill demo",
+        "more": "Mer"
     },
     "Hero": {
         "title": "<span class=\"text-primary\">Reliable AI</span> forskning, rådgivning og implementering",
@@ -94,7 +99,16 @@
         "blog": "Blogg",
         "contacts": "Kontakt",
         "office": "Kontor",
-        "rights": "Alle rettigheter forbeholdt Oslo {year}"
+        "rights": "Alle rettigheter forbeholdt Oslo {year}",
+        "tagline": "Forskningsbaserte KI-verktøy for jurister. Oslo, Norge.",
+        "colProduct": "Produkt",
+        "colCompany": "Selskap",
+        "colLegal": "Juridisk",
+        "coverage": "Kildedekning",
+        "news": "Blogg",
+        "contact": "Kontakt",
+        "privacy": "Personvernerklæring",
+        "datenschutz": "Datenschutzerklärung"
     },
     "Team": {
         "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",
@@ -105,7 +119,8 @@
             "coo_co_founder": "COO, Co-Founder",
             "cto_co_founder": "CTO, Co-Founder",
             "board_member": "Eksternt styremedlem",
-            "graphic_designer": "Grafisk designer"
+            "graphic_designer": "Grafisk designer",
+            "cpo_co_founder": "CPO, Co-Founder"
         },
         "descriptions": {
             "halvor": "Bakgrunn i fysikk og beregningsvitenskap. Spesialiserer seg på tekst-embeddings og representasjon av mening — med særlig interesse for kreative tilnærminger til embedding-rommet. Den tekniske ryggraden i Reliable AI. Når han ikke koder, finner du ham på langrennssporet eller i klatreveggen.",
@@ -116,7 +131,10 @@
             "mathilde": "Partner i Sprint Consulting med ni års erfaring innen innovasjon og bærekraftsrådgivning. Bakgrunn fra NTNU i informatikk og strategi. Spesialiserer seg på å hjelpe selskaper med innovasjon, etablering av nye virksomheter og bærekraftig vekst.",
             "larspetter": "5x seriegrunder innen EdTech. Medgründer og CPO i We Are Learning (immersiv 3D-læring). Tidligere medgründer av Motimate, som ble kjøpt opp av Kahoot!. Reisen hans spenner fra CD-ROM og laserdisker til gamification og AI-drevne immersive produkter. Kjent som en engasjerende foredragsholder om kreativitet og AI.",
             "martine": "Grafisk designer med bred erfaring fra blant annet designbyrået WAL. Bringer et skarpt blikk for visuell kommunikasjon og merkevareidentitet til Reliable AI. Når hun ikke jobber, finner du henne på treningssenteret eller ved biljardbordet."
-        }
+        },
+        "groupFounders": "Gründere",
+        "groupBoard": "Styre",
+        "groupDesign": "Design"
     },
     "Products": {
         "title": "Våre Produkter",
@@ -162,6 +180,126 @@
         },
         "getInTouch": "Ta Kontakt",
         "office": "Kontor",
-        "general": "Generelle Henvendelser"
+        "general": "Generelle Henvendelser",
+        "searchQuery": "Hvordan når jeg Reliable AI?",
+        "rowDemo": "Se Presedens",
+        "rowAsk": "Still et spørsmål",
+        "rowCeo": "Snakk med vår CEO",
+        "rowVisit": "Besøk kontoret",
+        "searchTag": "SØK"
+    },
+    "PHero": {
+        "kicker": "Semantisk søk i offentlige anskaffelser",
+        "title": "Rettspraksis, søkt etter <em>mening.</em>",
+        "keyLine": "Vi bruker KI til å finne kilder, ikke generere dem.",
+        "sub": "Presedens finner de relevante avgjørelsene selv når de bruker en helt annen ordlyd enn spørsmålet ditt — på avsnittsnivå, på tvers av nemndspraksis, lov og forskrift og EU-rett, og hvert treff lenker til den autoritative kilden.",
+        "ctaDemo": "Bestill demo",
+        "ctaCoverage": "Se kildedekning",
+        "award": "ECAI 2025 Outstanding Demo Award",
+        "queries": [
+            {
+                "tag": "SØK",
+                "q": "Kan oppdragsgiver avlyse en konkurranse uten saklig grunn?"
+            },
+            {
+                "tag": "SØK",
+                "q": "Hvilke krav stiller anskaffelsesforskriften til begrunnelsen for avvisning av tilbud?"
+            },
+            {
+                "tag": "SØK",
+                "q": "Når kan oppdragsgiver avlyse en anskaffelse uten erstatningsansvar?"
+            },
+            {
+                "tag": "SØK",
+                "q": "Hvilke terskelverdier utløser kunngjøringsplikt etter anskaffelsesloven?"
+            }
+        ]
+    },
+    "PTrust": {
+        "label": "Med tillit fra"
+    },
+    "PStats": {
+        "v1": "45 → 10 min",
+        "l1": "typisk tid per sak",
+        "v2": "697 ms",
+        "l2": "gjennomsnittlig responstid",
+        "v3": "10 millioner+",
+        "l3": "søkbare avsnitt",
+        "l4": "data per"
+    },
+    "PPress": {
+        "label": "Omtalt i pressen",
+        "finansavisen": "«Reliable AI har funnet en vei rundt problemet der språkmodeller hallusinerer»",
+        "digitalnorway": "«De har fått KI til å slutte å lyve»",
+        "universitas": "«Skapte prisvinnende KI-verktøy ved siden av studiene»"
+    },
+    "PCompare": {
+        "secNum": "§ 1 — Gjenfinning, ikke generering",
+        "headingLine1": "Presedens skriver ikke svar.",
+        "headingLine2": "Det finner <em>kilder.</em>",
+        "intro": "Juridisk research skjer under press, og det er ikke rom for feil. Generative verktøy produserer tekst — og av og til henvisninger som ikke finnes. Presedens bygger en meningsrepresentasjon av spørsmålet ditt og henter frem avsnitt fra reelle rettskilder. Hvert resultat er et dokument du kan åpne og kontrollere.",
+        "genericTag": "Generativ chatbot",
+        "latency": "Responstid",
+        "genericVerdict": "Den siterte avgjørelsen finnes ikke. Fabrikkerte henvisninger ser identiske ut med ekte — helt til du kontrollerer dem.",
+        "presedensAnswerPrefix": "Relevante avsnitt fra",
+        "presedensAnswerSuffix": "hvert treff åpner den autoritative teksten, med de relevante avsnittene markert.",
+        "presedensVerdict": "Gjenfunnet, ikke generert. Kilden er svaret."
+    },
+    "PCaps": {
+        "secNum": "§ 2 — Hva det gjør",
+        "heading": "Bygget for hvordan anskaffelsesjurister <em>faktisk arbeider.</em>",
+        "c1Title": "Søk etter mening",
+        "c1Body": "Still spørsmålet i vanlig juridisk språk. Presedens finner avgjørelser som besvarer spørsmålet selv når de bruker en helt annen ordlyd — ingen søkeoperatorer, ingen gjetting på nemndas begrepsbruk.",
+        "c2Title": "Treff på avsnittsnivå",
+        "c2Body": "Treffene peker til det konkrete avsnittet i avgjørelsen, ikke bare dokumentet. Du lander på vurderingen som betyr noe, ikke side én av førti.",
+        "c3Title": "Relevansmarkering",
+        "c3Body": "Åpnede avgjørelser og lovtekster skraverer avsnittene som svarte på spørsmålet ditt, slik at du umiddelbart ser hvorfor et treff er relevant.",
+        "c4Title": "Juridiske filtre",
+        "c4Body": "Avgrens etter avgjørelsestype, utfall, del av avgjørelsen, dato og parter — med løpende trefftall, slik du forventer av profesjonelle rettskildeverktøy.",
+        "c5Title": "Ett søk, alle kilder",
+        "c5Body": "Nemndspraksis, lov og forskrift, EU-rett, veileder og kommentar — søkt samlet, sitert hver for seg.",
+        "c6Title": "Prosjekter",
+        "c6Body": "Lagre avgjørelser og avsnitt underveis, gruppert etter problemstillingen som fant dem. Researchsporet kan rekonstrueres — for kolleger, og for saken."
+    },
+    "PCoverage": {
+        "secNum": "§ 3 — Kildedekning",
+        "heading": "Nøyaktig hvilke kilder, <em>uten omsvøp.</em>",
+        "sub": "Du ville uansett ha kontrollert det.",
+        "norway": "Norge",
+        "denmark": "Danmark",
+        "germany": "Tyskland",
+        "eu": "EU",
+        "status_live": "Tilgjengelig",
+        "status_launching": "Lanseres",
+        "status_liveAll": "Tilgjengelig — alle jurisdiksjoner",
+        "soon": "KOMMER",
+        "euDirectives": "Anskaffelsesdirektivene",
+        "euRegulations": "Forordninger om offentlige anskaffelser",
+        "euCourt": "EU-domstolens praksis",
+        "euGeneralCourt": "Underrettens praksis"
+    },
+    "PLawyers": {
+        "secNum": "§ 4 — Utviklet med advokater",
+        "heading": "Utviklet sammen med <em>anskaffelsesjurister.</em>",
+        "intro": "Presedens utvikles i tett dialog med praktiserende anskaffelsesjurister — først gjennom et pilotprosjekt hos Advokatfirmaet Haavind, og nå i daglig bruk hos norske og danske firmaer.",
+        "quote": "Vi er stolte over å kunne ta i bruk prisvinnende norskutviklet teknologi i praktisk juridisk arbeid. Samarbeidet med Reliable AI har gjort det mulig å utvikle et produkt for <b>presist søk i anskaffelsessaker</b>, noe som forenkler arbeidshverdagen. Reliable tok oppgaven på strak arm og utviklet et svært nyttig produkt på kort tid i tett dialog med oss.",
+        "role": "Partner, Advokatfirmaet Haavind"
+    },
+    "PResearch": {
+        "secNum": "§ 5 — Forskning",
+        "heading": "Forskere fra <em>Universitetet i Oslo.</em>",
+        "body": "Reliable AI er et forskningsdrevet selskap. Metodene bak Presedens er publisert og fagfellevurdert, og den samme standarden gjelder for hver kilde vi indekserer.",
+        "supportedBy": "Støttet av"
+    },
+    "PCta": {
+        "heading": "Ta med en problemstilling fra egen praksis.",
+        "sub": "Tretti minutter. Vi kjører spørsmålet ditt live i Presedens — vurder resultatene selv.",
+        "button": "Bestill demo"
+    },
+    "Meta": {
+        "title": "Presedens — Semantisk søk i offentlige anskaffelser | Reliable AI",
+        "description": "Presedens finner de relevante avgjørelsene selv når de bruker en helt annen ordlyd enn spørsmålet ditt. Treff på avsnittsnivå i nemndspraksis, lov og forskrift og EU-rett — hvert treff lenket til kilden.",
+        "ogTitle": "Presedens — Semantisk søk i offentlige anskaffelser",
+        "ogDescription": "Vi bruker KI til å finne kilder, ikke generere dem. Søk på avsnittsnivå for anskaffelsesjurister."
     }
 }

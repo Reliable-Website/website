@@ -19,45 +19,85 @@
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
 
-  --font-sans: var(--font-inter);
-  --font-heading: var(--font-outfit);
+  /* Brand palette (RAI-Farger) */
+  --color-bla: #6A7DFA;
+  --color-svart: #272726;
+  --color-hvit: #F3F3F3;
+  --color-himmel: #A0ADF9;
+  --color-regn: #D2DDF7;
+  --color-rod: #ED6354;
+  --color-appelsin: #FFA85A;
+  --color-lime: #AEEDB5;
+  --color-gronn: #8FDB83;
+  --color-ink-60: rgba(39, 39, 38, 0.62);
+  --color-ink-30: rgba(39, 39, 38, 0.3);
+  --color-rule: rgba(39, 39, 38, 0.16);
+  --color-rule-soft: rgba(39, 39, 38, 0.09);
+  --color-paper-60: rgba(243, 243, 243, 0.6);
+  --color-paper-30: rgba(243, 243, 243, 0.3);
+
+  --font-sans: var(--font-instrument);
+  --font-heading: var(--font-fraunces);
+  --font-mono: var(--font-plex-mono);
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
-  /* Slate 900 */
+  --background: #F3F3F3;
+  /* ikke hvit */
+  --foreground: #272726;
+  /* ikke svart */
 
-  --primary: #617eff;
-  /* Brand Blue */
-  --primary-foreground: #f8fafc;
-  /* Slate 50 */
+  --primary: #6A7DFA;
+  /* Reliable blå */
+  --primary-foreground: #ffffff;
 
-  --secondary: #f8fafc;
-  /* Slate 50 - Very light */
-  --secondary-foreground: #0f172a;
-  /* Slate 900 */
+  --secondary: #ffffff;
+  --secondary-foreground: #272726;
 
-  --accent: #617eff;
-  /* Brand Blue (same as primary) */
-  --accent-foreground: #0f172a;
+  --accent: #A0ADF9;
+  /* Himmel */
+  --accent-foreground: #272726;
 
-  --muted: #f1f5f9;
-  /* Slate 100 - Light */
-  --muted-foreground: #64748b;
-  /* Slate 500 */
+  --muted: #EAEAE9;
+  --muted-foreground: rgba(39, 39, 38, 0.62);
 
   --card: #ffffff;
-  --card-foreground: #0f172a;
+  --card-foreground: #272726;
 }
 
-/* Dark mode removed to force white theme per user request */
-/* @media (prefers-color-scheme: dark) { ... } */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+::selection {
+  background: var(--color-himmel);
+  color: var(--color-svart);
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+}
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  position: relative;
+}
+
+/* paper grain over everything */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 2000;
+  mix-blend-mode: multiply;
 }
 
 h1,
@@ -67,7 +107,28 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  font-weight: 400;
+  font-weight: 420;
+  letter-spacing: -0.01em;
+}
+
+/* § section number with ledger rule */
+.sec-num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--primary);
+  letter-spacing: 0.1em;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sec-num::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.25;
 }
 
 .mask-gradient-x {
@@ -87,4 +148,22 @@ h6 {
 
 .animate-shimmer {
   animation: shimmer 2s linear infinite;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes livepulse {
+  50% {
+    opacity: 0.35;
+  }
 }

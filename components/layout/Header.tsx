@@ -1,13 +1,12 @@
-
 "use client"
 
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
+import { useState } from "react"
 import { Menu, X, Globe, ChevronDown } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 import { Link, usePathname, useRouter } from "@/i18n/navigation"
 import { useTranslations, useLocale } from "next-intl"
+import { CALENDLY_URL } from "@/lib/constants"
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -15,49 +14,35 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+const FLAGS: Record<string, React.ReactNode> = {
+    en: <svg className="h-3.5 w-5 flex-shrink-0 rounded-[3px]" viewBox="0 0 22 16"><rect width="22" height="16" fill="#012169"/><path d="M0,0L22,16M22,0L0,16" stroke="#fff" strokeWidth="3"/><path d="M0,0L22,16M22,0L0,16" stroke="#C8102E" strokeWidth="1.2"/><rect x="8" width="6" height="16" fill="#fff"/><rect y="5.5" width="22" height="5" fill="#fff"/><rect x="9" width="4" height="16" fill="#C8102E"/><rect y="6.5" width="22" height="3" fill="#C8102E"/></svg>,
+    no: <svg className="h-3.5 w-5 flex-shrink-0 rounded-[3px]" viewBox="0 0 22 16"><rect width="22" height="16" fill="#EF2B2D"/><rect x="6" width="4" height="16" fill="#fff"/><rect y="6" width="22" height="4" fill="#fff"/><rect x="7" width="2" height="16" fill="#002868"/><rect y="7" width="22" height="2" fill="#002868"/></svg>,
+    da: <svg className="h-3.5 w-5 flex-shrink-0 rounded-[3px]" viewBox="0 0 22 16"><rect width="22" height="16" fill="#C8102E"/><rect x="6" width="4" height="16" fill="#fff"/><rect y="6" width="22" height="4" fill="#fff"/></svg>,
+    de: <svg className="h-3.5 w-5 flex-shrink-0 rounded-[3px]" viewBox="0 0 22 16"><rect width="22" height="5.33" fill="#000"/><rect y="5.33" width="22" height="5.33" fill="#DD0000"/><rect y="10.67" width="22" height="5.33" fill="#FFCC00"/></svg>,
+}
+
+const LANGUAGES = [
+    { code: "en", label: "English" },
+    { code: "no", label: "Norsk" },
+    { code: "da", label: "Dansk" },
+    { code: "de", label: "Deutsch" },
+]
+
 export function Header() {
     const t = useTranslations('Header')
     const [isOpen, setIsOpen] = useState(false)
-    const [scrolled, setScrolled] = useState(false)
-    const [showLogo, setShowLogo] = useState(false)
     const locale = useLocale()
     const router = useRouter()
     const pathname = usePathname()
-    const isHome = pathname === "/"
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 20)
-        }
-        window.addEventListener("scroll", handleScroll)
-        return () => window.removeEventListener("scroll", handleScroll)
-    }, [])
-
-    useEffect(() => {
-        // On non-home pages, always show the logo
-        if (!isHome) {
-            setShowLogo(true)
-            return
-        }
-
-        // On home page, show logo only when hero logo is out of view
-        setShowLogo(false)
-        const heroLogo = document.getElementById("hero-logo")
-        if (!heroLogo) return
-
-        const observer = new IntersectionObserver(
-            ([entry]) => setShowLogo(!entry.isIntersecting),
-            { threshold: 0.1 }
-        )
-        observer.observe(heroLogo)
-        return () => observer.disconnect()
-    }, [isHome])
 
     const navItems = [
-        { name: t('products'), href: "/products" },
+        { name: t('howItWorks'), href: "/#how" },
+        { name: t('coverage'), href: "/#coverage" },
+    ]
+
+    const menuItems = [
         { name: t('team'), href: "/team" },
-        { name: t('research'), href: "/research" },
-        { name: t('blog'), href: "/blog" },
+        { name: t('news'), href: "/blog" },
         { name: t('contact'), href: "/contact" },
     ]
 
@@ -74,87 +59,94 @@ export function Header() {
     }
 
     return (
-        <header
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-background/80 backdrop-blur-md" : "bg-transparent"
-                }`}
-        >
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="flex items-center justify-between h-24">
-                    {/* Logo - always takes up space, only visibility animates */}
-                    <motion.div
-                        animate={{ opacity: showLogo ? 1 : 0, x: showLogo ? 0 : -16 }}
-                        transition={{ duration: 0.3, ease: "easeOut" }}
-                        style={{ pointerEvents: showLogo ? "auto" : "none" }}
+        <header className="sticky top-0 left-0 right-0 z-50 bg-svart">
+            <div className="mx-auto max-w-[1180px] px-6">
+                <div className="flex items-center justify-between h-16">
+                    {/* Logo */}
+                    <Link
+                        href="/"
+                        className="relative z-[70] flex items-center"
+                        onClick={() => setIsOpen(false)}
                     >
-                        <Link href="/" className="relative z-[70] h-24 w-24 md:w-40 flex items-center" onClick={(e) => {
-                            setIsOpen(false)
-                            if (isHome) {
-                                e.preventDefault()
-                                window.scrollTo({ top: 0, behavior: "smooth" })
-                            }
-                        }}>
-                            <div className="absolute h-36 w-36 md:h-40 md:w-40 top-1/2 -translate-y-1/2 pointer-events-none">
-                                <Image
-                                    src="/images/LogoReliable/reliableai.png"
-                                    alt="Reliable AI Logo"
-                                    fill
-                                    className="object-contain"
-                                />
-                            </div>
-                        </Link>
-                    </motion.div>
+                        <Image
+                            src="/images/LogoReliable/logo-inverted-trim.png"
+                            alt="Reliable AI"
+                            width={127}
+                            height={24}
+                            className="h-6 w-auto"
+                            priority
+                        />
+                    </Link>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center gap-8">
+                    <nav className="hidden md:flex items-center gap-7">
                         {navItems.map((item) => (
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                                className="text-[15px] text-paper-60 hover:text-hvit transition-colors"
                             >
                                 {item.name}
                             </Link>
                         ))}
 
-                        {/* Login Button */}
-                        <a href="https://reliableai.online" target="_blank" rel="noopener noreferrer">
-                            <Button variant="outline" size="sm" className="border-black/30 bg-transparent text-muted-foreground hover:bg-[#617eff] hover:text-white hover:border-[#617eff] transition-colors duration-200 cursor-pointer">{t('login')}</Button>
-                        </a>
+                        {/* More menu: Team / News / Contact / Login */}
+                        <DropdownMenu>
+                            <DropdownMenuTrigger asChild>
+                                <button className="flex cursor-pointer items-center gap-1 text-[15px] text-paper-60 transition-colors hover:text-hvit focus-visible:outline-none">
+                                    {t('more')}
+                                    <ChevronDown className="h-3 w-3 opacity-50" />
+                                </button>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent align="end" className="rounded-xl bg-white border-black/10 shadow-sm">
+                                {menuItems.map((item) => (
+                                    <DropdownMenuItem key={item.name} asChild>
+                                        <Link href={item.href}>{item.name}</Link>
+                                    </DropdownMenuItem>
+                                ))}
+                                <DropdownMenuItem asChild>
+                                    <a href="https://reliableai.online" target="_blank" rel="noopener noreferrer">
+                                        {t('login')}
+                                    </a>
+                                </DropdownMenuItem>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
 
                         {/* Language Dropdown */}
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>
-                                <Button variant="ghost" size="sm" className="gap-1 text-muted-foreground hover:bg-transparent hover:text-muted-foreground focus-visible:ring-0 focus-visible:ring-offset-0">
-                                    <Globe className="h-4 w-4" />
-                                    <span className="uppercase">{locale}</span>
+                                <button className="flex items-center gap-1 font-mono text-xs tracking-widest text-paper-60 hover:text-hvit transition-colors uppercase cursor-pointer focus-visible:outline-none">
+                                    <Globe className="h-3.5 w-3.5" />
+                                    {locale}
                                     <ChevronDown className="h-3 w-3 opacity-50" />
-                                </Button>
+                                </button>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end" className="bg-white border-black/10 shadow-sm animate-in fade-in-0 zoom-in-95 slide-in-from-top-2 duration-200">
-                                <DropdownMenuItem onClick={() => switchLanguage('en')}>
-                                    <svg className="h-4 w-5 mr-2 rounded-sm flex-shrink-0" viewBox="0 0 22 16"><rect width="22" height="16" fill="#012169"/><path d="M0,0L22,16M22,0L0,16" stroke="#fff" strokeWidth="3"/><path d="M0,0L22,16" stroke="#C8102E" strokeWidth="1.5" clipPath="polygon(11 8,22 16,22 13)"/><path d="M0,0L22,16" stroke="#C8102E" strokeWidth="1.5" clipPath="polygon(11 8,0 0,0 3)"/><path d="M22,0L0,16" stroke="#C8102E" strokeWidth="1.5" clipPath="polygon(11 8,0 16,0 13)"/><path d="M22,0L0,16" stroke="#C8102E" strokeWidth="1.5" clipPath="polygon(11 8,22 0,22 3)"/><rect x="8" width="6" height="16" fill="#fff"/><rect y="5.5" width="22" height="5" fill="#fff"/><rect x="9" width="4" height="16" fill="#C8102E"/><rect y="6.5" width="22" height="3" fill="#C8102E"/></svg>
-                                    English
-                                </DropdownMenuItem>
-                                <DropdownMenuItem onClick={() => switchLanguage('no')}>
-                                    <svg className="h-4 w-5 mr-2 rounded-sm flex-shrink-0" viewBox="0 0 22 16"><rect width="22" height="16" fill="#EF2B2D"/><rect x="6" width="4" height="16" fill="#fff"/><rect y="6" width="22" height="4" fill="#fff"/><rect x="7" width="2" height="16" fill="#002868"/><rect y="7" width="22" height="2" fill="#002868"/></svg>
-                                    Norsk
-                                </DropdownMenuItem>
-                                <DropdownMenuItem onClick={() => switchLanguage('da')}>
-                                    <svg className="h-4 w-5 mr-2 rounded-sm flex-shrink-0" viewBox="0 0 22 16"><rect width="22" height="16" fill="#C8102E"/><rect x="6" width="4" height="16" fill="#fff"/><rect y="6" width="22" height="4" fill="#fff"/></svg>
-                                    Dansk
-                                </DropdownMenuItem>
-                                <DropdownMenuItem onClick={() => switchLanguage('de')}>
-                                    <svg className="h-4 w-5 mr-2 rounded-sm flex-shrink-0" viewBox="0 0 22 16"><rect width="22" height="5.33" fill="#000"/><rect y="5.33" width="22" height="5.33" fill="#DD0000"/><rect y="10.67" width="22" height="5.33" fill="#FFCC00"/></svg>
-                                    Deutsch
-                                </DropdownMenuItem>
+                            <DropdownMenuContent align="end" className="rounded-xl bg-white border-black/10 shadow-sm">
+                                {LANGUAGES.map((lang) => (
+                                    <DropdownMenuItem key={lang.code} onClick={() => switchLanguage(lang.code)}>
+                                        {FLAGS[lang.code]}
+                                        <span className={lang.code === locale ? 'font-medium' : ''}>{lang.label}</span>
+                                    </DropdownMenuItem>
+                                ))}
                             </DropdownMenuContent>
                         </DropdownMenu>
+
+                        {/* Demo CTA */}
+                        <a
+                            href={CALENDLY_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="rounded-full bg-primary border border-primary px-[22px] py-[9px] text-[15px] font-semibold text-white hover:bg-[#5a6de8] hover:border-[#5a6de8] transition-colors"
+                        >
+                            {t('bookDemo')}
+                        </a>
                     </nav>
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden relative z-[70] p-2 text-foreground"
+                        className="md:hidden relative z-[70] p-2 text-hvit"
                         onClick={() => setIsOpen(!isOpen)}
+                        aria-label="Menu"
                     >
                         {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                     </button>
@@ -163,17 +155,17 @@ export function Header() {
                     <AnimatePresence>
                         {isOpen && (
                             <motion.div
-                                initial={{ opacity: 0, y: -20 }}
+                                initial={{ opacity: 0, y: -16 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -20 }}
-                                className="fixed top-0 left-0 right-0 min-h-screen bg-background border-b md:hidden pt-24 px-4 z-[60]"
+                                exit={{ opacity: 0, y: -16 }}
+                                className="fixed top-0 left-0 right-0 min-h-screen bg-svart md:hidden pt-24 px-6 z-[60]"
                             >
                                 <div className="flex flex-col gap-6">
-                                    {navItems.map((item) => (
+                                    {[...navItems, ...menuItems].map((item) => (
                                         <Link
                                             key={item.name}
                                             href={item.href}
-                                            className="text-2xl font-heading font-bold text-foreground"
+                                            className="font-heading text-2xl text-hvit"
                                             onClick={() => {
                                                 setTimeout(() => setIsOpen(false), 0)
                                             }}
@@ -181,52 +173,39 @@ export function Header() {
                                             {item.name}
                                         </Link>
                                     ))}
-                                    <a href="https://reliableai.online" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
-                                        <Button variant="outline" className="w-full border-black/30 text-muted-foreground hover:bg-[#617eff] hover:text-white hover:border-[#617eff] transition-colors duration-200">{t('login')}</Button>
+                                    <a
+                                        href="https://reliableai.online"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="font-heading text-2xl text-paper-60"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        {t('login')}
                                     </a>
-                                    <div className="flex items-center justify-between pt-6 border-t">
-                                        <span className="text-lg font-medium text-muted-foreground">Language</span>
-                                        <div className="flex gap-2">
-                                            <Button
-                                                variant={locale === 'en' ? 'default' : 'outline'}
-                                                size="sm"
-                                                onClick={() => {
-                                                    switchLanguage('en')
-                                                    setIsOpen(false)
-                                                }}
-                                            >
-                                                <svg className="h-3.5 w-5 rounded-sm flex-shrink-0" viewBox="0 0 22 16"><rect width="22" height="16" fill="#012169"/><path d="M0,0L22,16M22,0L0,16" stroke="#fff" strokeWidth="3"/><path d="M0,0L22,16" stroke="#C8102E" strokeWidth="1.5" clipPath="polygon(11 8,22 16,22 13)"/><path d="M0,0L22,16" stroke="#C8102E" strokeWidth="1.5" clipPath="polygon(11 8,0 0,0 3)"/><path d="M22,0L0,16" stroke="#C8102E" strokeWidth="1.5" clipPath="polygon(11 8,0 16,0 13)"/><path d="M22,0L0,16" stroke="#C8102E" strokeWidth="1.5" clipPath="polygon(11 8,22 0,22 3)"/><rect x="8" width="6" height="16" fill="#fff"/><rect y="5.5" width="22" height="5" fill="#fff"/><rect x="9" width="4" height="16" fill="#C8102E"/><rect y="6.5" width="22" height="3" fill="#C8102E"/></svg> EN
-                                            </Button>
-                                            <Button
-                                                variant={locale === 'no' ? 'default' : 'outline'}
-                                                size="sm"
-                                                onClick={() => {
-                                                    switchLanguage('no')
-                                                    setIsOpen(false)
-                                                }}
-                                            >
-                                                <svg className="h-3.5 w-5 rounded-sm flex-shrink-0" viewBox="0 0 22 16"><rect width="22" height="16" fill="#EF2B2D"/><rect x="6" width="4" height="16" fill="#fff"/><rect y="6" width="22" height="4" fill="#fff"/><rect x="7" width="2" height="16" fill="#002868"/><rect y="7" width="22" height="2" fill="#002868"/></svg> NO
-                                            </Button>
-                                            <Button
-                                                variant={locale === 'da' ? 'default' : 'outline'}
-                                                size="sm"
-                                                onClick={() => {
-                                                    switchLanguage('da')
-                                                    setIsOpen(false)
-                                                }}
-                                            >
-                                                <svg className="h-3.5 w-5 rounded-sm flex-shrink-0" viewBox="0 0 22 16"><rect width="22" height="16" fill="#C8102E"/><rect x="6" width="4" height="16" fill="#fff"/><rect y="6" width="22" height="4" fill="#fff"/></svg> DA
-                                            </Button>
-                                            <Button
-                                                variant={locale === 'de' ? 'default' : 'outline'}
-                                                size="sm"
-                                                onClick={() => {
-                                                    switchLanguage('de')
-                                                    setIsOpen(false)
-                                                }}
-                                            >
-                                                <svg className="h-3.5 w-5 rounded-sm flex-shrink-0" viewBox="0 0 22 16"><rect width="22" height="5.33" fill="#000"/><rect y="5.33" width="22" height="5.33" fill="#DD0000"/><rect y="10.67" width="22" height="5.33" fill="#FFCC00"/></svg> DE
-                                            </Button>
+                                    <a
+                                        href={CALENDLY_URL}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="rounded-full bg-primary px-6 py-3 text-center text-base font-semibold text-white"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        {t('bookDemo')}
+                                    </a>
+                                    <div className="flex items-center justify-between pt-6 border-t border-white/10">
+                                        <span className="text-paper-60">Language</span>
+                                        <div className="flex gap-3">
+                                            {LANGUAGES.map((lang) => (
+                                                <button
+                                                    key={lang.code}
+                                                    onClick={() => {
+                                                        switchLanguage(lang.code)
+                                                        setIsOpen(false)
+                                                    }}
+                                                    className={`font-mono text-sm uppercase tracking-widest ${lang.code === locale ? 'text-hvit font-medium' : 'text-paper-60'}`}
+                                                >
+                                                    {lang.code}
+                                                </button>
+                                            ))}
                                         </div>
                                     </div>
                                 </div>

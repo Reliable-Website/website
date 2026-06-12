@@ -1,22 +1,29 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Fraunces, Instrument_Sans, IBM_Plex_Mono } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
-import Script from "next/script";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin", "latin-ext"],
+  style: ["normal", "italic"],
+  axes: ["opsz", "WONK"],
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin"],
+const instrumentSans = Instrument_Sans({
+  variable: "--font-instrument",
+  subsets: ["latin", "latin-ext"],
+});
+
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-plex-mono",
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500"],
 });
 
 const baseUrl = "https://reliableai.no";
@@ -27,14 +34,15 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Meta' });
 
   return {
     title: {
-      default: "Reliable AI - Analytical AI for Large Language Data",
+      default: t('title'),
       template: "%s | Reliable AI",
     },
-    description: "We empower people to work smarter with information. Reliable AI brings rigorous research into practical, trustworthy solutions for legal and survey data.",
-    keywords: ["AI", "Legal Tech", "NLP", "Large Language Models", "Survey Analysis", "Norwegian AI"],
+    description: t('description'),
+    keywords: ["Presedens", "procurement law", "KOFA", "Klagenævnet for Udbud", "Vergabekammer", "legal search", "semantic search", "Legal Tech", "Reliable AI"],
     authors: [{ name: "Reliable AI Team" }],
     creator: "Reliable AI",
 alternates: {
@@ -49,10 +57,10 @@ alternates: {
     },
     openGraph: {
       type: "website",
-      locale: "en_US",
+      locale: { en: "en_US", no: "nb_NO", da: "da_DK", de: "de_DE" }[locale] ?? "en_US",
       url: `${baseUrl}/${locale}`,
-      title: "Reliable AI - Analytical AI for Large Language Data",
-      description: "We empower people to work smarter with information. Reliable AI brings rigorous research into practical, trustworthy solutions.",
+      title: t('ogTitle'),
+      description: t('ogDescription'),
       siteName: "Reliable AI",
       images: [
         {
@@ -65,8 +73,8 @@ alternates: {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Reliable AI - Analytical AI for Large Language Data",
-      description: "We empower people to work smarter with information. Reliable AI brings rigorous research into practical, trustworthy solutions.",
+      title: t('ogTitle'),
+      description: t('ogDescription'),
       creator: "@reliable_ai",
       images: [`${baseUrl}/images/LogoReliable/og-image.png`],
     },
@@ -97,19 +105,8 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <head>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1MP9XCH1J8" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-1MP9XCH1J8');
-          `}
-        </Script>
-      </head>
       <body
-        className={`${inter.variable} ${outfit.variable} antialiased`}
+        className={`${fraunces.variable} ${instrumentSans.variable} ${plexMono.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
           {children}

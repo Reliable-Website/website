@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Calendar, Folder } from "lucide-react"
 
 interface AnimatedArticleProps {
     title: string
@@ -26,17 +25,10 @@ export function AnimatedArticle({ title, date, category, image, contentImage, im
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
             >
-                <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                    <span className="flex items-center gap-1">
-                        <Folder className="h-4 w-4" />
-                        {category}
-                    </span>
-                    <span className="flex items-center gap-1">
-                        <Calendar className="h-4 w-4" />
-                        {date}
-                    </span>
+                <div className="sec-num">
+                    {category} · {date}
                 </div>
-                <h1 className="font-heading text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+                <h1 className="text-[clamp(30px,3.4vw,46px)] leading-[1.1] text-foreground">
                     {title}
                 </h1>
             </motion.div>
@@ -53,6 +45,7 @@ export function AnimatedArticle({ title, date, category, image, contentImage, im
                         src={displayImage}
                         alt={title}
                         fill
+                        sizes="(max-width: 768px) 100vw, 768px"
                         className={`${imageContain ? "object-contain p-4" : "object-cover"} ${contentImage ? "object-[center_70%]" : ""}`}
                     />
                 </motion.div>

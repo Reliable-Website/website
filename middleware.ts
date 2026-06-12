@@ -33,5 +33,7 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-    matcher: ['/', '/(no|en|da|de)/:path*']
+    // Cover every path except internals and static files so unknown locales
+    // (e.g. /fr) are redirected into a valid locale and get the branded 404.
+    matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };

@@ -1,120 +1,96 @@
 "use client"
 
-import { MapPin, ArrowRight } from "lucide-react"
-import Image from "next/image"
+import { useEffect, useRef, useState } from "react"
 import { useTranslations } from "next-intl"
-import { motion } from "framer-motion"
 
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
+import { CALENDLY_URL } from "@/lib/constants"
+
+function TypingQuery({ query }: { query: string }) {
+    const [text, setText] = useState("")
+    const stop = useRef(false)
+
+    useEffect(() => {
+        stop.current = false
+        const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
+        async function loop() {
+            const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+            if (reduced) {
+                await sleep(0)
+                setText(query)
+                return
+            }
+            await sleep(900)
+            while (!stop.current) {
+                for (let i = 1; i <= query.length && !stop.current; i++) {
+                    setText(query.slice(0, i))
+                    await sleep(38 + Math.random() * 34)
+                }
+                await sleep(3600)
+                for (let i = query.length; i >= 0 && !stop.current; i--) {
+                    setText(query.slice(0, i))
+                    await sleep(11)
+                }
+                await sleep(700)
+            }
+        }
+        loop()
+        return () => { stop.current = true }
+    }, [query])
+
+    return <span className="min-h-[1.5em]">{text}</span>
+}
 
 export default function ContactPage() {
     const t = useTranslations('Contact')
+    const tHeader = useTranslations('Header')
+
+    const hits = [
+        { label: t('rowDemo'), dest: tHeader('bookDemo'), href: CALENDLY_URL, external: true },
+        { label: t('rowAsk'), dest: "hei@reliableai.no", href: "mailto:hei@reliableai.no" },
+        { label: t('rowCeo'), dest: "markus@reliableai.no", href: "mailto:markus@reliableai.no" },
+        { label: t('rowVisit'), dest: "Akersbakken 30, Oslo", href: "https://maps.google.com/?q=Akersbakken+30,+0172+Oslo", external: true },
+    ]
 
     return (
-        <div className="min-h-screen bg-background flex flex-col font-sans selection:bg-primary/20 overflow-x-hidden">
+        <div className="flex min-h-screen flex-col bg-background">
             <Header />
 
-            <main className="flex-1 relative overflow-hidden pt-24">
-                {/* Dynamic Background */}
-                <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
+            <main className="flex-1">
+                <h1 className="sr-only">{t('title')}</h1>
+                <div className="mx-auto max-w-[1100px] px-6 pb-28 pt-14">
+                    <div className="sec-num">{tHeader('contact')}</div>
 
-                <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                    <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] opacity-50" />
-                    <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[100px] opacity-30" />
-                </div>
-
-                <div className="container mx-auto px-4 md:px-6 pt-12 md:pt-20 pb-24 md:pb-40 relative z-10">
-                    {/* Title Section - Mobile only */}
-                    <div className="lg:hidden mb-12">
-                        <h1 className="font-heading text-5xl md:text-7xl font-bold tracking-tight text-foreground">
-                            {t('title')}
-                        </h1>
-                    </div>
-
-                    <div className="grid lg:grid-cols-2 gap-16 items-start">
-                        {/* Left Column: Markus Card */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
-                            className="lg:mt-12 order-1 lg:order-2"
+                    <div className="pt-16 text-center md:pt-20">
+                        {/* the contact page as a Presedens query */}
+                        <div
+                            aria-hidden="true"
+                            className="mx-auto inline-flex max-w-[94%] items-center gap-3 rounded-full bg-white px-7 py-4 text-left text-[16.5px] font-medium shadow-[0_0_60px_rgba(106,125,250,.25),0_16px_48px_rgba(39,39,38,.18)]"
                         >
-                            <div className="relative group">
-                                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-[2rem] blur-xl opacity-50 group-hover:opacity-100 transition duration-500" />
-                                <div className="relative bg-card/80 backdrop-blur-xl border border-white/10 rounded-[1.5rem] p-8 md:p-10 shadow-2xl overflow-hidden">
+                            <span className="font-mono text-[11px] tracking-[0.1em] text-primary">{t('searchTag')}</span>
+                            <TypingQuery query={t('searchQuery')} />
+                            <span className="h-[18px] w-[1.5px] flex-none bg-primary [animation:blink_1.1s_steps(1)_infinite]" />
+                        </div>
 
-                                    {/* Decorative circle */}
-                                    <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-2xl -mr-16 -mt-16 pointer-events-none" />
+                        {/* the results */}
+                        <div className="mx-auto mt-9 max-w-[580px] overflow-hidden rounded-2xl border border-rule bg-white text-left">
+                            {hits.map((hit) => (
+                                <a
+                                    key={hit.label}
+                                    href={hit.href}
+                                    {...(hit.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                                    className="flex items-baseline justify-between gap-4 border-b border-rule-soft px-6 py-4.5 transition-colors last:border-b-0 hover:bg-primary/[0.05]"
+                                >
+                                    <b className="font-heading text-[17.5px]" style={{ fontWeight: 460 }}>{hit.label}</b>
+                                    <span className="font-mono text-[12.5px] text-ink-60">{hit.dest} →</span>
+                                </a>
+                            ))}
+                        </div>
 
-                                    <div className="relative z-10 flex flex-col gap-8">
-                                        <div className="flex items-center gap-6">
-                                            <div className="relative h-32 w-32">
-                                                <Image
-                                                    src="/images/Team/markus.jpg"
-                                                    alt="Markus Kreutzer"
-                                                    fill
-                                                    className="object-cover rounded-xl"
-                                                    style={{ objectPosition: "center 15%" }}
-                                                />
-                                            </div>
-                                            <div>
-                                                <h3 className="font-heading text-2xl font-bold">{t('markus.name')}</h3>
-                                                <p className="text-primary font-medium text-lg">{t('markus.title')}</p>
-                                            </div>
-                                        </div>
-
-                                        <blockquote className="text-xl text-muted-foreground italic leading-relaxed border-l-4 border-primary/20 pl-6">
-                                            "{t('markus.quote')}"
-                                        </blockquote>
-
-                                        <div className="pt-4 border-t border-border/50 flex flex-col gap-3">
-                                            <a
-                                                href="mailto:markus@reliableai.no"
-                                                className="group/link inline-flex items-center gap-2 text-lg font-medium text-foreground hover:text-primary transition-colors"
-                                            >
-                                                markus@reliableai.no
-                                                <ArrowRight className="h-5 w-5 transform group-hover/link:translate-x-1 transition-transform" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </motion.div>
-
-                        {/* Right Column: Header & Intro */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5 }}
-                            className="space-y-8 lg:mt-24 order-2 lg:order-1"
-                        >
-                            <div className="space-y-6 hidden lg:block">
-                                <h1 className="font-heading text-5xl md:text-7xl font-bold tracking-tight text-foreground">
-                                    {t('title')}
-                                </h1>
-                            </div>
-
-                            {/* Office Card */}
-                            <div className="relative group">
-                                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-[2rem] blur-xl opacity-50 group-hover:opacity-100 transition duration-500" />
-                            <div className="relative bg-card/80 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl transition-all duration-300">
-                                <div className="flex items-start gap-4">
-                                    <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                                        <MapPin className="h-6 w-6" />
-                                    </div>
-                                    <div>
-                                        <h3 className="font-heading text-xl font-semibold mb-2">{t('office')}</h3>
-                                        <address className="not-italic text-muted-foreground leading-relaxed">
-                                            Akersbakken 30<br />
-                                            0172 Oslo<br />
-                                            Norway
-                                        </address>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </motion.div>
+                        <p className="mt-9 font-mono text-[11.5px] tracking-[0.06em] text-ink-30">
+                            All rights reserved · Oslo
+                        </p>
                     </div>
                 </div>
             </main>

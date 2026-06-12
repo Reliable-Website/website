@@ -1,6 +1,5 @@
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
-import { Button } from "@/components/ui/button"
 import { Link } from "@/i18n/navigation"
 import { ArrowLeft } from "lucide-react"
 import { notFound } from "next/navigation"
@@ -29,12 +28,13 @@ export default async function BlogPost({ params }: PageProps) {
             <Header />
             <main className="flex-1 py-24 bg-background">
                 <article className="container mx-auto px-4 md:px-6 max-w-3xl">
-                    <Button asChild variant="ghost" size="sm" className="mb-8 -ml-4 text-muted-foreground hover:text-primary">
-                        <Link href="/blog">
-                            <ArrowLeft className="mr-2 h-4 w-4" />
-                            {t("backToBlog")}
-                        </Link>
-                    </Button>
+                    <Link
+                        href="/blog"
+                        className="mb-8 inline-flex items-center gap-2 font-mono text-[12.5px] tracking-[0.04em] text-ink-60 transition-colors hover:text-foreground"
+                    >
+                        <ArrowLeft className="h-3.5 w-3.5" />
+                        {t("backToBlog")}
+                    </Link>
 
                     <AnimatedArticle
                         title={post.title}

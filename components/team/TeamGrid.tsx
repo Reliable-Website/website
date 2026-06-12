@@ -1,209 +1,119 @@
 "use client"
 
-
+import { useState } from "react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
-import { CSSProperties } from "react"
-import { motion } from "framer-motion"
 
 type TeamMember = {
     name: string
     email?: string
     image: string
     role: string
-    descriptionKey?: string
-    imageStyle?: CSSProperties
+    descriptionKey: string
 }
 
-const team: TeamMember[] = [
-    {
-        name: "Halvor Tyseng",
-        email: "halvor@reliableai.no",
-        image: "/images/Team/halvor.jpg",
-        role: "cto_co_founder",
-        descriptionKey: "halvor",
-    },
-    {
-        name: "Jonas Timmann Mjaaland",
-        email: "jonas@reliableai.no",
-        image: "/images/Team/jonas.jpg",
-        role: "coo_co_founder",
-        descriptionKey: "jonas",
-    },
-    {
-        name: "Markus Kreutzer",
-        email: "markus@reliableai.no",
-        image: "/images/Team/markus.jpg",
-        role: "ceo_co_founder",
-        descriptionKey: "markus",
-    },
-    {
-        name: "Tor Ole Bigton Odden",
-        email: "torole@reliableai.no",
-        image: "/images/Team/tor.jpg",
-        role: "co_founder",
-        descriptionKey: "torole",
-    },
-    {
-        name: "Anders Malthe-Sørenssen",
-        email: "anders@reliableai.no",
-        image: "/images/Team/anders.jpg",
-        role: "co_founder",
-        descriptionKey: "anders",
-    },
-    {
-        name: "Martine Goto",
-        image: "/images/Team/martine.jpeg",
-        role: "graphic_designer",
-        descriptionKey: "martine",
-    },
-    {
-        name: "Lars-Petter Windelstad Kjos",
-        image: "/images/Team/larspetter.png",
-        role: "board_member",
-        descriptionKey: "larspetter",
-    },
-    {
-        name: "Mathilde Fiksdahl",
-        image: "/images/Team/mathilde.jpg",
-        role: "board_member",
-        descriptionKey: "mathilde",
-    },
+const FOUNDERS: TeamMember[] = [
+    { name: "Markus Kreutzer", email: "markus@reliableai.no", image: "/images/Team/markus.jpg", role: "ceo_co_founder", descriptionKey: "markus" },
+    { name: "Halvor Tyseng", email: "halvor@reliableai.no", image: "/images/Team/halvor.jpg", role: "cto_co_founder", descriptionKey: "halvor" },
+    { name: "Jonas Timmann Mjaaland", email: "jonas@reliableai.no", image: "/images/Team/jonas.jpg", role: "cpo_co_founder", descriptionKey: "jonas" },
+    { name: "Tor Ole Bigton Odden", email: "torole@reliableai.no", image: "/images/Team/tor.jpg", role: "co_founder", descriptionKey: "torole" },
+    { name: "Anders Malthe-Sørenssen", email: "anders@reliableai.no", image: "/images/Team/anders.jpg", role: "co_founder", descriptionKey: "anders" },
 ]
+
+const DESIGN: TeamMember[] = [
+    { name: "Martine Goto", image: "/images/Team/martine.jpeg", role: "graphic_designer", descriptionKey: "martine" },
+]
+
+const BOARD: TeamMember[] = [
+    { name: "Lars-Petter Windelstad Kjos", image: "/images/Team/larspetter.png", role: "board_member", descriptionKey: "larspetter" },
+    { name: "Mathilde Fiksdahl", image: "/images/Team/mathilde.jpg", role: "board_member", descriptionKey: "mathilde" },
+]
+
+const ALL = [...FOUNDERS, ...DESIGN, ...BOARD]
 
 export function TeamGrid() {
     const t = useTranslations('Team')
+    const [active, setActive] = useState(0)
+    const current = ALL[active]
 
-    // Split team into two columns
-    const leftColumn = team.filter((_, i) => i % 2 === 0)
-    const rightColumn = team.filter((_, i) => i % 2 !== 0)
-
-    return (
-        <section className="pt-40 pb-24 bg-background overflow-hidden">
-            <div className="container mx-auto px-6 md:px-16 lg:px-32">
-                {/* Title Section - Mobile only */}
-                <motion.div
-                    className="md:hidden mb-12"
-                    initial={{ opacity: 0, y: 24 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, ease: "easeOut" }}
-                >
-                    <h1 className="font-heading text-5xl md:text-7xl font-normal tracking-tight text-foreground mb-6">
-                        {t.rich('title', {
-                            reliable: (chunks) => <span className="text-primary italic">{chunks}</span>,
-                            br: () => <br />
-                        })}
-                    </h1>
-                    <p className="text-xl text-muted-foreground leading-relaxed">
-                        {t('subtitle')}
-                    </p>
-                </motion.div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-start">
-
-                    {/* Left Column - Starts slightly lower (Desktop only) */}
-                    <div className="hidden md:block space-y-12 lg:space-y-24 md:pt-12">
-                        {team.filter((_, i) => i % 2 === 0).map((member, idx) => (
-                            <motion.div
-                                key={member.name}
-                                initial={{ opacity: 0, y: 24 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, ease: "easeOut", delay: idx * 0.08 }}
-                            >
-                                <TeamMemberCard member={member} />
-                            </motion.div>
-                        ))}
-                    </div>
-
-                    {/* Mobile view - Sequential order */}
-                    <div className="md:hidden space-y-12">
-                        {team.map((member, idx) => (
-                            <motion.div
-                                key={member.name}
-                                initial={{ opacity: 0, y: 24 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, ease: "easeOut", delay: idx * 0.06 }}
-                            >
-                                <TeamMemberCard member={member} />
-                            </motion.div>
-                        ))}
-                    </div>
-
-                    {/* Right Column - Starts with Header, padding reduced (Desktop only) */}
-                    <div className="hidden md:block space-y-12 lg:space-y-24 md:pt-12">
-                        <motion.div
-                            className="mb-16 md:mb-24 text-left hidden md:block"
-                            initial={{ opacity: 0, y: 24 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, ease: "easeOut" }}
-                        >
-                            <h1 className="font-heading text-5xl md:text-7xl font-normal tracking-tight text-foreground mb-6">
-                                {t.rich('title', {
-                                    reliable: (chunks) => <span className="text-primary italic">{chunks}</span>,
-                                    br: () => <br />
-                                })}
-                            </h1>
-                            <p className="text-xl text-muted-foreground leading-relaxed">
-                                {t('subtitle')}
-                            </p>
-                        </motion.div>
-
-                        {team.filter((_, i) => i % 2 !== 0).map((member, idx) => (
-                            <motion.div
-                                key={member.name}
-                                initial={{ opacity: 0, y: 24 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, ease: "easeOut", delay: idx * 0.08 }}
-                            >
-                                <TeamMemberCard member={member} />
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-        </section>
+    const row = (member: TeamMember, idx: number) => (
+        <button
+            key={member.name}
+            type="button"
+            onMouseEnter={() => setActive(idx)}
+            onFocus={() => setActive(idx)}
+            className={`group flex w-full cursor-default items-baseline gap-5 border-b border-rule-soft px-2 py-4 text-left transition-[padding] duration-300 ${active === idx ? "pl-7" : ""}`}
+        >
+            <span
+                className={`font-heading text-[clamp(26px,3.2vw,42px)] leading-[1.1] transition-colors duration-200 ${active === idx ? "italic text-foreground" : "text-ink-60"}`}
+                style={{ fontWeight: 420 }}
+            >
+                {member.name}
+            </span>
+            <span className={`font-mono text-[11px] uppercase tracking-[0.1em] transition-colors ${active === idx ? "text-primary" : "text-ink-30"}`}>
+                {t(`roles.${member.role}`)}
+            </span>
+        </button>
     )
-}
-
-function TeamMemberCard({ member }: { member: TeamMember }) {
-    const t = useTranslations('Team')
 
     return (
-        <div className="group relative">
-            <div className="relative aspect-[3/4] overflow-hidden mb-6">
-                {/* Grayscale to Color hover effect */}
-                <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover transition-all duration-700 filter grayscale contrast-125 group-hover:grayscale-0 group-hover:contrast-100 group-hover:scale-105"
-                    style={member.imageStyle}
-                />
-            </div>
+        <section className="pb-24">
+            {/* Desktop masthead: names left, sticky portrait pane right */}
+            <div className="mx-auto hidden max-w-[1180px] grid-cols-[1fr_340px] gap-16 px-6 md:grid">
+                <div>
+                    <div className="sec-num pt-12">{t('groupFounders')}</div>
+                    {FOUNDERS.map((m, i) => row(m, i))}
+                    <div className="sec-num pt-12">{t('groupDesign')}</div>
+                    {DESIGN.map((m, i) => row(m, FOUNDERS.length + i))}
+                    <div className="sec-num pt-12">{t('groupBoard')}</div>
+                    {BOARD.map((m, i) => row(m, FOUNDERS.length + DESIGN.length + i))}
+                </div>
 
-            <div className="space-y-2 border-t border-black/10 pt-4 pb-4 border-b">
-                <h3 className="font-heading text-2xl font-normal text-foreground">
-                    {member.name}
-                </h3>
-                <div className="flex flex-col gap-1 text-muted-foreground">
-                    <p className="font-medium text-primary">{t(`roles.${member.role}`)}</p>
-                    {member.email && (
-                        <a href={`mailto:${member.email}`} className="text-sm hover:text-foreground transition-colors">
-                            {member.email}
+                <div className="sticky top-24 self-start pt-12">
+                    <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-rule-soft shadow-[0_24px_60px_-18px_rgba(39,39,38,.35)]">
+                        {ALL.map((m, i) => (
+                            <Image
+                                key={m.name}
+                                src={m.image}
+                                alt={m.name}
+                                fill
+                                sizes="340px"
+                                className={`object-cover transition-opacity duration-300 ${active === i ? "opacity-100" : "opacity-0"}`}
+                            />
+                        ))}
+                    </div>
+                    <p className="mt-5 text-sm leading-relaxed text-ink-60">{t(`descriptions.${current.descriptionKey}`)}</p>
+                    {current.email && (
+                        <a href={`mailto:${current.email}`} className="mt-3 block font-mono text-[12.5px] text-ink-60 transition-colors hover:text-foreground">
+                            {current.email}
                         </a>
                     )}
                 </div>
-                {member.descriptionKey && (
-                    <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
-                        {t(`descriptions.${member.descriptionKey}`)}
-                    </p>
-                )}
             </div>
-        </div>
+
+            {/* Mobile: simple stacked cards */}
+            <div className="mx-auto max-w-[1180px] space-y-10 px-6 pt-10 md:hidden">
+                {[{ label: t('groupFounders'), list: FOUNDERS }, { label: t('groupDesign'), list: DESIGN }, { label: t('groupBoard'), list: BOARD }].map((group) => (
+                    <div key={group.label}>
+                        <div className="sec-num">{group.label}</div>
+                        <div className="space-y-8">
+                            {group.list.map((m) => (
+                                <div key={m.name}>
+                                    <div className="relative mb-4 aspect-[4/5] overflow-hidden rounded-2xl border border-rule-soft">
+                                        <Image src={m.image} alt={m.name} fill sizes="100vw" className="object-cover" />
+                                    </div>
+                                    <h3 className="font-heading text-2xl" style={{ fontWeight: 460 }}>{m.name}</h3>
+                                    <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.1em] text-primary">{t(`roles.${m.role}`)}</p>
+                                    {m.email && (
+                                        <a href={`mailto:${m.email}`} className="mt-1 block font-mono text-[12.5px] text-ink-60">{m.email}</a>
+                                    )}
+                                    <p className="mt-3 text-sm leading-relaxed text-ink-60">{t(`descriptions.${m.descriptionKey}`)}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
     )
 }

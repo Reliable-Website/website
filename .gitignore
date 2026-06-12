@@ -53,3 +53,11 @@ Thumbs.db
 
 # Package managers
 .pnpm-debug.log
+
+# local design mockups & app reference screenshots (not for the public repo)
+mockups/
+
+# internal working notes — not for the public repo
+CLAUDE.md
+.playwright-mcp/
+

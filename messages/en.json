@@ -32,7 +32,12 @@
         "research": "Research",
         "blog": "Blog",
         "contact": "Contact",
-        "login": "Login"
+        "login": "Login",
+        "howItWorks": "How it works",
+        "coverage": "Coverage",
+        "news": "Blog",
+        "bookDemo": "Book a demo",
+        "more": "More"
     },
     "Hero": {
         "title": "<span class=\"text-primary\">Reliable AI</span> research, consulting and deployment",
@@ -94,7 +99,16 @@
         "blog": "Blog",
         "contacts": "Contacts",
         "office": "Office",
-        "rights": "All rights reserved Oslo {year}"
+        "rights": "All rights reserved Oslo {year}",
+        "tagline": "Research-driven AI tools for legal professionals. Oslo, Norway.",
+        "colProduct": "Product",
+        "colCompany": "Company",
+        "colLegal": "Legal",
+        "coverage": "Coverage",
+        "news": "Blog",
+        "contact": "Contact",
+        "privacy": "Privacy policy",
+        "datenschutz": "Datenschutzerklärung"
     },
     "Team": {
         "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",
@@ -105,7 +119,8 @@
             "coo_co_founder": "COO, Co-Founder",
             "cto_co_founder": "CTO, Co-Founder",
             "board_member": "External Board Member",
-            "graphic_designer": "Graphic Designer"
+            "graphic_designer": "Graphic Designer",
+            "cpo_co_founder": "CPO, Co-Founder"
         },
         "descriptions": {
             "halvor": "Background in physics and computational science. Specializes in text embeddings and the representation of meaning — with a particular interest in creative approaches to working with embedding spaces. The technical backbone of Reliable AI. When not coding, you'll find him on the cross-country skiing trails or at the bouldering gym.",
@@ -116,7 +131,10 @@
             "mathilde": "Partner at Sprint Consulting with nine years of experience in innovation and sustainability consulting. Background from NTNU in computer science and strategy. Specializes in helping companies drive innovation, establish new ventures, and pursue sustainable growth.",
             "larspetter": "5x serial entrepreneur in EdTech. Co-founder and CPO of We Are Learning (immersive 3D learning). Previously co-founded Motimate, which was acquired by Kahoot!. His journey spans from CD-ROMs and laser discs to gamification and AI-powered immersive products. Known as a captivating speaker on creativity and AI.",
             "martine": "Graphic designer with broad experience from the design agency WAL, among others. Brings a keen eye for visual communication and brand identity to Reliable AI. When she's not working, you'll find her at the gym or by the pool table."
-        }
+        },
+        "groupFounders": "Founders",
+        "groupBoard": "Board",
+        "groupDesign": "Design"
     },
     "Products": {
         "title": "Our Products",
@@ -162,6 +180,126 @@
         },
         "getInTouch": "Get in Touch",
         "office": "Office",
-        "general": "General Inquiries"
+        "general": "General Inquiries",
+        "searchQuery": "How do I reach Reliable AI?",
+        "rowDemo": "See Presedens",
+        "rowAsk": "Ask a question",
+        "rowCeo": "Talk to the CEO",
+        "rowVisit": "Visit the office",
+        "searchTag": "SEARCH"
+    },
+    "PHero": {
+        "kicker": "Semantic search for public procurement law",
+        "title": "Case law, searched <em>by meaning.</em>",
+        "keyLine": "We use AI to find sources, not generate them.",
+        "sub": "Presedens retrieves the relevant decisions even when they use entirely different wording than your question — paragraph-level, and every hit linked to the authoritative text.",
+        "ctaDemo": "Book a demo",
+        "ctaCoverage": "See coverage",
+        "award": "ECAI 2025 Outstanding Demo Award",
+        "queries": [
+            {
+                "tag": "SEARCH",
+                "q": "Can a contracting authority cancel a tender procedure without objective grounds?"
+            },
+            {
+                "tag": "SØK",
+                "q": "Kan oppdragsgiver avlyse en konkurranse uten saklig grunn?"
+            },
+            {
+                "tag": "SØG",
+                "q": "Hvornår kan ordregiver annullere et udbud uden erstatningsansvar?"
+            },
+            {
+                "tag": "SUCHE",
+                "q": "Kann der Auftraggeber ein Vergabeverfahren ohne sachlichen Grund aufheben?"
+            }
+        ]
+    },
+    "PTrust": {
+        "label": "Trusted by"
+    },
+    "PStats": {
+        "v1": "45 → 10 min",
+        "l1": "typical time per case",
+        "v2": "697 ms",
+        "l2": "average search latency",
+        "v3": "10 million+",
+        "l3": "searchable paragraphs",
+        "l4": "data current per"
+    },
+    "PPress": {
+        "label": "In the press",
+        "finansavisen": "“Reliable AI has found a way around the problem of language models hallucinating”",
+        "digitalnorway": "“They got AI to stop lying”",
+        "universitas": "“Created award-winning AI tool alongside their studies”"
+    },
+    "PCompare": {
+        "secNum": "§ 1 — Retrieval, not generation",
+        "headingLine1": "Presedens does not write answers.",
+        "headingLine2": "It finds <em>sources.</em>",
+        "intro": "Legal research happens under pressure, and there is no room for mistakes. Generative tools produce text — and occasionally produce citations that do not exist. Presedens builds a representation of the meaning of your question and retrieves matching paragraphs from real legal sources. Every result is a document you can open and verify.",
+        "genericTag": "Generative chatbot",
+        "latency": "Response time",
+        "genericVerdict": "The cited decision does not exist. Fabricated citations look identical to real ones until you check.",
+        "presedensAnswerPrefix": "Relevant paragraphs from",
+        "presedensAnswerSuffix": "each opening to the authoritative text, with the matching paragraphs highlighted.",
+        "presedensVerdict": "Retrieved, not generated. The source is the answer."
+    },
+    "PCaps": {
+        "secNum": "§ 2 — What it does",
+        "heading": "Built for how procurement lawyers <em>actually work.</em>",
+        "c1Title": "Search by meaning",
+        "c1Body": "Ask in plain legal language. Presedens finds decisions that answer your question even when they use entirely different wording — no boolean syntax, no guessing the tribunal’s vocabulary.",
+        "c2Title": "Paragraph-level results",
+        "c2Body": "Hits point to the specific avsnitt in a decision, not just the document. You land on the reasoning that matters, not page one of a forty-page kendelse.",
+        "c3Title": "Relevance highlighting",
+        "c3Body": "Opened decisions and law texts shade the paragraphs that matched your question, so you see immediately why a hit is relevant.",
+        "c4Title": "Legal filters",
+        "c4Body": "Narrow by decision type, outcome, section of the decision, date and parties — with live counts, the way you expect from professional legal databases.",
+        "c5Title": "One query, all sources",
+        "c5Body": "Case law, statutes and regulations, EU directives and court practice, guidance and commentary — searched together, cited separately.",
+        "c6Title": "Projects",
+        "c6Body": "Save decisions and paragraphs as you research, grouped by the question that found them. Your research trail is reconstructible — for colleagues, and for the file."
+    },
+    "PCoverage": {
+        "secNum": "§ 3 — Coverage",
+        "heading": "Exactly which sources, <em>stated plainly.</em>",
+        "sub": "You would check anyway.",
+        "norway": "Norge",
+        "denmark": "Danmark",
+        "germany": "Deutschland",
+        "eu": "EU",
+        "status_live": "Live",
+        "status_launching": "Launching",
+        "status_liveAll": "Live — all jurisdictions",
+        "soon": "SOON",
+        "euDirectives": "Procurement directives",
+        "euRegulations": "Procurement regulations",
+        "euCourt": "Court of Justice case law",
+        "euGeneralCourt": "General Court case law"
+    },
+    "PLawyers": {
+        "secNum": "§ 4 — Built with lawyers",
+        "heading": "Built together with <em>procurement lawyers.</em>",
+        "intro": "Presedens is developed in close dialogue with practicing procurement lawyers — beginning with a pilot at Advokatfirmaet Haavind, and now in daily use at Norwegian and Danish firms.",
+        "quote": "We are proud to use award-winning, Norwegian-developed technology in practical legal work. The collaboration with Reliable AI has made it possible to develop a product for <b>precise search in procurement cases</b>, simplifying our daily workflow. Reliable took the challenge head-on and developed a highly useful product in a short time through close dialogue with us.",
+        "role": "Partner, Advokatfirmaet Haavind"
+    },
+    "PResearch": {
+        "secNum": "§ 5 — Research",
+        "heading": "Researchers from the <em>University of Oslo.</em>",
+        "body": "Reliable AI is a research-driven company. The methods behind Presedens are published and peer-reviewed, and the same standard of rigor applies to every source we index.",
+        "supportedBy": "Supported by"
+    },
+    "PCta": {
+        "heading": "Bring a question from your own practice.",
+        "sub": "Thirty minutes. We run your question live in Presedens, and you judge the results yourself.",
+        "button": "Book a demo"
+    },
+    "Meta": {
+        "title": "Presedens — Semantic search for public procurement law | Reliable AI",
+        "description": "Presedens retrieves the relevant decisions even when they use entirely different wording than your question. Paragraph-level results across tribunal practice, statutes and EU law — every hit linked to the authoritative source.",
+        "ogTitle": "Presedens — Semantic search for public procurement law",
+        "ogDescription": "We use AI to find sources, not generate them. Paragraph-level legal search for procurement lawyers in Norway, Denmark and Germany."
     }
 }

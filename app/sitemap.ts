@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 const baseUrl = "https://reliableai.no";
 const locales = ["en", "no", "da", "de"];
-const pages = ["", "/products", "/research", "/blog", "/contact", "/team"];
+const pages = ["", "/blog", "/contact", "/team", "/privacy", "/impressum", "/datenschutz"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
