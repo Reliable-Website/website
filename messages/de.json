@@ -32,7 +32,12 @@
         "research": "Forschung",
         "blog": "Blog",
         "contact": "Kontakt",
-        "login": "Anmelden"
+        "login": "Anmelden",
+        "howItWorks": "Funktionen",
+        "coverage": "Quellen",
+        "news": "Blog",
+        "bookDemo": "Demo vereinbaren",
+        "more": "Mehr"
     },
     "Hero": {
         "title": "<span class=\"text-primary\">Reliable AI</span> Forschung, Beratung und Implementierung",
@@ -94,7 +99,16 @@
         "blog": "Blog",
         "contacts": "Kontakt",
         "office": "Büro",
-        "rights": "Alle Rechte vorbehalten Oslo {year}"
+        "rights": "Alle Rechte vorbehalten Oslo {year}",
+        "tagline": "Forschungsbasierte KI-Werkzeuge für juristische Fachanwender. Oslo, Norwegen.",
+        "colProduct": "Produkt",
+        "colCompany": "Unternehmen",
+        "colLegal": "Rechtliches",
+        "coverage": "Quellen",
+        "news": "Blog",
+        "contact": "Kontakt",
+        "privacy": "Privacy Policy",
+        "datenschutz": "Datenschutzerklärung"
     },
     "Team": {
         "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",
@@ -105,7 +119,8 @@
             "coo_co_founder": "COO, Co-Founder",
             "cto_co_founder": "CTO, Co-Founder",
             "board_member": "Externes Vorstandsmitglied",
-            "graphic_designer": "Grafikdesignerin"
+            "graphic_designer": "Grafikdesignerin",
+            "cpo_co_founder": "CPO, Co-Founder"
         },
         "descriptions": {
             "halvor": "Hintergrund in Physik und Computational Science. Spezialisiert auf Text-Embeddings und die Darstellung von Bedeutung — mit besonderem Interesse an kreativen Ansätzen im Embedding-Raum. Das technische Rückgrat von Reliable AI. Wenn er nicht programmiert, findet man ihn auf der Langlaufloipe oder in der Boulderhalle.",
@@ -116,7 +131,10 @@
             "mathilde": "Partnerin bei Sprint Consulting mit neun Jahren Erfahrung in Innovations- und Nachhaltigkeitsberatung. Hintergrund von der NTNU in Informatik und Strategie. Spezialisiert darauf, Unternehmen bei Innovation, Gründung neuer Geschäftsbereiche und nachhaltigem Wachstum zu unterstützen.",
             "larspetter": "5-facher Seriengründer im EdTech-Bereich. Mitgründer und CPO von We Are Learning (immersives 3D-Lernen). Zuvor Mitgründer von Motimate, das von Kahoot! übernommen wurde. Sein Weg führt von CD-ROMs und Laserdiscs über Gamification bis zu KI-getriebenen immersiven Produkten. Bekannt als fesselnder Redner über Kreativität und KI.",
             "martine": "Grafikdesignerin mit breiter Erfahrung, unter anderem bei der Designagentur WAL. Bringt ein scharfes Auge für visuelle Kommunikation und Markenidentität zu Reliable AI. Wenn sie nicht arbeitet, findet man sie im Fitnessstudio oder am Billardtisch."
-        }
+        },
+        "groupFounders": "Gründer",
+        "groupBoard": "Beirat",
+        "groupDesign": "Design"
     },
     "Products": {
         "title": "Unsere Produkte",
@@ -162,6 +180,147 @@
         },
         "getInTouch": "Kontakt Aufnehmen",
         "office": "Büro",
-        "general": "Allgemeine Anfragen"
+        "general": "Allgemeine Anfragen",
+        "searchQuery": "Wie erreiche ich Reliable AI?",
+        "rowDemo": "Presedens ansehen",
+        "rowAsk": "Eine Frage stellen",
+        "rowCeo": "Mit dem CEO sprechen",
+        "rowVisit": "Das Büro besuchen",
+        "searchTag": "SUCHE"
+    },
+    "PHero": {
+        "kicker": "Semantische Suche im Vergaberecht",
+        "title": "Vergabekammer-Praxis, durchsucht nach <em>Bedeutung.</em>",
+        "keyLine": "Wir verwenden KI, um Quellen zu finden — nicht, um sie zu erzeugen.",
+        "sub": "Presedens durchsucht die veröffentlichte Spruchpraxis der Vergabekammer des Bundes — nach Bedeutung, nicht nach Stichworten — und führt Sie direkt zur einschlägigen Randnummer. Jeder Treffer verweist auf den Originaltext. Die Kammern der Länder folgen.",
+        "ctaDemo": "Demo vereinbaren",
+        "ctaCoverage": "Quellenabdeckung",
+        "award": "ECAI 2025 Outstanding Demo Award",
+        "queries": [
+            {
+                "tag": "SUCHE",
+                "q": "Kann der Auftraggeber ein Vergabeverfahren ohne sachlichen Grund aufheben?"
+            },
+            {
+                "tag": "SUCHE",
+                "q": "Welche Anforderungen gelten für die Dokumentation der Angebotswertung?"
+            },
+            {
+                "tag": "SUCHE",
+                "q": "Wann ist ein Angebot von der Wertung auszuschließen?"
+            }
+        ]
+    },
+    "PTrust": {
+        "label": "Vertrauen von"
+    },
+    "PStats": {
+        "v1": "45 → 10 Min.",
+        "l1": "typische Dauer pro Fall",
+        "v2": "697 ms",
+        "l2": "durchschnittliche Antwortzeit",
+        "v3": "10 Mio.+",
+        "l3": "durchsuchbare Absätze",
+        "l4": "Datenstand"
+    },
+    "PPress": {
+        "label": "Aus der Presse",
+        "finansavisen": "„Reliable AI hat einen Weg um das Problem halluzinierender Sprachmodelle gefunden“",
+        "digitalnorway": "„Sie haben die KI dazu gebracht, nicht mehr zu lügen“",
+        "universitas": "„Preisgekröntes KI-Werkzeug neben dem Studium entwickelt“"
+    },
+    "PCompare": {
+        "secNum": "§ 2 — Abruf statt Generierung",
+        "headingLine1": "Presedens schreibt keine Antworten.",
+        "headingLine2": "Es findet <em>Quellen.</em>",
+        "intro": "Juristische Recherche geschieht unter Zeitdruck, und für Fehler ist kein Raum. Generative Werkzeuge erzeugen Text — und gelegentlich Fundstellen, die nicht existieren. Presedens bildet die Bedeutung Ihrer Frage ab und ruft passende Absätze aus realen Rechtsquellen ab. Jedes Ergebnis ist ein Dokument, das Sie öffnen und prüfen können.",
+        "genericTag": "Generativer Chatbot",
+        "latency": "Antwortzeit",
+        "genericVerdict": "Die zitierte Entscheidung existiert nicht. Erfundene Fundstellen sehen echten zum Verwechseln ähnlich — bis man sie prüft.",
+        "presedensAnswerPrefix": "Einschlägige Absätze aus",
+        "presedensAnswerSuffix": "jeder Treffer öffnet den Originaltext mit markierten Absätzen.",
+        "presedensVerdict": "Abgerufen, nicht generiert. Die Quelle ist die Antwort."
+    },
+    "PCaps": {
+        "secNum": "§ 3 — Funktionen",
+        "heading": "Gefunden wird die <em>Randnummer,</em> nicht nur das Dokument.",
+        "c1Title": "Suche nach Bedeutung",
+        "c1Body": "Formulieren Sie Ihre Frage in juristischer Alltagssprache. Presedens bildet die Bedeutung der Frage ab und findet einschlägige Entscheidungen auch dann, wenn sie eine völlig andere Formulierung verwenden.",
+        "c2Title": "Treffer auf Absatzebene",
+        "c2Body": "Ergebnisse verweisen auf die konkrete Randnummer, nicht auf Seite eins eines vierzigseitigen Beschlusses.",
+        "c3Title": "Relevanz im Dokument",
+        "c3Body": "Geöffnete Entscheidungen markieren die Absätze, die zu Ihrer Frage passen — Sie sehen sofort, warum ein Treffer einschlägig ist.",
+        "c4Title": "Juristische Filter",
+        "c4Body": "Eingrenzung nach Entscheidungsart, Ergebnis, Datum und Beteiligten — mit laufend aktualisierten Trefferzahlen.",
+        "c5Title": "Eine Suche, alle Quellen",
+        "c5Body": "Spruchpraxis, Gesetzes- und Verordnungstexte sowie EU-Recht — gemeinsam durchsucht, getrennt zitiert.",
+        "c6Title": "Projekte",
+        "c6Body": "Entscheidungen und Absätze speichern, geordnet nach der Recherchefrage, die sie gefunden hat — nachvollziehbar für Kollegen und für die Akte."
+    },
+    "PCoverage": {
+        "secNum": "§ 3 — Quellenabdeckung",
+        "heading": "Was durchsucht wird — <em>und was noch nicht.</em>",
+        "sub": "Sie würden es ohnehin prüfen. Deshalb sagen wir es genau.",
+        "norway": "Norwegen",
+        "denmark": "Dänemark",
+        "germany": "Deutschland",
+        "eu": "EU",
+        "status_live": "Verfügbar",
+        "status_launching": "Im Aufbau",
+        "status_liveAll": "Verfügbar — alle Rechtsordnungen",
+        "soon": "GEPLANT",
+        "euDirectives": "Vergaberichtlinien",
+        "euRegulations": "Vergabeverordnungen",
+        "euCourt": "Rechtsprechung des EuGH",
+        "euGeneralCourt": "Rechtsprechung des EuG"
+    },
+    "PLawyers": {
+        "secNum": "§ 4 — Mit Anwälten entwickelt",
+        "heading": "Gemeinsam mit <em>Vergaberechtlern</em> entwickelt.",
+        "intro": "Presedens wird im engen Dialog mit praktizierenden Vergaberechtlern entwickelt — beginnend mit einem Pilotprojekt bei Advokatfirmaet Haavind, heute im täglichen Einsatz bei norwegischen und dänischen Kanzleien.",
+        "quote": "Wir sind stolz darauf, preisgekrönte norwegische Technologie in der praktischen Rechtsarbeit einzusetzen. Die Zusammenarbeit mit Reliable AI hat es ermöglicht, ein Produkt für <b>präzise Suche in Vergabefällen</b> zu entwickeln, das unseren täglichen Arbeitsablauf vereinfacht. Reliable hat die Herausforderung angenommen und in engem Dialog mit uns in kurzer Zeit ein äußerst nützliches Produkt entwickelt.",
+        "role": "Partner, Advokatfirmaet Haavind"
+    },
+    "PResearch": {
+        "secNum": "§ 5 — Forschung",
+        "heading": "Forscher der <em>Universität Oslo.</em>",
+        "body": "Reliable AI ist ein forschungsgetriebenes Unternehmen. Die Methoden hinter Presedens sind publiziert und begutachtet — derselbe Maßstab gilt für jede Quelle, die wir indexieren.",
+        "supportedBy": "Unterstützt durch"
+    },
+    "PCta": {
+        "heading": "Bringen Sie eine Frage aus Ihrer eigenen Praxis mit.",
+        "sub": "Dreißig Minuten. Wir führen Ihre Frage live in Presedens aus — beurteilen Sie die Ergebnisse selbst.",
+        "button": "Demo vereinbaren"
+    },
+    "PQuellen": {
+        "secNum": "§ 1 — Quellenabdeckung",
+        "heading": "Was durchsucht wird — <em>und was noch nicht.</em>",
+        "sub": "Sie würden es ohnehin prüfen. Deshalb sagen wir es genau.",
+        "statusLive": "Verfügbar",
+        "statusPlanned": "In Planung",
+        "r1Title": "Vergabekammer des Bundes",
+        "r1Desc": "Entscheidungen der Vergabekammer des Bundes, durchsuchbar auf Absatzebene.",
+        "r2Title": "Vergabekammern der Länder",
+        "r2Desc": "Spruchpraxis der Landeskammern — schrittweise Aufnahme.",
+        "r3Title": "GWB, VgV, UVgO",
+        "r3Desc": "Gesetzes- und Verordnungstexte, verknüpft mit der Spruchpraxis.",
+        "r4Title": "OLG-Vergabesenate",
+        "r4Desc": "Beschlüsse der Vergabesenate der Oberlandesgerichte.",
+        "r5Title": "EU-Recht",
+        "r5Desc": "Richtlinien 2014/24/EU und 2014/25/EU, Vergabeverordnungen sowie die Rechtsprechung von EuGH und EuG — als eigener Quellenbestand."
+    },
+    "PReferenzen": {
+        "secNum": "§ 4 — Referenzen",
+        "heading": "In Skandinavien <em>im täglichen Einsatz.</em>",
+        "sub": "Presedens ist kein Prototyp. Norwegische und dänische Kanzleien recherchieren damit täglich in der Spruchpraxis ihrer Nachprüfungsinstanzen.",
+        "kanzleien": "Kanzleien",
+        "herkunft": "Herkunft",
+        "herkunftText": "Entwickelt von Forschern der Universität Oslo. Ausgezeichnet mit dem Outstanding Demo Award der ECAI 2025. Unterstützt durch Microsoft for Startups und Anthropic."
+    },
+    "Meta": {
+        "title": "Presedens — Semantische Suche im Vergaberecht | Reliable AI",
+        "description": "Presedens durchsucht die Spruchpraxis der Vergabekammer des Bundes nach Bedeutung, nicht nach Stichworten. Treffer auf Absatzebene — jeder verweist auf den Originaltext.",
+        "ogTitle": "Presedens — Semantische Suche im Vergaberecht",
+        "ogDescription": "Wir verwenden KI, um Quellen zu finden — nicht, um sie zu erzeugen. Suche auf Absatzebene für Vergaberechtler."
     }
 }
