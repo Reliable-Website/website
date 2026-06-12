@@ -100,7 +100,7 @@
         "contacts": "Kontakt",
         "office": "Kontor",
         "rights": "Alle rettigheder forbeholdt Oslo {year}",
-        "tagline": "Forskningsbaserede AI-værktøjer til jurister. Oslo, Norge.",
+        "tagline": "Forskningsbaserede AI-værktøjer til jurister.",
         "colProduct": "Produkt",
         "colCompany": "Virksomhed",
         "colLegal": "Juridisk",
@@ -108,7 +108,8 @@
         "news": "Blog",
         "contact": "Kontakt",
         "privacy": "Privatlivspolitik",
-        "datenschutz": "Datenschutzerklärung"
+        "datenschutz": "Datenschutzerklärung",
+        "location": "Oslo, Norge."
     },
     "Team": {
         "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",

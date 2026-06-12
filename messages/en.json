@@ -100,7 +100,7 @@
         "contacts": "Contacts",
         "office": "Office",
         "rights": "All rights reserved Oslo {year}",
-        "tagline": "Research-driven AI tools for legal professionals. Oslo, Norway.",
+        "tagline": "Research-driven AI tools for legal professionals.",
         "colProduct": "Product",
         "colCompany": "Company",
         "colLegal": "Legal",
@@ -108,7 +108,8 @@
         "news": "Blog",
         "contact": "Contact",
         "privacy": "Privacy policy",
-        "datenschutz": "Datenschutzerklärung"
+        "datenschutz": "Datenschutzerklärung",
+        "location": "Oslo, Norway."
     },
     "Team": {
         "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",

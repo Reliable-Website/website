@@ -100,7 +100,7 @@
         "contacts": "Kontakt",
         "office": "Büro",
         "rights": "Alle Rechte vorbehalten Oslo {year}",
-        "tagline": "Forschungsbasierte KI-Werkzeuge für juristische Fachanwender. Oslo, Norwegen.",
+        "tagline": "Forschungsbasierte KI-Werkzeuge für juristische Fachanwender.",
         "colProduct": "Produkt",
         "colCompany": "Unternehmen",
         "colLegal": "Rechtliches",
@@ -108,7 +108,8 @@
         "news": "Blog",
         "contact": "Kontakt",
         "privacy": "Privacy Policy",
-        "datenschutz": "Datenschutzerklärung"
+        "datenschutz": "Datenschutzerklärung",
+        "location": "Oslo, Norwegen."
     },
     "Team": {
         "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",

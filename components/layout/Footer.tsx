@@ -50,7 +50,11 @@ export function Footer() {
                                 className="h-6 w-auto"
                             />
                         </Link>
-                        <p className="mt-4 text-sm text-ink-60">{t('tagline')}</p>
+                        <p className="mt-4 text-sm text-ink-60">
+                            {t('tagline')}
+                            <br />
+                            {t('location')}
+                        </p>
                         <address className="not-italic mt-4 text-sm text-ink-60 space-y-0.5">
                             <p>Akersbakken 30, 0172 Oslo</p>
                             <p>Org.nr: 934 343 786</p>
