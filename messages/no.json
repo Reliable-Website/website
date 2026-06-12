@@ -191,7 +191,7 @@
     },
     "PHero": {
         "kicker": "Semantisk søk i offentlige anskaffelser",
-        "title": "Rettspraksis, søkt etter <em>mening.</em>",
+        "title": "Rettskildesøk etter <em>mening.</em>",
         "keyLine": "Vi bruker KI til å finne kilder, ikke generere dem.",
         "sub": "Presedens finner de relevante avgjørelsene selv når de bruker en helt annen ordlyd enn spørsmålet ditt — på avsnittsnivå, på tvers av nemndspraksis, lov og forskrift og EU-rett, og hvert treff lenker til den autoritative kilden.",
         "ctaDemo": "Bestill demo",
