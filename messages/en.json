@@ -193,7 +193,7 @@
         "kicker": "Semantic search for public procurement law",
         "title": "Case law, searched <em>by meaning.</em>",
         "keyLine": "We use AI to find sources, not generate them.",
-        "sub": "Presedens retrieves the relevant decisions even when they use entirely different wording than your question — paragraph-level, and every hit linked to the authoritative text.",
+        "sub": "Presedens retrieves the decisions most relevant to your question — at paragraph level, each one linked to the authoritative source.",
         "ctaDemo": "Book a demo",
         "ctaCoverage": "See coverage",
         "award": "ECAI 2025 Outstanding Demo Award",
@@ -299,7 +299,7 @@
     },
     "Meta": {
         "title": "Presedens — Semantic search for public procurement law | Reliable AI",
-        "description": "Presedens retrieves the relevant decisions even when they use entirely different wording than your question. Paragraph-level results across tribunal practice, statutes and EU law — every hit linked to the authoritative source.",
+        "description": "Presedens retrieves the decisions most relevant to your question — paragraph-level results across tribunal practice, statutes and EU law, each one linked to the authoritative source.",
         "ogTitle": "Presedens — Semantic search for public procurement law",
         "ogDescription": "We use AI to find sources, not generate them. Paragraph-level legal search for procurement lawyers in Norway, Denmark and Germany."
     }

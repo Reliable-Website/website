@@ -190,10 +190,10 @@
         "searchTag": "SØK"
     },
     "PHero": {
-        "kicker": "Semantisk søk i offentlige anskaffelser",
+        "kicker": "Semantisk søk i anskaffelsesretten",
         "title": "Rettskildesøk etter <em>mening.</em>",
         "keyLine": "Vi bruker KI til å finne kilder, ikke generere dem.",
-        "sub": "Presedens finner de relevante avgjørelsene selv når de bruker en helt annen ordlyd enn spørsmålet ditt — på avsnittsnivå, på tvers av nemndspraksis, lov og forskrift og EU-rett, og hvert treff lenker til den autoritative kilden.",
+        "sub": "Presedens henter frem de mest relevante avgjørelsene for spørsmålet ditt — på avsnittsnivå, og hvert treff lenker til den autoritative kilden.",
         "ctaDemo": "Bestill demo",
         "ctaCoverage": "Se kildedekning",
         "award": "ECAI 2025 Outstanding Demo Award",
@@ -217,7 +217,7 @@
         ]
     },
     "PTrust": {
-        "label": "Med tillit fra"
+        "label": "Brukes av"
     },
     "PStats": {
         "v1": "45 → 10 min",
@@ -226,7 +226,7 @@
         "l2": "gjennomsnittlig responstid",
         "v3": "10 millioner+",
         "l3": "søkbare avsnitt",
-        "l4": "data per"
+        "l4": "data ajour per"
     },
     "PPress": {
         "label": "Omtalt i pressen",
@@ -238,7 +238,7 @@
         "secNum": "§ 1 — Gjenfinning, ikke generering",
         "headingLine1": "Presedens skriver ikke svar.",
         "headingLine2": "Det finner <em>kilder.</em>",
-        "intro": "Juridisk research skjer under press, og det er ikke rom for feil. Generative verktøy produserer tekst — og av og til henvisninger som ikke finnes. Presedens bygger en meningsrepresentasjon av spørsmålet ditt og henter frem avsnitt fra reelle rettskilder. Hvert resultat er et dokument du kan åpne og kontrollere.",
+        "intro": "Juridisk research skjer under press, og det er ikke rom for feil. Generative verktøy produserer tekst — og av og til henvisninger som ikke finnes. Presedens bygger en meningsrepresentasjon av spørsmålet ditt og henter frem avsnitt fra faktiske rettskilder. Hvert resultat er et dokument du kan åpne og kontrollere.",
         "genericTag": "Generativ chatbot",
         "latency": "Responstid",
         "genericVerdict": "Den siterte avgjørelsen finnes ikke. Fabrikkerte henvisninger ser identiske ut med ekte — helt til du kontrollerer dem.",
@@ -254,13 +254,13 @@
         "c2Title": "Treff på avsnittsnivå",
         "c2Body": "Treffene peker til det konkrete avsnittet i avgjørelsen, ikke bare dokumentet. Du lander på vurderingen som betyr noe, ikke side én av førti.",
         "c3Title": "Relevansmarkering",
-        "c3Body": "Åpnede avgjørelser og lovtekster skraverer avsnittene som svarte på spørsmålet ditt, slik at du umiddelbart ser hvorfor et treff er relevant.",
+        "c3Body": "I åpnede avgjørelser og lovtekster markeres avsnittene som svarer på spørsmålet ditt, slik at du umiddelbart ser hvorfor treffet er relevant.",
         "c4Title": "Juridiske filtre",
         "c4Body": "Avgrens etter avgjørelsestype, utfall, del av avgjørelsen, dato og parter — med løpende trefftall, slik du forventer av profesjonelle rettskildeverktøy.",
         "c5Title": "Ett søk, alle kilder",
         "c5Body": "Nemndspraksis, lov og forskrift, EU-rett, veileder og kommentar — søkt samlet, sitert hver for seg.",
         "c6Title": "Prosjekter",
-        "c6Body": "Lagre avgjørelser og avsnitt underveis, gruppert etter problemstillingen som fant dem. Researchsporet kan rekonstrueres — for kolleger, og for saken."
+        "c6Body": "Lagre avgjørelser og avsnitt underveis, gruppert etter problemstillingen som fant dem. Søkesporet kan rekonstrueres — for kolleger, og for saken."
     },
     "PCoverage": {
         "secNum": "§ 3 — Kildedekning",
@@ -298,9 +298,9 @@
         "button": "Bestill demo"
     },
     "Meta": {
-        "title": "Presedens — Semantisk søk i offentlige anskaffelser | Reliable AI",
-        "description": "Presedens finner de relevante avgjørelsene selv når de bruker en helt annen ordlyd enn spørsmålet ditt. Treff på avsnittsnivå i nemndspraksis, lov og forskrift og EU-rett — hvert treff lenket til kilden.",
-        "ogTitle": "Presedens — Semantisk søk i offentlige anskaffelser",
+        "title": "Presedens — Semantisk søk i anskaffelsesretten | Reliable AI",
+        "description": "Presedens henter frem de mest relevante avgjørelsene for spørsmålet ditt — treff på avsnittsnivå i nemndspraksis, lov og forskrift og EU-rett, hvert treff lenket til kilden.",
+        "ogTitle": "Presedens — Semantisk søk i anskaffelsesretten",
         "ogDescription": "Vi bruker KI til å finne kilder, ikke generere dem. Søk på avsnittsnivå for anskaffelsesjurister."
     }
 }

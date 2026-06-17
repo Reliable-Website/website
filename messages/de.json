@@ -100,7 +100,7 @@
         "contacts": "Kontakt",
         "office": "Büro",
         "rights": "Alle Rechte vorbehalten Oslo {year}",
-        "tagline": "Forschungsbasierte KI-Werkzeuge für juristische Fachanwender.",
+        "tagline": "Forschungsbasierte KI-Werkzeuge für Juristen.",
         "colProduct": "Produkt",
         "colCompany": "Unternehmen",
         "colLegal": "Rechtliches",
@@ -213,7 +213,7 @@
         ]
     },
     "PTrust": {
-        "label": "Vertrauen von"
+        "label": "Genutzt von"
     },
     "PStats": {
         "v1": "45 → 10 Min.",
@@ -234,7 +234,7 @@
         "secNum": "§ 2 — Abruf statt Generierung",
         "headingLine1": "Presedens schreibt keine Antworten.",
         "headingLine2": "Es findet <em>Quellen.</em>",
-        "intro": "Juristische Recherche geschieht unter Zeitdruck, und für Fehler ist kein Raum. Generative Werkzeuge erzeugen Text — und gelegentlich Fundstellen, die nicht existieren. Presedens bildet die Bedeutung Ihrer Frage ab und ruft passende Absätze aus realen Rechtsquellen ab. Jedes Ergebnis ist ein Dokument, das Sie öffnen und prüfen können.",
+        "intro": "Juristische Recherche geschieht unter Zeitdruck, und für Fehler ist kein Raum. Generative Werkzeuge erzeugen Text — und gelegentlich Fundstellen, die nicht existieren. Presedens bildet die Bedeutung Ihrer Frage ab und ruft passende Absätze aus echten Rechtsquellen ab. Jedes Ergebnis ist ein Dokument, das Sie öffnen und prüfen können.",
         "genericTag": "Generativer Chatbot",
         "latency": "Antwortzeit",
         "genericVerdict": "Die zitierte Entscheidung existiert nicht. Erfundene Fundstellen sehen echten zum Verwechseln ähnlich — bis man sie prüft.",

@@ -193,7 +193,7 @@
         "kicker": "Semantisk søgning i udbudsretten",
         "title": "Retspraksis, søgt efter <em>mening.</em>",
         "keyLine": "Vi bruger AI til at finde kilder, ikke generere dem.",
-        "sub": "Presedens finder de relevante kendelser, selv når de bruger en helt anden ordlyd end dit spørgsmål — på afsnitsniveau, på tværs af nævnspraksis, lovgivning og EU-ret, og hvert resultat linker til den autoritative kilde.",
+        "sub": "Presedens finder de kendelser, der er mest relevante for dit spørgsmål — på afsnitsniveau, og hvert resultat linker til den autoritative kilde.",
         "ctaDemo": "Book demo",
         "ctaCoverage": "Se kildedækning",
         "award": "ECAI 2025 Outstanding Demo Award",
@@ -213,7 +213,7 @@
         ]
     },
     "PTrust": {
-        "label": "Med tillid fra"
+        "label": "Bruges af"
     },
     "PStats": {
         "v1": "45 → 10 min",
@@ -222,7 +222,7 @@
         "l2": "gennemsnitlig svartid",
         "v3": "10 millioner+",
         "l3": "søgbare afsnit",
-        "l4": "data pr."
+        "l4": "data ajour pr."
     },
     "PPress": {
         "label": "Omtalt i pressen",
@@ -234,7 +234,7 @@
         "secNum": "§ 1 — Genfinding, ikke generering",
         "headingLine1": "Presedens skriver ikke svar.",
         "headingLine2": "Det finder <em>kilder.</em>",
-        "intro": "Juridisk research foregår under pres, og der er ikke plads til fejl. Generative værktøjer producerer tekst — og af og til henvisninger, der ikke findes. Presedens bygger en repræsentation af meningen i dit spørgsmål og henter afsnit fra reelle retskilder. Hvert resultat er et dokument, du kan åbne og efterprøve.",
+        "intro": "Juridisk research foregår under pres, og der er ikke plads til fejl. Generative værktøjer producerer tekst — og af og til henvisninger, der ikke findes. Presedens bygger en repræsentation af meningen i dit spørgsmål og henter afsnit fra faktiske retskilder. Hvert resultat er et dokument, du kan åbne og efterprøve.",
         "genericTag": "Generativ chatbot",
         "latency": "Svartid",
         "genericVerdict": "Den citerede kendelse findes ikke. Fabrikerede henvisninger ligner ægte — indtil du efterprøver dem.",
@@ -250,13 +250,13 @@
         "c2Title": "Resultater på afsnitsniveau",
         "c2Body": "Resultaterne peger på det konkrete afsnit i kendelsen, ikke kun dokumentet. Du lander på vurderingen, der betyder noget, ikke side ét af fyrre.",
         "c3Title": "Relevansmarkering",
-        "c3Body": "Åbnede kendelser og lovtekster skraverer de afsnit, der matchede dit spørgsmål, så du straks ser, hvorfor et resultat er relevant.",
+        "c3Body": "I åbnede kendelser og lovtekster markeres de afsnit, der matcher dit spørgsmål, så du straks ser, hvorfor et resultat er relevant.",
         "c4Title": "Juridiske filtre",
         "c4Body": "Afgræns efter afgørelsestype, udfald, del af kendelsen, dato og parter — med løbende resultattal, som du forventer af professionelle juridiske databaser.",
         "c5Title": "Én søgning, alle kilder",
         "c5Body": "Nævnspraksis, lovgivning, EU-ret, vejledning og kommentar — søgt samlet, citeret hver for sig.",
         "c6Title": "Projekter",
-        "c6Body": "Gem kendelser og afsnit undervejs, grupperet efter det spørgsmål, der fandt dem. Dit researchspor kan rekonstrueres — for kolleger og til sagen."
+        "c6Body": "Gem kendelser og afsnit undervejs, grupperet efter det spørgsmål, der fandt dem. Dit søgespor kan rekonstrueres — for kolleger og til sagen."
     },
     "PCoverage": {
         "secNum": "§ 3 — Kildedækning",
@@ -295,7 +295,7 @@
     },
     "Meta": {
         "title": "Presedens — Semantisk søgning i udbudsretten | Reliable AI",
-        "description": "Presedens finder de relevante kendelser, selv når de bruger en helt anden ordlyd end dit spørgsmål. Resultater på afsnitsniveau i nævnspraksis, lovgivning og EU-ret — hvert resultat linket til kilden.",
+        "description": "Presedens finder de mest relevante kendelser for dit spørgsmål — resultater på afsnitsniveau i nævnspraksis, lovgivning og EU-ret, hvert resultat linket til kilden.",
         "ogTitle": "Presedens — Semantisk søgning i udbudsretten",
         "ogDescription": "Vi bruger AI til at finde kilder, ikke generere dem. Søgning på afsnitsniveau for udbudsjurister."
     }
