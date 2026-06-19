@@ -237,7 +237,7 @@
         "intro": "Juristische Recherche geschieht unter Zeitdruck, und für Fehler ist kein Raum. Generative Werkzeuge erzeugen Text — und gelegentlich Fundstellen, die nicht existieren. Presedens bildet die Bedeutung Ihrer Frage ab und ruft passende Absätze aus echten Rechtsquellen ab. Jedes Ergebnis ist ein Dokument, das Sie öffnen und prüfen können.",
         "genericTag": "Generativer Chatbot",
         "latency": "Antwortzeit",
-        "genericVerdict": "Die zitierte Entscheidung existiert nicht. Erfundene Fundstellen sehen echten zum Verwechseln ähnlich — bis man sie prüft.",
+        "genericVerdict": "Die zitierte Entscheidung existiert nicht — und selbst wenn eine Quelle echt ist, verschwindet sie in Analysen, um die niemand gebeten hat.",
         "presedensAnswerPrefix": "Einschlägige Absätze aus",
         "presedensAnswerSuffix": "jeder Treffer öffnet den Originaltext mit markierten Absätzen.",
         "presedensVerdict": "Abgerufen, nicht generiert. Die Quelle ist die Antwort."
@@ -253,15 +253,13 @@
         "c3Body": "Geöffnete Entscheidungen markieren die Absätze, die zu Ihrer Frage passen — Sie sehen sofort, warum ein Treffer einschlägig ist.",
         "c4Title": "Juristische Filter",
         "c4Body": "Eingrenzung nach Entscheidungsart, Ergebnis, Datum und Beteiligten — mit laufend aktualisierten Trefferzahlen.",
-        "c5Title": "Eine Suche, alle Quellen",
-        "c5Body": "Spruchpraxis, Gesetzes- und Verordnungstexte sowie EU-Recht — gemeinsam durchsucht, getrennt zitiert.",
         "c6Title": "Projekte",
         "c6Body": "Entscheidungen und Absätze speichern, geordnet nach der Recherchefrage, die sie gefunden hat — nachvollziehbar für Kollegen und für die Akte."
     },
     "PCoverage": {
         "secNum": "§ 3 — Quellenabdeckung",
         "heading": "Was durchsucht wird — <em>und was noch nicht.</em>",
-        "sub": "Sie würden es ohnehin prüfen. Deshalb sagen wir es genau.",
+        "sub": "Quelle für Quelle — ohne vage Versprechen.",
         "norway": "Norwegen",
         "denmark": "Dänemark",
         "germany": "Deutschland",
@@ -296,7 +294,7 @@
     "PQuellen": {
         "secNum": "§ 1 — Quellenabdeckung",
         "heading": "Was durchsucht wird — <em>und was noch nicht.</em>",
-        "sub": "Sie würden es ohnehin prüfen. Deshalb sagen wir es genau.",
+        "sub": "Quelle für Quelle — ohne vage Versprechen.",
         "statusLive": "Verfügbar",
         "statusPlanned": "In Planung",
         "r1Title": "Vergabekammer des Bundes",

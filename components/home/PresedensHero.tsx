@@ -140,7 +140,7 @@ export function PresedensHero() {
                     >
                         <Link
                             href="/blog/ecai-2025-outstanding-demo-award"
-                            className="text-hvit underline decoration-white/25 underline-offset-4 transition-colors hover:text-himmel hover:decoration-himmel"
+                            className="text-hvit transition-colors hover:text-himmel"
                         >
                             {t('award')}
                         </Link>

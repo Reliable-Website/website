@@ -237,7 +237,7 @@
         "intro": "Juridisk research foregår under pres, og der er ikke plads til fejl. Generative værktøjer producerer tekst — og af og til henvisninger, der ikke findes. Presedens bygger en repræsentation af meningen i dit spørgsmål og henter afsnit fra faktiske retskilder. Hvert resultat er et dokument, du kan åbne og efterprøve.",
         "genericTag": "Generativ chatbot",
         "latency": "Svartid",
-        "genericVerdict": "Den citerede kendelse findes ikke. Fabrikerede henvisninger ligner ægte — indtil du efterprøver dem.",
+        "genericVerdict": "Den citerede kendelse findes ikke — og selv når en kilde er ægte, drukner den i analyse, du ikke har bedt om.",
         "presedensAnswerPrefix": "Relevante afsnit fra",
         "presedensAnswerSuffix": "hvert resultat åbner den autoritative tekst med de relevante afsnit markeret.",
         "presedensVerdict": "Genfundet, ikke genereret. Kilden er svaret."
@@ -253,15 +253,13 @@
         "c3Body": "I åbnede kendelser og lovtekster markeres de afsnit, der matcher dit spørgsmål, så du straks ser, hvorfor et resultat er relevant.",
         "c4Title": "Juridiske filtre",
         "c4Body": "Afgræns efter afgørelsestype, udfald, del af kendelsen, dato og parter — med løbende resultattal, som du forventer af professionelle juridiske databaser.",
-        "c5Title": "Én søgning, alle kilder",
-        "c5Body": "Nævnspraksis, lovgivning, EU-ret, vejledning og kommentar — søgt samlet, citeret hver for sig.",
         "c6Title": "Projekter",
         "c6Body": "Gem kendelser og afsnit undervejs, grupperet efter det spørgsmål, der fandt dem. Dit søgespor kan rekonstrueres — for kolleger og til sagen."
     },
     "PCoverage": {
         "secNum": "§ 3 — Kildedækning",
         "heading": "Præcis hvilke kilder, <em>uden omsvøb.</em>",
-        "sub": "Du ville alligevel have tjekket.",
+        "sub": "Hvad der er tilgængeligt nu — og hvad der stadig er på vej.",
         "norway": "Norge",
         "denmark": "Danmark",
         "germany": "Tyskland",

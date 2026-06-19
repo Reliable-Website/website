@@ -20,7 +20,7 @@ function MiniDoc() {
 
 export function Capabilities() {
     const t = useTranslations('PCaps')
-    const itemKeys = ["c1", "c2", "c3", "c4", "c5", "c6"] as const
+    const itemKeys = ["c1", "c2", "c3", "c4", "c6"] as const
 
     return (
         <section id="how" className="border-t border-rule py-24">

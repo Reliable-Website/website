@@ -241,7 +241,7 @@
         "intro": "Juridisk research skjer under press, og det er ikke rom for feil. Generative verktøy produserer tekst — og av og til henvisninger som ikke finnes. Presedens bygger en meningsrepresentasjon av spørsmålet ditt og henter frem avsnitt fra faktiske rettskilder. Hvert resultat er et dokument du kan åpne og kontrollere.",
         "genericTag": "Generativ chatbot",
         "latency": "Responstid",
-        "genericVerdict": "Den siterte avgjørelsen finnes ikke. Fabrikkerte henvisninger ser identiske ut med ekte — helt til du kontrollerer dem.",
+        "genericVerdict": "Den siterte avgjørelsen finnes ikke — og selv når en kilde er ekte, drukner den i analyse du aldri ba om.",
         "presedensAnswerPrefix": "Relevante avsnitt fra",
         "presedensAnswerSuffix": "hvert treff åpner den autoritative teksten, med de relevante avsnittene markert.",
         "presedensVerdict": "Gjenfunnet, ikke generert. Kilden er svaret."
@@ -257,15 +257,13 @@
         "c3Body": "I åpnede avgjørelser og lovtekster markeres avsnittene som svarer på spørsmålet ditt, slik at du umiddelbart ser hvorfor treffet er relevant.",
         "c4Title": "Juridiske filtre",
         "c4Body": "Avgrens etter avgjørelsestype, utfall, del av avgjørelsen, dato og parter — med løpende trefftall, slik du forventer av profesjonelle rettskildeverktøy.",
-        "c5Title": "Ett søk, alle kilder",
-        "c5Body": "Nemndspraksis, lov og forskrift, EU-rett, veileder og kommentar — søkt samlet, sitert hver for seg.",
         "c6Title": "Prosjekter",
         "c6Body": "Lagre avgjørelser og avsnitt underveis, gruppert etter problemstillingen som fant dem. Søkesporet kan rekonstrueres — for kolleger, og for saken."
     },
     "PCoverage": {
         "secNum": "§ 3 — Kildedekning",
         "heading": "Nøyaktig hvilke kilder, <em>uten omsvøp.</em>",
-        "sub": "Du ville uansett ha kontrollert det.",
+        "sub": "Hva som er tilgjengelig nå — og hva som fortsatt kommer.",
         "norway": "Norge",
         "denmark": "Danmark",
         "germany": "Tyskland",
