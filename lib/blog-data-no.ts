@@ -2,6 +2,33 @@ import { BlogPost } from "./blog-data"
 
 export const blogPostsNo: BlogPost[] = [
     {
+        title: "Vi lanserer Presedens — semantisk søk i anskaffelsesretten",
+        excerpt: "Presedens er vårt verktøy for semantisk søk i anskaffelsesretten. Det henter frem de mest relevante avgjørelsene for spørsmålet ditt — på avsnittsnivå, på tvers av nemndspraksis, lov og forskrift og EU-rett, og hvert treff er lenket til den autoritative kilden.",
+        date: "5. juni 2026",
+        category: "Produktlansering",
+        slug: "introducing-presedens",
+        image: "/images/Blog/presedens-now-live-4.png",
+        imageNatural: true,
+        featured: true,
+        content: `
+            <p>I dag lanserer vi <strong>Presedens</strong> — vårt verktøy for semantisk søk i anskaffelsesretten, bygget for juristene som arbeider med den hver dag.</p>
+            <p>Anskaffelsesretten er omfattende, i stadig utvikling og uten rom for feil. Arbeidet bak ett enkelt spørsmål kan bety å lese gjennom tusenvis av avgjørelser for å finne de få som betyr noe. Presedens er bygget nettopp for dette arbeidet, og følger ett prinsipp framfor alt: <strong>vi bruker KI til å finne kilder, ikke generere dem.</strong></p>
+
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">Fra spørsmål til riktig avsnitt</h2>
+            <p>Still Presedens et spørsmål i vanlig juridisk språk. I stedet for å matche nøkkelord bygger verktøyet en representasjon av <em>meningen</em> i spørsmålet ditt og henter frem avgjørelsene som besvarer det — selv når de er formulert med helt andre ord. Treffene gis på avsnittsnivå, ikke bare på dokumentnivå, slik at du lander på vurderingen som betyr noe, ikke side én av førti. Når du åpner en avgjørelse, er avsnittene som svarte på spørsmålet ditt markert direkte i teksten.</p>
+
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">Alle kilder i ett søk</h2>
+            <p>Presedens søker på tvers av kildene en anskaffelsesjurist støtter seg på, og siterer hver av dem for seg:</p>
+            <ul class="list-disc list-inside space-y-2 mb-6 text-muted-foreground">
+                <li><strong>Norge:</strong> avgjørelser fra Klagenemnda for offentlige anskaffelser (KOFA), anskaffelsesloven med forskrifter, DFØ-veilederen og juridisk kommentarmateriale.</li>
+                <li><strong>Danmark:</strong> kendelser fra Klagenævnet for Udbud, sammen med udbudsloven og tilhørende bekendtgørelser.</li>
+                <li><strong>Tyskland:</strong> forbundets Vergabekammer des Bundes, med Länder-kamrene, lovtekstene og overrettspraksis som kommer.</li>
+                <li><strong>EU-rett:</strong> anskaffelsesdirektivene og forordningene, og praksis fra EU-domstolen og Underretten — tilgjengelig på tvers av alle jurisdiksjoner.</li>
+            </ul>
+            <p>Nasjonal domstolspraksis legges til som det neste. Arbeider du med offentlige anskaffelser og vil se hvordan Presedens håndterer en problemstilling fra egen praksis, viser vi deg gjerne. Ta med et reelt spørsmål — vi kjører det live, og du vurderer resultatene selv.</p>
+        `
+    },
+    {
         title: "Reliable AI mottar 1 MNOK fra Innovasjon Norge",
         excerpt: "Vi er stolte og takknemlige for å kunngjøre at Reliable AI er tildelt 1 000 000 kr i STUD-ENT-støtte fra Innovasjon Norge, ett av bare 20 prosjekter valgt ut fra rekordmange 87 søkere ved norske universiteter og høgskoler.",
         date: "10. april 2026",

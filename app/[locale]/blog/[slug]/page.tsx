@@ -44,6 +44,7 @@ export default async function BlogPost({ params }: PageProps) {
                         contentImage={post.contentImage}
                         imageContain={post.imageContain}
                         contentImageContain={post.contentImageContain}
+                        imageNatural={post.imageNatural}
                     />
 
                     <div>

@@ -65,7 +65,7 @@ export default async function BlogPage({ params }: PageProps) {
                                                 alt=""
                                                 fill
                                                 sizes="180px"
-                                                className={post.imageContain ? "bg-white object-contain p-2" : "object-cover"}
+                                                className={post.imageContain ? "bg-white object-contain p-2" : post.imageNatural ? "object-cover object-bottom" : "object-cover"}
                                             />
                                         </div>
                                     )}

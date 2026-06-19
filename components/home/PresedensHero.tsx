@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
+import { Link } from "@/i18n/navigation"
 import { CALENDLY_URL } from "@/lib/constants"
 
 type Query = { tag: string; q: string }
@@ -137,7 +138,12 @@ export function PresedensHero() {
                         custom={4} initial="hidden" animate="visible" variants={fadeIn}
                         className="mt-7 font-mono text-[12.5px] leading-relaxed text-paper-60"
                     >
-                        <span className="text-hvit">{t('award')}</span>
+                        <Link
+                            href="/blog/ecai-2025-outstanding-demo-award"
+                            className="text-hvit underline decoration-white/25 underline-offset-4 transition-colors hover:text-himmel hover:decoration-himmel"
+                        >
+                            {t('award')}
+                        </Link>
                     </motion.p>
 
                     <motion.div custom={5} initial="hidden" animate="visible" variants={fadeIn}>

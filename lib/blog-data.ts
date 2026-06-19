@@ -9,10 +9,38 @@ export interface BlogPost {
     contentImage?: string
     imageContain?: boolean
     contentImageContain?: boolean
+    imageNatural?: boolean
     featured?: boolean
 }
 
 export const blogPosts: BlogPost[] = [
+    {
+        title: "Introducing Presedens — semantic search for procurement law",
+        excerpt: "Presedens is our semantic search tool for public procurement law. It retrieves the decisions most relevant to your question — at paragraph level, across complaint-board practice, statutes and EU law, with every result linked to its authoritative source.",
+        date: "5 June 2026",
+        category: "Product Launch",
+        slug: "introducing-presedens",
+        image: "/images/Blog/presedens-now-live-4.png",
+        imageNatural: true,
+        featured: true,
+        content: `
+            <p>Today we are launching <strong>Presedens</strong> — our semantic search tool for public procurement law, built for the lawyers who work in it every day.</p>
+            <p>Procurement law is dense, fast-moving, and unforgiving of mistakes. The research behind a single question can mean reading through thousands of decisions to find the few that matter. Presedens is built for exactly that work, and it follows one principle above all: <strong>we use AI to find sources, not generate them.</strong></p>
+
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">From a question to the right paragraph</h2>
+            <p>Ask Presedens a question in plain legal language. Instead of matching keywords, it builds a representation of the <em>meaning</em> of your question and retrieves the decisions that answer it — even when they use entirely different wording. Results are returned at the level of the individual paragraph, not just the document, so you land on the reasoning that matters rather than page one of forty. When you open a decision, the passages that answered your question are highlighted in place.</p>
+
+            <h2 class="font-heading text-2xl font-bold mt-10 mb-4">Every source in one search</h2>
+            <p>Presedens searches across the sources a procurement lawyer relies on, and cites each one separately:</p>
+            <ul class="list-disc list-inside space-y-2 mb-6 text-muted-foreground">
+                <li><strong>Norway:</strong> decisions of the Klagenemnda for offentlige anskaffelser (KOFA), the procurement act and its regulations, the DFØ guidance, and legal commentary.</li>
+                <li><strong>Denmark:</strong> decisions of Klagenævnet for Udbud, together with the procurement act and its executive orders.</li>
+                <li><strong>Germany:</strong> the federal Vergabekammer des Bundes, with the Länder chambers, the statutes and higher-court practice to follow.</li>
+                <li><strong>EU law:</strong> the procurement directives and regulations, and the case law of the Court of Justice and the General Court — available across every jurisdiction.</li>
+            </ul>
+            <p>National court practice is being added next. If you work with public procurement and want to see how Presedens handles a question from your own practice, we would be glad to show you. Bring a real question — we will run it live, and you can judge the results yourself.</p>
+        `
+    },
     {
         title: "Reliable AI receives 1 MNOK from Innovasjon Norge",
         excerpt: "We are proud and grateful to announce that Reliable AI has been awarded 1,000,000 kr in STUD-ENT funding from Innovasjon Norge, one of only 20 projects selected from a record 87 applicants across Norwegian universities and colleges.",
