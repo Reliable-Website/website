@@ -250,11 +250,11 @@
         "c2Title": "Treffer auf Absatzebene",
         "c2Body": "Ergebnisse verweisen auf die konkrete Randnummer, nicht auf Seite eins eines vierzigseitigen Beschlusses.",
         "c3Title": "Relevanz im Dokument",
-        "c3Body": "Geöffnete Entscheidungen markieren die Absätze, die zu Ihrer Frage passen — Sie sehen sofort, warum ein Treffer einschlägig ist.",
+        "c3Body": "Öffnen Sie eine Entscheidung oder einen Gesetzestext, und die relevanten Absätze sind direkt im Text markiert — so sehen Sie auf einen Blick, welche Teile des Dokuments relevant sind.",
         "c4Title": "Juristische Filter",
-        "c4Body": "Eingrenzung nach Entscheidungsart, Ergebnis, Datum und Beteiligten — mit laufend aktualisierten Trefferzahlen.",
+        "c4Body": "Eingrenzung nach Entscheidungsart, Ergebnis, Datum und Beteiligten — jeder Filter zeigt, wie viele Treffer er liefert.",
         "c6Title": "Projekte",
-        "c6Body": "Entscheidungen und Absätze speichern, geordnet nach der Recherchefrage, die sie gefunden hat — nachvollziehbar für Kollegen und für die Akte."
+        "c6Body": "Entscheidungen und Absätze speichern — nachvollziehbar für Kollegen und für die Akte."
     },
     "PCoverage": {
         "secNum": "§ 3 — Quellenabdeckung",

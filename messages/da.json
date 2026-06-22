@@ -250,11 +250,11 @@
         "c2Title": "Resultater på afsnitsniveau",
         "c2Body": "Resultaterne peger på det konkrete afsnit i kendelsen, ikke kun dokumentet. Du lander på vurderingen, der betyder noget, ikke side ét af fyrre.",
         "c3Title": "Relevansmarkering",
-        "c3Body": "I åbnede kendelser og lovtekster markeres de afsnit, der matcher dit spørgsmål, så du straks ser, hvorfor et resultat er relevant.",
+        "c3Body": "Åbn en kendelse eller lovtekst, og de relevante afsnit er markeret direkte i teksten, så du straks ser, hvilke dele af dokumentet der er relevante.",
         "c4Title": "Juridiske filtre",
-        "c4Body": "Afgræns efter afgørelsestype, udfald, del af kendelsen, dato og parter — med løbende resultattal, som du forventer af professionelle juridiske databaser.",
+        "c4Body": "Afgræns efter afgørelsestype, udfald, del af kendelsen, dato og parter — hvert filter viser, hvor mange resultater det giver.",
         "c6Title": "Projekter",
-        "c6Body": "Gem kendelser og afsnit undervejs, grupperet efter det spørgsmål, der fandt dem. Dit søgespor kan rekonstrueres — for kolleger og til sagen."
+        "c6Body": "Gem kendelser og afsnit undervejs. Dit søgespor kan rekonstrueres — for kolleger og til sagen."
     },
     "PCoverage": {
         "secNum": "§ 3 — Kildedækning",

@@ -254,11 +254,11 @@
         "c2Title": "Treff på avsnittsnivå",
         "c2Body": "Treffene peker til det konkrete avsnittet i avgjørelsen, ikke bare dokumentet. Du lander på vurderingen som betyr noe, ikke side én av førti.",
         "c3Title": "Relevansmarkering",
-        "c3Body": "I åpnede avgjørelser og lovtekster markeres avsnittene som svarer på spørsmålet ditt, slik at du umiddelbart ser hvorfor treffet er relevant.",
+        "c3Body": "Åpne en avgjørelse eller lovtekst, og de relevante avsnittene er markert direkte i teksten, slik at du straks ser hvilke deler av dokumentet som er relevante.",
         "c4Title": "Juridiske filtre",
-        "c4Body": "Avgrens etter avgjørelsestype, utfall, del av avgjørelsen, dato og parter — med løpende trefftall, slik du forventer av profesjonelle rettskildeverktøy.",
+        "c4Body": "Avgrens etter avgjørelsestype, utfall, del av avgjørelsen, dato og parter — hvert filter viser hvor mange treff det gir.",
         "c6Title": "Prosjekter",
-        "c6Body": "Lagre avgjørelser og avsnitt underveis, gruppert etter problemstillingen som fant dem. Søkesporet kan rekonstrueres — for kolleger, og for saken."
+        "c6Body": "Lagre avgjørelser og avsnitt underveis. Søkesporet kan rekonstrueres — for kolleger, og for saken."
     },
     "PCoverage": {
         "secNum": "§ 3 — Kildedekning",

@@ -254,11 +254,11 @@
         "c2Title": "Paragraph-level results",
         "c2Body": "Hits point to the specific paragraph in a decision, not just the document. You land on the reasoning that matters, not page one of forty.",
         "c3Title": "Relevance highlighting",
-        "c3Body": "Opened decisions and law texts shade the paragraphs that matched your question, so you see immediately why a hit is relevant.",
+        "c3Body": "Open a decision or statute and the matching paragraphs are highlighted in place, so you see at a glance which parts of the document are relevant.",
         "c4Title": "Legal filters",
-        "c4Body": "Narrow by decision type, outcome, section of the decision, date and parties — with live counts, the way you expect from professional legal databases.",
+        "c4Body": "Narrow by decision type, outcome, section of the decision, date and parties — each filter showing how many results it returns.",
         "c6Title": "Projects",
-        "c6Body": "Save decisions and paragraphs as you research, grouped by the question that found them. Your research trail is reconstructible — for colleagues, and for the file."
+        "c6Body": "Save decisions and paragraphs as you research. Your research trail is reconstructible — for colleagues, and for the file."
     },
     "PCoverage": {
         "secNum": "§ 3 — Coverage",
