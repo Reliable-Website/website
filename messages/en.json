@@ -32,16 +32,15 @@
         "research": "Research",
         "blog": "Blog",
         "contact": "Contact",
-        "login": "Login",
+        "login": "Log in",
         "howItWorks": "How it works",
         "coverage": "Coverage",
         "news": "Blog",
         "bookDemo": "Book a demo",
-        "more": "More",
-        "access": "Access Presedens"
+        "more": "More"
     },
     "Access": {
-        "title": "Access Presedens",
+        "title": "Access Reliable",
         "demoBadge": "New here",
         "demoHeading": "Book a demo",
         "demoBody": "See Presedens on your own procurement questions, together with our team.",

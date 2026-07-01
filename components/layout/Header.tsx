@@ -130,7 +130,7 @@ export function Header() {
                             href="/access"
                             className="rounded-full bg-primary border border-primary px-[22px] py-[9px] text-[15px] font-semibold text-white hover:bg-[#5a6de8] hover:border-[#5a6de8] transition-colors"
                         >
-                            {t('access')}
+                            {t('login')}
                         </Link>
                     </nav>
 
@@ -170,7 +170,7 @@ export function Header() {
                                         className="rounded-full bg-primary px-6 py-3 text-center text-base font-semibold text-white"
                                         onClick={() => setIsOpen(false)}
                                     >
-                                        {t('access')}
+                                        {t('login')}
                                     </Link>
                                     <div className="flex items-center justify-between pt-6 border-t border-white/10">
                                         <span className="text-paper-60">Language</span>

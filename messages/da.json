@@ -37,11 +37,10 @@
         "coverage": "Kildedækning",
         "news": "Blog",
         "bookDemo": "Book demo",
-        "more": "Mere",
-        "access": "Åbn Presedens"
+        "more": "Mere"
     },
     "Access": {
-        "title": "Adgang til Presedens",
+        "title": "Adgang til Reliable",
         "demoBadge": "Ny her",
         "demoHeading": "Book demo",
         "demoBody": "Se Presedens brugt på egne udbudsspørgsmål, sammen med vores team.",

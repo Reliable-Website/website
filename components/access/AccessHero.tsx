@@ -106,9 +106,9 @@ export function AccessHero() {
     const t = useTranslations("Access")
     const loginUrl = loginUrlFor(useLocale())
 
-    // Italicise the trailing "Presedens" in the localized title.
+    // Italicise the trailing "Reliable" in the localized title.
     const title = t("title")
-    const idx = title.lastIndexOf("Presedens")
+    const idx = title.lastIndexOf("Reliable")
     const pre = idx >= 0 ? title.slice(0, idx) : title
 
     return (
@@ -118,7 +118,7 @@ export function AccessHero() {
             <div className="relative z-10 mx-auto w-full max-w-[1080px] px-6 py-24 text-center">
                 <h1 className="text-[clamp(42px,6.4vw,76px)] font-normal leading-[1.03] tracking-[-0.028em]">
                     {pre}
-                    {idx >= 0 && <em className="font-normal italic text-himmel">Presedens</em>}
+                    {idx >= 0 && <em className="font-normal italic text-himmel">Reliable</em>}
                 </h1>
 
                 <div className="mx-auto mt-11 grid w-full max-w-[620px] grid-cols-1 gap-4 text-left sm:grid-cols-2">
