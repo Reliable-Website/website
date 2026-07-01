@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 import { Link, usePathname, useRouter } from "@/i18n/navigation"
 import { useTranslations, useLocale } from "next-intl"
-import { CALENDLY_URL } from "@/lib/constants"
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -90,7 +89,7 @@ export function Header() {
                             </Link>
                         ))}
 
-                        {/* More menu: Team / News / Contact / Login */}
+                        {/* More menu: Team / News / Contact */}
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>
                                 <button className="flex cursor-pointer items-center gap-1 text-[15px] text-paper-60 transition-colors hover:text-hvit focus-visible:outline-none">
@@ -104,11 +103,6 @@ export function Header() {
                                         <Link href={item.href}>{item.name}</Link>
                                     </DropdownMenuItem>
                                 ))}
-                                <DropdownMenuItem asChild>
-                                    <a href="https://reliableai.online" target="_blank" rel="noopener noreferrer">
-                                        {t('login')}
-                                    </a>
-                                </DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>
 
@@ -131,15 +125,13 @@ export function Header() {
                             </DropdownMenuContent>
                         </DropdownMenu>
 
-                        {/* Demo CTA */}
-                        <a
-                            href={CALENDLY_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        {/* Access CTA — leads to the /access gate (log in or book a demo) */}
+                        <Link
+                            href="/access"
                             className="rounded-full bg-primary border border-primary px-[22px] py-[9px] text-[15px] font-semibold text-white hover:bg-[#5a6de8] hover:border-[#5a6de8] transition-colors"
                         >
-                            {t('bookDemo')}
-                        </a>
+                            {t('access')}
+                        </Link>
                     </nav>
 
                     {/* Mobile Menu Button */}
@@ -173,24 +165,13 @@ export function Header() {
                                             {item.name}
                                         </Link>
                                     ))}
-                                    <a
-                                        href="https://reliableai.online"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="font-heading text-2xl text-paper-60"
-                                        onClick={() => setIsOpen(false)}
-                                    >
-                                        {t('login')}
-                                    </a>
-                                    <a
-                                        href={CALENDLY_URL}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                                    <Link
+                                        href="/access"
                                         className="rounded-full bg-primary px-6 py-3 text-center text-base font-semibold text-white"
                                         onClick={() => setIsOpen(false)}
                                     >
-                                        {t('bookDemo')}
-                                    </a>
+                                        {t('access')}
+                                    </Link>
                                     <div className="flex items-center justify-between pt-6 border-t border-white/10">
                                         <span className="text-paper-60">Language</span>
                                         <div className="flex gap-3">

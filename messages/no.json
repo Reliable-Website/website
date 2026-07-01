@@ -37,7 +37,19 @@
         "coverage": "Kildedekning",
         "news": "Blogg",
         "bookDemo": "Bestill demo",
-        "more": "Mer"
+        "more": "Mer",
+        "access": "Åpne Presedens"
+    },
+    "Access": {
+        "title": "Tilgang til Presedens",
+        "demoBadge": "Ny her",
+        "demoHeading": "Bestill demo",
+        "demoBody": "Se Presedens brukt på egne anskaffelsesspørsmål, sammen med teamet vårt.",
+        "demoCta": "Bestill demo",
+        "loginBadge": "Har tilgang",
+        "loginHeading": "Logg inn",
+        "loginBody": "For eksisterende brukere hos firmaer med Presedens-tilgang.",
+        "loginCta": "Gå til innlogging"
     },
     "Hero": {
         "title": "<span class=\"text-primary\">Reliable AI</span> forskning, rådgivning og implementering",

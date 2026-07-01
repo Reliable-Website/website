@@ -37,7 +37,19 @@
         "coverage": "Quellen",
         "news": "Blog",
         "bookDemo": "Demo vereinbaren",
-        "more": "Mehr"
+        "more": "Mehr",
+        "access": "Presedens öffnen"
+    },
+    "Access": {
+        "title": "Zugang zu Presedens",
+        "demoBadge": "Neu hier",
+        "demoHeading": "Demo vereinbaren",
+        "demoBody": "Sehen Sie Presedens an eigenen Vergabefragen, gemeinsam mit unserem Team.",
+        "demoCta": "Demo vereinbaren",
+        "loginBadge": "Zugang vorhanden",
+        "loginHeading": "Anmelden",
+        "loginBody": "Für bestehende Nutzer in Kanzleien mit Presedens-Zugang.",
+        "loginCta": "Zur Anmeldung"
     },
     "Hero": {
         "title": "<span class=\"text-primary\">Reliable AI</span> Forschung, Beratung und Implementierung",

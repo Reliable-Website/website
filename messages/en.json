@@ -37,7 +37,19 @@
         "coverage": "Coverage",
         "news": "Blog",
         "bookDemo": "Book a demo",
-        "more": "More"
+        "more": "More",
+        "access": "Access Presedens"
+    },
+    "Access": {
+        "title": "Access Presedens",
+        "demoBadge": "New here",
+        "demoHeading": "Book a demo",
+        "demoBody": "See Presedens on your own procurement questions, together with our team.",
+        "demoCta": "Book a demo",
+        "loginBadge": "Have access",
+        "loginHeading": "Log in",
+        "loginBody": "For existing users at firms with a Presedens account.",
+        "loginCta": "Go to login"
     },
     "Hero": {
         "title": "<span class=\"text-primary\">Reliable AI</span> research, consulting and deployment",
