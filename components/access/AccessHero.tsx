@@ -147,7 +147,7 @@ export function AccessHero() {
                             href={loginUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group mt-6 inline-flex items-center gap-2 self-start rounded-full border border-white/30 px-5 py-2.5 text-[14.5px] font-semibold text-hvit transition-colors hover:bg-hvit hover:text-natt"
+                            className="group mt-6 inline-flex items-center gap-2 self-start rounded-full border border-white/30 px-5 py-2.5 text-[14.5px] font-semibold text-hvit transition-colors hover:bg-hvit hover:text-svart"
                         >
                             {t("loginCta")}
                             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />

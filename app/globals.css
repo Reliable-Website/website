@@ -22,7 +22,6 @@
   /* Brand palette (RAI-Farger) */
   --color-bla: #6A7DFA;
   --color-svart: #272726;
-  --color-natt: #08080c;
   --color-hvit: #F3F3F3;
   --color-himmel: #A0ADF9;
   --color-regn: #D2DDF7;
@@ -37,9 +36,9 @@
   --color-paper-60: rgba(243, 243, 243, 0.6);
   --color-paper-30: rgba(243, 243, 243, 0.3);
 
-  --font-sans: var(--font-instrument);
-  --font-heading: var(--font-fraunces);
-  --font-mono: var(--font-plex-mono);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-inter);
+  --font-mono: var(--font-inter);
 }
 
 :root {
