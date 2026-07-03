@@ -1,8 +1,9 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { motion } from "framer-motion"
+import { motion, useReducedMotion } from "framer-motion"
 import { useTranslations } from "next-intl"
+import { ChevronDown } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 import { CALENDLY_URL } from "@/lib/constants"
 
@@ -61,6 +62,7 @@ function TypingSearchBar({ queries }: { queries: Query[] }) {
 export function PresedensHero() {
     const t = useTranslations('PHero')
     const queries = t.raw('queries') as Query[]
+    const reducedMotion = useReducedMotion()
 
     const fadeIn = {
         hidden: { opacity: 0 },
@@ -77,14 +79,15 @@ export function PresedensHero() {
             {/* § watermark */}
             <span
                 aria-hidden="true"
-                className="pointer-events-none absolute left-1/2 top-[-16%] -translate-x-[92%] select-none font-heading font-light leading-none"
+                className="pointer-events-none absolute left-1/2 top-4 -translate-x-[92%] select-none font-heading font-light leading-none"
                 style={{ fontSize: "70vh", color: "rgba(106,125,250,.14)" }}
             >
                 §
             </span>
 
             <div className="relative z-10 mx-auto max-w-[1180px] px-6">
-                <div className="py-20 text-center md:py-24">
+                {/* keeps the trust strip (and a hint of the next section) above the fold on a ~900px viewport */}
+                <div className="flex min-h-[calc(100svh-160px)] flex-col justify-center pt-32 pb-24 text-center">
                     <motion.span
                         custom={0} initial="hidden" animate="visible" variants={fadeIn}
                         className="mb-7 inline-block font-mono text-[12.5px] uppercase tracking-[0.16em] text-himmel"
@@ -151,6 +154,17 @@ export function PresedensHero() {
                     </motion.div>
                 </div>
             </div>
+
+            {/* scroll cue */}
+            <motion.div
+                aria-hidden="true"
+                className="pointer-events-none absolute bottom-7 left-1/2 -translate-x-1/2"
+                initial={{ opacity: 0 }}
+                animate={reducedMotion ? { opacity: 0.4 } : { opacity: [0.2, 0.55, 0.2] }}
+                transition={reducedMotion ? { duration: 0.6, delay: 1 } : { duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+            >
+                <ChevronDown className="h-5 w-5 text-hvit" strokeWidth={1.5} />
+            </motion.div>
         </div>
     )
 }
