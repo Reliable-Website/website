@@ -136,10 +136,10 @@
             "cpo_co_founder": "CPO, Co-Founder"
         },
         "descriptions": {
-            "halvor": "Baggrund i fysik og beregningsvidenskab. Specialiserer sig i tekst-embeddings og repræsentationen af betydning — med særlig interesse for kreative tilgange til embedding-rum. Den tekniske rygrad i Reliable AI. Når han ikke koder, finder du ham på langrendssporet eller i klatrevæggen.",
+            "halvor": "Baggrund i fysik og beregningsvidenskab. Specialiserer sig i tekst-embeddings og repræsentationen af betydning, med særlig interesse for kreative tilgange til embedding-rum. Den tekniske rygrad i Reliable AI. Når han ikke koder, finder du ham på langrendssporet eller i klatrevæggen.",
             "jonas": "Baggrund i filosofi og datavidenskab med et solidt fundament i statistik og teori. Har øje for design og får løsningerne til at se godt ud. Når han ikke arbejder, finder du ham på basketballbanen eller fodboldbanen.",
-            "markus": "Baggrund i filosofi, AI og etik — med særlig interesse for, hvordan sprogmodeller repræsenterer begreber. Leder salg og markedsføring i Reliable AI. Tennisspiller og alpinist på næsten professionelt niveau.",
-            "torole": "Lektor i fysik ved Universitetet i Oslo. Hans forskning fokuserer på beregningskompetence, aktive læringsmetoder og brug af NLP i uddannelsesforskning — herunder tekst-embeddings til kvalitativ analyse. I sin fritid spiller han norsk folkemusik på violin, skærer i træ og læser tegneserier.",
+            "markus": "Baggrund i filosofi, AI og etik, med særlig interesse for, hvordan sprogmodeller repræsenterer begreber. Leder salg og markedsføring i Reliable AI. Tennisspiller og alpinist på næsten professionelt niveau.",
+            "torole": "Lektor i fysik ved Universitetet i Oslo. Hans forskning fokuserer på beregningskompetence, aktive læringsmetoder og brug af NLP i uddannelsesforskning, herunder tekst-embeddings til kvalitativ analyse. I sin fritid spiller han norsk folkemusik på violin, skærer i træ og læser tegneserier.",
             "anders": "Professor i fysik ved Universitetet i Oslo med forskning inden for geofysik, neurovidenskab og kunstig intelligens. Leder af Center for Computing in Science Education og erfaren med at bringe akademisk forskning til markedet. Leder i øjeblikket et offentligt udvalg, der rådgiver om, hvordan AI bør forme videregående uddannelse. Lever af havregryn.",
             "mathilde": "Partner i Sprint Consulting med ni års erfaring inden for innovation og bæredygtighedsrådgivning. Baggrund fra NTNU i datalogi og strategi. Specialiserer sig i at hjælpe virksomheder med innovation, etablering af nye forretninger og bæredygtig vækst.",
             "larspetter": "5x serieentreprenør inden for EdTech. Medstifter og CPO af We Are Learning (immersiv 3D-læring). Tidligere medstifter af Motimate, som blev opkøbt af Kahoot!. Hans rejse spænder fra CD-ROM og laserdiske til gamification og AI-drevne immersive produkter. Kendt som en fængslende foredragsholder om kreativitet og AI.",
@@ -151,11 +151,11 @@
     },
     "Products": {
         "title": "Vores Produkter",
-        "subtitle": "Sikker beslutningsstøtte, der styrker faglig vurdering. Vi erstatter ikke din analyse — vi gør den bedre.",
+        "subtitle": "Sikker beslutningsstøtte, der styrker faglig vurdering. Vi erstatter ikke din analyse. Vi gør den bedre.",
         "kofa": {
             "tag": "Legal Tech",
             "title": "Presedens",
-            "description": "Alle relevante retskilder for udbudsjurister samlet ét sted. Søg i KOFA-afgørelser, norsk ret, DFØ-vejledning, EU-direktiver og retspraksis samt dansk KLFU — alt sammen fra én hybrid AI-søgning.",
+            "description": "Alle relevante retskilder for udbudsjurister samlet ét sted. Søg i KOFA-afgørelser, norsk ret, DFØ-vejledning, EU-direktiver og retspraksis samt dansk KLFU, alt sammen fra én hybrid AI-søgning.",
             "feature1": "Alle vigtige retskilder for udbudsret samlet ét sted.",
             "feature2": "Hybrid søgning, der kombinerer semantisk forståelse og præcis søgeordsmatchning.",
             "feature3": "Bygget til udbudsjuristens arbejdsgang.",
@@ -205,7 +205,7 @@
         "kicker": "Semantisk søgning i udbudsretten",
         "title": "Retspraksis, søgt efter <em>mening.</em>",
         "keyLine": "Vi bruger AI til at finde kilder, ikke generere dem.",
-        "sub": "Presedens finder de kendelser, der er mest relevante for dit spørgsmål — på afsnitsniveau, og hvert resultat linker til den autoritative kilde.",
+        "sub": "Presedens finder de kendelser, der er mest relevante for dit spørgsmål, på afsnitsniveau, og hvert resultat linker til den autoritative kilde.",
         "ctaDemo": "Book demo",
         "ctaCoverage": "Se kildedækning",
         "award": "ECAI 2025 Outstanding Demo Award",
@@ -243,42 +243,42 @@
         "universitas": "«Skapte prisvinnende KI-verktøy ved siden av studiene»"
     },
     "PCompare": {
-        "secNum": "§ 1 — Genfinding, ikke generering",
+        "secNum": "§ 1. Genfinding, ikke generering",
         "headingLine1": "Presedens skriver ikke svar.",
         "headingLine2": "Det finder <em>kilder.</em>",
-        "intro": "Juridisk research foregår under pres, og der er ikke plads til fejl. Generative værktøjer producerer tekst — og af og til henvisninger, der ikke findes. Presedens bygger en repræsentation af meningen i dit spørgsmål og henter afsnit fra faktiske retskilder. Hvert resultat er et dokument, du kan åbne og efterprøve.",
+        "intro": "Juridisk research foregår under pres, og der er ikke plads til fejl. Generative værktøjer producerer tekst, og af og til henvisninger, der ikke findes. Presedens bygger en repræsentation af meningen i dit spørgsmål og henter afsnit fra faktiske retskilder. Hvert resultat er et dokument, du kan åbne og efterprøve.",
         "genericTag": "Generativ chatbot",
         "latency": "Svartid",
-        "genericVerdict": "Den citerede kendelse findes ikke — og selv når en kilde er ægte, drukner den i analyse, du ikke har bedt om.",
+        "genericVerdict": "Den citerede kendelse findes ikke, og selv når en kilde er ægte, drukner den i analyse, du ikke har bedt om.",
         "presedensAnswerPrefix": "Relevante afsnit fra",
         "presedensAnswerSuffix": "hvert resultat åbner den autoritative tekst med de relevante afsnit markeret.",
         "presedensVerdict": "Genfundet, ikke genereret. Kilden er svaret."
     },
     "PCaps": {
-        "secNum": "§ 2 — Hvad det gør",
+        "secNum": "§ 2. Hvad det gør",
         "heading": "Bygget til hvordan udbudsjurister <em>faktisk arbejder.</em>",
         "c1Title": "Søgning efter mening",
-        "c1Body": "Stil spørgsmålet i almindeligt juridisk sprog. Presedens finder kendelser, der besvarer spørgsmålet, selv når de bruger en helt anden ordlyd — ingen søgeoperatorer, ingen gætten på nævnets begreber.",
+        "c1Body": "Stil spørgsmålet i almindeligt juridisk sprog. Presedens finder kendelser, der besvarer spørgsmålet, selv når de bruger en helt anden ordlyd: ingen søgeoperatorer, ingen gætten på nævnets begreber.",
         "c2Title": "Resultater på afsnitsniveau",
         "c2Body": "Resultaterne peger på det konkrete afsnit i kendelsen, ikke kun dokumentet. Du lander på vurderingen, der betyder noget, ikke side ét af fyrre.",
         "c3Title": "Relevansmarkering",
         "c3Body": "Åbn en kendelse eller lovtekst, og de relevante afsnit er markeret direkte i teksten, så du straks ser, hvilke dele af dokumentet der er relevante.",
         "c4Title": "Juridiske filtre",
-        "c4Body": "Afgræns efter afgørelsestype, udfald, del af kendelsen, dato og parter — hvert filter viser, hvor mange resultater det giver.",
+        "c4Body": "Afgræns efter afgørelsestype, udfald, del af kendelsen, dato og parter. Hvert filter viser, hvor mange resultater det giver.",
         "c6Title": "Projekter",
-        "c6Body": "Gem kendelser og afsnit undervejs. Dit søgespor kan rekonstrueres — for kolleger og til sagen."
+        "c6Body": "Gem kendelser og afsnit undervejs. Dit søgespor kan rekonstrueres, for kolleger og til sagen."
     },
     "PCoverage": {
-        "secNum": "§ 3 — Kildedækning",
+        "secNum": "§ 3. Kildedækning",
         "heading": "Præcis hvilke kilder, <em>uden omsvøb.</em>",
-        "sub": "Hvad der er tilgængeligt nu — og hvad der stadig er på vej.",
+        "sub": "Hvad der er tilgængeligt nu, og hvad der stadig er på vej.",
         "norway": "Norge",
         "denmark": "Danmark",
         "germany": "Tyskland",
         "eu": "EU",
         "status_live": "Tilgængelig",
         "status_launching": "Lanceres",
-        "status_liveAll": "Tilgængelig — alle jurisdiktioner",
+        "status_liveAll": "Tilgængelig i alle jurisdiktioner",
         "soon": "KOMMER",
         "euDirectives": "Udbudsdirektiverne",
         "euRegulations": "Forordninger om offentlige udbud",
@@ -286,27 +286,27 @@
         "euGeneralCourt": "Rettens praksis"
     },
     "PLawyers": {
-        "secNum": "§ 4 — Udviklet med advokater",
+        "secNum": "§ 4. Udviklet med advokater",
         "heading": "Udviklet sammen med <em>udbudsjurister.</em>",
-        "intro": "Presedens udvikles i tæt dialog med praktiserende udbudsjurister — først gennem et pilotprojekt hos Advokatfirmaet Haavind, og nu i daglig brug hos norske og danske firmaer.",
+        "intro": "Presedens udvikles i tæt dialog med praktiserende udbudsjurister, først gennem et pilotprojekt hos Advokatfirmaet Haavind, og nu i daglig brug hos norske og danske firmaer.",
         "quote": "Vi er stolte over at kunne tage prisvindende norskudviklet teknologi i brug i praktisk juridisk arbejde. Samarbejdet med Reliable AI har gjort det muligt at udvikle et produkt til <b>præcis søgning i udbudssager</b>, hvilket forenkler vores daglige arbejdsgang. Reliable tog opgaven på strak arm og udviklede et yderst nyttigt produkt på kort tid i tæt dialog med os.",
         "role": "Partner, Advokatfirmaet Haavind"
     },
     "PResearch": {
-        "secNum": "§ 5 — Forskning",
+        "secNum": "§ 5. Forskning",
         "heading": "Forskere fra <em>Universitetet i Oslo.</em>",
         "body": "Reliable AI er en forskningsdrevet virksomhed. Metoderne bag Presedens er publiceret og fagfællebedømt, og den samme standard gælder for hver kilde, vi indekserer.",
         "supportedBy": "Støttet af"
     },
     "PCta": {
         "heading": "Tag et spørgsmål med fra din egen praksis.",
-        "sub": "Tredive minutter. Vi kører dit spørgsmål live i Presedens — vurder selv resultaterne.",
+        "sub": "Tredive minutter. Vi kører dit spørgsmål live i Presedens. Vurder selv resultaterne.",
         "button": "Book demo"
     },
     "Meta": {
-        "title": "Presedens — Semantisk søgning i udbudsretten | Reliable AI",
-        "description": "Presedens finder de mest relevante kendelser for dit spørgsmål — resultater på afsnitsniveau i nævnspraksis, lovgivning og EU-ret, hvert resultat linket til kilden.",
-        "ogTitle": "Presedens — Semantisk søgning i udbudsretten",
+        "title": "Presedens: Semantisk søgning i udbudsretten | Reliable AI",
+        "description": "Presedens finder de mest relevante kendelser for dit spørgsmål: resultater på afsnitsniveau i nævnspraksis, lovgivning og EU-ret, hvert resultat linket til kilden.",
+        "ogTitle": "Presedens: Semantisk søgning i udbudsretten",
         "ogDescription": "Vi bruger AI til at finde kilder, ikke generere dem. Søgning på afsnitsniveau for udbudsjurister."
     }
 }

@@ -14,7 +14,7 @@ export default function PrivacyPage() {
                 <PageHead kicker="Legal" title="Privacy policy" />
                 <div className="mx-auto max-w-[760px] px-6 pb-24 pt-4">
                     <p className="mb-8 inline-block rounded-full bg-appelsin/25 px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-[#9a5a14]">
-                        Draft — under review
+                        Draft · under review
                     </p>
 
                     <div className="space-y-8 text-[15.5px] leading-relaxed text-ink-60 [&_h2]:mb-2 [&_h2]:text-[22px] [&_h2]:text-foreground">

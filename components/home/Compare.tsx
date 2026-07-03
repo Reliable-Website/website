@@ -14,14 +14,14 @@ const EXAMPLES: Record<string, {
 }> = {
     de: {
         query: "» Kann der Auftraggeber ein Vergabeverfahren ohne sachlichen Grund aufheben?",
-        badPre: "„Nein — dies folgt aus ",
+        badPre: "„Nein, dies folgt aus ",
         badCite: "VK 1-203/19",
         badPost: ", wo die Vergabekammer feststellte, dass…“",
         goodCites: ["VK 2-12/18", "C-440/13", "RL 2014/24 Art. 55"],
     },
     default: {
         query: "» Kan oppdragsgiver avlyse en konkurranse uten saklig grunn?",
-        badPre: "“Nei — dette følger av ",
+        badPre: "“Nei, dette følger av ",
         badCite: "KOFA-2021-0847",
         badPost: ", hvor klagenemnda la til grunn at…”",
         goodCites: ["KOFA 2010/7", "KOFA 2010/303", "FOA § 25-4", "C-440/13"],
@@ -79,10 +79,10 @@ export function Compare() {
                             {ex.goodCites.map((cite, i) => (
                                 <span key={cite}>
                                     <span className="whitespace-nowrap rounded bg-gronn/15 px-1.5 font-mono text-[13px] text-gronn">{cite}</span>
-                                    {i < ex.goodCites.length - 1 ? ", " : " "}
+                                    {i < ex.goodCites.length - 1 ? ", " : "; "}
                                 </span>
                             ))}
-                            — {t('presedensAnswerSuffix')}
+                            {t('presedensAnswerSuffix')}
                         </p>
                         <p className="mt-4 font-mono text-xs tracking-[0.04em] text-hvit/45">
                             {t('latency')}: <b className="font-medium text-hvit/75">697 ms</b>

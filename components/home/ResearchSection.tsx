@@ -6,7 +6,7 @@ import { Link } from "@/i18n/navigation"
 const PUBLICATIONS = [
     {
         year: "2025",
-        title: "ECAI 2025 — Outstanding Demo Award",
+        title: "ECAI 2025 · Outstanding Demo Award",
         venue: "European Conference on Artificial Intelligence",
         href: "/blog/ecai-2025-outstanding-demo-award",
         internal: true,

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { useTranslations } from "next-intl"
 
 function LiveClock() {
-    const [stamp, setStamp] = useState("—")
+    const [stamp, setStamp] = useState("…")
 
     useEffect(() => {
         const fmt = new Intl.DateTimeFormat("sv-SE", {

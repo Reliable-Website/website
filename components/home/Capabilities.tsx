@@ -7,7 +7,7 @@ function MiniDoc() {
     return (
         <div aria-hidden="true" className="mt-4.5 max-w-[34em] rounded-lg border border-rule bg-white px-4.5 py-4 text-[11.5px] leading-[1.7] text-ink-60">
             <span className="mb-2 block font-mono text-[10px] uppercase tracking-[0.08em] text-ink-30">
-                KOFA 2010/7 — Klagenemndas vurdering
+                KOFA 2010/7 · Klagenemndas vurdering
             </span>
             {/* marker-yellow shading, matching the in-app PDF highlighter */}
             <span className="block rounded px-1.5 py-px">(46) Klagenemnda har etter dette kommet til at …</span>
