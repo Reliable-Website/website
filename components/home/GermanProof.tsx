@@ -40,7 +40,7 @@ export function GermanProof() {
 
                 <figure className="mt-12 max-w-[56em]">
                     <blockquote className="border-l-[3px] border-himmel pl-7 font-heading text-[clamp(18px,1.8vw,23px)] italic leading-[1.5] text-hvit/90">
-                        {tQuote.rich('quote', { b: (c) => <b className="italic text-himmel" style={{ fontWeight: 480 }}>{c}</b> })}
+                        {tQuote.rich('stian.quote', { b: (c) => <b className="italic text-himmel" style={{ fontWeight: 480 }}>{c}</b> })}
                     </blockquote>
                     <figcaption className="mt-5 flex items-center gap-3.5 pl-7 font-mono text-[12.5px] text-hvit/60">
                         <Image
@@ -51,8 +51,8 @@ export function GermanProof() {
                             className="h-[42px] w-[42px] rounded-full object-cover"
                         />
                         <span className="leading-normal">
-                            <b className="block font-medium text-hvit">Stian Hultin Oddbjørnsen</b>
-                            {tQuote('role')}
+                            <b className="block font-medium text-hvit">{tQuote('stian.name')}</b>
+                            {tQuote('stian.role')}
                         </span>
                     </figcaption>
                 </figure>

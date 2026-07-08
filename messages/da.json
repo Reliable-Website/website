@@ -289,8 +289,16 @@
         "secNum": "§ 4. Udviklet med advokater",
         "heading": "Udviklet sammen med <em>udbudsjurister.</em>",
         "intro": "Presedens udvikles i tæt dialog med praktiserende udbudsjurister, først gennem et pilotprojekt hos Advokatfirmaet Haavind, og nu i daglig brug hos norske og danske firmaer.",
-        "quote": "Vi er stolte over at kunne tage prisvindende norskudviklet teknologi i brug i praktisk juridisk arbejde. Samarbejdet med Reliable AI har gjort det muligt at udvikle et produkt til <b>præcis søgning i udbudssager</b>, hvilket forenkler vores daglige arbejdsgang. Reliable tog opgaven på strak arm og udviklede et yderst nyttigt produkt på kort tid i tæt dialog med os.",
-        "role": "Partner, Advokatfirmaet Haavind"
+        "stian": {
+            "quote": "Vi er stolte over at kunne tage prisvindende norskudviklet teknologi i brug i praktisk juridisk arbejde. Samarbejdet med Reliable AI har gjort det muligt at udvikle et produkt til <b>præcis søgning i udbudssager</b>, hvilket forenkler vores daglige arbejdsgang. Reliable tog opgaven på strak arm og udviklede et yderst nyttigt produkt på kort tid i tæt dialog med os.",
+            "name": "Stian Hultin Oddbjørnsen",
+            "role": "Partner, Advokatfirmaet Haavind"
+        },
+        "karen": {
+            "quote": "Jeg bruger Reliable AI som <b>førstevalg til søgning i KOFA</b>. Det er mere præcist og effektivt end andre løsninger, og giver mig større tryghed for, at jeg har fået dækket de relevante sager.",
+            "name": "Karen Anne Rekkedal",
+            "role": "Partner, Advokatfirmaet Selmer"
+        }
     },
     "PResearch": {
         "secNum": "§ 5. Forskning",

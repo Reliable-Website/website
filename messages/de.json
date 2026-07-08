@@ -289,8 +289,16 @@
         "secNum": "§ 4. Mit Anwälten entwickelt",
         "heading": "Gemeinsam mit <em>Vergaberechtlern</em> entwickelt.",
         "intro": "Presedens wird im engen Dialog mit praktizierenden Vergaberechtlern entwickelt, beginnend mit einem Pilotprojekt bei Advokatfirmaet Haavind, heute im täglichen Einsatz bei norwegischen und dänischen Kanzleien.",
-        "quote": "Wir sind stolz darauf, preisgekrönte norwegische Technologie in der praktischen Rechtsarbeit einzusetzen. Die Zusammenarbeit mit Reliable AI hat es ermöglicht, ein Produkt für <b>präzise Suche in Vergabefällen</b> zu entwickeln, das unseren täglichen Arbeitsablauf vereinfacht. Reliable hat die Herausforderung angenommen und in engem Dialog mit uns in kurzer Zeit ein äußerst nützliches Produkt entwickelt.",
-        "role": "Partner, Advokatfirmaet Haavind"
+        "stian": {
+            "quote": "Wir sind stolz darauf, preisgekrönte norwegische Technologie in der praktischen Rechtsarbeit einzusetzen. Die Zusammenarbeit mit Reliable AI hat es ermöglicht, ein Produkt für <b>präzise Suche in Vergabefällen</b> zu entwickeln, das unseren täglichen Arbeitsablauf vereinfacht. Reliable hat die Herausforderung angenommen und in engem Dialog mit uns in kurzer Zeit ein äußerst nützliches Produkt entwickelt.",
+            "name": "Stian Hultin Oddbjørnsen",
+            "role": "Partner, Advokatfirmaet Haavind"
+        },
+        "karen": {
+            "quote": "Ich nutze Reliable AI als <b>erste Wahl für die Suche in KOFA-Entscheidungen</b>. Es ist präziser und effizienter als andere Lösungen und gibt mir zusätzliche Sicherheit, dass ich die relevanten Fälle abgedeckt habe.",
+            "name": "Karen Anne Rekkedal",
+            "role": "Partner, Advokatfirmaet Selmer"
+        }
     },
     "PResearch": {
         "secNum": "§ 5. Forschung",

@@ -293,8 +293,16 @@
         "secNum": "§ 4. Utviklet med advokater",
         "heading": "Utviklet sammen med <em>anskaffelsesjurister.</em>",
         "intro": "Presedens utvikles i tett dialog med praktiserende anskaffelsesjurister, først gjennom et pilotprosjekt hos Advokatfirmaet Haavind, og nå i daglig bruk hos norske og danske firmaer.",
-        "quote": "Vi er stolte over å kunne ta i bruk prisvinnende norskutviklet teknologi i praktisk juridisk arbeid. Samarbeidet med Reliable AI har gjort det mulig å utvikle et produkt for <b>presist søk i anskaffelsessaker</b>, noe som forenkler arbeidshverdagen. Reliable tok oppgaven på strak arm og utviklet et svært nyttig produkt på kort tid i tett dialog med oss.",
-        "role": "Partner, Advokatfirmaet Haavind"
+        "stian": {
+            "quote": "Vi er stolte over å kunne ta i bruk prisvinnende norskutviklet teknologi i praktisk juridisk arbeid. Samarbeidet med Reliable AI har gjort det mulig å utvikle et produkt for <b>presist søk i anskaffelsessaker</b>, noe som forenkler arbeidshverdagen. Reliable tok oppgaven på strak arm og utviklet et svært nyttig produkt på kort tid i tett dialog med oss.",
+            "name": "Stian Hultin Oddbjørnsen",
+            "role": "Partner, Advokatfirmaet Haavind"
+        },
+        "karen": {
+            "quote": "Jeg bruker Reliable AI som <b>førstevalg for søk i KOFA</b>. Det er mer presist og effektivt enn andre løsninger, og gir meg økt trygghet på at jeg har fått dekket de relevante sakene.",
+            "name": "Karen Anne Rekkedal",
+            "role": "Partner, Advokatfirmaet Selmer"
+        }
     },
     "PResearch": {
         "secNum": "§ 5. Forskning",

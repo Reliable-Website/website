@@ -293,8 +293,16 @@
         "secNum": "§ 4. Built with lawyers",
         "heading": "Built together with <em>procurement lawyers.</em>",
         "intro": "Presedens is developed in close dialogue with practicing procurement lawyers, beginning with a pilot at Advokatfirmaet Haavind, and now in daily use at Norwegian and Danish firms.",
-        "quote": "We are proud to use award-winning, Norwegian-developed technology in practical legal work. The collaboration with Reliable AI has made it possible to develop a product for <b>precise search in procurement cases</b>, simplifying our daily workflow. Reliable took the challenge head-on and developed a highly useful product in a short time through close dialogue with us.",
-        "role": "Partner, Advokatfirmaet Haavind"
+        "stian": {
+            "quote": "We are proud to use award-winning, Norwegian-developed technology in practical legal work. The collaboration with Reliable AI has made it possible to develop a product for <b>precise search in procurement cases</b>, simplifying our daily workflow. Reliable took the challenge head-on and developed a highly useful product in a short time through close dialogue with us.",
+            "name": "Stian Hultin Oddbjørnsen",
+            "role": "Partner, Advokatfirmaet Haavind"
+        },
+        "karen": {
+            "quote": "I use Reliable AI as my <b>first choice for searching KOFA</b>. It is more precise and efficient than other solutions, and gives me greater confidence that I have covered the relevant cases.",
+            "name": "Karen Anne Rekkedal",
+            "role": "Partner, Advokatfirmaet Selmer"
+        }
     },
     "PResearch": {
         "secNum": "§ 5. Research",
