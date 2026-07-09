@@ -14,7 +14,7 @@ export function LaunchNote() {
                     Neu
                 </span>
                 <p className="text-[14.5px] text-ink-60">
-                    Presedens startet in Deutschland: die Vergabekammer des Bundes zuerst;
+                    Reliable startet in Deutschland: die Vergabekammer des Bundes zuerst;
                     Länderkammern, GWB/VgV und OLG-Praxis in Arbeit.{" "}
                     <a href="#coverage" className="font-mono text-[12.5px] text-primary hover:underline underline-offset-[3px]">
                         Quellenabdeckung →

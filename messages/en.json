@@ -44,11 +44,11 @@
         "title": "Access Reliable",
         "demoBadge": "New here",
         "demoHeading": "Book a demo",
-        "demoBody": "See Presedens on your own procurement questions, together with our team.",
+        "demoBody": "See Reliable on your own procurement questions, together with our team.",
         "demoCta": "Book a demo",
         "loginBadge": "Have access",
         "loginHeading": "Log in",
-        "loginBody": "For existing users at firms with a Presedens account.",
+        "loginBody": "For existing users at firms with a Reliable account.",
         "loginCta": "Go to login"
     },
     "Hero": {
@@ -154,19 +154,19 @@
         "subtitle": "Safe decision support that enhances professional judgment. We don't replace your analysis. We make it better.",
         "kofa": {
             "tag": "Legal Tech",
-            "title": "Presedens",
+            "title": "Reliable",
             "description": "Every legal source a procurement lawyer needs, in one workspace. Search KOFA decisions, Norwegian law and regulations, DFØ guidance, EU directives and case law, and Danish KLFU, all from a single hybrid AI search.",
             "feature1": "All major procurement-law sources unified in one workspace.",
             "feature2": "Hybrid search combining semantic understanding and exact keyword matching.",
             "feature3": "Built for the procurement lawyer's workflow.",
             "cta": "Book a demo",
             "login": "Login",
-            "cardTitle": "Presedens",
+            "cardTitle": "Reliable",
             "cardSubtitle": "Procurement Law Search"
         },
         "impact": {
             "before": "Before",
-            "after": "With Presedens",
+            "after": "With Reliable",
             "caption": "Typical procurement-law search, end-to-end."
         },
         "comingSoon": {
@@ -181,7 +181,7 @@
         "author": "Stian Hultin Oddbjørnsen",
         "role": "Partner",
         "company": "Advokatfirmaet Haavind",
-        "cta": "Explore Presedens"
+        "cta": "Explore Reliable"
     },
     "Contact": {
         "title": "Get in touch",
@@ -195,7 +195,7 @@
         "office": "Office",
         "general": "General Inquiries",
         "searchQuery": "How do I reach Reliable AI?",
-        "rowDemo": "See Presedens",
+        "rowDemo": "See Reliable",
         "rowAsk": "Ask a question",
         "rowCeo": "Talk to the CEO",
         "rowVisit": "Visit the office",
@@ -205,7 +205,7 @@
         "kicker": "Semantic search for public procurement law",
         "title": "Case law, searched <em>by meaning.</em>",
         "keyLine": "We use AI to find sources, not generate them.",
-        "sub": "Presedens retrieves the decisions most relevant to your question, at paragraph level, each one linked to the authoritative source.",
+        "sub": "Reliable retrieves the decisions most relevant to your question, at paragraph level, each one linked to the authoritative source.",
         "ctaDemo": "Book a demo",
         "ctaCoverage": "See coverage",
         "award": "ECAI 2025 Outstanding Demo Award",
@@ -248,9 +248,9 @@
     },
     "PCompare": {
         "secNum": "§ 1. Retrieval, not generation",
-        "headingLine1": "Presedens does not write answers.",
+        "headingLine1": "Reliable does not write answers.",
         "headingLine2": "It finds <em>sources.</em>",
-        "intro": "Legal research happens under pressure, and there is no room for mistakes. Generative tools produce text, and occasionally produce citations that do not exist. Presedens builds a representation of the meaning of your question and retrieves matching paragraphs from real legal sources. Every result is a document you can open and verify.",
+        "intro": "Legal research happens under pressure, and there is no room for mistakes. Generative tools produce text, and occasionally produce citations that do not exist. Reliable builds a representation of the meaning of your question and retrieves matching paragraphs from real legal sources. Every result is a document you can open and verify.",
         "genericTag": "Generative chatbot",
         "latency": "Response time",
         "genericVerdict": "The cited decision does not exist, and even when a source is real, it is buried in analysis you never asked for.",
@@ -262,7 +262,7 @@
         "secNum": "§ 2. What it does",
         "heading": "Built for how procurement lawyers <em>actually work.</em>",
         "c1Title": "Search by meaning",
-        "c1Body": "Ask in plain legal language. Presedens finds decisions that answer your question even when they use entirely different wording: no boolean syntax, no guessing the tribunal’s vocabulary.",
+        "c1Body": "Ask in plain legal language. Reliable finds decisions that answer your question even when they use entirely different wording: no boolean syntax, no guessing the tribunal’s vocabulary.",
         "c2Title": "Paragraph-level results",
         "c2Body": "Hits point to the specific paragraph in a decision, not just the document. You land on the reasoning that matters, not page one of forty.",
         "c3Title": "Relevance highlighting",
@@ -292,7 +292,7 @@
     "PLawyers": {
         "secNum": "§ 4. Built with lawyers",
         "heading": "Built together with <em>procurement lawyers.</em>",
-        "intro": "Presedens is developed in close dialogue with practicing procurement lawyers, beginning with a pilot at Advokatfirmaet Haavind, and now in daily use at Norwegian and Danish firms.",
+        "intro": "Reliable is developed in close dialogue with practicing procurement lawyers, beginning with a pilot at Advokatfirmaet Haavind, and now in daily use at Norwegian and Danish firms.",
         "stian": {
             "quote": "We are proud to use award-winning, Norwegian-developed technology in practical legal work. The collaboration with Reliable AI has made it possible to develop a product for <b>precise search in procurement cases</b>, simplifying our daily workflow. Reliable took the challenge head-on and developed a highly useful product in a short time through close dialogue with us.",
             "name": "Stian Hultin Oddbjørnsen",
@@ -307,18 +307,18 @@
     "PResearch": {
         "secNum": "§ 5. Research",
         "heading": "Researchers from the <em>University of Oslo.</em>",
-        "body": "Reliable AI is a research-driven company. The methods behind Presedens are published and peer-reviewed, and the same standard of rigor applies to every source we index.",
+        "body": "Reliable AI is a research-driven company. The methods behind the product are published and peer-reviewed, and the same standard of rigor applies to every source we index.",
         "supportedBy": "Supported by"
     },
     "PCta": {
         "heading": "Bring a question from your own practice.",
-        "sub": "Thirty minutes. We run your question live in Presedens, and you judge the results yourself.",
+        "sub": "Thirty minutes. We run your question live in Reliable, and you judge the results yourself.",
         "button": "Book a demo"
     },
     "Meta": {
-        "title": "Presedens: Semantic search for public procurement law | Reliable AI",
-        "description": "Presedens retrieves the decisions most relevant to your question: paragraph-level results across tribunal practice, statutes and EU law, each one linked to the authoritative source.",
-        "ogTitle": "Presedens: Semantic search for public procurement law",
+        "title": "Reliable: Semantic search for public procurement law",
+        "description": "Reliable retrieves the decisions most relevant to your question: paragraph-level results across tribunal practice, statutes and EU law, each one linked to the authoritative source.",
+        "ogTitle": "Reliable: Semantic search for public procurement law",
         "ogDescription": "We use AI to find sources, not generate them. Paragraph-level legal search for procurement lawyers in Norway, Denmark and Germany."
     }
 }

@@ -44,11 +44,11 @@
         "title": "Tilgang til Reliable",
         "demoBadge": "Ny her",
         "demoHeading": "Bestill demo",
-        "demoBody": "Se Presedens brukt på egne anskaffelsesspørsmål, sammen med teamet vårt.",
+        "demoBody": "Se Reliable brukt på egne anskaffelsesspørsmål, sammen med teamet vårt.",
         "demoCta": "Bestill demo",
         "loginBadge": "Har tilgang",
         "loginHeading": "Logg inn",
-        "loginBody": "For eksisterende brukere hos firmaer med Presedens-tilgang.",
+        "loginBody": "For eksisterende brukere hos firmaer med Reliable-tilgang.",
         "loginCta": "Gå til innlogging"
     },
     "Hero": {
@@ -154,19 +154,19 @@
         "subtitle": "Trygg beslutningsstøtte som styrker faglig skjønn. Vi erstatter ikke analysen din. Vi gjør den bedre.",
         "kofa": {
             "tag": "Legal Tech",
-            "title": "Presedens",
+            "title": "Reliable",
             "description": "Alle relevante rettskilder for anskaffelsesjurister samlet ett sted. Søk i KOFA-avgjørelser, norsk rett, DFØ-veileder, EU-rettsakter og rettspraksis, og dansk KLFU, alt fra ett hybrid AI-søk.",
             "feature1": "Alle viktige rettskilder for anskaffelsesrett samlet ett sted.",
             "feature2": "Hybrid søk som kombinerer semantisk forståelse og presis nøkkelordmatching.",
             "feature3": "Bygget for anskaffelsesjuristens arbeidsflyt.",
             "cta": "Book en demo",
             "login": "Logg inn",
-            "cardTitle": "Presedens",
+            "cardTitle": "Reliable",
             "cardSubtitle": "Søk i anskaffelsesretten"
         },
         "impact": {
             "before": "Før",
-            "after": "Med Presedens",
+            "after": "Med Reliable",
             "caption": "Typisk søk i anskaffelsesretten, ende til ende."
         },
         "comingSoon": {
@@ -181,7 +181,7 @@
         "author": "Stian Hultin Oddbjørnsen",
         "role": "Partner",
         "company": "Advokatfirmaet Haavind",
-        "cta": "Utforsk Presedens"
+        "cta": "Utforsk Reliable"
     },
     "Contact": {
         "title": "Ta kontakt",
@@ -195,7 +195,7 @@
         "office": "Kontor",
         "general": "Generelle Henvendelser",
         "searchQuery": "Hvordan når jeg Reliable AI?",
-        "rowDemo": "Se Presedens",
+        "rowDemo": "Se Reliable",
         "rowAsk": "Still et spørsmål",
         "rowCeo": "Snakk med vår CEO",
         "rowVisit": "Besøk kontoret",
@@ -205,7 +205,7 @@
         "kicker": "Semantisk søk i anskaffelsesretten",
         "title": "Rettskildesøk etter <em>mening.</em>",
         "keyLine": "Vi bruker KI til å finne kilder, ikke generere dem.",
-        "sub": "Presedens henter frem de mest relevante avgjørelsene for spørsmålet ditt, på avsnittsnivå, og hvert treff lenker til den autoritative kilden.",
+        "sub": "Reliable henter frem de mest relevante avgjørelsene for spørsmålet ditt, på avsnittsnivå, og hvert treff lenker til den autoritative kilden.",
         "ctaDemo": "Bestill demo",
         "ctaCoverage": "Se kildedekning",
         "award": "ECAI 2025 Outstanding Demo Award",
@@ -248,9 +248,9 @@
     },
     "PCompare": {
         "secNum": "§ 1. Gjenfinning, ikke generering",
-        "headingLine1": "Presedens skriver ikke svar.",
+        "headingLine1": "Reliable skriver ikke svar.",
         "headingLine2": "Det finner <em>kilder.</em>",
-        "intro": "Juridisk research skjer under press, og det er ikke rom for feil. Generative verktøy produserer tekst, og av og til henvisninger som ikke finnes. Presedens bygger en meningsrepresentasjon av spørsmålet ditt og henter frem avsnitt fra faktiske rettskilder. Hvert resultat er et dokument du kan åpne og kontrollere.",
+        "intro": "Juridisk research skjer under press, og det er ikke rom for feil. Generative verktøy produserer tekst, og av og til henvisninger som ikke finnes. Reliable bygger en meningsrepresentasjon av spørsmålet ditt og henter frem avsnitt fra faktiske rettskilder. Hvert resultat er et dokument du kan åpne og kontrollere.",
         "genericTag": "Generativ chatbot",
         "latency": "Responstid",
         "genericVerdict": "Den siterte avgjørelsen finnes ikke, og selv når en kilde er ekte, drukner den i analyse du aldri ba om.",
@@ -262,7 +262,7 @@
         "secNum": "§ 2. Hva det gjør",
         "heading": "Bygget for hvordan anskaffelsesjurister <em>faktisk arbeider.</em>",
         "c1Title": "Søk etter mening",
-        "c1Body": "Still spørsmålet i vanlig juridisk språk. Presedens finner avgjørelser som besvarer spørsmålet selv når de bruker en helt annen ordlyd: ingen søkeoperatorer, ingen gjetting på nemndas begrepsbruk.",
+        "c1Body": "Still spørsmålet i vanlig juridisk språk. Reliable finner avgjørelser som besvarer spørsmålet selv når de bruker en helt annen ordlyd: ingen søkeoperatorer, ingen gjetting på nemndas begrepsbruk.",
         "c2Title": "Treff på avsnittsnivå",
         "c2Body": "Treffene peker til det konkrete avsnittet i avgjørelsen, ikke bare dokumentet. Du lander på vurderingen som betyr noe, ikke side én av førti.",
         "c3Title": "Relevansmarkering",
@@ -292,7 +292,7 @@
     "PLawyers": {
         "secNum": "§ 4. Utviklet med advokater",
         "heading": "Utviklet sammen med <em>anskaffelsesjurister.</em>",
-        "intro": "Presedens utvikles i tett dialog med praktiserende anskaffelsesjurister, først gjennom et pilotprosjekt hos Advokatfirmaet Haavind, og nå i daglig bruk hos norske og danske firmaer.",
+        "intro": "Reliable utvikles i tett dialog med praktiserende anskaffelsesjurister, først gjennom et pilotprosjekt hos Advokatfirmaet Haavind, og nå i daglig bruk hos norske og danske firmaer.",
         "stian": {
             "quote": "Vi er stolte over å kunne ta i bruk prisvinnende norskutviklet teknologi i praktisk juridisk arbeid. Samarbeidet med Reliable AI har gjort det mulig å utvikle et produkt for <b>presist søk i anskaffelsessaker</b>, noe som forenkler arbeidshverdagen. Reliable tok oppgaven på strak arm og utviklet et svært nyttig produkt på kort tid i tett dialog med oss.",
             "name": "Stian Hultin Oddbjørnsen",
@@ -307,18 +307,18 @@
     "PResearch": {
         "secNum": "§ 5. Forskning",
         "heading": "Forskere fra <em>Universitetet i Oslo.</em>",
-        "body": "Reliable AI er et forskningsdrevet selskap. Metodene bak Presedens er publisert og fagfellevurdert, og den samme standarden gjelder for hver kilde vi indekserer.",
+        "body": "Reliable AI er et forskningsdrevet selskap. Metodene bak produktet er publisert og fagfellevurdert, og den samme standarden gjelder for hver kilde vi indekserer.",
         "supportedBy": "Støttet av"
     },
     "PCta": {
         "heading": "Ta med en problemstilling fra egen praksis.",
-        "sub": "Tretti minutter. Vi kjører spørsmålet ditt live i Presedens. Vurder resultatene selv.",
+        "sub": "Tretti minutter. Vi kjører spørsmålet ditt live i Reliable. Vurder resultatene selv.",
         "button": "Bestill demo"
     },
     "Meta": {
-        "title": "Presedens: Semantisk søk i anskaffelsesretten | Reliable AI",
-        "description": "Presedens henter frem de mest relevante avgjørelsene for spørsmålet ditt: treff på avsnittsnivå i nemndspraksis, lov og forskrift og EU-rett, hvert treff lenket til kilden.",
-        "ogTitle": "Presedens: Semantisk søk i anskaffelsesretten",
+        "title": "Reliable: Semantisk søk i anskaffelsesretten",
+        "description": "Reliable henter frem de mest relevante avgjørelsene for spørsmålet ditt: treff på avsnittsnivå i nemndspraksis, lov og forskrift og EU-rett, hvert treff lenket til kilden.",
+        "ogTitle": "Reliable: Semantisk søk i anskaffelsesretten",
         "ogDescription": "Vi bruker KI til å finne kilder, ikke generere dem. Søk på avsnittsnivå for anskaffelsesjurister."
     }
 }

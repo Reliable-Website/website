@@ -30,7 +30,7 @@ export async function generateMetadata({
       template: "%s | Reliable AI",
     },
     description: t('description'),
-    keywords: ["Presedens", "procurement law", "KOFA", "Klagenævnet for Udbud", "Vergabekammer", "legal search", "semantic search", "Legal Tech", "Reliable AI"],
+    keywords: ["Reliable", "procurement law", "KOFA", "Klagenævnet for Udbud", "Vergabekammer", "legal search", "semantic search", "Legal Tech", "Reliable AI"],
     authors: [{ name: "Reliable AI Team" }],
     creator: "Reliable AI",
 alternates: {

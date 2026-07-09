@@ -44,11 +44,11 @@
         "title": "Zugang zu Reliable",
         "demoBadge": "Neu hier",
         "demoHeading": "Demo vereinbaren",
-        "demoBody": "Sehen Sie Presedens an eigenen Vergabefragen, gemeinsam mit unserem Team.",
+        "demoBody": "Sehen Sie Reliable an eigenen Vergabefragen, gemeinsam mit unserem Team.",
         "demoCta": "Demo vereinbaren",
         "loginBadge": "Zugang vorhanden",
         "loginHeading": "Anmelden",
-        "loginBody": "Für bestehende Nutzer in Kanzleien mit Presedens-Zugang.",
+        "loginBody": "Für bestehende Nutzer in Kanzleien mit Reliable-Zugang.",
         "loginCta": "Zur Anmeldung"
     },
     "Hero": {
@@ -154,19 +154,19 @@
         "subtitle": "Sichere Entscheidungsunterstützung, die fachliches Urteilsvermögen stärkt. Wir ersetzen Ihre Analyse nicht. Wir machen sie besser.",
         "kofa": {
             "tag": "Legal Tech",
-            "title": "Presedens",
+            "title": "Reliable",
             "description": "Alle relevanten Rechtsquellen für Vergaberechtsjuristen an einem Ort. Durchsuchen Sie KOFA-Entscheidungen, norwegisches Recht, DFØ-Leitfäden, EU-Richtlinien und -Rechtsprechung sowie das dänische KLFU, mit einer einzigen hybriden KI-Suche.",
             "feature1": "Alle wichtigen Rechtsquellen des Vergaberechts in einem Arbeitsbereich vereint.",
             "feature2": "Hybride Suche, die semantisches Verständnis und exakte Stichwortsuche kombiniert.",
             "feature3": "Entwickelt für den Arbeitsablauf von Vergaberechtsjuristen.",
             "cta": "Demo buchen",
             "login": "Anmelden",
-            "cardTitle": "Presedens",
+            "cardTitle": "Reliable",
             "cardSubtitle": "Suche im Vergaberecht"
         },
         "impact": {
             "before": "Vorher",
-            "after": "Mit Presedens",
+            "after": "Mit Reliable",
             "caption": "Typische Vergaberechtsrecherche, von Anfang bis Ende."
         },
         "comingSoon": {
@@ -181,7 +181,7 @@
         "author": "Stian Hultin Oddbjørnsen",
         "role": "Partner",
         "company": "Advokatfirmaet Haavind",
-        "cta": "Presedens entdecken"
+        "cta": "Reliable entdecken"
     },
     "Contact": {
         "title": "Kontakt aufnehmen",
@@ -195,7 +195,7 @@
         "office": "Büro",
         "general": "Allgemeine Anfragen",
         "searchQuery": "Wie erreiche ich Reliable AI?",
-        "rowDemo": "Presedens ansehen",
+        "rowDemo": "Reliable ansehen",
         "rowAsk": "Eine Frage stellen",
         "rowCeo": "Mit dem CEO sprechen",
         "rowVisit": "Das Büro besuchen",
@@ -205,7 +205,7 @@
         "kicker": "Semantische Suche im Vergaberecht",
         "title": "Vergabekammer-Praxis, durchsucht nach <em>Bedeutung.</em>",
         "keyLine": "Wir verwenden KI, um Quellen zu finden, nicht um sie zu erzeugen.",
-        "sub": "Presedens durchsucht die veröffentlichte Spruchpraxis der Vergabekammer des Bundes nach Bedeutung statt nach Stichworten und führt Sie direkt zur einschlägigen Randnummer. Jeder Treffer verweist auf den Originaltext. Die Kammern der Länder folgen.",
+        "sub": "Reliable durchsucht die veröffentlichte Spruchpraxis der Vergabekammer des Bundes nach Bedeutung statt nach Stichworten und führt Sie direkt zur einschlägigen Randnummer. Jeder Treffer verweist auf den Originaltext. Die Kammern der Länder folgen.",
         "ctaDemo": "Demo vereinbaren",
         "ctaCoverage": "Quellenabdeckung",
         "award": "ECAI 2025 Outstanding Demo Award",
@@ -244,9 +244,9 @@
     },
     "PCompare": {
         "secNum": "§ 2. Abruf statt Generierung",
-        "headingLine1": "Presedens schreibt keine Antworten.",
+        "headingLine1": "Reliable schreibt keine Antworten.",
         "headingLine2": "Es findet <em>Quellen.</em>",
-        "intro": "Juristische Recherche geschieht unter Zeitdruck, und für Fehler ist kein Raum. Generative Werkzeuge erzeugen Text und gelegentlich Fundstellen, die nicht existieren. Presedens bildet die Bedeutung Ihrer Frage ab und ruft passende Absätze aus echten Rechtsquellen ab. Jedes Ergebnis ist ein Dokument, das Sie öffnen und prüfen können.",
+        "intro": "Juristische Recherche geschieht unter Zeitdruck, und für Fehler ist kein Raum. Generative Werkzeuge erzeugen Text und gelegentlich Fundstellen, die nicht existieren. Reliable bildet die Bedeutung Ihrer Frage ab und ruft passende Absätze aus echten Rechtsquellen ab. Jedes Ergebnis ist ein Dokument, das Sie öffnen und prüfen können.",
         "genericTag": "Generativer Chatbot",
         "latency": "Antwortzeit",
         "genericVerdict": "Die zitierte Entscheidung existiert nicht, und selbst wenn eine Quelle echt ist, verschwindet sie in Analysen, um die niemand gebeten hat.",
@@ -258,7 +258,7 @@
         "secNum": "§ 3. Funktionen",
         "heading": "Gefunden wird die <em>Randnummer,</em> nicht nur das Dokument.",
         "c1Title": "Suche nach Bedeutung",
-        "c1Body": "Formulieren Sie Ihre Frage in juristischer Alltagssprache. Presedens bildet die Bedeutung der Frage ab und findet einschlägige Entscheidungen auch dann, wenn sie eine völlig andere Formulierung verwenden.",
+        "c1Body": "Formulieren Sie Ihre Frage in juristischer Alltagssprache. Reliable bildet die Bedeutung der Frage ab und findet einschlägige Entscheidungen auch dann, wenn sie eine völlig andere Formulierung verwenden.",
         "c2Title": "Treffer auf Absatzebene",
         "c2Body": "Ergebnisse verweisen auf die konkrete Randnummer, nicht auf Seite eins eines vierzigseitigen Beschlusses.",
         "c3Title": "Relevanz im Dokument",
@@ -288,7 +288,7 @@
     "PLawyers": {
         "secNum": "§ 4. Mit Anwälten entwickelt",
         "heading": "Gemeinsam mit <em>Vergaberechtlern</em> entwickelt.",
-        "intro": "Presedens wird im engen Dialog mit praktizierenden Vergaberechtlern entwickelt, beginnend mit einem Pilotprojekt bei Advokatfirmaet Haavind, heute im täglichen Einsatz bei norwegischen und dänischen Kanzleien.",
+        "intro": "Reliable wird im engen Dialog mit praktizierenden Vergaberechtlern entwickelt, beginnend mit einem Pilotprojekt bei Advokatfirmaet Haavind, heute im täglichen Einsatz bei norwegischen und dänischen Kanzleien.",
         "stian": {
             "quote": "Wir sind stolz darauf, preisgekrönte norwegische Technologie in der praktischen Rechtsarbeit einzusetzen. Die Zusammenarbeit mit Reliable AI hat es ermöglicht, ein Produkt für <b>präzise Suche in Vergabefällen</b> zu entwickeln, das unseren täglichen Arbeitsablauf vereinfacht. Reliable hat die Herausforderung angenommen und in engem Dialog mit uns in kurzer Zeit ein äußerst nützliches Produkt entwickelt.",
             "name": "Stian Hultin Oddbjørnsen",
@@ -303,12 +303,12 @@
     "PResearch": {
         "secNum": "§ 5. Forschung",
         "heading": "Forscher der <em>Universität Oslo.</em>",
-        "body": "Reliable AI ist ein forschungsgetriebenes Unternehmen. Die Methoden hinter Presedens sind publiziert und begutachtet. Derselbe Maßstab gilt für jede Quelle, die wir indexieren.",
+        "body": "Reliable AI ist ein forschungsgetriebenes Unternehmen. Die Methoden hinter dem Produkt sind publiziert und begutachtet. Derselbe Maßstab gilt für jede Quelle, die wir indexieren.",
         "supportedBy": "Unterstützt durch"
     },
     "PCta": {
         "heading": "Bringen Sie eine Frage aus Ihrer eigenen Praxis mit.",
-        "sub": "Dreißig Minuten. Wir führen Ihre Frage live in Presedens aus. Beurteilen Sie die Ergebnisse selbst.",
+        "sub": "Dreißig Minuten. Wir führen Ihre Frage live in Reliable aus. Beurteilen Sie die Ergebnisse selbst.",
         "button": "Demo vereinbaren"
     },
     "PQuellen": {
@@ -331,15 +331,15 @@
     "PReferenzen": {
         "secNum": "§ 4. Referenzen",
         "heading": "In Skandinavien <em>im täglichen Einsatz.</em>",
-        "sub": "Presedens ist kein Prototyp. Norwegische und dänische Kanzleien recherchieren damit täglich in der Spruchpraxis ihrer Nachprüfungsinstanzen.",
+        "sub": "Reliable ist kein Prototyp. Norwegische und dänische Kanzleien recherchieren damit täglich in der Spruchpraxis ihrer Nachprüfungsinstanzen.",
         "kanzleien": "Kanzleien",
         "herkunft": "Herkunft",
         "herkunftText": "Entwickelt von Forschern der Universität Oslo. Ausgezeichnet mit dem Outstanding Demo Award der ECAI 2025. Unterstützt durch Microsoft for Startups und Anthropic."
     },
     "Meta": {
-        "title": "Presedens: Semantische Suche im Vergaberecht | Reliable AI",
-        "description": "Presedens durchsucht die Spruchpraxis der Vergabekammer des Bundes nach Bedeutung, nicht nach Stichworten. Treffer auf Absatzebene, jeder mit Verweis auf den Originaltext.",
-        "ogTitle": "Presedens: Semantische Suche im Vergaberecht",
+        "title": "Reliable: Semantische Suche im Vergaberecht",
+        "description": "Reliable durchsucht die Spruchpraxis der Vergabekammer des Bundes nach Bedeutung, nicht nach Stichworten. Treffer auf Absatzebene, jeder mit Verweis auf den Originaltext.",
+        "ogTitle": "Reliable: Semantische Suche im Vergaberecht",
         "ogDescription": "Wir verwenden KI, um Quellen zu finden, nicht um sie zu erzeugen. Suche auf Absatzebene für Vergaberechtler."
     }
 }

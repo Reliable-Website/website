@@ -71,7 +71,7 @@ export function Compare() {
                     {/* Presedens */}
                     <div className="rounded-2xl border border-primary/50 bg-primary/[0.13] p-8 pb-9">
                         <span className="mb-5 inline-block rounded-full bg-lime/15 px-3 py-1 font-mono text-[11.5px] uppercase tracking-[0.12em] text-lime">
-                            Presedens
+                            Reliable
                         </span>
                         <p className="mb-4 font-mono text-[13px] text-hvit/55">{ex.query}</p>
                         <p className="text-[15.5px] leading-[1.65] text-hvit/85">

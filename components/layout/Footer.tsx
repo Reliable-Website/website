@@ -12,7 +12,7 @@ export function Footer() {
         {
             title: t('colProduct'),
             links: [
-                { name: "Presedens", href: "/#how" },
+                { name: "Reliable", href: "/#how" },
                 { name: t('coverage'), href: "/#coverage" },
                 { name: t('research'), href: "/#research" },
             ],
