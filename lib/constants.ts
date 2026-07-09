@@ -4,7 +4,7 @@ export const CALENDLY_URL = "https://calendly.com/jonas-reliableai/demo"
 export const LOGIN_URLS: Record<string, string> = {
     en: "https://login.reliableai.no",
     no: "https://login.reliableai.no",
-    da: "https://procurement.reliablelabs.ai",
+    da: "https://login.reliableai.dk",
     de: "https://vergaberecht.reliablelabs.ai",
 }
 
