@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const baseUrl = "https://reliableai.no";
+const baseUrl = "https://reliablelabs.ai";
 const locales = ["en", "no", "da", "de"];
 const pages = ["", "/blog", "/contact", "/team", "/privacy", "/impressum", "/datenschutz"];
 

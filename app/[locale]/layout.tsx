@@ -14,7 +14,7 @@ const inter = Inter({
   style: ["normal", "italic"],
 });
 
-const baseUrl = "https://reliableai.no";
+const baseUrl = "https://reliablelabs.ai";
 
 export async function generateMetadata({
   params,
