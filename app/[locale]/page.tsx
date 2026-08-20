@@ -51,9 +51,9 @@ export default async function Home({ params }: PageProps) {
         <StatsBand />
         <PressStrip />
         <Compare />
+        <BuiltWithLawyers />
         <Capabilities />
         <Coverage />
-        <BuiltWithLawyers />
         <ResearchSection />
         <CtaBand />
       </main>

@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl"
 
 // Firm logos cleared for public use via signed contracts (founder, 2026-06-12).
 const FIRMS = [
+    { src: "/images/LogoCarousel/kromann-reumert.svg", alt: "Kromann Reumert", h: 22 },
     { src: "/images/LogoCarousel/kvale.svg", alt: "Kvale", h: 16 },
     { src: "/images/LogoCarousel/haavind.png", alt: "Haavind", h: 20 },
     { src: "/images/LogoCarousel/selmer.png", alt: "Selmer", h: 20 },

@@ -259,7 +259,7 @@
         "presedensVerdict": "Retrieved, not generated. The source is the answer."
     },
     "PCaps": {
-        "secNum": "§ 2. What it does",
+        "secNum": "§ 3. What it does",
         "heading": "Built for how procurement lawyers <em>actually work.</em>",
         "c1Title": "Search by meaning",
         "c1Body": "Ask in plain legal language. Reliable finds decisions that answer your question even when they use entirely different wording: no boolean syntax, no guessing the tribunal’s vocabulary.",
@@ -273,7 +273,7 @@
         "c6Body": "Save decisions and paragraphs as you research. Your research trail is reconstructible, for colleagues and for the file."
     },
     "PCoverage": {
-        "secNum": "§ 3. Coverage",
+        "secNum": "§ 4. Coverage",
         "heading": "Exactly which sources, <em>stated plainly.</em>",
         "sub": "What is live now, and what is still coming.",
         "norway": "Norge",
@@ -290,7 +290,7 @@
         "euGeneralCourt": "General Court case law"
     },
     "PLawyers": {
-        "secNum": "§ 4. Built with lawyers",
+        "secNum": "§ 2. Built with lawyers",
         "heading": "Built together with <em>procurement lawyers.</em>",
         "intro": "Reliable is developed in close dialogue with practicing procurement lawyers, beginning with a pilot at Advokatfirmaet Haavind, and now in daily use at Norwegian and Danish firms.",
         "stian": {

@@ -259,7 +259,7 @@
         "presedensVerdict": "Gjenfunnet, ikke generert. Kilden er svaret."
     },
     "PCaps": {
-        "secNum": "§ 2. Hva det gjør",
+        "secNum": "§ 3. Hva det gjør",
         "heading": "Bygget for hvordan anskaffelsesjurister <em>faktisk arbeider.</em>",
         "c1Title": "Søk etter mening",
         "c1Body": "Still spørsmålet i vanlig juridisk språk. Reliable finner avgjørelser som besvarer spørsmålet selv når de bruker en helt annen ordlyd: ingen søkeoperatorer, ingen gjetting på nemndas begrepsbruk.",
@@ -273,7 +273,7 @@
         "c6Body": "Lagre avgjørelser og avsnitt underveis. Søkesporet kan rekonstrueres, for kolleger og for saken."
     },
     "PCoverage": {
-        "secNum": "§ 3. Kildedekning",
+        "secNum": "§ 4. Kildedekning",
         "heading": "Nøyaktig hvilke kilder, <em>uten omsvøp.</em>",
         "sub": "Hva som er tilgjengelig nå, og hva som fortsatt kommer.",
         "norway": "Norge",
@@ -290,7 +290,7 @@
         "euGeneralCourt": "Underrettens praksis"
     },
     "PLawyers": {
-        "secNum": "§ 4. Utviklet med advokater",
+        "secNum": "§ 2. Utviklet med advokater",
         "heading": "Utviklet sammen med <em>anskaffelsesjurister.</em>",
         "intro": "Reliable utvikles i tett dialog med praktiserende anskaffelsesjurister, først gjennom et pilotprosjekt hos Advokatfirmaet Haavind, og nå i daglig bruk hos norske og danske firmaer.",
         "stian": {

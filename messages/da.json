@@ -255,7 +255,7 @@
         "presedensVerdict": "Genfundet, ikke genereret. Kilden er svaret."
     },
     "PCaps": {
-        "secNum": "§ 2. Hvad det gør",
+        "secNum": "§ 3. Hvad det gør",
         "heading": "Bygget til hvordan udbudsjurister <em>faktisk arbejder.</em>",
         "c1Title": "Søgning efter mening",
         "c1Body": "Stil spørgsmålet i almindeligt juridisk sprog. Reliable finder kendelser, der besvarer spørgsmålet, selv når de bruger en helt anden ordlyd: ingen søgeoperatorer, ingen gætten på nævnets begreber.",
@@ -269,7 +269,7 @@
         "c6Body": "Gem kendelser og afsnit undervejs. Dit søgespor kan rekonstrueres, for kolleger og til sagen."
     },
     "PCoverage": {
-        "secNum": "§ 3. Kildedækning",
+        "secNum": "§ 4. Kildedækning",
         "heading": "Præcis hvilke kilder, <em>uden omsvøb.</em>",
         "sub": "Hvad der er tilgængeligt nu, og hvad der stadig er på vej.",
         "norway": "Norge",
@@ -286,7 +286,7 @@
         "euGeneralCourt": "Rettens praksis"
     },
     "PLawyers": {
-        "secNum": "§ 4. Udviklet med advokater",
+        "secNum": "§ 2. Udviklet med advokater",
         "heading": "Udviklet sammen med <em>udbudsjurister.</em>",
         "intro": "Reliable udvikles i tæt dialog med praktiserende udbudsjurister, først gennem et pilotprojekt hos Advokatfirmaet Haavind, og nu i daglig brug hos norske og danske firmaer.",
         "stian": {

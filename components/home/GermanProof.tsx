@@ -26,6 +26,7 @@ export function GermanProof() {
                     <div className="rounded-2xl border border-white/15 bg-white/[0.04] p-8">
                         <h3 className="mb-6 font-mono text-[11px] uppercase tracking-[0.12em] text-himmel">{t('kanzleien')}</h3>
                         <div className="flex flex-wrap items-center gap-x-10 gap-y-6">
+                            <Image src="/images/LogoCarousel/kromann-reumert.svg" alt="Kromann Reumert" width={116} height={22} className="h-[22px] w-auto invert opacity-70" />
                             <Image src="/images/LogoCarousel/kvale.svg" alt="Kvale" width={80} height={16} className="h-4 w-auto invert opacity-70" />
                             <Image src="/images/LogoCarousel/haavind.png" alt="Haavind" width={100} height={20} className="h-5 w-auto invert opacity-70" />
                             <Image src="/images/LogoCarousel/selmer.png" alt="Selmer" width={100} height={20} className="h-5 w-auto opacity-90" />
