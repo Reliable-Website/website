@@ -274,8 +274,7 @@
     },
     "PCoverage": {
         "secNum": "§ 4. Kildedekning",
-        "heading": "Nøyaktig hvilke kilder, <em>uten omsvøp.</em>",
-        "sub": "Hva som er tilgjengelig nå, og hva som fortsatt kommer.",
+        "heading": "Hva som er søkbart, <em>og hva som kommer.</em>",
         "norway": "Norge",
         "denmark": "Danmark",
         "germany": "Tyskland",

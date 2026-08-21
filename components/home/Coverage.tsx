@@ -69,7 +69,6 @@ export function Coverage() {
                         <h2 className="text-[clamp(28px,3vw,40px)] leading-[1.14]">
                             {t.rich('heading', { em: (c) => <em className="italic text-primary">{c}</em> })}
                         </h2>
-                        <p className="mt-4.5 text-[17.5px] text-ink-60">{t('sub')}</p>
                     </div>
                     <Image
                         src="/images/Symbols/rai-symboler-02.png"
