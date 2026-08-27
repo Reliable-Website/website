@@ -8,9 +8,52 @@ import { blogPostsNo } from "@/lib/blog-data-no"
 import { getTranslations } from "next-intl/server"
 import { AnimatedArticle } from "@/components/blog/AnimatedArticle"
 import Image from "next/image"
+import type { Metadata } from "next"
+import { BASE_URL, publishedDate } from "@/lib/seo"
 
 interface PageProps {
     params: Promise<{ slug: string; locale: string }>
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { slug, locale } = await params
+    const posts = locale === "no" ? blogPostsNo : blogPosts
+    const post = posts.find((p) => p.slug === slug)
+    if (!post) return {}
+
+    // Only en and no have their own content; da/de serve the English text,
+    // so their canonical points at the English URL.
+    const contentLocale = locale === "no" ? "no" : "en"
+    const url = `${BASE_URL}/${contentLocale}/blog/${slug}`
+    const image = post.image ? `${BASE_URL}${post.image}` : undefined
+
+    return {
+        title: post.title,
+        description: post.excerpt,
+        alternates: {
+            canonical: url,
+            languages: {
+                en: `${BASE_URL}/en/blog/${slug}`,
+                no: `${BASE_URL}/no/blog/${slug}`,
+                "x-default": `${BASE_URL}/en/blog/${slug}`,
+            },
+        },
+        openGraph: {
+            type: "article",
+            url,
+            title: post.title,
+            description: post.excerpt,
+            siteName: "Reliable AI",
+            publishedTime: publishedDate(slug)?.toISOString(),
+            ...(image ? { images: [{ url: image }] } : {}),
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: post.title,
+            description: post.excerpt,
+            ...(image ? { images: [image] } : {}),
+        },
+    }
 }
 
 export default async function BlogPost({ params }: PageProps) {
@@ -23,8 +66,25 @@ export default async function BlogPost({ params }: PageProps) {
         notFound()
     }
 
+    const articleJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: post.title,
+        description: post.excerpt,
+        datePublished: publishedDate(slug)?.toISOString(),
+        inLanguage: locale === "no" ? "nb" : "en",
+        ...(post.image ? { image: `${BASE_URL}${post.image}` } : {}),
+        author: { "@id": `${BASE_URL}/#organization` },
+        publisher: { "@id": `${BASE_URL}/#organization` },
+        mainEntityOfPage: `${BASE_URL}/${locale === "no" ? "no" : "en"}/blog/${slug}`,
+    }
+
     return (
         <div className="flex min-h-screen flex-col">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+            />
             <Header />
             <main className="flex-1 py-24 bg-background">
                 <article className="container mx-auto px-4 md:px-6 max-w-3xl">

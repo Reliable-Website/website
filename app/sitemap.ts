@@ -1,4 +1,6 @@
 import { MetadataRoute } from "next";
+import { blogPosts } from "@/lib/blog-data";
+import { publishedDate } from "@/lib/seo";
 
 const baseUrl = "https://reliablelabs.ai";
 const locales = ["en", "no", "da", "de"];
@@ -17,6 +19,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: Object.fromEntries(
           locales.map((locale) => [locale, `${baseUrl}/${locale}${page}`])
         ),
+      },
+    });
+  }
+
+  // Blog posts: content exists in en and no (da/de serve the English text).
+  for (const post of blogPosts) {
+    entries.push({
+      url: `${baseUrl}/en/blog/${post.slug}`,
+      lastModified: publishedDate(post.slug) ?? new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/blog/${post.slug}`,
+          no: `${baseUrl}/no/blog/${post.slug}`,
+        },
       },
     });
   }

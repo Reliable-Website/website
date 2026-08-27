@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -96,6 +97,12 @@ export default async function LocaleLayout({
       <body
         className="antialiased"
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([organizationJsonLd, websiteJsonLd(locale)]),
+          }}
+        />
         <NextIntlClientProvider messages={messages}>
           {children}
           <SpeedInsights />
