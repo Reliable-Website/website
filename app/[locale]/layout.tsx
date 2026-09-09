@@ -39,8 +39,7 @@ alternates: {
       languages: {
         "en": `${baseUrl}/en`,
         "no": `${baseUrl}/no`,
-        "da": `${baseUrl}/da`,
-        "de": `${baseUrl}/de`,
+        // da/de parked 2026-09-08; restore when those locales relaunch.
         "x-default": `${baseUrl}/en`,
       },
     },

@@ -20,11 +20,11 @@ const FLAGS: Record<string, React.ReactNode> = {
     de: <svg className="h-3.5 w-5 flex-shrink-0 rounded-[3px]" viewBox="0 0 22 16"><rect width="22" height="5.33" fill="#000"/><rect y="5.33" width="22" height="5.33" fill="#DD0000"/><rect y="10.67" width="22" height="5.33" fill="#FFCC00"/></svg>,
 }
 
+// da/de parked 2026-09-08 until the translations are up to standard —
+// restore the rows here and in i18n/routing.ts to relaunch them.
 const LANGUAGES = [
     { code: "en", label: "English" },
     { code: "no", label: "Norsk" },
-    { code: "da", label: "Dansk" },
-    { code: "de", label: "Deutsch" },
 ]
 
 export function Header() {

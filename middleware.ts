@@ -4,10 +4,9 @@ import { NextRequest } from 'next/server';
 
 const countryToLocale: Record<string, string> = {
     NO: 'no',
-    DK: 'da',
-    DE: 'de',
-    AT: 'de',
-    CH: 'de',
+    // da/de are parked (2026-09-08); DK/DE/AT/CH visitors get the 'en'
+    // fallback until those locales relaunch:
+    // DK: 'da', DE: 'de', AT: 'de', CH: 'de',
 };
 
 const intlMiddleware = createMiddleware(routing);

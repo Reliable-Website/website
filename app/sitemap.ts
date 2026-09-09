@@ -3,7 +3,8 @@ import { blogPosts } from "@/lib/blog-data";
 import { publishedDate } from "@/lib/seo";
 
 const baseUrl = "https://reliablelabs.ai";
-const locales = ["en", "no", "da", "de"];
+// da/de are parked (2026-09-08); re-add them here when they relaunch.
+const locales = ["en", "no"];
 const pages = ["", "/blog", "/contact", "/team", "/privacy", "/impressum", "/datenschutz"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
