@@ -3,6 +3,9 @@ import { useLocale, useTranslations } from "next-intl"
 
 // Source names stay in their native language across locales (they are the
 // official names lawyers use). Status labels are localized.
+// The website shows only the procurement sources (Jonas, 2026-09-08): the
+// product's konkurranserett practice area is parked for now — the two-group
+// variant is kept at mockups/parked/Coverage-with-competition.tsx.
 const CARDS = [
     {
         cc: "NO",
@@ -22,7 +25,15 @@ const CARDS = [
         items: [
             { name: "Klagenævnet for Udbud", live: true },
             { name: "Udbudsloven og bekendtgørelser", live: true },
-            { name: "Domstolspraksis (udbud)", live: false },
+            { name: "Domstolspraksis (udbud)", live: true },
+        ],
+    },
+    {
+        cc: "SE",
+        titleKey: "sweden",
+        status: "soon" as const,
+        items: [
+            { name: "Konkurrensverket", live: false },
         ],
     },
     {
@@ -36,6 +47,7 @@ const CARDS = [
             { name: "OLG-Vergabesenate", live: false },
         ],
     },
+    // Second row: EU (and the next jurisdictions as they are announced).
     {
         cc: "EU",
         titleKey: "eu",
@@ -49,13 +61,20 @@ const CARDS = [
     },
 ]
 
+const STATUS_PILL: Record<string, string> = {
+    live: "bg-lime text-[#3e7c3a]",
+    liveAll: "bg-lime text-[#3e7c3a]",
+    launching: "bg-regn text-[#3a4cab]",
+    soon: "bg-[#ffe9d3] text-[#a05c1e]",
+}
+
 export function Coverage() {
     const t = useTranslations('PCoverage')
     const locale = useLocale()
     // German visitors see their own jurisdiction first
     const cards = locale === "de"
         ? [...CARDS].sort((a, b) => {
-            const order = ["DE", "EU", "NO", "DK"]
+            const order = ["DE", "NO", "DK", "SE", "EU"]
             return order.indexOf(a.cc) - order.indexOf(b.cc)
         })
         : CARDS
@@ -79,7 +98,7 @@ export function Coverage() {
                     />
                 </div>
 
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
+                <div className="grid auto-rows-fr grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
                     {cards.map((card) => (
                         <div
                             key={card.cc}
@@ -88,7 +107,7 @@ export function Coverage() {
                             <span className="mb-2.5 block font-mono text-xs tracking-[0.14em] text-ink-60">{card.cc}</span>
                             <h3 className="mb-1.5 font-heading text-[23px]" style={{ fontWeight: 500 }}>{t(card.titleKey)}</h3>
                             <span
-                                className={`mb-5 inline-block rounded-full px-2.5 py-1 font-mono text-[10.5px] uppercase tracking-[0.1em] ${card.status === "launching" ? "bg-regn text-[#3a4cab]" : "bg-lime text-[#3e7c3a]"}`}
+                                className={`mb-5 inline-block rounded-full px-2.5 py-1 font-mono text-[10.5px] uppercase tracking-[0.1em] ${STATUS_PILL[card.status]}`}
                             >
                                 {t(`status_${card.status}`)}
                             </span>
