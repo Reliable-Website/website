@@ -43,12 +43,12 @@
     },
     "TrackRecord": {
         "label": "Track record",
-        "heading": "We started with law, where a wrong source is <em>never acceptable.</em>",
-        "lead": "Lawyers cannot cite a decision that does not exist. That made law the hardest place to start, and the best proof of the method. Reliable is now in daily use at leading Nordic law firms.",
-        "v1": "10M+",
+        "heading": "We started with law, where a wrong source <em>never is acceptable.</em>",
+        "lead": "Lawyers cannot cite a decision that does not exist. That made law the hardest place to start, and the best proof of the method. Reliable is now in daily use at leading law firms across the Nordics.",
+        "v1": "100M+",
         "l1": "searchable paragraphs",
         "v2": "697 ms",
-        "l2": "average search",
+        "l2": "average search time",
         "v3": "45 → 10",
         "l3": "minutes per research task",
         "karen": {
@@ -72,15 +72,13 @@
         "rows": {
             "law": {
                 "title": "Law & regulation",
-                "body": "Ten million paragraphs of decisions and legislation, in daily use."
+                "body": "Millions of paragraphs of decisions and legislation, in daily use."
             },
             "area1": {
-                "title": "<ph>Area one</ph>",
-                "body": "<ph>One line on why this field needs it.</ph>"
+                "title": "<ph>Area one</ph>"
             },
             "area2": {
-                "title": "<ph>Area two</ph>",
-                "body": "<ph>One line on why this field needs it.</ph>"
+                "title": "<ph>Area two</ph>"
             },
             "yours": {
                 "title": "Your field?",

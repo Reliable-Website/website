@@ -44,11 +44,11 @@
     "TrackRecord": {
         "label": "Erfaring",
         "heading": "Vi startet med juss, der en feil kilde <em>aldri kan godtas.</em>",
-        "lead": "Jurister kan ikke vise til en avgjørelse som ikke finnes. Det gjorde juss til det vanskeligste stedet å starte, og det beste beviset på at metoden virker. Reliable er nå i daglig bruk hos ledende nordiske advokatfirmaer.",
-        "v1": "10 mill.+",
+        "lead": "Jurister kan ikke vise til en avgjørelse som ikke finnes. Det gjorde juss til det vanskeligste stedet å starte, og det beste beviset på at metoden virker. Reliable er nå i daglig bruk hos ledende advokatfirmaer i hele Norden.",
+        "v1": "100 mill.+",
         "l1": "søkbare avsnitt",
         "v2": "697 ms",
-        "l2": "gjennomsnittlig søk",
+        "l2": "gjennomsnittlig søketid",
         "v3": "45 → 10",
         "l3": "minutter per søkeoppgave",
         "karen": {
@@ -72,15 +72,13 @@
         "rows": {
             "law": {
                 "title": "Juss og regulering",
-                "body": "Ti millioner avsnitt med avgjørelser og regelverk, i daglig bruk."
+                "body": "Millioner av avsnitt med avgjørelser og regelverk, i daglig bruk."
             },
             "area1": {
-                "title": "<ph>Område én</ph>",
-                "body": "<ph>Én linje om hvorfor feltet trenger dette.</ph>"
+                "title": "<ph>Område én</ph>"
             },
             "area2": {
-                "title": "<ph>Område to</ph>",
-                "body": "<ph>Én linje om hvorfor feltet trenger dette.</ph>"
+                "title": "<ph>Område to</ph>"
             },
             "yours": {
                 "title": "Ditt fagfelt?",

@@ -43,7 +43,7 @@ export function Statement() {
     }
 
     return (
-        <section className="py-20 md:py-[120px]">
+        <section className="pb-16 pt-20 md:pb-24 md:pt-[120px]">
             <div className="mx-auto max-w-[1180px] px-6">
                 <p
                     ref={ref}

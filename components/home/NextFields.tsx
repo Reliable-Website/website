@@ -35,7 +35,9 @@ export function NextFields() {
                             {t(row.status)}
                         </span>
                         <h3 className="text-[21px]" style={{ fontWeight: 450 }}>{t.rich(`rows.${row.key}.title`, { ph })}</h3>
-                        <p className="text-[15px] text-ink-60">{t.rich(`rows.${row.key}.body`, { ph })}</p>
+                        {t.has(`rows.${row.key}.body`) && (
+                            <p className="text-[15px] text-ink-60">{t.rich(`rows.${row.key}.body`, { ph })}</p>
+                        )}
                     </div>
                 ))}
             </div>

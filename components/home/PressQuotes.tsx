@@ -18,12 +18,12 @@ const ITEMS = [
     },
 ]
 
-// Press headlines set as plain typography.
+// Press headlines set as plain typography; sits right under the manifesto, so no rule of its own.
 export function PressQuotes() {
     const t = useTranslations('Press')
 
     return (
-        <section aria-label={t('label')} className="border-t border-rule py-[72px] md:py-[88px]">
+        <section aria-label={t('label')} className="pb-[72px] md:pb-[88px]">
             <div className="mx-auto max-w-[1180px] px-6">
                 <span className="mb-8 block font-mono text-[11.5px] uppercase tracking-[0.1em] text-ink-60">{t('label')}</span>
                 <div className="grid grid-cols-1 gap-10 md:grid-cols-3">

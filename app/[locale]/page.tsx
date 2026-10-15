@@ -15,12 +15,12 @@ export default function Home() {
             <main className="flex-1">
                 <Hero />
                 <Statement />
+                <PressQuotes />
                 <div className="mx-auto max-w-[1180px] px-6">
                     <TrackRecord />
                     <NextFields />
                     <ResearchSection />
                 </div>
-                <PressQuotes />
                 <Closing />
             </main>
             <Footer />
