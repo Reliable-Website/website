@@ -1,127 +1,124 @@
 {
-    "Research": {
-        "title": "Vår Forskning",
-        "subtitle": "Fagfellevurdert forskning er grunnlaget til Reliable AI.",
-        "papers": {
-            "paper1": {
-                "title": "Skalerbar klassifisering av spørreundersøkelser med tekst-embeddings",
-                "description": "Vi presenterer et rammeverk for effektiv kvalitativ analyse av åpne svar ved hjelp av tekst-embeddings. Metoden krever få eksempler, integreres lett i eksisterende arbeidsflyter, og oppnår resultater på linje med menneskelige eksperter. Dette muliggjør skalerbar analyse av tusenvis av svar med høy konsistens og etterprøvbarhet.",
-                "date": "27. august 2025",
-                "linkText": "Les Artikkel",
-                "linkUrl": "https://arxiv.org/abs/2508.19836"
+    "Header": {
+        "trackRecord": "Erfaring",
+        "research": "Forskning",
+        "team": "Team",
+        "contact": "Kontakt",
+        "login": "Logg inn",
+        "access": "Tilgang"
+    },
+    "Hero": {
+        "kicker": "Pålitelig KI for offentlig kunnskap",
+        "title": "KI du kan <em>etterprøve.</em>",
+        "keyLine": "Vi bygger KI som finner avsnittet i stedet for å skrive et.",
+        "sub": "Hvert svar kommer med kilden, så fagpersonen beholder kontrollen.",
+        "ctaPrimary": "Se erfaringen vår",
+        "ctaTeam": "Møt teamet",
+        "trustLabel": "I daglig bruk hos",
+        "demo": {
+            "label": "Offentlig kilde",
+            "match": "Treff i {pn}",
+            "open": "Åpne kilden ↗",
+            "docs": [
+                {
+                    "tag": "SØK",
+                    "q": "Er dette spørsmålet avgjort før?",
+                    "title": "Nemndsavgjørelse"
+                },
+                {
+                    "tag": "SØK",
+                    "q": "Hva konkluderte utvalget om risikoen?",
+                    "title": "Offentlig utredning, kapittel 4"
+                },
+                {
+                    "tag": "SØK",
+                    "q": "Gir aktiv læring bedre eksamensresultater?",
+                    "title": "Fagfellevurdert studie, resultater"
+                }
+            ]
+        }
+    },
+    "Statement": {
+        "text": "Mye av det fagfolk trenger å vite, <mark>står allerede skrevet</mark> i offentlige kilder som alle kan lese. Det vanskelige er å finne det. Generativ KI har gjort det vanskeligere: den svarer flytende, og <miss>viser noen ganger til kilder som ikke finnes.</miss> Vi bygger det motsatte: KI som <mark>finner avsnittet</mark> og <mark>viser deg hvor det står.</mark>"
+    },
+    "TrackRecord": {
+        "label": "Erfaring",
+        "heading": "Vi startet med juss, der en feil kilde <em>aldri kan godtas.</em>",
+        "lead": "Jurister kan ikke vise til en avgjørelse som ikke finnes. Det gjorde juss til det vanskeligste stedet å starte, og det beste beviset på at metoden virker. Reliable er nå i daglig bruk hos ledende nordiske advokatfirmaer.",
+        "v1": "10 mill.+",
+        "l1": "søkbare avsnitt",
+        "v2": "697 ms",
+        "l2": "gjennomsnittlig søk",
+        "v3": "45 → 10",
+        "l3": "minutter per søkeoppgave",
+        "karen": {
+            "quote": "Det er mer presist og effektivt enn andre løsninger, og gir meg økt trygghet på at jeg har fått dekket de relevante sakene.",
+            "name": "Karen Anne Rekkedal",
+            "role": "Partner, Advokatfirmaet Selmer"
+        },
+        "stian": {
+            "quote": "Reliable tok oppgaven på strak arm og utviklet et svært nyttig produkt på kort tid i tett dialog med oss.",
+            "name": "Stian Hultin Oddbjørnsen",
+            "role": "Partner, Advokatfirmaet Haavind"
+        }
+    },
+    "NextFields": {
+        "label": "Veien videre",
+        "heading": "Juss og regulering først. <ph>Område én</ph> og <ph>område to</ph> neste.",
+        "lead": "Problemet er det samme overalt der fagarbeid avhenger av store mengder offentlig tekst. Nå snakker vi med dem som kjenner disse fagfeltene best.",
+        "live": "I drift",
+        "building": "Under utvikling",
+        "exploring": "Utforsker",
+        "rows": {
+            "law": {
+                "title": "Juss og regulering",
+                "body": "Ti millioner avsnitt med avgjørelser og regelverk, i daglig bruk."
             },
-            "paper2": {
-                "title": "Kvalitativ analyse i stor skala med tekst-embeddings",
-                "description": "Vi foreslår en ny teknikk for deduktiv kvalitativ analyse ved bruk av tekst-embeddings. Ved å representere tekst i et høydimensjonalt betydningsrom kan vi kvantifisere forskjeller og modellere emner mer fleksibelt enn tradisjonelle metoder. Vår tilnærming er validert mot etablerte datasett og viser stort potensial for analyse av store tekstmengder.",
-                "date": "20. desember 2024",
-                "linkText": "Les Artikkel",
-                "linkUrl": "https://journals.aps.org/prper/abstract/10.1103/PhysRevPhysEducRes.20.020151"
+            "area1": {
+                "title": "<ph>Område én</ph>",
+                "body": "<ph>Én linje om hvorfor feltet trenger dette.</ph>"
             },
-            "paper3": {
-                "title": "DANTE: Deduktiv innholdsanalyse med tekst-embeddings",
-                "description": "Tradisjonell kvalitativ tekstanalyse er tidkrevende. Vi introduserer DANTE, et pålitelig og transparent verktøy som gjør kvalitativ analyse basert på embeddings mer tilgjengelig. Det gjør det mulig for forskere å utføre storskala deduktiv innholdsanalyse uten omfattende programmeringsferdigheter.",
-                "date": "30. oktober 2025",
-                "linkText": "Les Artikkel",
-                "linkUrl": "https://ebooks.iospress.nl/doi/10.3233/FAIA251443"
+            "area2": {
+                "title": "<ph>Område to</ph>",
+                "body": "<ph>Én linje om hvorfor feltet trenger dette.</ph>"
+            },
+            "yours": {
+                "title": "Ditt fagfelt?",
+                "body": "Hvis arbeidet ditt avhenger av offentlig tekst som er vanskelig å søke i, vil vi gjerne høre om det."
             }
         }
     },
-    "Header": {
-        "products": "Produkter",
-        "team": "Team",
-        "research": "Forskning",
-        "blog": "Blogg",
-        "contact": "Kontakt",
-        "login": "Logg inn",
-        "howItWorks": "Slik virker det",
-        "coverage": "Kildedekning",
-        "news": "Blogg",
-        "bookDemo": "Bestill demo",
-        "more": "Mer",
-        "access": "Tilgang"
+    "Research": {
+        "label": "Forskning",
+        "heading": "Forskere fra <em>Universitetet i Oslo.</em>",
+        "body": "Reliable er et forskningsdrevet selskap. Metodene våre er publisert og fagfellevurdert, og den samme standarden gjelder for hver kilde vi indekserer.",
+        "rootedIn": "Forankret i",
+        "supportedBy": "Støttet av"
     },
-    "Access": {
-        "title": "Tilgang til Reliable",
-        "demoBadge": "Ny her",
-        "demoHeading": "Bestill demo",
-        "demoBody": "Se Reliable brukt på egne anskaffelsesspørsmål, sammen med teamet vårt.",
-        "demoCta": "Bestill demo",
-        "loginBadge": "Har tilgang",
-        "loginHeading": "Logg inn",
-        "loginBody": "For eksisterende brukere hos firmaer med Reliable-tilgang.",
-        "loginCta": "Gå til innlogging"
+    "Press": {
+        "label": "Omtalt i pressen",
+        "digitalnorway": "«De har fått KI til å slutte å lyve»",
+        "finansavisen": "«Reliable AI har funnet en vei rundt problemet der språkmodeller hallusinerer»",
+        "universitas": "«Skapte prisvinnende KI-verktøy ved siden av studiene»"
     },
-    "Hero": {
-        "title": "<span class=\"text-primary\">Reliable AI</span> forskning, rådgivning og implementering",
-        "subtitle": "Brobygger mellom akademisk forskning og industriell anvendelse.",
-        "cta": "Book en demo",
-        "award": "Vinner av ECAI 2025 Outstanding Demo Award"
-    },
-    "Values": {
-        "title": "Våre",
-        "titleAccent": "Prinsipper",
-        "research": {
-            "name": "Forskningsbasert",
-            "description": "Våre metoder er forankret i grundig akademisk forskning og utprøvde metoder."
-        },
-        "reliable": {
-            "name": "Pålitelig og sikker",
-            "description": "Vi prioriterer datasikkerhet og systempålitelighet i hver løsning vi bygger."
-        },
-        "custom": {
-            "name": "Skreddersydde løsninger",
-            "description": "Vi tror ikke på 'one-size-fits-all'. Vi bygger det du faktisk trenger."
-        }
-    },
-    "Offerings": {
-        "title": "Hva Vi Tilbyr",
-        "subtitle": "Omfattende AI-tjenester fra strategi til programvare.",
-        "consulting": {
-            "title": "Rådgivning",
-            "description": "Strategisk veiledning om AI-adopsjon og implementering.",
-            "cta": "Les mer"
-        },
-        "custom": {
-            "title": "Skreddersydd Programvare",
-            "description": "Spesialtilpassede AI-applikasjoner som løser dine spesifikke utfordringer.",
-            "cta": "Kom i gang"
-        },
-        "saas": {
-            "title": "SaaS-løsninger",
-            "description": "Klare verktøy for spesialiserte oppgaver.",
-            "cta": "Utforsk produkter"
-        }
-    },
-    "BlogPreview": {
-        "title": "Siste Innsikt",
-        "subtitle": "Tanker om teknologi, strategi og fremtidens arbeid.",
-        "viewAll": "Se alle innlegg"
-    },
-    "Blog": {
-        "title": "Nyheter og Innsikt",
-        "subtitle": "Siste oppdateringer, forskningsfunn og tanker fra Reliable AI-teamet.",
-        "backToBlog": "Tilbake til Blogg"
+    "Closing": {
+        "heading": "Er ditt fagfelt <em>neste?</em>",
+        "body": "Vi snakker med fagfolk på tvers av felt om hvor pålitelig søk i offentlig tekst betyr mest.",
+        "ceoRole": "Daglig leder",
+        "writeUs": "Skriv til oss"
     },
     "Footer": {
-        "contactUs": "KONTAKT OSS",
-        "overview": "Oversikt",
-        "products": "Produkter",
-        "team": "Team",
-        "research": "Forskning",
-        "blog": "Blogg",
-        "contacts": "Kontakt",
-        "office": "Kontor",
-        "rights": "Alle rettigheter forbeholdt Oslo {year}",
-        "tagline": "Forskningsbaserte KI-verktøy for jurister.",
-        "colProduct": "Produkt",
+        "tagline": "Pålitelig KI for offentlig kunnskap.",
+        "location": "Oslo, Norge.",
         "colCompany": "Selskap",
+        "colCustomers": "Kunder",
         "colLegal": "Juridisk",
-        "coverage": "Kildedekning",
-        "news": "Blogg",
+        "research": "Forskning",
+        "team": "Team",
         "contact": "Kontakt",
+        "login": "Logg inn",
         "privacy": "Personvernerklæring",
-        "datenschutz": "Datenschutzerklärung",
-        "location": "Oslo, Norge."
+        "rights": "Alle rettigheter forbeholdt Oslo {year}"
     },
     "Team": {
         "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",
@@ -149,177 +146,21 @@
         "groupBoard": "Styre",
         "groupDesign": "Design"
     },
-    "Products": {
-        "title": "Våre Produkter",
-        "subtitle": "Trygg beslutningsstøtte som styrker faglig skjønn. Vi erstatter ikke analysen din. Vi gjør den bedre.",
-        "kofa": {
-            "tag": "Legal Tech",
-            "title": "Reliable",
-            "description": "Alle relevante rettskilder for anskaffelsesjurister samlet ett sted. Søk i KOFA-avgjørelser, norsk rett, DFØ-veileder, EU-rettsakter og rettspraksis, og dansk KLFU, alt fra ett hybrid AI-søk.",
-            "feature1": "Alle viktige rettskilder for anskaffelsesrett samlet ett sted.",
-            "feature2": "Hybrid søk som kombinerer semantisk forståelse og presis nøkkelordmatching.",
-            "feature3": "Bygget for anskaffelsesjuristens arbeidsflyt.",
-            "cta": "Book en demo",
-            "login": "Logg inn",
-            "cardTitle": "Reliable",
-            "cardSubtitle": "Søk i anskaffelsesretten"
-        },
-        "impact": {
-            "before": "Før",
-            "after": "Med Reliable",
-            "caption": "Typisk søk i anskaffelsesretten, ende til ende."
-        },
-        "comingSoon": {
-            "title": "Kommer snart",
-            "subtitle": "Flere verktøy på vei."
-        }
-    },
-    "Testimonial": {
-        "textBefore": "Vi er stolte over å kunne ta i bruk prisvinnende norskutviklet teknologi i praktisk juridisk arbeid. Samarbeidet med Reliable AI har gjort det mulig å utvikle et produkt for presist søk i ",
-        "kofa": "KOFA",
-        "textAfter": "-saker, noe som forenkler arbeidshverdagen. Reliable tok oppgaven på strak arm og utviklet et svært nyttig produkt på kort tid i tett dialog med oss.",
-        "author": "Stian Hultin Oddbjørnsen",
-        "role": "Partner",
-        "company": "Advokatfirmaet Haavind",
-        "cta": "Utforsk Reliable"
-    },
-    "Contact": {
-        "title": "Ta kontakt",
-        "subtitle": "Ta kontakt for å diskutere hvordan vi kan støtte dine AI-initiativer.",
-        "markus": {
-            "name": "Markus Kreutzer",
-            "title": "CEO, Co-Founder",
-            "quote": "Vi er forpliktet til etisk og ansvarlig AI. Målet vårt er å muliggjøre trygg og sikker bruk."
-        },
-        "getInTouch": "Ta Kontakt",
-        "office": "Kontor",
-        "general": "Generelle Henvendelser",
-        "searchQuery": "Hvordan når jeg Reliable AI?",
-        "rowDemo": "Se Reliable",
-        "rowAsk": "Still et spørsmål",
-        "rowCeo": "Snakk med vår CEO",
-        "rowVisit": "Besøk kontoret",
-        "searchTag": "SØK"
-    },
-    "PHero": {
-        "kicker": "Semantisk søk i anskaffelsesretten",
-        "title": "Rettskildesøk etter <em>mening.</em>",
-        "keyLine": "Vi bruker KI til å finne kilder, ikke generere dem.",
-        "sub": "Reliable henter frem de mest relevante avgjørelsene for spørsmålet ditt, på avsnittsnivå, og hvert treff lenker til den autoritative kilden.",
-        "ctaDemo": "Bestill demo",
-        "ctaCoverage": "Se kildedekning",
-        "award": "ECAI 2025 Outstanding Demo Award",
-        "queries": [
-            {
-                "tag": "SØK",
-                "q": "Kan oppdragsgiver avlyse en konkurranse uten saklig grunn?"
-            },
-            {
-                "tag": "SØK",
-                "q": "Hvilke krav stiller anskaffelsesforskriften til begrunnelsen for avvisning av tilbud?"
-            },
-            {
-                "tag": "SØK",
-                "q": "Når kan oppdragsgiver avlyse en anskaffelse uten erstatningsansvar?"
-            },
-            {
-                "tag": "SØK",
-                "q": "Hvilke terskelverdier utløser kunngjøringsplikt etter anskaffelsesloven?"
-            }
-        ]
-    },
-    "PTrust": {
-        "label": "Brukes av"
-    },
-    "PStats": {
-        "v1": "45 → 10 min",
-        "l1": "typisk tid per sak",
-        "v2": "697 ms",
-        "l2": "gjennomsnittlig responstid",
-        "v3": "10 millioner+",
-        "l3": "søkbare avsnitt",
-        "l4": "data ajour per"
-    },
-    "PPress": {
-        "label": "Omtalt i pressen",
-        "finansavisen": "«Reliable AI har funnet en vei rundt problemet der språkmodeller hallusinerer»",
-        "digitalnorway": "«De har fått KI til å slutte å lyve»",
-        "universitas": "«Skapte prisvinnende KI-verktøy ved siden av studiene»"
-    },
-    "PCompare": {
-        "secNum": "§ 1. Gjenfinning, ikke generering",
-        "headingLine1": "Reliable skriver ikke svar.",
-        "headingLine2": "Det finner <em>kilder.</em>",
-        "intro": "Juridisk research skjer under press, og det er ikke rom for feil. Generative verktøy produserer tekst, og av og til henvisninger som ikke finnes. Reliable bygger en meningsrepresentasjon av spørsmålet ditt og henter frem avsnitt fra faktiske rettskilder. Hvert resultat er et dokument du kan åpne og kontrollere.",
-        "genericTag": "Generativ chatbot",
-        "latency": "Responstid",
-        "genericVerdict": "Den siterte avgjørelsen finnes ikke, og selv når en kilde er ekte, drukner den i analyse du aldri ba om.",
-        "presedensAnswerPrefix": "Relevante avsnitt fra",
-        "presedensAnswerSuffix": "hvert treff åpner den autoritative teksten, med de relevante avsnittene markert.",
-        "presedensVerdict": "Gjenfunnet, ikke generert. Kilden er svaret."
-    },
-    "PCaps": {
-        "secNum": "§ 3. Hva det gjør",
-        "heading": "Bygget for hvordan anskaffelsesjurister <em>faktisk arbeider.</em>",
-        "c1Title": "Søk etter mening",
-        "c1Body": "Still spørsmålet i vanlig juridisk språk. Reliable finner avgjørelser som besvarer spørsmålet selv når de bruker en helt annen ordlyd: ingen søkeoperatorer, ingen gjetting på nemndas begrepsbruk.",
-        "c2Title": "Treff på avsnittsnivå",
-        "c2Body": "Treffene peker til det konkrete avsnittet i avgjørelsen, ikke bare dokumentet. Du lander på vurderingen som betyr noe, ikke side én av førti.",
-        "c3Title": "Relevansmarkering",
-        "c3Body": "Åpne en avgjørelse eller lovtekst, og de relevante avsnittene er markert direkte i teksten, slik at du straks ser hvilke deler av dokumentet som er relevante.",
-        "c4Title": "Juridiske filtre",
-        "c4Body": "Avgrens etter avgjørelsestype, utfall, del av avgjørelsen, dato og parter. Hvert filter viser hvor mange treff det gir.",
-        "c6Title": "Prosjekter",
-        "c6Body": "Lagre avgjørelser og avsnitt underveis. Søkesporet kan rekonstrueres, for kolleger og for saken."
-    },
-    "PCoverage": {
-        "secNum": "§ 4. Kildedekning",
-        "heading": "Hva som er søkbart, <em>og hva som kommer.</em>",
-        "norway": "Norge",
-        "denmark": "Danmark",
-        "germany": "Tyskland",
-        "sweden": "Sverige",
-        "eu": "EU",
-        "status_live": "Tilgjengelig",
-        "status_launching": "Lanseres",
-        "status_liveAll": "Tilgjengelig i alle jurisdiksjoner",
-        "status_soon": "Kommer",
-        "soon": "KOMMER",
-        "euDirectives": "Anskaffelsesdirektivene",
-        "euRegulations": "Forordninger om offentlige anskaffelser",
-        "euCourt": "EU-domstolens praksis",
-        "euGeneralCourt": "Underrettens praksis"
-    },
-    "PLawyers": {
-        "secNum": "§ 2. Utviklet med advokater",
-        "heading": "Utviklet sammen med <em>anskaffelsesjurister.</em>",
-        "intro": "Reliable utvikles i tett dialog med praktiserende anskaffelsesjurister, først gjennom et pilotprosjekt hos Advokatfirmaet Haavind, og nå i daglig bruk hos norske og danske firmaer.",
-        "stian": {
-            "quote": "Vi er stolte over å kunne ta i bruk prisvinnende norskutviklet teknologi i praktisk juridisk arbeid. Samarbeidet med Reliable AI har gjort det mulig å utvikle et produkt for <b>presist søk i anskaffelsessaker</b>, noe som forenkler arbeidshverdagen. Reliable tok oppgaven på strak arm og utviklet et svært nyttig produkt på kort tid i tett dialog med oss.",
-            "name": "Stian Hultin Oddbjørnsen",
-            "role": "Partner, Advokatfirmaet Haavind"
-        },
-        "karen": {
-            "quote": "Jeg bruker Reliable AI som <b>førstevalg for søk i KOFA</b>. Det er mer presist og effektivt enn andre løsninger, og gir meg økt trygghet på at jeg har fått dekket de relevante sakene.",
-            "name": "Karen Anne Rekkedal",
-            "role": "Partner, Advokatfirmaet Selmer"
-        }
-    },
-    "PResearch": {
-        "secNum": "§ 5. Forskning",
-        "heading": "Forskere fra <em>Universitetet i Oslo.</em>",
-        "body": "Reliable AI er et forskningsdrevet selskap. Metodene bak produktet er publisert og fagfellevurdert, og den samme standarden gjelder for hver kilde vi indekserer.",
-        "supportedBy": "Støttet av"
-    },
-    "PCta": {
-        "heading": "Ta med en problemstilling fra egen praksis.",
-        "sub": "Tretti minutter. Vi kjører spørsmålet ditt live i Reliable. Vurder resultatene selv.",
-        "button": "Bestill demo"
+    "Access": {
+        "title": "Tilgang til Reliable",
+        "demoBadge": "Ny her",
+        "demoHeading": "Bestill demo",
+        "demoBody": "Se Reliable brukt på egne spørsmål, sammen med teamet vårt.",
+        "demoCta": "Bestill demo",
+        "loginBadge": "Har tilgang",
+        "loginHeading": "Logg inn",
+        "loginBody": "For eksisterende brukere hos firmaer med Reliable-tilgang.",
+        "loginCta": "Gå til innlogging"
     },
     "Meta": {
-        "title": "Reliable: Semantisk søk i anskaffelsesretten",
-        "description": "Reliable henter frem de mest relevante avgjørelsene for spørsmålet ditt: treff på avsnittsnivå i nemndspraksis, lov og forskrift og EU-rett, hvert treff lenket til kilden.",
-        "ogTitle": "Reliable: Semantisk søk i anskaffelsesretten",
-        "ogDescription": "Vi bruker KI til å finne kilder, ikke generere dem. Søk på avsnittsnivå for anskaffelsesjurister."
+        "title": "Reliable: Pålitelig KI for offentlig kunnskap",
+        "description": "Reliable bygger KI som finner avsnittet i stedet for å skrive et: søk etter mening i store mengder offentlig tekst, med kilden lenket til hvert svar.",
+        "ogTitle": "Reliable: KI du kan etterprøve",
+        "ogDescription": "Vi bruker KI til å finne kilder, ikke finne på dem. Søk etter mening i offentlig tekst, med kilden lenket til hvert svar."
     }
 }

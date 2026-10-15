@@ -1,6 +1,6 @@
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
-import { PageHeadDark } from "@/components/layout/PageHeadDark"
+import { PageHead } from "@/components/layout/PageHead"
 import { TeamGrid } from "@/components/team/TeamGrid"
 import { getTranslations } from "next-intl/server"
 
@@ -11,10 +11,10 @@ export default async function TeamPage() {
         <div className="flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">
-                <PageHeadDark
+                <PageHead
                     kicker="Team"
                     title={t.rich('title', {
-                        reliable: (chunks) => <em className="italic text-himmel" style={{ fontVariationSettings: "'WONK' 1" }}>{chunks}</em>,
+                        reliable: (chunks) => <em className="italic text-primary">{chunks}</em>,
                         br: () => <br />,
                     })}
                     sub={t('subtitle')}
