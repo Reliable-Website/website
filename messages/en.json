@@ -8,8 +8,8 @@
         "access": "Access"
     },
     "Hero": {
-        "kicker": "Trustworthy AI for public knowledge",
-        "title": "AI you can <em>check.</em>",
+        "kicker": "Making public knowledge searchable",
+        "title": "AI you can <em>trust.</em>",
         "keyLine": "We build AI that finds the passage instead of writing one.",
         "sub": "Every answer comes with its source, so the expert stays in charge.",
         "ctaPrimary": "See our track record",
@@ -106,7 +106,7 @@
         "writeUs": "Write to us"
     },
     "Footer": {
-        "tagline": "Trustworthy AI for public knowledge.",
+        "tagline": "Making public knowledge searchable.",
         "location": "Oslo, Norway.",
         "colCompany": "Company",
         "colCustomers": "Customers",
@@ -156,9 +156,9 @@
         "loginCta": "Go to login"
     },
     "Meta": {
-        "title": "Reliable: Trustworthy AI for public knowledge",
+        "title": "Reliable: Making public knowledge searchable",
         "description": "Reliable builds AI that finds the passage instead of writing one: search by meaning across large bodies of public text, with every answer linked to its source.",
-        "ogTitle": "Reliable: AI you can check",
+        "ogTitle": "Reliable: AI you can trust",
         "ogDescription": "We use AI to find sources, not invent them. Search by meaning across public text, with every answer linked to its source."
     }
 }

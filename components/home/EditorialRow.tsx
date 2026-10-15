@@ -9,12 +9,12 @@ export function EditorialRow({ id, num, label, children }: {
     children: ReactNode
 }) {
     return (
-        <div id={id} className="grid grid-cols-1 gap-6 border-t border-rule py-16 md:grid-cols-[230px_1fr] md:gap-14 md:py-[88px]">
-            <div className="md:sticky md:top-[104px] md:self-start">
-                <span className="block text-[48px] font-light leading-[0.9] tracking-[-0.04em] text-primary md:text-[72px]">{num}</span>
+        <div id={id} className="grid grid-cols-1 gap-6 border-t border-rule py-16 md:py-[88px] lg:grid-cols-[230px_1fr] lg:gap-14">
+            <div className="lg:sticky lg:top-[104px] lg:self-start">
+                <span className="block text-[48px] font-light leading-[0.9] tracking-[-0.04em] text-primary lg:text-[72px]">{num}</span>
                 <span className="mt-3.5 block font-mono text-[11.5px] uppercase tracking-[0.1em] text-ink-60">{label}</span>
             </div>
-            <div>{children}</div>
+            <div className="min-w-0">{children}</div>
         </div>
     )
 }

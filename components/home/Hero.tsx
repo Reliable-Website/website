@@ -8,11 +8,11 @@ import { Link } from "@/i18n/navigation"
 // Firm logos cleared for public use via signed contracts (founder, 2026-06-12).
 // w/h are the files' intrinsic sizes (keeps the aspect ratio); `h` is the display height.
 const FIRMS = [
-    { src: "/images/LogoCarousel/kromann-reumert.svg", alt: "Kromann Reumert", w: 148, ih: 28, h: 20 },
-    { src: "/images/LogoCarousel/kvale.svg", alt: "Kvale", w: 200, ih: 40, h: 14 },
-    { src: "/images/LogoCarousel/haavind.png", alt: "Haavind", w: 3370, ih: 766, h: 18 },
-    { src: "/images/LogoCarousel/selmer.png", alt: "Selmer", w: 1514, ih: 380, h: 18 },
-    { src: "/images/LogoCarousel/odin.png", alt: "Odin Prosjekt", w: 2942, ih: 1200, h: 18 },
+    { src: "/images/LogoCarousel/kromann-reumert.svg", alt: "Kromann Reumert", w: 148, ih: 28, h: 18 },
+    { src: "/images/LogoCarousel/kvale.svg", alt: "Kvale", w: 200, ih: 40, h: 13 },
+    { src: "/images/LogoCarousel/haavind.png", alt: "Haavind", w: 3370, ih: 766, h: 16 },
+    { src: "/images/LogoCarousel/selmer.png", alt: "Selmer", w: 1514, ih: 380, h: 16 },
+    { src: "/images/LogoCarousel/odin.png", alt: "Odin Prosjekt", w: 2942, ih: 1200, h: 17 },
 ]
 
 // Illustrative documents for the demo: paragraph labels and which one "matches".
@@ -134,7 +134,7 @@ export function Hero() {
 
     return (
         <section className="relative overflow-hidden border-b border-rule">
-            <div className="mx-auto grid max-w-[1180px] grid-cols-1 items-center gap-12 px-6 pb-[72px] pt-16 md:grid-cols-[1.05fr_1fr] md:gap-16 md:pt-[88px]">
+            <div className="mx-auto grid max-w-[1180px] grid-cols-1 items-center gap-12 px-6 pb-[72px] pt-16 md:pt-[88px] lg:grid-cols-[1.05fr_1fr] lg:gap-16">
                 <div>
                     <span className="font-mono text-[11.5px] uppercase tracking-[0.12em] text-primary">{t('kicker')}</span>
                     <h1
@@ -160,9 +160,9 @@ export function Hero() {
                             {t('ctaTeam')} →
                         </Link>
                     </div>
-                    <div className="mt-14 border-t border-rule-soft pt-[22px]">
-                        <span className="mb-3.5 block font-mono text-[11.5px] uppercase tracking-[0.1em] text-ink-60">{t('trustLabel')}</span>
-                        <div className="flex flex-wrap items-center gap-x-8 gap-y-3.5">
+                    <div className="mt-14 border-t border-rule-soft pt-6">
+                        <span className="mb-5 block font-mono text-[11.5px] uppercase tracking-[0.1em] text-ink-60">{t('trustLabel')}</span>
+                        <div className="flex flex-wrap items-center gap-x-8 gap-y-5 xl:gap-x-12">
                             {FIRMS.map((firm) => (
                                 <Image
                                     key={firm.alt}

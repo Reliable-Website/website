@@ -8,8 +8,8 @@
         "access": "Tilgang"
     },
     "Hero": {
-        "kicker": "Pålitelig KI for offentlig kunnskap",
-        "title": "KI du kan <em>etterprøve.</em>",
+        "kicker": "Vi gjør offentlig kunnskap søkbar",
+        "title": "KI du kan <em>stole på.</em>",
         "keyLine": "Vi bygger KI som finner avsnittet i stedet for å skrive et.",
         "sub": "Hvert svar kommer med kilden, så fagpersonen beholder kontrollen.",
         "ctaPrimary": "Se erfaringen vår",
@@ -106,7 +106,7 @@
         "writeUs": "Skriv til oss"
     },
     "Footer": {
-        "tagline": "Pålitelig KI for offentlig kunnskap.",
+        "tagline": "Vi gjør offentlig kunnskap søkbar.",
         "location": "Oslo, Norge.",
         "colCompany": "Selskap",
         "colCustomers": "Kunder",
@@ -156,9 +156,9 @@
         "loginCta": "Gå til innlogging"
     },
     "Meta": {
-        "title": "Reliable: Pålitelig KI for offentlig kunnskap",
+        "title": "Reliable: Vi gjør offentlig kunnskap søkbar",
         "description": "Reliable bygger KI som finner avsnittet i stedet for å skrive et: søk etter mening i store mengder offentlig tekst, med kilden lenket til hvert svar.",
-        "ogTitle": "Reliable: KI du kan etterprøve",
+        "ogTitle": "Reliable: KI du kan stole på",
         "ogDescription": "Vi bruker KI til å finne kilder, ikke finne på dem. Søk etter mening i offentlig tekst, med kilden lenket til hvert svar."
     }
 }
