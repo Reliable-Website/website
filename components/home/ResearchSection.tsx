@@ -1,15 +1,14 @@
 import Image from "next/image"
 import { useTranslations } from "next-intl"
-import { Link } from "@/i18n/navigation"
+import { EditorialRow, EditorialHeading } from "@/components/home/EditorialRow"
 
 // Publication titles are proper names and stay in English across locales.
-const PUBLICATIONS = [
+// The award row has no link since the blog post it pointed to was retired.
+const PUBLICATIONS: { year: string; title: string; venue: string; href?: string }[] = [
     {
         year: "2025",
         title: "ECAI 2025 · Outstanding Demo Award",
         venue: "European Conference on Artificial Intelligence",
-        href: "/blog/ecai-2025-outstanding-demo-award",
-        internal: true,
     },
     {
         year: "2025",
@@ -31,74 +30,84 @@ const PUBLICATIONS = [
     },
 ]
 
+const label = "mb-3.5 block font-mono text-[11.5px] uppercase tracking-[0.1em] text-ink-60"
+
+// Publications as a ledger (same rhythm as the fields list above), with the
+// university and supporters in a logo strip like the hero's trust row.
 export function ResearchSection() {
-    const t = useTranslations('PResearch')
+    const t = useTranslations('Research')
 
     return (
-        <section id="research" className="border-t border-rule bg-white py-24">
-            <div className="mx-auto grid max-w-[1180px] grid-cols-1 items-start gap-11 px-6 md:grid-cols-2 md:gap-[72px]">
+        <EditorialRow id="research" num="03" label={t('label')}>
+            <EditorialHeading>
+                {t.rich('heading', { em: (c) => <em className="italic text-primary">{c}</em> })}
+            </EditorialHeading>
+            <p className="mt-[18px] max-w-[36em] text-[18px] text-ink-60">{t('body')}</p>
+
+            <div className="mt-11 border-t border-rule">
+                {PUBLICATIONS.map((pub) => {
+                    // keep the last word and the arrow together so the arrow never wraps alone
+                    const cut = pub.title.lastIndexOf(" ") + 1
+                    const inner = (
+                        <>
+                            <span className="pt-1 font-mono text-[11.5px] uppercase tracking-[0.1em] text-ink-60">{pub.year}</span>
+                            <div>
+                                <h3 className="text-[21px] leading-snug transition-colors group-hover:text-primary" style={{ fontWeight: 450 }}>
+                                    {pub.title.slice(0, cut)}
+                                    <span className="whitespace-nowrap">
+                                        {pub.title.slice(cut)}
+                                        {pub.href && (
+                                            <span className="ml-2 inline-block text-[15px] text-ink-30 transition-all group-hover:translate-x-0.5 group-hover:text-primary">↗</span>
+                                        )}
+                                    </span>
+                                </h3>
+                                <p className="mt-1 text-[15px] text-ink-60">{pub.venue}</p>
+                            </div>
+                        </>
+                    )
+                    const className = "grid grid-cols-1 items-baseline gap-1 border-b border-rule py-[22px] md:grid-cols-[150px_1fr] md:gap-6"
+                    return pub.href ? (
+                        <a key={pub.title} href={pub.href} target="_blank" rel="noopener noreferrer" className={`group ${className}`}>
+                            {inner}
+                        </a>
+                    ) : (
+                        <div key={pub.title} className={className}>
+                            {inner}
+                        </div>
+                    )
+                })}
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-[auto_1fr] sm:gap-16">
                 <div>
-                    <span className="sec-num">{t('secNum')}</span>
-                    <h2 className="text-[clamp(28px,3vw,40px)] leading-[1.14]">
-                        {t.rich('heading', { em: (c) => <em className="italic text-primary">{c}</em> })}
-                    </h2>
-                    <p className="mt-5 text-[17px] text-ink-60">{t('body')}</p>
+                    <span className={label}>{t('rootedIn')}</span>
                     <Image
                         src="/images/LogoCarousel/uio-logo.svg"
                         alt="University of Oslo"
-                        width={169}
-                        height={52}
-                        className="mt-8 h-[52px] w-auto"
+                        width={312}
+                        height={96}
+                        className="h-11"
+                        style={{ width: "auto" }}
                     />
-                    <div className="mt-9 border-t border-rule-soft pt-6">
-                        <h3 className="mb-3.5 font-mono text-[11px] uppercase tracking-[0.12em] text-foreground">
-                            {t('supportedBy')}
-                        </h3>
-                        <div className="flex items-center gap-9">
-                            <Image
-                                src="/images/LogoCarousel/microsoft.png"
-                                alt="Microsoft for Startups"
-                                width={82}
-                                height={34}
-                                className="h-[34px] w-auto opacity-60 transition-opacity hover:opacity-100"
-                            />
-                            {/* Anthropic wordmark typeset pending real logo file / permission */}
-                            <span className="font-heading text-xl tracking-[0.03em] text-foreground opacity-60 transition-opacity hover:opacity-100" style={{ fontWeight: 550 }}>
-                                ANTHROPIC
-                            </span>
-                        </div>
+                </div>
+                <div>
+                    <span className={label}>{t('supportedBy')}</span>
+                    <div className="flex h-11 items-center gap-9">
+                        <Image
+                            src="/images/LogoCarousel/microsoft.png"
+                            alt="Microsoft for Startups"
+                            width={1046}
+                            height={439}
+                            className="h-8 opacity-60 transition-opacity hover:opacity-100"
+                            style={{ width: "auto" }}
+                        />
+                        {/* Anthropic wordmark typeset pending real logo file / permission */}
+                        <span className="text-xl tracking-[0.03em] text-foreground opacity-60 transition-opacity hover:opacity-100" style={{ fontWeight: 550 }}>
+                            ANTHROPIC
+                        </span>
                     </div>
                 </div>
-
-                <div className="border-t border-rule">
-                    {PUBLICATIONS.map((pub) => {
-                        const inner = (
-                            <>
-                                <span className="pt-1 font-mono text-[13px] text-ink-60">{pub.year}</span>
-                                <div>
-                                    <h4 className="mb-1.5 font-heading text-lg leading-snug transition-colors group-hover:text-primary" style={{ fontWeight: 500 }}>
-                                        {pub.title}
-                                        <span className="ml-2 inline-block font-mono text-[12px] text-ink-30 transition-all group-hover:translate-x-0.5 group-hover:text-primary">
-                                            {pub.internal ? "→" : "↗"}
-                                        </span>
-                                    </h4>
-                                    <p className="text-[14.5px] text-ink-60">{pub.venue}</p>
-                                </div>
-                            </>
-                        )
-                        const className = "group grid grid-cols-[110px_1fr] gap-6 border-b border-rule py-5.5 transition-colors hover:bg-primary/[0.03]"
-                        return pub.internal ? (
-                            <Link key={pub.title} href={pub.href} className={className}>
-                                {inner}
-                            </Link>
-                        ) : (
-                            <a key={pub.title} href={pub.href} target="_blank" rel="noopener noreferrer" className={className}>
-                                {inner}
-                            </a>
-                        )
-                    })}
-                </div>
             </div>
-        </section>
+        </EditorialRow>
     )
 }

@@ -28,12 +28,12 @@ export async function generateMetadata({
   return {
     title: {
       default: t('title'),
-      template: "%s | Reliable AI",
+      template: "%s | Reliable",
     },
     description: t('description'),
-    keywords: ["Reliable", "procurement law", "KOFA", "Klagenævnet for Udbud", "Vergabekammer", "legal search", "semantic search", "Legal Tech", "Reliable AI"],
-    authors: [{ name: "Reliable AI Team" }],
-    creator: "Reliable AI",
+    keywords: ["Reliable", "trustworthy AI", "semantic search", "retrieval", "public knowledge", "text embeddings", "Reliable AI"],
+    authors: [{ name: "Reliable" }],
+    creator: "Reliable",
 alternates: {
       canonical: `${baseUrl}/${locale}`,
       languages: {
@@ -45,17 +45,17 @@ alternates: {
     },
     openGraph: {
       type: "website",
-      locale: { en: "en_US", no: "nb_NO", da: "da_DK", de: "de_DE" }[locale] ?? "en_US",
+      locale: { en: "en_US", no: "nb_NO" }[locale] ?? "en_US",
       url: `${baseUrl}/${locale}`,
       title: t('ogTitle'),
       description: t('ogDescription'),
-      siteName: "Reliable AI",
+      siteName: "Reliable",
       images: [
         {
           url: `${baseUrl}/images/LogoReliable/og-image.png`,
           width: 1200,
           height: 630,
-          alt: "Reliable AI Logo",
+          alt: "Reliable",
         },
       ],
     },

@@ -1,127 +1,114 @@
 {
-    "Research": {
-        "title": "Our Research",
-        "subtitle": "Rigorous research is at the core of Reliable AI.",
-        "papers": {
-            "paper1": {
-                "title": "Scalable and consistent few-shot classification of survey responses using text embeddings",
-                "description": "We introduce a text embedding-based classification framework for efficient qualitative analysis of open-ended survey responses. Requiring only a handful of examples, this method integrates seamlessly into existing workflows and achieves performance comparable to expert human coders. It enables scalable, consistent, and audit-friendly analysis of thousands of responses.",
-                "date": "August 27, 2025",
-                "linkText": "Read Paper",
-                "linkUrl": "https://arxiv.org/abs/2508.19836"
+    "Header": {
+        "research": "Research",
+        "team": "Team",
+        "contact": "Contact",
+        "login": "Log in",
+        "access": "Access",
+        "language": "Language"
+    },
+    "Hero": {
+        "kicker": "Making public knowledge searchable",
+        "title": "AI you can <em>trust.</em>",
+        "keyLine": "We build AI that finds the needle in the haystack.",
+        "sub": "The knowledge worker gets the source and stays in charge.",
+        "ctaPrimary": "See our track record",
+        "ctaTeam": "Meet the team",
+        "trustLabel": "In daily use at",
+        "demo": {
+            "label": "Public source",
+            "match": "Match in {pn}",
+            "open": "Open the source ↗",
+            "docs": [
+                {
+                    "tag": "SEARCH",
+                    "q": "Can a seller refuse to repair a phone with water damage?",
+                    "title": "Board decision"
+                },
+                {
+                    "tag": "SEARCH",
+                    "q": "What did the committee conclude about the risks?",
+                    "title": "Official report, chapter 4"
+                },
+                {
+                    "tag": "SEARCH",
+                    "q": "Does active learning improve exam results?",
+                    "title": "Peer-reviewed study, results"
+                }
+            ]
+        }
+    },
+    "Statement": {
+        "text": "Much of what experts need to know is <mark>already written down</mark>, in public sources anyone can read. The hard part is finding what you need. Generative AI is not built for this task: it is slow and expensive, and <miss>sometimes cites sources that do not exist.</miss> We build the alternative: AI that <mark>finds the insight</mark> and <mark>shows you exactly where in the document it is.</mark>"
+    },
+    "TrackRecord": {
+        "label": "Track record",
+        "heading": "We started with law, where a wrong source <em>never is acceptable.</em>",
+        "lead": "Lawyers cannot cite a decision that does not exist. That made law a natural place to start, and good proof that our methods work. Reliable is now in daily use at leading law firms across the Nordics.",
+        "v1": "100M+",
+        "l1": "searchable paragraphs",
+        "v2": "697 ms",
+        "l2": "average search time",
+        "v3": "45 → 10",
+        "l3": "minutes per research task",
+        "karen": {
+            "quote": "It is more precise and efficient than other solutions, and gives me greater confidence that I have covered the relevant cases.",
+            "name": "Karen Anne Rekkedal",
+            "role": "Partner, Advokatfirmaet Selmer"
+        },
+        "stian": {
+            "quote": "Reliable took the challenge head-on and developed a highly useful product in a short time through close dialogue with us.",
+            "name": "Stian Hultin Oddbjørnsen",
+            "role": "Partner, Advokatfirmaet Haavind"
+        }
+    },
+    "NextFields": {
+        "label": "What comes next",
+        "heading": "Laws, rulings and regulation first. <em>Your field next?</em>",
+        "lead": "The problem is the same wherever knowledge workers depend on public text sources. We are now talking to the people who know those fields best.",
+        "live": "Live",
+        "exploring": "Exploring",
+        "rows": {
+            "law": {
+                "title": "Law",
+                "body": "Millions of paragraphs of decisions and legislation, in daily use."
             },
-            "paper2": {
-                "title": "Using Text Embeddings for Qualitative Analysis at Scale",
-                "description": "We propose a novel technique for deductive qualitative data analysis using text embeddings. By representing text in a high-dimensional meaning space, we can quantify differences and model topics more flexibly than traditional methods. Validate against established datasets, our approach recovers key trends and offers a scalable solution for large text corpora.",
-                "date": "December 20, 2024",
-                "linkText": "Read Paper",
-                "linkUrl": "https://journals.aps.org/prper/abstract/10.1103/PhysRevPhysEducRes.20.020151"
-            },
-            "paper3": {
-                "title": "DANTE: Deductive Content Analysis Using Text Embeddings",
-                "description": "Traditional qualitative content analysis of text is labor-intensive. We introduce DANTE, a reliable and transparent few-shot tool that makes text embedding-based qualitative analysis more accessible. It enables researchers to perform large-scale deductive content analysis without extensive programming skills.",
-                "date": "October 30, 2025",
-                "linkText": "Read Paper",
-                "linkUrl": "https://ebooks.iospress.nl/doi/10.3233/FAIA251443"
+            "yours": {
+                "title": "Your field?",
+                "body": "If your work depends on public text that is hard to search, we would like to hear from you."
             }
         }
     },
-    "Header": {
-        "products": "Products",
-        "team": "Team",
-        "research": "Research",
-        "blog": "Blog",
-        "contact": "Contact",
-        "login": "Log in",
-        "howItWorks": "How it works",
-        "coverage": "Coverage",
-        "news": "Blog",
-        "bookDemo": "Book a demo",
-        "more": "More",
-        "access": "Access"
+    "Research": {
+        "label": "Research",
+        "heading": "Researchers from the <em>University of Oslo.</em>",
+        "body": "Reliable is a research-driven company. Our methods are published, peer-reviewed and award-winning.",
+        "rootedIn": "Rooted in",
+        "supportedBy": "Supported by"
     },
-    "Access": {
-        "title": "Access Reliable",
-        "demoBadge": "New here",
-        "demoHeading": "Book a demo",
-        "demoBody": "See Reliable on your own procurement questions, together with our team.",
-        "demoCta": "Book a demo",
-        "loginBadge": "Have access",
-        "loginHeading": "Log in",
-        "loginBody": "For existing users at firms with a Reliable account.",
-        "loginCta": "Go to login"
+    "Press": {
+        "label": "In the press",
+        "digitalnorway": "“They got AI to stop lying”",
+        "finansavisen": "“Reliable AI has found a way around the problem of language models hallucinating”",
+        "universitas": "“Created award-winning AI tool alongside their studies”"
     },
-    "Hero": {
-        "title": "<span class=\"text-primary\">Reliable AI</span> research, consulting and deployment",
-        "subtitle": "Bridging the gap between academic research and industrial application.",
-        "cta": "Book a demo",
-        "award": "Winner of ECAI 2025 Outstanding Demo Award"
-    },
-    "Values": {
-        "title": "Our",
-        "titleAccent": "Principles",
-        "research": {
-            "name": "Research based",
-            "description": "Our methods are grounded in rigorous academic research and proven methodologies."
-        },
-        "reliable": {
-            "name": "Reliable and secure",
-            "description": "We prioritize data security and system reliability in every solution we build."
-        },
-        "custom": {
-            "name": "Custom solutions",
-            "description": "We don't believe in one-size-fits-all. We build what you actually need."
-        }
-    },
-    "Offerings": {
-        "title": "What We Offer",
-        "subtitle": "Comprehensive AI services from strategy to software.",
-        "consulting": {
-            "title": "Consulting",
-            "description": "Strategic guidance on AI adoption and implementation.",
-            "cta": "Learn more"
-        },
-        "custom": {
-            "title": "Custom Software",
-            "description": "Tailor-made AI applications solving your specific challenges.",
-            "cta": "Get started"
-        },
-        "saas": {
-            "title": "SaaS Solutions",
-            "description": "Ready-to-use tools for specialized tasks.",
-            "cta": "Explore products"
-        }
-    },
-    "BlogPreview": {
-        "title": "Latest Insights",
-        "subtitle": "Thoughts on technology, strategy, and the future of work.",
-        "viewAll": "View all posts"
-    },
-    "Blog": {
-        "title": "News & Insights",
-        "subtitle": "Latest updates, research findings, and thoughts from the Reliable AI team.",
-        "backToBlog": "Back to Blog"
+    "Closing": {
+        "heading": "What's <em>your haystack?</em>",
+        "ceoRole": "CEO",
+        "writeUs": "Write to us"
     },
     "Footer": {
-        "contactUs": "CONTACT US",
-        "overview": "Overview",
-        "products": "Products",
-        "team": "Team",
-        "research": "Research",
-        "blog": "Blog",
-        "contacts": "Contacts",
-        "office": "Office",
-        "rights": "All rights reserved Oslo {year}",
-        "tagline": "Research-driven AI tools for legal professionals.",
-        "colProduct": "Product",
+        "tagline": "Making public knowledge searchable.",
+        "location": "Oslo, Norway.",
         "colCompany": "Company",
+        "colCustomers": "Customers",
         "colLegal": "Legal",
-        "coverage": "Coverage",
-        "news": "Blog",
+        "research": "Research",
+        "team": "Team",
         "contact": "Contact",
+        "login": "Log in",
         "privacy": "Privacy policy",
-        "datenschutz": "Datenschutzerklärung",
-        "location": "Oslo, Norway."
+        "rights": "All rights reserved Oslo {year}"
     },
     "Team": {
         "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",
@@ -149,177 +136,21 @@
         "groupBoard": "Board",
         "groupDesign": "Design"
     },
-    "Products": {
-        "title": "Our Products",
-        "subtitle": "Safe decision support that enhances professional judgment. We don't replace your analysis. We make it better.",
-        "kofa": {
-            "tag": "Legal Tech",
-            "title": "Reliable",
-            "description": "Every legal source a procurement lawyer needs, in one workspace. Search KOFA decisions, Norwegian law and regulations, DFØ guidance, EU directives and case law, and Danish KLFU, all from a single hybrid AI search.",
-            "feature1": "All major procurement-law sources unified in one workspace.",
-            "feature2": "Hybrid search combining semantic understanding and exact keyword matching.",
-            "feature3": "Built for the procurement lawyer's workflow.",
-            "cta": "Book a demo",
-            "login": "Login",
-            "cardTitle": "Reliable",
-            "cardSubtitle": "Procurement Law Search"
-        },
-        "impact": {
-            "before": "Before",
-            "after": "With Reliable",
-            "caption": "Typical procurement-law search, end-to-end."
-        },
-        "comingSoon": {
-            "title": "Coming soon",
-            "subtitle": "More tools in the works."
-        }
-    },
-    "Testimonial": {
-        "textBefore": "We are proud to use award-winning, Norwegian-developed technology in practical legal work. The collaboration with Reliable AI has made it possible to develop a product for precise search in ",
-        "kofa": "KOFA",
-        "textAfter": " cases, simplifying our daily workflow. Reliable took the challenge head-on and developed a highly useful product in a short time through close dialogue with us.",
-        "author": "Stian Hultin Oddbjørnsen",
-        "role": "Partner",
-        "company": "Advokatfirmaet Haavind",
-        "cta": "Explore Reliable"
-    },
-    "Contact": {
-        "title": "Get in touch",
-        "subtitle": "Reach out to discuss how we can support your AI initiatives.",
-        "markus": {
-            "name": "Markus Kreutzer",
-            "title": "CEO, Co-Founder",
-            "quote": "We are committed to ethical and responsible AI. Our goal is to enable safe, confident adoption."
-        },
-        "getInTouch": "Get in Touch",
-        "office": "Office",
-        "general": "General Inquiries",
-        "searchQuery": "How do I reach Reliable AI?",
-        "rowDemo": "See Reliable",
-        "rowAsk": "Ask a question",
-        "rowCeo": "Talk to the CEO",
-        "rowVisit": "Visit the office",
-        "searchTag": "SEARCH"
-    },
-    "PHero": {
-        "kicker": "Semantic search for public procurement law",
-        "title": "Case law, searched <em>by meaning.</em>",
-        "keyLine": "We use AI to find sources, not generate them.",
-        "sub": "Reliable retrieves the decisions most relevant to your question, at paragraph level, each one linked to the authoritative source.",
-        "ctaDemo": "Book a demo",
-        "ctaCoverage": "See coverage",
-        "award": "ECAI 2025 Outstanding Demo Award",
-        "queries": [
-            {
-                "tag": "SEARCH",
-                "q": "Can a contracting authority cancel a tender procedure without objective grounds?"
-            },
-            {
-                "tag": "SØK",
-                "q": "Kan oppdragsgiver avlyse en konkurranse uten saklig grunn?"
-            },
-            {
-                "tag": "SØG",
-                "q": "Hvornår kan ordregiver annullere et udbud uden erstatningsansvar?"
-            },
-            {
-                "tag": "SUCHE",
-                "q": "Kann der Auftraggeber ein Vergabeverfahren ohne sachlichen Grund aufheben?"
-            }
-        ]
-    },
-    "PTrust": {
-        "label": "Trusted by"
-    },
-    "PStats": {
-        "v1": "45 → 10 min",
-        "l1": "typical time per case",
-        "v2": "697 ms",
-        "l2": "average search latency",
-        "v3": "10 million+",
-        "l3": "searchable paragraphs",
-        "l4": "data current per"
-    },
-    "PPress": {
-        "label": "In the press",
-        "finansavisen": "“Reliable AI has found a way around the problem of language models hallucinating”",
-        "digitalnorway": "“They got AI to stop lying”",
-        "universitas": "“Created award-winning AI tool alongside their studies”"
-    },
-    "PCompare": {
-        "secNum": "§ 1. Retrieval, not generation",
-        "headingLine1": "Reliable does not write answers.",
-        "headingLine2": "It finds <em>sources.</em>",
-        "intro": "Legal research happens under pressure, and there is no room for mistakes. Generative tools produce text, and occasionally produce citations that do not exist. Reliable builds a representation of the meaning of your question and retrieves matching paragraphs from real legal sources. Every result is a document you can open and verify.",
-        "genericTag": "Generative chatbot",
-        "latency": "Response time",
-        "genericVerdict": "The cited decision does not exist, and even when a source is real, it is buried in analysis you never asked for.",
-        "presedensAnswerPrefix": "Relevant paragraphs from",
-        "presedensAnswerSuffix": "each opening to the authoritative text, with the matching paragraphs highlighted.",
-        "presedensVerdict": "Retrieved, not generated. The source is the answer."
-    },
-    "PCaps": {
-        "secNum": "§ 3. What it does",
-        "heading": "Built for how procurement lawyers <em>actually work.</em>",
-        "c1Title": "Search by meaning",
-        "c1Body": "Ask in plain legal language. Reliable finds decisions that answer your question even when they use entirely different wording: no boolean syntax, no guessing the tribunal’s vocabulary.",
-        "c2Title": "Paragraph-level results",
-        "c2Body": "Hits point to the specific paragraph in a decision, not just the document. You land on the reasoning that matters, not page one of forty.",
-        "c3Title": "Relevance highlighting",
-        "c3Body": "Open a decision or statute and the matching paragraphs are highlighted in place, so you see at a glance which parts of the document are relevant.",
-        "c4Title": "Legal filters",
-        "c4Body": "Narrow by decision type, outcome, section of the decision, date and parties, each filter showing how many results it returns.",
-        "c6Title": "Projects",
-        "c6Body": "Save decisions and paragraphs as you research. Your research trail is reconstructible, for colleagues and for the file."
-    },
-    "PCoverage": {
-        "secNum": "§ 4. Coverage",
-        "heading": "What is searchable, <em>and what is coming.</em>",
-        "norway": "Norge",
-        "denmark": "Danmark",
-        "germany": "Deutschland",
-        "sweden": "Sverige",
-        "eu": "EU",
-        "status_live": "Live",
-        "status_launching": "Launching",
-        "status_liveAll": "Live in all jurisdictions",
-        "status_soon": "Coming soon",
-        "soon": "SOON",
-        "euDirectives": "Procurement directives",
-        "euRegulations": "Procurement regulations",
-        "euCourt": "Court of Justice case law",
-        "euGeneralCourt": "General Court case law"
-    },
-    "PLawyers": {
-        "secNum": "§ 2. Built with lawyers",
-        "heading": "Built together with <em>procurement lawyers.</em>",
-        "intro": "Reliable is developed in close dialogue with practicing procurement lawyers, beginning with a pilot at Advokatfirmaet Haavind, and now in daily use at Norwegian and Danish firms.",
-        "stian": {
-            "quote": "We are proud to use award-winning, Norwegian-developed technology in practical legal work. The collaboration with Reliable AI has made it possible to develop a product for <b>precise search in procurement cases</b>, simplifying our daily workflow. Reliable took the challenge head-on and developed a highly useful product in a short time through close dialogue with us.",
-            "name": "Stian Hultin Oddbjørnsen",
-            "role": "Partner, Advokatfirmaet Haavind"
-        },
-        "karen": {
-            "quote": "I use Reliable AI as my <b>first choice for searching in KOFA</b>. It is more precise and efficient than other solutions, and gives me greater confidence that I have covered the relevant cases.",
-            "name": "Karen Anne Rekkedal",
-            "role": "Partner, Advokatfirmaet Selmer"
-        }
-    },
-    "PResearch": {
-        "secNum": "§ 5. Research",
-        "heading": "Researchers from the <em>University of Oslo.</em>",
-        "body": "Reliable AI is a research-driven company. The methods behind the product are published and peer-reviewed, and the same standard of rigor applies to every source we index.",
-        "supportedBy": "Supported by"
-    },
-    "PCta": {
-        "heading": "Bring a question from your own practice.",
-        "sub": "Thirty minutes. We run your question live in Reliable, and you judge the results yourself.",
-        "button": "Book a demo"
+    "Access": {
+        "title": "Access Reliable",
+        "demoBadge": "New here",
+        "demoHeading": "Book a demo",
+        "demoBody": "See Reliable on your own questions, together with our team.",
+        "demoCta": "Book a demo",
+        "loginBadge": "Have access",
+        "loginHeading": "Log in",
+        "loginBody": "For existing users at firms with a Reliable account.",
+        "loginCta": "Go to login"
     },
     "Meta": {
-        "title": "Reliable: Semantic search for public procurement law",
-        "description": "Reliable retrieves the decisions most relevant to your question: paragraph-level results across tribunal practice, statutes and EU law, each one linked to the authoritative source.",
-        "ogTitle": "Reliable: Semantic search for public procurement law",
-        "ogDescription": "We use AI to find sources, not generate them. Paragraph-level legal search for procurement lawyers in Norway, Denmark and Germany."
+        "title": "Reliable: Making public knowledge searchable",
+        "description": "Reliable builds AI that finds the needle in the haystack: search by meaning across large bodies of public text, with every answer linked to its source.",
+        "ogTitle": "Reliable: AI you can trust",
+        "ogDescription": "We use AI to find sources, not invent them. Search by meaning across public text, with every answer linked to its source."
     }
 }

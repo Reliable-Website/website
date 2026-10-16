@@ -167,3 +167,14 @@ h6 {
     opacity: 0.35;
   }
 }
+
+/* hero source demo: a highlight band passing down the document */
+@keyframes docscan {
+  from {
+    top: 40px;
+  }
+
+  to {
+    top: 100%;
+  }
+}

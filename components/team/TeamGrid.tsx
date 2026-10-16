@@ -78,6 +78,7 @@ export function TeamGrid() {
                                 alt={m.name}
                                 fill
                                 sizes="340px"
+                                priority={i === 0}
                                 className={`object-cover transition-opacity duration-300 ${active === i ? "opacity-100" : "opacity-0"}`}
                             />
                         ))}
@@ -91,7 +92,7 @@ export function TeamGrid() {
                 </div>
             </div>
 
-            {/* Mobile: simple stacked cards */}
+            {/* Mobile: compact cards, small portrait beside name and role, bio below */}
             <div className="mx-auto max-w-[1180px] space-y-10 px-6 pt-10 md:hidden">
                 {[{ label: t('groupFounders'), list: FOUNDERS }, { label: t('groupDesign'), list: DESIGN }, { label: t('groupBoard'), list: BOARD }].map((group) => (
                     <div key={group.label}>
@@ -99,15 +100,19 @@ export function TeamGrid() {
                         <div className="space-y-8">
                             {group.list.map((m) => (
                                 <div key={m.name}>
-                                    <div className="relative mb-4 aspect-[4/5] overflow-hidden rounded-2xl border border-rule-soft">
-                                        <Image src={m.image} alt={m.name} fill sizes="100vw" className="object-cover" />
+                                    <div className="flex items-center gap-4">
+                                        <div className="relative aspect-[4/5] w-24 flex-none overflow-hidden rounded-xl border border-rule-soft">
+                                            <Image src={m.image} alt={m.name} fill sizes="96px" className="object-cover" priority={m === ALL[0]} />
+                                        </div>
+                                        <div className="min-w-0">
+                                            <h3 className="font-heading text-xl leading-tight" style={{ fontWeight: 460 }}>{m.name}</h3>
+                                            <p className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-primary">{t(`roles.${m.role}`)}</p>
+                                            {m.email && (
+                                                <a href={`mailto:${m.email}`} className="mt-0.5 block truncate py-1 font-mono text-[12.5px] text-ink-60">{m.email}</a>
+                                            )}
+                                        </div>
                                     </div>
-                                    <h3 className="font-heading text-2xl" style={{ fontWeight: 460 }}>{m.name}</h3>
-                                    <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.1em] text-primary">{t(`roles.${m.role}`)}</p>
-                                    {m.email && (
-                                        <a href={`mailto:${m.email}`} className="mt-1 block font-mono text-[12.5px] text-ink-60">{m.email}</a>
-                                    )}
-                                    <p className="mt-3 text-sm leading-relaxed text-ink-60">{t(`descriptions.${m.descriptionKey}`)}</p>
+                                    <p className="mt-3.5 text-sm leading-relaxed text-ink-60">{t(`descriptions.${m.descriptionKey}`)}</p>
                                 </div>
                             ))}
                         </div>
