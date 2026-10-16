@@ -26,13 +26,3 @@ export function EditorialHeading({ children }: { children: ReactNode }) {
         </h2>
     )
 }
-
-// Copy the team still has to write. Rendered loudly on purpose so it cannot ship unnoticed;
-// remove the <ph> tags in messages once the real text is in.
-export function Placeholder({ children }: { children: ReactNode }) {
-    return (
-        <span className="whitespace-nowrap rounded-md border border-dashed border-appelsin bg-appelsin/20 px-1.5 not-italic text-[#a85c18]">
-            {children}
-        </span>
-    )
-}

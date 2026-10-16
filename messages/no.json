@@ -67,18 +67,11 @@
         "heading": "Lov, dom og regulering først. <em>Ditt fagfelt neste?</em>",
         "lead": "Problemet er det samme overalt der kunnskapsarbeidere avhenger av offentlige tekstkilder. Nå snakker vi med dem som kjenner disse fagfeltene best.",
         "live": "I drift",
-        "building": "Under utvikling",
         "exploring": "Utforsker",
         "rows": {
             "law": {
                 "title": "Juss",
                 "body": "Millioner av avsnitt med avgjørelser og regelverk, i daglig bruk."
-            },
-            "area1": {
-                "title": "<ph>Område to</ph>"
-            },
-            "area2": {
-                "title": "<ph>Område tre</ph>"
             },
             "yours": {
                 "title": "Ditt fagfelt?",

@@ -67,18 +67,11 @@
         "heading": "Laws, rulings and regulation first. <em>Your field next?</em>",
         "lead": "The problem is the same wherever knowledge workers depend on public text sources. We are now talking to the people who know those fields best.",
         "live": "Live",
-        "building": "Building",
         "exploring": "Exploring",
         "rows": {
             "law": {
                 "title": "Law",
                 "body": "Millions of paragraphs of decisions and legislation, in daily use."
-            },
-            "area1": {
-                "title": "<ph>Area two</ph>"
-            },
-            "area2": {
-                "title": "<ph>Area three</ph>"
             },
             "yours": {
                 "title": "Your field?",
