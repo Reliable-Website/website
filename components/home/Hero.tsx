@@ -81,9 +81,9 @@ function SourceDemo() {
 
     return (
         <div aria-hidden="true" className="relative pb-[18px]">
-            <div className="mb-[22px] flex min-h-[52px] w-full items-center gap-3 rounded-full border border-rule-soft bg-white px-6 py-3 text-[15px] font-medium shadow-[0_1px_0_rgba(39,39,38,.09),0_18px_40px_-22px_rgba(39,39,38,.35)]">
+            <div className="mb-[22px] flex min-h-[52px] w-full items-center gap-3 rounded-[26px] border border-rule-soft bg-white px-6 py-3 text-[15px] font-medium shadow-[0_1px_0_rgba(39,39,38,.09),0_18px_40px_-22px_rgba(39,39,38,.35)]">
                 <span className="flex-none font-mono text-[11px] tracking-[0.1em] text-primary">{doc.tag}</span>
-                <span className="truncate">{text}</span>
+                <span className="min-w-0 sm:truncate">{text}</span>
                 <span className="h-[17px] w-[1.5px] flex-none bg-primary [animation:blink_1.1s_steps(1)_infinite]" />
             </div>
 
@@ -96,14 +96,14 @@ function SourceDemo() {
                 )}
                 <div className="mb-2 flex items-baseline justify-between border-b border-rule-soft pb-3.5">
                     <span className="text-[15px]" style={{ fontWeight: 560 }}>{doc.title}</span>
-                    <span className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ink-60">{t('label')}</span>
+                    <span className="hidden font-mono text-[10.5px] uppercase tracking-[0.1em] text-ink-60 sm:inline">{t('label')}</span>
                 </div>
                 {LINES.map((widths, p) => {
                     const hit = matched && p === shape.hit
                     return (
                         <div
                             key={p}
-                            className={`grid grid-cols-[52px_1fr] gap-2.5 rounded-lg py-2.5 pr-2.5 transition-[background,box-shadow] duration-500 ${hit ? "bg-himmel/[0.16] shadow-[inset_3px_0_0_var(--color-bla)]" : ""}`}
+                            className={`grid-cols-[52px_1fr] gap-2.5 rounded-lg py-2.5 pr-2.5 transition-[background,box-shadow] duration-500 ${p === LINES.length - 1 ? "hidden sm:grid" : "grid"} ${hit ? "bg-himmel/[0.16] shadow-[inset_3px_0_0_var(--color-bla)]" : ""}`}
                         >
                             <span className={`pl-2 pt-px font-mono text-[11.5px] transition-colors ${hit ? "text-primary" : "text-ink-30"}`}>{shape.pns[p]}</span>
                             <div>
@@ -156,7 +156,7 @@ export function Hero() {
                         >
                             {t('ctaPrimary')}
                         </a>
-                        <Link href="/team" className="font-medium text-primary underline-offset-4 hover:underline">
+                        <Link href="/team" className="py-2 font-medium text-primary underline-offset-4 hover:underline">
                             {t('ctaTeam')} →
                         </Link>
                     </div>

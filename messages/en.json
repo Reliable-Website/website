@@ -1,17 +1,17 @@
 {
     "Header": {
-        "trackRecord": "Track record",
         "research": "Research",
         "team": "Team",
         "contact": "Contact",
         "login": "Log in",
-        "access": "Access"
+        "access": "Access",
+        "language": "Language"
     },
     "Hero": {
         "kicker": "Making public knowledge searchable",
         "title": "AI you can <em>trust.</em>",
-        "keyLine": "We build AI that finds the passage instead of writing one.",
-        "sub": "Every answer comes with its source, so the expert stays in charge.",
+        "keyLine": "We build AI that finds the needle in the haystack.",
+        "sub": "The knowledge worker gets the source and stays in charge.",
         "ctaPrimary": "See our track record",
         "ctaTeam": "Meet the team",
         "trustLabel": "In daily use at",
@@ -22,7 +22,7 @@
             "docs": [
                 {
                     "tag": "SEARCH",
-                    "q": "Has this question been decided before?",
+                    "q": "Can a seller refuse to repair a phone with water damage?",
                     "title": "Board decision"
                 },
                 {
@@ -39,12 +39,12 @@
         }
     },
     "Statement": {
-        "text": "Much of what experts need to know is <mark>already written down</mark>, in public sources anyone can read. The hard part is finding it. Generative AI made that harder: it answers fluently, and <miss>sometimes cites sources that do not exist.</miss> We build the opposite: AI that <mark>finds the passage</mark> and <mark>shows you where it is.</mark>"
+        "text": "Much of what experts need to know is <mark>already written down</mark>, in public sources anyone can read. The hard part is finding what you need. Generative AI is not built for this task: it is slow and expensive, and <miss>sometimes cites sources that do not exist.</miss> We build the alternative: AI that <mark>finds the insight</mark> and <mark>shows you exactly where in the document it is.</mark>"
     },
     "TrackRecord": {
         "label": "Track record",
         "heading": "We started with law, where a wrong source <em>never is acceptable.</em>",
-        "lead": "Lawyers cannot cite a decision that does not exist. That made law the hardest place to start, and the best proof of the method. Reliable is now in daily use at leading law firms across the Nordics.",
+        "lead": "Lawyers cannot cite a decision that does not exist. That made law a natural place to start, and good proof that our methods work. Reliable is now in daily use at leading law firms across the Nordics.",
         "v1": "100M+",
         "l1": "searchable paragraphs",
         "v2": "697 ms",
@@ -64,32 +64,32 @@
     },
     "NextFields": {
         "label": "What comes next",
-        "heading": "Law and regulation first. <ph>Area one</ph> and <ph>area two</ph> next.",
-        "lead": "The problem is the same wherever expert work depends on large amounts of public text. We are now talking to the people who know those fields best.",
+        "heading": "Laws, rulings and regulation first. <em>Your field next?</em>",
+        "lead": "The problem is the same wherever knowledge workers depend on public text sources. We are now talking to the people who know those fields best.",
         "live": "Live",
         "building": "Building",
         "exploring": "Exploring",
         "rows": {
             "law": {
-                "title": "Law & regulation",
+                "title": "Law",
                 "body": "Millions of paragraphs of decisions and legislation, in daily use."
             },
             "area1": {
-                "title": "<ph>Area one</ph>"
+                "title": "<ph>Area two</ph>"
             },
             "area2": {
-                "title": "<ph>Area two</ph>"
+                "title": "<ph>Area three</ph>"
             },
             "yours": {
                 "title": "Your field?",
-                "body": "If your work depends on public text that is hard to search, tell us about it."
+                "body": "If your work depends on public text that is hard to search, we would like to hear from you."
             }
         }
     },
     "Research": {
         "label": "Research",
         "heading": "Researchers from the <em>University of Oslo.</em>",
-        "body": "Reliable is a research-driven company. Our methods are published and peer-reviewed, and the same standard of rigor applies to every source we index.",
+        "body": "Reliable is a research-driven company. Our methods are published, peer-reviewed and award-winning.",
         "rootedIn": "Rooted in",
         "supportedBy": "Supported by"
     },
@@ -100,8 +100,7 @@
         "universitas": "“Created award-winning AI tool alongside their studies”"
     },
     "Closing": {
-        "heading": "Is your field <em>next?</em>",
-        "body": "We are talking to experts across fields about where trustworthy search over public text matters most.",
+        "heading": "What's <em>your haystack?</em>",
         "ceoRole": "CEO",
         "writeUs": "Write to us"
     },
@@ -157,7 +156,7 @@
     },
     "Meta": {
         "title": "Reliable: Making public knowledge searchable",
-        "description": "Reliable builds AI that finds the passage instead of writing one: search by meaning across large bodies of public text, with every answer linked to its source.",
+        "description": "Reliable builds AI that finds the needle in the haystack: search by meaning across large bodies of public text, with every answer linked to its source.",
         "ogTitle": "Reliable: AI you can trust",
         "ogDescription": "We use AI to find sources, not invent them. Search by meaning across public text, with every answer linked to its source."
     }

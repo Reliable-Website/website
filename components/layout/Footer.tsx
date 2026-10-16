@@ -52,18 +52,18 @@ export function Footer() {
                     </div>
 
                     {/* Link columns */}
-                    <div className="flex gap-16 flex-wrap">
+                    <div className="flex flex-wrap gap-x-16 gap-y-8">
                         {cols.map((col) => (
                             <div key={col.title}>
                                 <h3 className="font-mono text-[11px] uppercase tracking-[0.12em] text-foreground mb-3.5">
                                     {col.title}
                                 </h3>
-                                <ul className="space-y-2 text-sm text-ink-60">
+                                <ul className="space-y-1 text-sm text-ink-60">
                                     {col.links.map((link) => (
                                         <li key={link.name}>
                                             <Link
                                                 href={link.href}
-                                                className="hover:text-foreground hover:underline underline-offset-[3px] decoration-1 transition-colors"
+                                                className="inline-block py-1 hover:text-foreground hover:underline underline-offset-[3px] decoration-1 transition-colors"
                                             >
                                                 {link.name}
                                             </Link>

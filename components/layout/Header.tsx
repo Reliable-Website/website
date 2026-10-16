@@ -32,7 +32,6 @@ export function Header({ dark = false }: { dark?: boolean }) {
     const pathname = usePathname()
 
     const navItems = [
-        { name: t('trackRecord'), href: "/#track-record" },
         { name: t('research'), href: "/#research" },
         { name: t('team'), href: "/team" },
         { name: t('contact'), href: "/#contact" },
@@ -144,7 +143,7 @@ export function Header({ dark = false }: { dark?: boolean }) {
                                         {t('login')}
                                     </Link>
                                     <div className={`flex items-center justify-between pt-6 border-t ${tone.overlayRule}`}>
-                                        <span className={dark ? "text-paper-60" : "text-ink-60"}>Language</span>
+                                        <span className={dark ? "text-paper-60" : "text-ink-60"}>{t('language')}</span>
                                         <div className="flex gap-3">
                                             {LANGUAGES.map((lang) => (
                                                 <button

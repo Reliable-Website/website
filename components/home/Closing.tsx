@@ -10,7 +10,6 @@ export function Closing() {
                 <h2 className="leading-none tracking-[-0.03em]" style={{ fontSize: "clamp(40px, 5.4vw, 76px)", fontWeight: 400 }}>
                     {t.rich('heading', { em: (c) => <em className="italic text-primary">{c}</em> })}
                 </h2>
-                <p className="mt-[22px] max-w-[30em] text-[19px] text-ink-60">{t('body')}</p>
 
                 <div className="mt-11 flex flex-wrap gap-4">
                     <a

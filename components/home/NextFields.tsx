@@ -24,7 +24,7 @@ export function NextFields() {
 
     return (
         <EditorialRow id="next" num="02" label={t('label')}>
-            <EditorialHeading>{t.rich('heading', { ph })}</EditorialHeading>
+            <EditorialHeading>{t.rich('heading', { ph, em: (c) => <em className="italic text-primary">{c}</em> })}</EditorialHeading>
             <p className="mt-[18px] max-w-[36em] text-[18px] text-ink-60">{t('lead')}</p>
 
             <div className="mt-11 border-t border-rule">

@@ -1,18 +1,18 @@
 {
     "Header": {
-        "trackRecord": "Erfaring",
         "research": "Forskning",
         "team": "Team",
         "contact": "Kontakt",
         "login": "Logg inn",
-        "access": "Tilgang"
+        "access": "Tilgang",
+        "language": "Språk"
     },
     "Hero": {
-        "kicker": "Vi gjør offentlig kunnskap søkbar",
+        "kicker": "Vi gjør offentlige kilder søkbare",
         "title": "KI du kan <em>stole på.</em>",
-        "keyLine": "Vi bygger KI som finner avsnittet i stedet for å skrive et.",
-        "sub": "Hvert svar kommer med kilden, så fagpersonen beholder kontrollen.",
-        "ctaPrimary": "Se erfaringen vår",
+        "keyLine": "Vi bygger KI som finner nåla i høystakken.",
+        "sub": "Kunnskapsarbeideren får kilden og beholder kontrollen.",
+        "ctaPrimary": "Se hva vi har bygget",
         "ctaTeam": "Møt teamet",
         "trustLabel": "I daglig bruk hos",
         "demo": {
@@ -22,7 +22,7 @@
             "docs": [
                 {
                     "tag": "SØK",
-                    "q": "Er dette spørsmålet avgjort før?",
+                    "q": "Kan selgeren nekte å reparere en telefon med fuktskade?",
                     "title": "Nemndsavgjørelse"
                 },
                 {
@@ -39,12 +39,12 @@
         }
     },
     "Statement": {
-        "text": "Mye av det fagfolk trenger å vite, <mark>står allerede skrevet</mark> i offentlige kilder som alle kan lese. Det vanskelige er å finne det. Generativ KI har gjort det vanskeligere: den svarer flytende, og <miss>viser noen ganger til kilder som ikke finnes.</miss> Vi bygger det motsatte: KI som <mark>finner avsnittet</mark> og <mark>viser deg hvor det står.</mark>"
+        "text": "Mye av det fagfolk trenger å vite, <mark>står allerede skrevet</mark> i offentlige kilder som alle kan lese. Det som er vanskelig, er å finne frem. Generativ KI er ikke laget for denne oppgaven, den er treig og dyr, og <miss>viser noen ganger til kilder som ikke finnes.</miss> Vi bygger alternativet: KI som <mark>finner innsikten</mark> og <mark>viser deg nøyaktig hvor i dokumentet den står.</mark>"
     },
     "TrackRecord": {
-        "label": "Erfaring",
-        "heading": "Vi startet med juss, der en feil kilde <em>aldri kan godtas.</em>",
-        "lead": "Jurister kan ikke vise til en avgjørelse som ikke finnes. Det gjorde juss til det vanskeligste stedet å starte, og det beste beviset på at metoden virker. Reliable er nå i daglig bruk hos ledende advokatfirmaer i hele Norden.",
+        "label": "Hvor vi er",
+        "heading": "Vi startet med juss, der en feil sitering <em>kan felle en sak.</em>",
+        "lead": "Jurister kan ikke vise til en avgjørelse som ikke finnes. Det gjorde juss til et naturlig sted å starte, og et godt bevis på at metodene våre virker. Reliable er nå i daglig bruk hos ledende advokatfirmaer i hele Norden.",
         "v1": "100 mill.+",
         "l1": "søkbare avsnitt",
         "v2": "697 ms",
@@ -64,32 +64,32 @@
     },
     "NextFields": {
         "label": "Veien videre",
-        "heading": "Juss og regulering først. <ph>Område én</ph> og <ph>område to</ph> neste.",
-        "lead": "Problemet er det samme overalt der fagarbeid avhenger av store mengder offentlig tekst. Nå snakker vi med dem som kjenner disse fagfeltene best.",
+        "heading": "Lov, dom og regulering først. <em>Ditt fagfelt neste?</em>",
+        "lead": "Problemet er det samme overalt der kunnskapsarbeidere avhenger av offentlige tekstkilder. Nå snakker vi med dem som kjenner disse fagfeltene best.",
         "live": "I drift",
         "building": "Under utvikling",
         "exploring": "Utforsker",
         "rows": {
             "law": {
-                "title": "Juss og regulering",
+                "title": "Juss",
                 "body": "Millioner av avsnitt med avgjørelser og regelverk, i daglig bruk."
             },
             "area1": {
-                "title": "<ph>Område én</ph>"
+                "title": "<ph>Område to</ph>"
             },
             "area2": {
-                "title": "<ph>Område to</ph>"
+                "title": "<ph>Område tre</ph>"
             },
             "yours": {
                 "title": "Ditt fagfelt?",
-                "body": "Hvis arbeidet ditt avhenger av offentlig tekst som er vanskelig å søke i, vil vi gjerne høre om det."
+                "body": "Hvis arbeidet ditt avhenger av offentlig tekst som er vanskelig å søke i, vil vi gjerne høre fra deg."
             }
         }
     },
     "Research": {
         "label": "Forskning",
         "heading": "Forskere fra <em>Universitetet i Oslo.</em>",
-        "body": "Reliable er et forskningsdrevet selskap. Metodene våre er publisert og fagfellevurdert, og den samme standarden gjelder for hver kilde vi indekserer.",
+        "body": "Reliable er et forskningsdrevet selskap. Metodene våre er publisert, fagfellevurdert og prisbelønnet.",
         "rootedIn": "Forankret i",
         "supportedBy": "Støttet av"
     },
@@ -100,13 +100,12 @@
         "universitas": "«Skapte prisvinnende KI-verktøy ved siden av studiene»"
     },
     "Closing": {
-        "heading": "Er ditt fagfelt <em>neste?</em>",
-        "body": "Vi snakker med fagfolk på tvers av felt om hvor pålitelig søk i offentlig tekst betyr mest.",
+        "heading": "Hva er <em>din høystakk?</em>",
         "ceoRole": "Daglig leder",
         "writeUs": "Skriv til oss"
     },
     "Footer": {
-        "tagline": "Vi gjør offentlig kunnskap søkbar.",
+        "tagline": "Vi gjør offentlige kilder søkbare.",
         "location": "Oslo, Norge.",
         "colCompany": "Selskap",
         "colCustomers": "Kunder",
@@ -156,8 +155,8 @@
         "loginCta": "Gå til innlogging"
     },
     "Meta": {
-        "title": "Reliable: Vi gjør offentlig kunnskap søkbar",
-        "description": "Reliable bygger KI som finner avsnittet i stedet for å skrive et: søk etter mening i store mengder offentlig tekst, med kilden lenket til hvert svar.",
+        "title": "Reliable: Vi gjør offentlige kilder søkbare",
+        "description": "Reliable bygger KI som finner nåla i høystakken: søk etter mening i store mengder offentlig tekst, med kilden lenket til hvert svar.",
         "ogTitle": "Reliable: KI du kan stole på",
         "ogDescription": "Vi bruker KI til å finne kilder, ikke finne på dem. Søk etter mening i offentlig tekst, med kilden lenket til hvert svar."
     }

@@ -20,11 +20,11 @@ export function TrackRecord() {
 
             <div className="mt-12 grid grid-cols-1 border-t border-rule sm:grid-cols-3">
                 {stats.map((s) => (
-                    <div key={s.label} className="pr-6 pt-[22px]">
-                        <b className="block whitespace-nowrap leading-none tracking-[-0.03em] [font-feature-settings:'tnum'_1]" style={{ fontSize: "clamp(34px, 4vw, 54px)", fontWeight: 350 }}>
+                    <div key={s.label} className="flex items-baseline justify-between gap-4 border-b border-rule-soft py-3.5 sm:block sm:border-0 sm:py-0 sm:pr-6 sm:pt-[22px]">
+                        <b className="block whitespace-nowrap leading-none tracking-[-0.03em] [font-feature-settings:'tnum'_1]" style={{ fontSize: "clamp(30px, 4vw, 54px)", fontWeight: 350 }}>
                             {s.value}
                         </b>
-                        <span className="mt-2.5 block font-mono text-[11.5px] uppercase tracking-[0.1em] text-ink-60">{s.label}</span>
+                        <span className="block text-right font-mono text-[11.5px] uppercase tracking-[0.1em] text-ink-60 sm:mt-2.5 sm:text-left">{s.label}</span>
                     </div>
                 ))}
             </div>
@@ -38,7 +38,7 @@ export function TrackRecord() {
                         style={{ backgroundImage: `url(${q.photo})`, backgroundPosition: q.position }}
                     />
                     <div>
-                        <blockquote className="max-w-[24em] italic leading-[1.38] tracking-[-0.01em]" style={{ fontSize: "clamp(22px, 2.3vw, 30px)" }}>
+                        <blockquote className="max-w-[24em] italic leading-[1.38] tracking-[-0.01em]" style={{ fontSize: "clamp(20px, 2.3vw, 30px)" }}>
                             <span className="text-himmel">“</span>{t(`${q.key}.quote`)}<span className="text-himmel">”</span>
                         </blockquote>
                         <figcaption className="mt-4 text-[13px] text-ink-60">
