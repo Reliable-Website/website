@@ -162,7 +162,7 @@ export function Hero() {
                     </div>
                     <div className="mt-14 border-t border-rule-soft pt-6">
                         <span className="mb-5 block font-mono text-[11.5px] uppercase tracking-[0.1em] text-ink-60">{t('trustLabel')}</span>
-                        <div className="flex flex-wrap items-center gap-x-8 gap-y-5 xl:gap-x-12">
+                        <div className="grid grid-cols-3 items-center justify-items-start gap-x-6 gap-y-5 sm:flex sm:flex-wrap sm:gap-x-8 xl:gap-x-12">
                             {FIRMS.map((firm) => (
                                 <Image
                                     key={firm.alt}
