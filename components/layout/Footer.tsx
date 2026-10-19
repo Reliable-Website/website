@@ -1,8 +1,8 @@
 "use client"
 
 import { Link } from "@/i18n/navigation"
-import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { Brand } from "@/components/layout/Brand"
 
 export function Footer() {
     const t = useTranslations('Footer')
@@ -10,27 +10,23 @@ export function Footer() {
 
     const cols = [
         {
-            title: t('colProduct'),
+            title: t('colCompany'),
             links: [
-                { name: "Reliable", href: "/#how" },
-                { name: t('coverage'), href: "/#coverage" },
                 { name: t('research'), href: "/#research" },
+                { name: t('team'), href: "/team" },
+                { name: t('contact'), href: "/#contact" },
             ],
         },
         {
-            title: t('colCompany'),
+            title: t('colCustomers'),
             links: [
-                { name: t('team'), href: "/team" },
-                { name: t('news'), href: "/blog" },
-                { name: t('contact'), href: "/contact" },
+                { name: t('login'), href: "/access" },
             ],
         },
         {
             title: t('colLegal'),
             links: [
                 { name: t('privacy'), href: "/privacy" },
-                { name: "Impressum", href: "/impressum" },
-                { name: t('datenschutz'), href: "/datenschutz" },
             ],
         },
     ]
@@ -41,14 +37,8 @@ export function Footer() {
                 <div className="flex flex-wrap justify-between gap-10">
                     {/* Brand */}
                     <div className="max-w-sm">
-                        <Link href="/">
-                            <Image
-                                src="/images/LogoReliable/logo-svart-trim.png"
-                                alt="Reliable AI"
-                                width={129}
-                                height={24}
-                                className="h-6 w-auto"
-                            />
+                        <Link href="/" aria-label="Reliable">
+                            <Brand />
                         </Link>
                         <p className="mt-4 text-sm text-ink-60">
                             {t('tagline')}
@@ -62,18 +52,18 @@ export function Footer() {
                     </div>
 
                     {/* Link columns */}
-                    <div className="flex gap-16 flex-wrap">
+                    <div className="flex flex-wrap gap-x-16 gap-y-8">
                         {cols.map((col) => (
                             <div key={col.title}>
                                 <h3 className="font-mono text-[11px] uppercase tracking-[0.12em] text-foreground mb-3.5">
                                     {col.title}
                                 </h3>
-                                <ul className="space-y-2 text-sm text-ink-60">
+                                <ul className="space-y-1 text-sm text-ink-60">
                                     {col.links.map((link) => (
                                         <li key={link.name}>
                                             <Link
                                                 href={link.href}
-                                                className="hover:text-foreground hover:underline underline-offset-[3px] decoration-1 transition-colors"
+                                                className="inline-block py-1 hover:text-foreground hover:underline underline-offset-[3px] decoration-1 transition-colors"
                                             >
                                                 {link.name}
                                             </Link>

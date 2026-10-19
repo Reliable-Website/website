@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return { title: t("access") }
 }
 
-// Gate page between the header CTA and the app: book a demo, or log in if you already have access.
+// Gate page between the header "Log in" link and the app: log in, or book a demo if you are new.
 export default function AccessPage() {
     return (
         <div className="flex min-h-screen flex-col bg-svart text-hvit">
-            <Header />
+            <Header dark />
             <main className="relative flex flex-1 items-center justify-center overflow-hidden">
                 <AccessHero />
             </main>
