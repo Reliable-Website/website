@@ -3,7 +3,7 @@ import { SLUGS } from "@/lib/legal";
 
 const baseUrl = "https://reliablelabs.ai";
 const locales = ["en", "no"];
-const pages = ["", "/team", "/privacy", "/legal", ...SLUGS.map((slug) => `/legal/${slug}`)];
+const pages = ["", "/team", "/legal", ...SLUGS.map((slug) => `/legal/${slug}`)];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return pages.map((page) => ({

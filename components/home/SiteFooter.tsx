@@ -13,7 +13,6 @@ export function SiteFooter() {
             <span className={s.org}>Org.nr 934 343 786</span>
             <span className={s.end}>
                 <Link href="/legal">{t("legal")}</Link>
-                <Link href="/legal#privacy">{t("privacy")}</Link>
                 <a href="#top">{t("top")}</a>
             </span>
         </footer>

@@ -15,18 +15,13 @@ export function Footer() {
                 { name: t('research'), href: "/#research" },
                 { name: t('team'), href: "/team" },
                 { name: t('contact'), href: "/#contact" },
+                { name: t('legal'), href: "/legal" },
             ],
         },
         {
             title: t('colCustomers'),
             links: [
                 { name: t('login'), href: "/access" },
-            ],
-        },
-        {
-            title: t('colLegal'),
-            links: [
-                { name: t('privacy'), href: "/privacy" },
             ],
         },
     ]

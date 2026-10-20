@@ -53,7 +53,6 @@
         "ceo": "Markus Kreutzer, daglig leder",
         "address": "Adresse",
         "legal": "Juridisk",
-        "privacy": "Personvernerklæring",
         "top": "Til toppen ↑"
     },
     "Footer": {
@@ -61,12 +60,11 @@
         "location": "Oslo, Norge.",
         "colCompany": "Selskap",
         "colCustomers": "Kunder",
-        "colLegal": "Juridisk",
         "research": "Forskning",
         "team": "Team",
         "contact": "Kontakt",
         "login": "Logg inn",
-        "privacy": "Personvernerklæring",
+        "legal": "Juridisk",
         "rights": "Alle rettigheter forbeholdt Oslo {year}"
     },
     "Team": {
