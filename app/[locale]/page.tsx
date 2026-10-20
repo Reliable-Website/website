@@ -3,8 +3,8 @@ import type { Viewport } from "next"
 import Image from "next/image"
 import clsx from "clsx"
 import { useLocale, useTranslations } from "next-intl"
-import { Link } from "@/i18n/navigation"
 import { HomeMotion } from "@/components/home/HomeMotion"
+import { SiteFooter } from "@/components/home/SiteFooter"
 import { ADDRESS, FIRMS, MAPS_URL, PEOPLE, PRESS, PUBLICATIONS, QUOTES, TEAM } from "@/components/home/content"
 import s from "@/components/home/Home.module.css"
 
@@ -149,15 +149,7 @@ export default function Home() {
                 </section>
             </main>
 
-            <footer className={s.foot}>
-                <span>© {new Date().getFullYear()} Reliable AI AS</span>
-                <span>{ADDRESS}</span>
-                <span>Org.nr 934 343 786</span>
-                <span className={s.end}>
-                    <Link href="/privacy">{t("privacy")}</Link>
-                    <a href="#top">{t("top")}</a>
-                </span>
-            </footer>
+            <SiteFooter />
         </div>
     )
 }

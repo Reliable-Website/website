@@ -14,8 +14,10 @@ const nextConfig: NextConfig = {
       // branch). Temporary so they can come back without cached redirects.
       { source: '/:locale(en|no)/blog/:path*', destination: '/:locale', permanent: false },
       { source: '/:locale(en|no)/contact', destination: '/:locale', permanent: false },
-      { source: '/:locale(en|no)/impressum', destination: '/:locale', permanent: false },
       { source: '/:locale(en|no)/datenschutz', destination: '/:locale', permanent: false },
+      // Short addresses for the legal documents, which live under /legal. /privacy is
+      // still the old page and is left out until it is decided what happens to it.
+      { source: '/:locale(en|no)/:doc(terms|data-processing-agreement|subprocessors|security|impressum)', destination: '/:locale/legal/:doc', permanent: false },
     ];
   },
 };

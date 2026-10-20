@@ -11,6 +11,8 @@
   --m: 32px;
   --g: 24px;
   --ease: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --frost: rgba(200, 208, 250, 0.55); /* the header once the page scrolls on */
+  --veil: rgba(196, 204, 250, 0.82); /* the phone menu */
 
   color: var(--ink);
   font-family: var(--font-geist), system-ui, sans-serif;
@@ -20,7 +22,7 @@
 }
 
 /* the haze is the page ground (also behind overscroll) and carries its own grain */
-:global(body):has(.page) { background: #B3BDF8; }
+:global(body):has(.forms) { background: #B3BDF8; }
 :global(body):has(.page)::before { content: none; }
 :global(body):has(.menuOpen) { overflow: hidden; }
 :global(html):has(.page) { scroll-padding-top: 80px; }
@@ -99,7 +101,7 @@ a:hover .u, a.u:hover { text-decoration-color: currentColor; }
 }
 .bar.show {
   height: 60px;
-  background: rgba(200, 208, 250, 0.55);
+  background: var(--frost);
   backdrop-filter: blur(16px) saturate(1.2);
 }
 .logo { display: block; width: auto; height: 24px; transition: height 0.4s var(--ease); }
@@ -118,7 +120,7 @@ a:hover .u, a.u:hover { text-decoration-color: currentColor; }
   position: fixed; inset: 0; z-index: 39;
   display: none; flex-direction: column;
   padding: 88px var(--m) 40px;
-  background: rgba(196, 204, 250, 0.82);
+  background: var(--veil);
   backdrop-filter: blur(22px) saturate(1.2);
 }
 .menu.menuOpen { display: flex; }
@@ -248,7 +250,8 @@ a.row:hover .arr { color: var(--ink); transform: translate(2px, -2px); }
   color: var(--ink-2);
 }
 .foot > * { grid-column: span 3; }
-.foot .end { display: flex; justify-content: flex-end; gap: 28px; }
+.foot .org { grid-column: span 2; }
+.foot .end { grid-column: span 4; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px 28px; }
 .foot a:hover { color: var(--ink); }
 
 @media (max-width: 860px) {
@@ -282,7 +285,7 @@ a.row:hover .arr { color: var(--ink); transform: translate(2px, -2px); }
   .bio img { display: block; grid-row: 1; width: 64%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 22%; filter: grayscale(1); }
   .mail { grid-column: 1; }
   .foot { margin-top: 120px; row-gap: 10px; }
-  .foot > * { grid-column: 1 / -1; }
+  .foot > *, .foot .org, .foot .end { grid-column: 1 / -1; }
   .foot .end { justify-content: flex-start; margin-top: 10px; }
 }
 @media (prefers-reduced-motion: reduce) {

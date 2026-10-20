@@ -52,6 +52,7 @@
         "contact": "Kontakt",
         "ceo": "Markus Kreutzer, daglig leder",
         "address": "Adresse",
+        "legal": "Juridisk",
         "privacy": "Personvernerklæring",
         "top": "Til toppen ↑"
     },
@@ -104,6 +105,11 @@
         "loginHeading": "Logg inn",
         "loginBody": "For eksisterende brukere hos firmaer med Reliable-tilgang.",
         "loginCta": "Gå til innlogging"
+    },
+    "Legal": {
+        "title": "Juridisk",
+        "description": "Kundevilkår, personvernerklæring, databehandleravtale, underleverandører, sikkerhet og impressum for Reliable AI AS.",
+        "contents": "Innhold"
     },
     "Meta": {
         "title": "Reliable: KI du kan stole på",
