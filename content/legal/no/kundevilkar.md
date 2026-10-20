@@ -30,8 +30,6 @@ Versjon 2.0 · Gjelder fra 15. oktober 2026
 
 3.3 Leverandøren videreutvikler og endrer Tjenesten løpende, og Kunden har alltid tilgang til gjeldende versjon.
 
-3.4 Funksjoner som er merket som test eller beta, er frivillige å bruke og leveres som de er.
-
 ## 4. Lisenser
 
 4.1 Kunden får en ikke-eksklusiv og ikke-overførbar rett til å bruke Tjenesten i egen virksomhet i avtaleperioden, for det antallet Brukere som fremgår av Kundeavtalen.

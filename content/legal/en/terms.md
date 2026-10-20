@@ -30,8 +30,6 @@ Version 2.0 · Effective from 15 October 2026
 
 3.3 The Supplier continuously develops and changes the Service, and the Customer always has access to the current version.
 
-3.4 Features marked as test or beta are optional and provided as is.
-
 ## 4. Licences
 
 4.1 The Customer receives a non-exclusive and non-transferable right to use the Service in its own business during the term of the Agreement, for the number of Users set out in the Customer Agreement.
