@@ -36,9 +36,9 @@
   --color-paper-60: rgba(243, 243, 243, 0.6);
   --color-paper-30: rgba(243, 243, 243, 0.3);
 
-  --font-sans: var(--font-inter);
-  --font-heading: var(--font-inter);
-  --font-mono: var(--font-inter);
+  --font-sans: var(--font-geist);
+  --font-heading: var(--font-geist);
+  --font-mono: var(--font-geist);
 }
 
 :root {
