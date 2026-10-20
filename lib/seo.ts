@@ -9,7 +9,7 @@ export const organizationJsonLd = {
     alternateName: "Reliable AI",
     url: BASE_URL,
     logo: `${BASE_URL}/images/LogoReliable/reliableai.png`,
-    email: "hei@reliableai.no",
+    taxID: "934 343 786",
     address: {
         "@type": "PostalAddress",
         streetAddress: "Akersbakken 30",

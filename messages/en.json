@@ -7,95 +7,53 @@
         "access": "Access",
         "language": "Language"
     },
-    "Hero": {
-        "kicker": "Making public knowledge searchable",
-        "title": "AI you can <em>trust.</em>",
-        "keyLine": "We build AI that finds the needle in the haystack.",
-        "sub": "The knowledge worker gets the source and stays in charge.",
-        "ctaPrimary": "See our track record",
-        "ctaTeam": "Meet the team",
-        "trustLabel": "In daily use at",
-        "demo": {
-            "label": "Public source",
-            "match": "Match in {pn}",
-            "open": "Open the source ↗",
-            "docs": [
-                {
-                    "tag": "SEARCH",
-                    "q": "Can a seller refuse to repair a phone with water damage?",
-                    "title": "Board decision"
-                },
-                {
-                    "tag": "SEARCH",
-                    "q": "What did the committee conclude about the risks?",
-                    "title": "Official report, chapter 4"
-                },
-                {
-                    "tag": "SEARCH",
-                    "q": "Does active learning improve exam results?",
-                    "title": "Peer-reviewed study, results"
-                }
-            ]
-        }
-    },
-    "Statement": {
-        "text": "Much of what experts need to know is <mark>already written down</mark>, in public sources anyone can read. The hard part is finding what you need. Generative AI is not built for this task: it is slow and expensive, and <miss>sometimes cites sources that do not exist.</miss> We build the alternative: AI that <mark>finds the insight</mark> and <mark>shows you exactly where in the document it is.</mark>"
-    },
-    "TrackRecord": {
-        "label": "Track record",
-        "heading": "We started with law, where a wrong source <em>never is acceptable.</em>",
-        "lead": "Lawyers cannot cite a decision that does not exist. That made law a natural place to start, and good proof that our methods work. Reliable is now in daily use at leading law firms across the Nordics.",
-        "v1": "100M+",
-        "l1": "searchable paragraphs",
-        "v2": "697 ms",
-        "l2": "average search time",
-        "v3": "45 → 10",
-        "l3": "minutes per research task",
-        "karen": {
-            "quote": "It is more precise and efficient than other solutions, and gives me greater confidence that I have covered the relevant cases.",
-            "name": "Karen Anne Rekkedal",
-            "role": "Partner, Advokatfirmaet Selmer"
+    "Home": {
+        "skip": "Skip to content",
+        "menu": "Menu",
+        "close": "Close",
+        "nav": {
+            "research": "Research",
+            "team": "Team",
+            "press": "Press",
+            "contact": "Contact",
+            "login": "Log in"
         },
-        "stian": {
-            "quote": "Reliable took the challenge head-on and developed a highly useful product in a short time through close dialogue with us.",
-            "name": "Stian Hultin Oddbjørnsen",
-            "role": "Partner, Advokatfirmaet Haavind"
-        }
-    },
-    "NextFields": {
-        "label": "What comes next",
-        "heading": "Laws, rulings and regulation first. <em>Your field next?</em>",
-        "lead": "The problem is the same wherever knowledge workers depend on public text sources. We are now talking to the people who know those fields best.",
-        "live": "Live",
-        "exploring": "Exploring",
-        "rows": {
-            "law": {
-                "title": "Law",
-                "body": "Millions of paragraphs of decisions and legislation, in daily use."
-            },
-            "yours": {
-                "title": "Your field?",
-                "body": "If your work depends on public text that is hard to search, we would like to hear from you."
-            }
-        }
-    },
-    "Research": {
-        "label": "Research",
-        "heading": "Researchers from the <em>University of Oslo.</em>",
-        "body": "Reliable is a research-driven company. Our methods are published, peer-reviewed and award-winning.",
+        "claim": "AI you can trust.",
+        "meta": "Research from the University of Oslo, in daily use at leading Nordic law firms.",
+        "clients": "In daily use at",
+        "words": "In their words",
+        "quotes": {
+            "karen": "It is more precise and efficient than other solutions, and gives me greater confidence that I have covered the relevant cases.",
+            "stian": "Reliable took the challenge head-on and developed a highly useful product in a short time through close dialogue with us."
+        },
+        "press": "Press",
+        "headlines": {
+            "digitalnorway": "They got AI to stop lying",
+            "finansavisen": "Reliable AI has found a way around the problem of language models hallucinating",
+            "universitas": "Created award-winning AI tool alongside their studies"
+        },
+        "research": "Research",
         "rootedIn": "Rooted in",
-        "supportedBy": "Supported by"
-    },
-    "Press": {
-        "label": "In the press",
-        "digitalnorway": "“They got AI to stop lying”",
-        "finansavisen": "“Reliable AI has found a way around the problem of language models hallucinating”",
-        "universitas": "“Created award-winning AI tool alongside their studies”"
-    },
-    "Closing": {
-        "heading": "What's <em>your haystack?</em>",
-        "ceoRole": "CEO",
-        "writeUs": "Write to us"
+        "supportedBy": "Supported by",
+        "team": "Team",
+        "groups": {
+            "founders": "Founders",
+            "design": "Design",
+            "board": "Board"
+        },
+        "roles": {
+            "ceo": "CEO, Co-founder",
+            "cto": "CTO, Co-founder",
+            "cpo": "CPO, Co-founder",
+            "cofounder": "Co-founder",
+            "designer": "Graphic Designer",
+            "board": "External Board Member"
+        },
+        "contact": "Contact",
+        "ceo": "Markus Kreutzer, CEO",
+        "address": "Address",
+        "privacy": "Privacy policy",
+        "top": "Back to top ↑"
     },
     "Footer": {
         "tagline": "Making public knowledge searchable.",
@@ -148,9 +106,9 @@
         "loginCta": "Go to login"
     },
     "Meta": {
-        "title": "Reliable: Making public knowledge searchable",
-        "description": "Reliable builds AI that finds the needle in the haystack: search by meaning across large bodies of public text, with every answer linked to its source.",
+        "title": "Reliable: AI you can trust",
+        "description": "Reliable builds AI you can trust. Research from the University of Oslo, in daily use at leading Nordic law firms.",
         "ogTitle": "Reliable: AI you can trust",
-        "ogDescription": "We use AI to find sources, not invent them. Search by meaning across public text, with every answer linked to its source."
+        "ogDescription": "Research from the University of Oslo, in daily use at leading Nordic law firms."
     }
 }

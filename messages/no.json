@@ -7,95 +7,53 @@
         "access": "Tilgang",
         "language": "Språk"
     },
-    "Hero": {
-        "kicker": "Vi gjør offentlige kilder søkbare",
-        "title": "KI du kan <em>stole på.</em>",
-        "keyLine": "Vi bygger KI som finner nåla i høystakken.",
-        "sub": "Kunnskapsarbeideren får kilden og beholder kontrollen.",
-        "ctaPrimary": "Se hva vi har bygget",
-        "ctaTeam": "Møt teamet",
-        "trustLabel": "I daglig bruk hos",
-        "demo": {
-            "label": "Offentlig kilde",
-            "match": "Treff i {pn}",
-            "open": "Åpne kilden ↗",
-            "docs": [
-                {
-                    "tag": "SØK",
-                    "q": "Kan selgeren nekte å reparere en telefon med fuktskade?",
-                    "title": "Nemndsavgjørelse"
-                },
-                {
-                    "tag": "SØK",
-                    "q": "Hva konkluderte utvalget om risikoen?",
-                    "title": "Offentlig utredning, kapittel 4"
-                },
-                {
-                    "tag": "SØK",
-                    "q": "Gir aktiv læring bedre eksamensresultater?",
-                    "title": "Fagfellevurdert studie, resultater"
-                }
-            ]
-        }
-    },
-    "Statement": {
-        "text": "Mye av det fagfolk trenger å vite, <mark>står allerede skrevet</mark> i offentlige kilder som alle kan lese. Det som er vanskelig, er å finne frem. Generativ KI er ikke laget for denne oppgaven, den er treig og dyr, og <miss>viser noen ganger til kilder som ikke finnes.</miss> Vi bygger alternativet: KI som <mark>finner innsikten</mark> og <mark>viser deg nøyaktig hvor i dokumentet den står.</mark>"
-    },
-    "TrackRecord": {
-        "label": "Hvor vi er",
-        "heading": "Vi startet med juss, der en feil sitering <em>kan felle en sak.</em>",
-        "lead": "Jurister kan ikke vise til en avgjørelse som ikke finnes. Det gjorde juss til et naturlig sted å starte, og et godt bevis på at metodene våre virker. Reliable er nå i daglig bruk hos ledende advokatfirmaer i hele Norden.",
-        "v1": "100 mill.+",
-        "l1": "søkbare avsnitt",
-        "v2": "697 ms",
-        "l2": "gjennomsnittlig søketid",
-        "v3": "45 → 10",
-        "l3": "minutter per søkeoppgave",
-        "karen": {
-            "quote": "Det er mer presist og effektivt enn andre løsninger, og gir meg økt trygghet på at jeg har fått dekket de relevante sakene.",
-            "name": "Karen Anne Rekkedal",
-            "role": "Partner, Advokatfirmaet Selmer"
+    "Home": {
+        "skip": "Hopp til innholdet",
+        "menu": "Meny",
+        "close": "Lukk",
+        "nav": {
+            "research": "Forskning",
+            "team": "Team",
+            "press": "Presse",
+            "contact": "Kontakt",
+            "login": "Logg inn"
         },
-        "stian": {
-            "quote": "Reliable tok oppgaven på strak arm og utviklet et svært nyttig produkt på kort tid i tett dialog med oss.",
-            "name": "Stian Hultin Oddbjørnsen",
-            "role": "Partner, Advokatfirmaet Haavind"
-        }
-    },
-    "NextFields": {
-        "label": "Veien videre",
-        "heading": "Lov, dom og regulering først. <em>Ditt fagfelt neste?</em>",
-        "lead": "Problemet er det samme overalt der kunnskapsarbeidere avhenger av offentlige tekstkilder. Nå snakker vi med dem som kjenner disse fagfeltene best.",
-        "live": "I drift",
-        "exploring": "Utforsker",
-        "rows": {
-            "law": {
-                "title": "Juss",
-                "body": "Millioner av avsnitt med avgjørelser og regelverk, i daglig bruk."
-            },
-            "yours": {
-                "title": "Ditt fagfelt?",
-                "body": "Hvis arbeidet ditt avhenger av offentlig tekst som er vanskelig å søke i, vil vi gjerne høre fra deg."
-            }
-        }
-    },
-    "Research": {
-        "label": "Forskning",
-        "heading": "Forskere fra <em>Universitetet i Oslo.</em>",
-        "body": "Reliable er et forskningsdrevet selskap. Metodene våre er publisert, fagfellevurdert og prisbelønnet.",
+        "claim": "KI du kan stole på.",
+        "meta": "Forskning fra Universitetet i Oslo, i daglig bruk hos ledende advokatfirmaer i Norden.",
+        "clients": "I daglig bruk hos",
+        "words": "Med egne ord",
+        "quotes": {
+            "karen": "Det er mer presist og effektivt enn andre løsninger, og gir meg økt trygghet på at jeg har fått dekket de relevante sakene.",
+            "stian": "Reliable tok oppgaven på strak arm og utviklet et svært nyttig produkt på kort tid i tett dialog med oss."
+        },
+        "press": "Omtalt i pressen",
+        "headlines": {
+            "digitalnorway": "De har fått KI til å slutte å lyve",
+            "finansavisen": "Reliable AI har funnet en vei rundt problemet der språkmodeller hallusinerer",
+            "universitas": "Skapte prisvinnende KI-verktøy ved siden av studiene"
+        },
+        "research": "Forskning",
         "rootedIn": "Forankret i",
-        "supportedBy": "Støttet av"
-    },
-    "Press": {
-        "label": "Omtalt i pressen",
-        "digitalnorway": "«De har fått KI til å slutte å lyve»",
-        "finansavisen": "«Reliable AI har funnet en vei rundt problemet der språkmodeller hallusinerer»",
-        "universitas": "«Skapte prisvinnende KI-verktøy ved siden av studiene»"
-    },
-    "Closing": {
-        "heading": "Hva er <em>din høystakk?</em>",
-        "ceoRole": "Daglig leder",
-        "writeUs": "Skriv til oss"
+        "supportedBy": "Støttet av",
+        "team": "Team",
+        "groups": {
+            "founders": "Gründere",
+            "design": "Design",
+            "board": "Styre"
+        },
+        "roles": {
+            "ceo": "CEO, Co-founder",
+            "cto": "CTO, Co-founder",
+            "cpo": "CPO, Co-founder",
+            "cofounder": "Co-founder",
+            "designer": "Grafisk designer",
+            "board": "Eksternt styremedlem"
+        },
+        "contact": "Kontakt",
+        "ceo": "Markus Kreutzer, daglig leder",
+        "address": "Adresse",
+        "privacy": "Personvernerklæring",
+        "top": "Til toppen ↑"
     },
     "Footer": {
         "tagline": "Vi gjør offentlige kilder søkbare.",
@@ -148,9 +106,9 @@
         "loginCta": "Gå til innlogging"
     },
     "Meta": {
-        "title": "Reliable: Vi gjør offentlige kilder søkbare",
-        "description": "Reliable bygger KI som finner nåla i høystakken: søk etter mening i store mengder offentlig tekst, med kilden lenket til hvert svar.",
+        "title": "Reliable: KI du kan stole på",
+        "description": "Reliable bygger KI du kan stole på. Forskning fra Universitetet i Oslo, i daglig bruk hos ledende advokatfirmaer i Norden.",
         "ogTitle": "Reliable: KI du kan stole på",
-        "ogDescription": "Vi bruker KI til å finne kilder, ikke finne på dem. Søk etter mening i offentlig tekst, med kilden lenket til hvert svar."
+        "ogDescription": "Forskning fra Universitetet i Oslo, i daglig bruk hos ledende advokatfirmaer i Norden."
     }
 }

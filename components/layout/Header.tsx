@@ -23,6 +23,20 @@ const LANGUAGES = [
     { code: "no", label: "Norsk" },
 ]
 
+// Dims the page briefly while the language switches.
+function dimWhile(switchLanguage: () => void) {
+    const root = document.documentElement
+    root.style.transition = "opacity 0.3s ease"
+    root.style.opacity = "0.5"
+    switchLanguage()
+    setTimeout(() => {
+        root.style.opacity = "1"
+        setTimeout(() => {
+            root.style.transition = ""
+        }, 300)
+    }, 150)
+}
+
 // Light by default; `dark` keeps the header seamless on the dark /access gate.
 export function Header({ dark = false }: { dark?: boolean }) {
     const t = useTranslations('Header')
@@ -38,15 +52,7 @@ export function Header({ dark = false }: { dark?: boolean }) {
     ]
 
     const switchLanguage = (newLocale: string) => {
-        document.documentElement.style.transition = "opacity 0.3s ease"
-        document.documentElement.style.opacity = "0.5"
-        router.replace(pathname, { locale: newLocale })
-        setTimeout(() => {
-            document.documentElement.style.opacity = "1"
-            setTimeout(() => {
-                document.documentElement.style.transition = ""
-            }, 300)
-        }, 150)
+        dimWhile(() => router.replace(pathname, { locale: newLocale }))
     }
 
     const tone = dark
