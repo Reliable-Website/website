@@ -52,6 +52,7 @@
         "contact": "Contact",
         "ceo": "Markus Kreutzer, CEO",
         "address": "Address",
+        "legal": "Legal",
         "privacy": "Privacy policy",
         "top": "Back to top ↑"
     },
@@ -104,6 +105,11 @@
         "loginHeading": "Log in",
         "loginBody": "For existing users at firms with a Reliable account.",
         "loginCta": "Go to login"
+    },
+    "Legal": {
+        "title": "Legal",
+        "description": "Customer terms, privacy policy, data processing agreement, sub-processors, security and impressum for Reliable AI AS.",
+        "contents": "Contents"
     },
     "Meta": {
         "title": "Reliable: AI you can trust",

@@ -3,28 +3,10 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from "react"
 import Image from "next/image"
 import clsx from "clsx"
-import { useLocale, useTranslations } from "next-intl"
-import { Link } from "@/i18n/navigation"
+import { useTranslations } from "next-intl"
 import { PEOPLE } from "@/components/home/content"
+import { SiteBar } from "@/components/home/SiteBar"
 import s from "@/components/home/Home.module.css"
-
-const LOCALES = [
-    { code: "en", short: "EN", long: "English" },
-    { code: "no", short: "NO", long: "Norsk" },
-]
-
-const SECTIONS = ["research", "team", "press", "contact"] as const
-
-// The header frosts once the first screen has scrolled away.
-function subscribeScroll(onChange: () => void) {
-    addEventListener("scroll", onChange, { passive: true })
-    addEventListener("resize", onChange)
-    return () => {
-        removeEventListener("scroll", onChange)
-        removeEventListener("resize", onChange)
-    }
-}
-const pastStage = () => (document.getElementById("top")?.getBoundingClientRect().bottom ?? Infinity) < 80
 
 // The team portrait only follows a fine pointer on wide screens.
 const HOVER = "(pointer: fine) and (min-width: 861px)"
@@ -40,14 +22,11 @@ const smooth = (x: number) => {
     return x * x * (3 - 2 * x)
 }
 
-// The moving parts of the homepage: the header and phone menu, the first screen
+// The moving parts of the homepage: the header (SiteBar), the first screen
 // where scrolling brings the two circles into line, and the team portrait that
 // follows the cursor. The sections in between are rendered on the server.
 export function HomeMotion() {
     const t = useTranslations("Home")
-    const locale = useLocale()
-    const [open, setOpen] = useState(false)
-    const show = useSyncExternalStore(subscribeScroll, pastStage, () => false)
     const hover = useSyncExternalStore(subscribeHover, canHover, () => false)
     const [portrait, setPortrait] = useState<{ on: boolean; index: number }>({ on: false, index: 0 })
 
@@ -60,20 +39,6 @@ export function HomeMotion() {
     const stageRef = useRef<HTMLDivElement>(null)
     const wordRef = useRef<HTMLHeadingElement>(null)
     const floatRef = useRef<HTMLDivElement>(null)
-
-    // ---------- phone menu ----------
-    useEffect(() => {
-        const close = () => setOpen(false)
-        const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") close() }
-        const wide = matchMedia("(min-width: 861px)")
-        const onWide = (e: MediaQueryListEvent) => { if (e.matches) close() }
-        addEventListener("keydown", onKey)
-        wide.addEventListener("change", onWide)
-        return () => {
-            removeEventListener("keydown", onKey)
-            wide.removeEventListener("change", onWide)
-        }
-    }, [])
 
     // ---------- the two circles: scrolling the stage brings them into line;
     // after the stage they scroll away with the page ----------
@@ -210,20 +175,6 @@ export function HomeMotion() {
         }
     }, [hover])
 
-    const close = () => setOpen(false)
-    const languages = (long: boolean) => (
-        <span className={s.lang}>
-            {LOCALES.map((l, i) => (
-                <span key={l.code}>
-                    {i > 0 && " / "}
-                    <Link href="/" locale={l.code} scroll={false} aria-current={l.code === locale ? "true" : undefined} onClick={close}>
-                        {long ? l.long : l.short}
-                    </Link>
-                </span>
-            ))}
-        </span>
-    )
-
     return (
         <>
             <div className={s.forms} ref={formsRef} aria-hidden="true">
@@ -234,25 +185,7 @@ export function HomeMotion() {
                 </div>
             </div>
 
-            <header className={clsx(s.bar, show && s.show, open && s.clear)} ref={barRef}>
-                <a href="#top" onClick={close}>
-                    <Image className={s.logo} src="/images/LogoReliable/logo-svart-trim.png" alt="Reliable" width={1710} height={319} sizes="129px" style={{ width: "auto" }} preload />
-                </a>
-                <nav className={s.nav} aria-label="Main">
-                    {SECTIONS.map((id) => <a key={id} href={`#${id}`}>{t(`nav.${id}`)}</a>)}
-                    <Link href="/access">{t("nav.login")}</Link>
-                    {languages(false)}
-                </nav>
-                <button type="button" className={s.menuBtn} aria-expanded={open} aria-controls="menu" onClick={() => setOpen(!open)}>
-                    {open ? t("close") : t("menu")}
-                </button>
-            </header>
-
-            <div className={clsx(s.menu, open && s.menuOpen)} id="menu">
-                {SECTIONS.map((id) => <a key={id} className={s.item} href={`#${id}`} onClick={close}>{t(`nav.${id}`)}</a>)}
-                <Link className={s.item} href="/access" onClick={close}>{t("nav.login")}</Link>
-                {languages(true)}
-            </div>
+            <SiteBar home ref={barRef} />
 
             <section className={s.hero} id="top" ref={heroRef}>
                 <div className={s.stage} ref={stageRef}>
