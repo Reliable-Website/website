@@ -53,7 +53,6 @@
         "ceo": "Markus Kreutzer, CEO",
         "address": "Address",
         "legal": "Legal",
-        "privacy": "Privacy policy",
         "top": "Back to top ↑"
     },
     "Footer": {
@@ -61,12 +60,11 @@
         "location": "Oslo, Norway.",
         "colCompany": "Company",
         "colCustomers": "Customers",
-        "colLegal": "Legal",
         "research": "Research",
         "team": "Team",
         "contact": "Contact",
         "login": "Log in",
-        "privacy": "Privacy policy",
+        "legal": "Legal",
         "rights": "All rights reserved Oslo {year}"
     },
     "Team": {
