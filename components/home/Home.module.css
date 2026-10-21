@@ -109,7 +109,7 @@ a:hover .u, a.u:hover { text-decoration-color: currentColor; }
 .bar.show .logo { height: 21px; }
 .nav { display: flex; align-items: center; gap: 28px; color: var(--ink-2); }
 .nav a { transition: color 0.25s; }
-.nav a:hover { color: var(--ink); }
+.nav a:hover, .nav a[aria-current="page"] { color: var(--ink); }
 .lang { color: var(--ink-3); }
 .lang a { color: var(--ink-3); }
 .lang a:hover, .lang a[aria-current="true"] { color: var(--ink); }

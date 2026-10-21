@@ -1,24 +1,26 @@
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
+import { useLocale, useTranslations } from "next-intl"
 import { getTranslations } from "next-intl/server"
+import { PageRow, PageShell } from "@/components/home/PageShell"
+import { CALENDLY_URL, loginUrlFor } from "@/lib/constants"
 
-import { Header } from "@/components/layout/Header"
-import { AccessHero } from "@/components/access/AccessHero"
+export const viewport: Viewport = { themeColor: "#B3BDF8" }
 
-// Reliable-focused tab title for the gate page (no Presedens); the layout template appends " | Reliable AI".
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params
-    const t = await getTranslations({ locale, namespace: "Header" })
-    return { title: t("access") }
+    const t = await getTranslations({ locale, namespace: "Access" })
+    return { title: t("title") }
 }
 
-// Gate page between the header "Log in" link and the app: log in, or book a demo if you are new.
+// The header's "Log in": on to the app, or a demo for those who are new.
 export default function AccessPage() {
+    const t = useTranslations("Access")
+    const loginUrl = loginUrlFor(useLocale())
+
     return (
-        <div className="flex min-h-screen flex-col bg-svart text-hvit">
-            <Header dark />
-            <main className="relative flex flex-1 items-center justify-center overflow-hidden">
-                <AccessHero />
-            </main>
-        </div>
+        <PageShell title={t("title")}>
+            <PageRow label={t("customers")} title={t("login")} note={new URL(loginUrl).host} href={loginUrl} />
+            <PageRow label={t("new")} title={t("demo")} href={CALENDLY_URL} newTab quiet />
+        </PageShell>
     )
 }

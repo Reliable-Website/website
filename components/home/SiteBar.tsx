@@ -48,6 +48,7 @@ export function SiteBar({ home = false, ref }: { home?: boolean; ref?: Ref<HTMLE
     }, [])
 
     const close = () => setOpen(false)
+    const here = pathname === "/access" ? "page" : undefined
     const section = (id: string, className?: string) => home
         ? <a key={id} className={className} href={`#${id}`} onClick={close}>{t(`nav.${id}`)}</a>
         : <Link key={id} className={className} href={`/#${id}`} onClick={close}>{t(`nav.${id}`)}</Link>
@@ -71,7 +72,7 @@ export function SiteBar({ home = false, ref }: { home?: boolean; ref?: Ref<HTMLE
                 {home ? <a href="#top" onClick={close}>{logo}</a> : <Link href="/" onClick={close}>{logo}</Link>}
                 <nav className={s.nav} aria-label="Main">
                     {SECTIONS.map((id) => section(id))}
-                    <Link href="/access">{t("nav.login")}</Link>
+                    <Link href="/access" aria-current={here}>{t("nav.login")}</Link>
                     {languages(false)}
                 </nav>
                 <button type="button" className={s.menuBtn} aria-expanded={open} aria-controls="menu" onClick={() => setOpen(!open)}>
@@ -81,7 +82,7 @@ export function SiteBar({ home = false, ref }: { home?: boolean; ref?: Ref<HTMLE
 
             <div className={clsx(s.menu, open && s.menuOpen)} id="menu">
                 {SECTIONS.map((id) => section(id, s.item))}
-                <Link className={s.item} href="/access" onClick={close}>{t("nav.login")}</Link>
+                <Link className={s.item} href="/access" aria-current={here} onClick={close}>{t("nav.login")}</Link>
                 {languages(true)}
             </div>
         </>

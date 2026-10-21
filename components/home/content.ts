@@ -29,7 +29,7 @@ export const PUBLICATIONS: { year: string; title: string; venue: string; href?: 
     { year: "2024", title: "Using Text Embeddings for Qualitative Analysis at Scale", venue: "Physical Review PER, peer-reviewed", href: "https://journals.aps.org/prper/abstract/10.1103/PhysRevPhysEducRes.20.020151" },
 ]
 
-// `bio` keys into Team.descriptions, shared with the /team page.
+// `bio` keys into Team.descriptions.
 export type Person = { bio: string; name: string; role: string; img: string; email?: string }
 
 export const TEAM: { group: "founders" | "design" | "board"; people: Person[] }[] = [

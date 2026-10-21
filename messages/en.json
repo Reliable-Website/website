@@ -1,12 +1,4 @@
 {
-    "Header": {
-        "research": "Research",
-        "team": "Team",
-        "contact": "Contact",
-        "login": "Log in",
-        "access": "Access",
-        "language": "Language"
-    },
     "Home": {
         "skip": "Skip to content",
         "menu": "Menu",
@@ -55,30 +47,7 @@
         "legal": "Legal",
         "top": "Back to top ↑"
     },
-    "Footer": {
-        "tagline": "Making public knowledge searchable.",
-        "location": "Oslo, Norway.",
-        "colCompany": "Company",
-        "colCustomers": "Customers",
-        "research": "Research",
-        "team": "Team",
-        "contact": "Contact",
-        "login": "Log in",
-        "legal": "Legal",
-        "rights": "All rights reserved Oslo {year}"
-    },
     "Team": {
-        "title": "Meet Our <br></br><reliable>Reliable</reliable><br></br> People",
-        "subtitle": "As an inherently interdisciplinary team of researchers, we are committed to ethical and responsible AI usage.",
-        "roles": {
-            "co_founder": "Co-Founder",
-            "ceo_co_founder": "CEO, Co-Founder",
-            "coo_co_founder": "COO, Co-Founder",
-            "cto_co_founder": "CTO, Co-Founder",
-            "board_member": "External Board Member",
-            "graphic_designer": "Graphic Designer",
-            "cpo_co_founder": "CPO, Co-Founder"
-        },
         "descriptions": {
             "halvor": "Background in physics and computational science. Specializes in text embeddings and the representation of meaning, with a particular interest in creative approaches to working with embedding spaces. The technical backbone of Reliable AI. When not coding, you'll find him on the cross-country skiing trails or at the bouldering gym.",
             "jonas": "Background in philosophy and data science, with a strong foundation in statistics and theory. Has an eye for design and makes the solutions look good. When he's not working, you might find him on the basketball court or the football pitch.",
@@ -88,21 +57,18 @@
             "mathilde": "Partner at Sprint Consulting with nine years of experience in innovation and sustainability consulting. Background from NTNU in computer science and strategy. Specializes in helping companies drive innovation, establish new ventures, and pursue sustainable growth.",
             "larspetter": "5x serial entrepreneur in EdTech. Co-founder and CPO of We Are Learning (immersive 3D learning). Previously co-founded Motimate, which was acquired by Kahoot!. His journey spans from CD-ROMs and laser discs to gamification and AI-powered immersive products. Known as a captivating speaker on creativity and AI.",
             "martine": "Graphic designer with broad experience from the design agency WAL, among others. Brings a keen eye for visual communication and brand identity to Reliable AI. When she's not working, you'll find her at the gym or by the pool table."
-        },
-        "groupFounders": "Founders",
-        "groupBoard": "Board",
-        "groupDesign": "Design"
+        }
     },
     "Access": {
-        "title": "Access Reliable",
-        "demoBadge": "New here",
-        "demoHeading": "Book a demo",
-        "demoBody": "See Reliable on your own questions, together with our team.",
-        "demoCta": "Book a demo",
-        "loginBadge": "Have access",
-        "loginHeading": "Log in",
-        "loginBody": "For existing users at firms with a Reliable account.",
-        "loginCta": "Go to login"
+        "title": "Log in",
+        "customers": "Customers",
+        "login": "Log in to Reliable",
+        "new": "Not yet a customer",
+        "demo": "Book a demo"
+    },
+    "NotFound": {
+        "title": "This page does not exist.",
+        "home": "Back to the front page"
     },
     "Legal": {
         "title": "Legal",
