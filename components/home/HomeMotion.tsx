@@ -37,6 +37,7 @@ export function HomeMotion() {
     const barRef = useRef<HTMLElement>(null)
     const heroRef = useRef<HTMLElement>(null)
     const stageRef = useRef<HTMLDivElement>(null)
+    const titleRef = useRef<HTMLDivElement>(null)
     const wordRef = useRef<HTMLHeadingElement>(null)
     const floatRef = useRef<HTMLDivElement>(null)
 
@@ -45,10 +46,11 @@ export function HomeMotion() {
     useEffect(() => {
         const forms = formsRef.current, pair = pairRef.current, f1 = f1Ref.current, f2 = f2Ref.current
         const bar = barRef.current, hero = heroRef.current, stage = stageRef.current, word = wordRef.current
-        if (!forms || !pair || !f1 || !f2 || !bar || !hero || !stage || !word) return
+        const title = titleRef.current
+        if (!forms || !pair || !f1 || !f2 || !bar || !hero || !stage || !word || !title) return
 
         const still = matchMedia("(prefers-reduced-motion: reduce)").matches
-        let CX = 0, CY = 0, R = 0
+        let CX = 0, CY = 0, R = 0, maxRise = 0
         let p = 0, mx = 0, my = 0, smx = 0, smy = 0, running = false, raf = 0
         const t0 = performance.now()
 
@@ -60,11 +62,15 @@ export function HomeMotion() {
                 R = Math.round(Math.min(W * 0.3, room * 0.34))
                 CX = Math.round(W * 0.5)
                 CY = Math.round(from + room / 2)
+                // the text closes on the circles at half its rise; keep 16px between them
+                const gap = word!.offsetTop - (CY + R)
+                maxRise = Math.max(0, Math.min(H * 0.1, 2 * (gap - 16)))
             } else {
                 // desktop: to the right, centred on the headline, so the merged disc sits level with it
                 R = Math.round(Math.min(H * 0.26, W * 0.17))
                 CX = Math.round(W * 0.72)
                 CY = Math.round(word!.offsetTop + word!.offsetHeight / 2)
+                maxRise = H * 0.12
             }
             forms!.style.setProperty("--d", 2 * R + "px")
             kick()
@@ -88,7 +94,11 @@ export function HomeMotion() {
             const q = 1 - p
             const ox = (-0.28 * R + (still ? 0 : smx * 8)) * q
             const oy = (-0.3 * R + (still ? 0 : smy * 8 + Math.sin(t * 0.35) * 4)) * q
-            const y = CY + lift
+            // the text drifts up as the stage scrolls and the circles drift half as far,
+            // so the first screen never stands still while they come into line
+            const rise = still ? 0 : sp * maxRise
+            title!.style.transform = `translate3d(0, ${(-rise).toFixed(1)}px, 0)`
+            const y = CY + lift - rise * 0.5
             f1!.style.transform = `translate3d(${(CX + ox - R).toFixed(1)}px, ${(y + oy - R).toFixed(1)}px, 0)`
             f2!.style.transform = `translate3d(${(CX - ox - R).toFixed(1)}px, ${(y - oy - R).toFixed(1)}px, 0)`
             const visible = y + R * 1.6 > 0
@@ -189,7 +199,7 @@ export function HomeMotion() {
 
             <section className={s.hero} id="top" ref={heroRef}>
                 <div className={s.stage} ref={stageRef}>
-                    <div className={s.title}>
+                    <div className={s.title} ref={titleRef}>
                         <h1 className={s.word} ref={wordRef}><span>Reliable</span><span>{t("claim")}</span></h1>
                         <p className={s.meta}>{t("meta")}</p>
                     </div>
