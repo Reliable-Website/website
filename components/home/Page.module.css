@@ -1,0 +1,58 @@
+/* Short pages in the homepage's frame (the log-in page, the 404): the blue haze, a large title,
+   and a few ruled rows across the grid. Tokens and the header, haze and footer come from Home.module.css. */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+.main { flex: 1; }
+
+/* ---------- page head, set like the title on /legal ---------- */
+.head { padding: 176px var(--m) 0; }
+.title {
+  max-width: 14em;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: clamp(42px, 5.4vw, 80px);
+  line-height: 1.02;
+  letter-spacing: -0.036em;
+  animation: rise 1.4s 0.1s var(--ease) both;
+}
+@keyframes rise { from { opacity: 0; transform: translateY(0.18em); } }
+
+/* ---------- rows: who it is for in the label column, where it goes beside it ---------- */
+.rows {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--g);
+  margin: 120px var(--m) 0;
+  border-top: 1px solid var(--rule);
+  animation: rise 1.4s 0.35s var(--ease) both;
+}
+.row {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+  align-items: baseline;
+  padding: 20px 0 21px;
+  border-bottom: 1px solid var(--rule);
+}
+.k { grid-column: 1 / span 3; font-size: 15px; color: var(--ink-2); }
+.v { grid-column: 4 / span 8; font-size: clamp(22px, 2.1vw, 30px); line-height: 1.15; letter-spacing: -0.025em; transition: color 0.25s; }
+.v small { display: block; margin-top: 6px; font-size: 15px; line-height: 1.45; letter-spacing: 0; color: var(--ink-2); }
+.arr { grid-column: 12; justify-self: end; color: var(--ink-3); transition: color 0.25s, transform 0.25s var(--ease); }
+.row:hover .arr { color: var(--ink); transform: translate(2px, -2px); }
+
+/* a secondary way on: grey until it is hovered */
+.quiet .v { color: var(--ink-2); }
+.quiet:hover .v { color: var(--ink); }
+
+@media (max-width: 860px) {
+  .head { padding-top: 136px; }
+  .rows { margin-top: 88px; }
+  .row { grid-template-columns: 1fr 24px; row-gap: 4px; padding: 16px 0 17px; }
+  .k { grid-column: 1; grid-row: 1; }
+  .v { grid-column: 1; grid-row: 2; }
+  .arr { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+}
