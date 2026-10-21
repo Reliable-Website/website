@@ -17,7 +17,7 @@ Søkeindeksene inneholder bare offentlige rettskilder. Kundenes data legges aldr
 
 Hver bruker bestemmer selv om søkene deres lagres, og kan slå det av i tjenesten. Kunden kan også slå av lagringen for alle sine brukere. Lagret søketekst har ikke navn, e-postadresse eller bruker-ID knyttet til seg, slettes eller anonymiseres automatisk etter høyst 90 dager og brukes ikke til å trene generative KI-modeller.
 
-Søket kjøres av modeller i vårt eget Azure-miljø. Søketekst sendes ikke til eksterne KI-leverandører.
+Søket kjøres av modeller i vårt eget Azure-miljø.
 
 ## Drift og datalagring
 
