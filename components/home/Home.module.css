@@ -75,6 +75,7 @@ a:hover .u, a.u:hover { text-decoration-color: currentColor; }
   display: grid;
   grid-template-rows: 1.1fr auto 0.9fr auto;
   padding: 72px var(--m) 40px;
+  will-change: transform; /* drifts up as the stage scrolls (HomeMotion) */
 }
 .word {
   grid-row: 2;
