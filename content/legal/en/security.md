@@ -17,7 +17,7 @@ The search indexes contain only public legal sources. Customer data is never add
 
 Each user decides whether their searches are stored, and can switch it off in the service. A customer can also switch storage off for all its users. Stored search text has no name, e-mail address or user ID attached, is deleted or anonymised automatically after at most 90 days, and is not used to train generative AI models.
 
-Search is run by models in our own Azure environment. Search text is not sent to external AI providers.
+Search is run by models in our own Azure environment.
 
 ## Hosting and data location
 
